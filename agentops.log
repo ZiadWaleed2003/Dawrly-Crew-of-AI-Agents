@@ -1,0 +1,6 @@
+2025-06-12 22:10:02,860 - INFO - Session Replay for default trace: https://app.agentops.ai/sessions?trace_id=4272066693ba10d48d33d84b7b56b43e
+2025-06-12 22:10:13,513 - ERROR - Error in trace creation: litellm.AuthenticationError: AuthenticationError: OpenrouterException - {"error":{"message":"No auth credentials found","code":401}}
+2025-06-12 22:10:13,540 - ERROR - Error in trace creation: litellm.AuthenticationError: AuthenticationError: OpenrouterException - {"error":{"message":"No auth credentials found","code":401}}
+2025-06-12 22:10:13,556 - ERROR - Error in trace creation: litellm.AuthenticationError: AuthenticationError: OpenrouterException - {"error":{"message":"No auth credentials found","code":401}}
+2025-06-12 22:10:25,743 - ERROR - [agentops.InternalSpanProcessor] Error uploading logfile: Internal Server Error
+2025-06-12 22:10:25,989 - INFO - Session Replay for default.session trace: https://app.agentops.ai/sessions?trace_id=4272066693ba10d48d33d84b7b56b43e
