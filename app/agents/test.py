@@ -4,14 +4,14 @@ from job_requirement_analyst import JobRequirementAnalyst  # Import your classes
 
 job_analyst_agent = JobRequirementAnalyst(
     max_queries=8,
-    search_mode="general"  # or "general"
+    search_mode="Platform-specific"  # or "general"
 )
 
 # 2. Create a Crew
 crew = Crew(
     agents=[job_analyst_agent.agent],  # Access the underlying Agent object
     tasks=[job_analyst_agent.create_task(
-        user_input="I want a senior Python developer role in Berlin or remote",
+        user_input="I want a fresh NodeJs developer role in Egypt you can use Indeed or Linkedin",
     )],
     verbose=1
 )
