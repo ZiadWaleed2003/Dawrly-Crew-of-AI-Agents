@@ -2,6 +2,7 @@ from crewai import LLM
 import agentops
 from tavily import TavilyClient
 from scrapegraph_py import Client
+from config import CONFIG
 
 
 import os
@@ -16,7 +17,7 @@ def get_llm() -> LLM:
     return LLM(
         model="openrouter/deepseek/deepseek-r1-0528:free",
         base_url="https://openrouter.ai/api/v1",
-        api_key=os.environ['OPENROUTER_API_KEY'],
+        api_key=CONFIG['OPENROUTER_API_KEY'],
         temperature=0
     )
 
@@ -24,13 +25,13 @@ def get_llm() -> LLM:
 def get_search_client() -> TavilyClient:
     """Initializes and returns a shared TavilyClient instance."""
     print("--- Initializing Tavily Client (This will run only once) ---")
-    return TavilyClient(api_key=os.environ['TAVILY_API_KEY'])
+    return TavilyClient(api_key=CONFIG['TAVILY_API_KEY'])
 
 @lru_cache(maxsize=None)
 def get_scrape_client() -> Client:
     """Initializes and returns a shared ScrapeGraph Client instance."""
     print("--- Initializing ScrapeGraph Client (This will run only once) ---")
-    return Client(api_key=os.environ['SCRAPEGRAPH_API_KEY'])
+    return Client(api_key=CONFIG['SCRAPEGRAPH_API_KEY'])
 
 def initialize_agentops():
     """Initializes AgentOps. This doesn't need to return anything."""
@@ -38,7 +39,7 @@ def initialize_agentops():
     # Using a simple flag to ensure it's not re-initialized
     if not getattr(initialize_agentops, "has_run", False):
         agentops.init(
-            api_key=os.environ['AGENTOPS_API_KEY'],
+            api_key=CONFIG['AGENTOPS_API_KEY'],
             skip_auto_end_session=True,
             default_tags=['crewai']
         )
