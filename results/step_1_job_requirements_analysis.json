@@ -1,0 +1,35 @@
+{
+  "job_titles": [
+    ".NET Developer",
+    "C# Developer",
+    "Software Developer",
+    "Junior Developer",
+    "Entry-Level Developer",
+    "Fresh Graduate Developer"
+  ],
+  "required_skills": [
+    ".NET",
+    "C#"
+  ],
+  "preferred_skills": [],
+  "experience_level": "Entry level",
+  "min_years_experience": 0,
+  "locations": [
+    "Egypt"
+  ],
+  "remote_preference": "None specified",
+  "specified_websites": [
+    "Indeed",
+    "LinkedIn"
+  ],
+  "search_queries": [
+    "LinkedIn: (\"C# Developer\" OR \".NET Developer\") AND (Egypt) AND (entry-level OR junior OR graduate OR fresher)",
+    "LinkedIn: (C# OR .NET) AND (Developer) AND (Egypt) AND (\"0 years\" OR \"no experience\" OR trainee)",
+    "LinkedIn: \"Software Developer\" AND (C# OR .NET) AND Egypt AND (junior OR entry-level)",
+    "LinkedIn: (\"Junior Developer\" OR \"Graduate Developer\") AND (.NET) AND (Egypt)",
+    "Indeed: title:(\".NET Developer\" OR \"C# Developer\") AND Egypt AND (entry-level OR junior OR graduate)",
+    "Indeed: title:(Developer) AND (C# OR .NET) AND Egypt AND (junior OR \"0 experience\" OR fresher)",
+    "Indeed: title:(\"Junior Software Developer\") AND (C# OR .NET) AND Egypt",
+    "Indeed: title:(\"Entry-Level Developer\") AND (.NET) AND Egypt AND (\"fresh graduate\" OR trainee)"
+  ]
+}

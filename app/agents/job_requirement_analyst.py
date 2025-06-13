@@ -13,34 +13,30 @@ class JobSearchCriteria(BaseModel):
     job_titles: List[str] = Field(..., description="Primary job titles/roles")
     required_skills: List[str] = Field(..., description="Must-have skills")
     preferred_skills: List[str] = Field(default=[], description="Nice-to-have skills")
-    
+   
     # Experience and level
     experience_level: str = Field(..., description="Fresh/Junior/Mid/Senior/Lead")
     min_years_experience: Optional[int] = Field(default=None)
-    
+   
     # Location and work setup
     locations: List[str] = Field(default=[], description="Preferred locations")
     remote_preference: str = Field(default="any", description="remote/hybrid/onsite/any")
     
-    # Search queries
-    universal_query: str = Field(..., description="General search query usable on any platform")
-    platform_queries: Optional[Dict[str, List[str]]] = Field(
-        default=None,
-        description="Platform-specific optimized search queries (LinkedIn/Indeed/RemoteOK/Wuzzuf)"
-    )
+    # Specified websites (new - based on task description)
+    specified_websites: List[str] = Field(default=[], description="User-specified websites to prioritize")
+   
+    # Search queries - SIMPLIFIED based on task logic
+    search_queries: List[str] = Field(..., description="Optimized search queries for job platforms", min_items=1)
 
 
 class JobRequirementAnalyst:
-    def __init__(self, max_queries=8, search_mode="general"):
+    def __init__(self, max_queries=8):
         """
         Args:
-            llm: The language model to use
             max_queries: Maximum number of queries to generate
-            search_mode: "general" or "platform_specific"
         """
         self.llm = get_llm()
         self.max_queries = max_queries
-        self.search_mode = search_mode
         self.agent = self._create_agent()
         self.task = None
     
@@ -62,30 +58,33 @@ class JobRequirementAnalyst:
             verbose=True,
         )
     
-    def create_task(self, user_input):
-        if self.search_mode == "general":
-            description = "\n".join([
-                "A job seeker is looking for opportunities with the following requirements: {user_input}",
-                f"Extract structured job search criteria and generate up to {self.max_queries} universal search queries.",
-                "Focus on creating general queries that will work across all job platforms:",
-                "- Combine job titles, required skills, and location preferences into concise search terms",
-                "- Avoid platform-specific syntax",
-                "- Include variations that cover different ways the job might be described",
-                "- Prioritize clarity and broad compatibility over platform optimization"
-            ])
-        else:  # platform_specific
-            description = "\n".join([
-                "A job seeker is looking for opportunities with the following requirements: {user_input}",
-                f"Extract structured job search criteria and generate:",
-                f"1. A universal search query (works everywhere)",
-                f"2. Up to {self.max_queries} platform-specific optimized search queries for LinkedIn/Indeed/RemoteOK/Wuzzuf",
-                "For platform-specific queries:",
-                "- LinkedIn: Use Boolean operators (AND/OR), quotes for exact terms",
-                "- Indeed: Focus on keywords + location, use title:() syntax",
-                "- RemoteOK: Short, remote-focused keywords",
-                "- Wuzzuf: Include Arabic/English variations if relevant",
-                "Ensure all queries maintain the core requirements while optimizing for each platform's search algorithm."
-            ])
+    def create_task(self):
+        description = "\n".join([
+            "A job seeker is looking for opportunities with the following requirements: {user_input}",
+            f"Extract structured job search criteria and generate up to {self.max_queries} optimized search queries.",
+            "",
+            "Generate search queries optimized for these top job platforms:",
+            "- LinkedIn: Use Boolean operators (AND/OR), quotes for exact terms, location filters",
+            "- Indeed: Focus on keywords + location, use title:() syntax for job titles",
+            "- Wuzzuf: Include Arabic/English variations, local market focus",
+            "- RemoteOK: Short, remote-focused keywords, tech stack emphasis",
+            "",
+            "If user specifies particular websites, prioritize those platforms in query generation.",
+            "If no specific websites mentioned, create general queries that work across all four platforms.",
+            "",
+            "IMPORTANT: Search queries must lead directly to actual job posting pages, not career advice blogs, job search tips, or company overview pages.",
+            "Focus on queries that will return individual job listings that can be scraped for detailed information.",
+            "",
+            "Focus on:",
+            "- Job titles and role variations",
+            "- Required skills and technologies",
+            "- Location preferences (including remote options)",
+            "- Experience level indicators",
+            "- Industry-specific terms",
+            "",
+            "Ensure queries are specific enough to avoid irrelevant results but broad enough to capture all relevant opportunities.",
+            "Ensure that the job is still available not an old one and closed"
+        ])
 
         self.task = Task(
             description=description,
@@ -93,11 +92,10 @@ class JobRequirementAnalyst:
             output_json=JobSearchCriteria,
             output_file=os.path.join("./results/", "step_1_job_requirements_analysis.json"),
             agent=self.agent,
-            context_variables={"user_input": user_input}
         )
         return self.task
     
-    def analyze_requirements(self, user_input):
+    def analyze_requirements(self):
         """Main method to analyze job requirements"""
-        task = self.create_task(user_input)
+        task = self.create_task()
         return task
