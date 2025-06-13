@@ -65,7 +65,7 @@ class JobRequirementAnalyst:
     def create_task(self, user_input):
         if self.search_mode == "general":
             description = "\n".join([
-                "A job seeker is looking for opportunities with the following requirements: {user_input}",
+                f"A job seeker is looking for opportunities with the following requirements: {user_input}",
                 f"Extract structured job search criteria and generate up to {self.max_queries} universal search queries.",
                 "Focus on creating general queries that will work across all job platforms:",
                 "- Combine job titles, required skills, and location preferences into concise search terms",
@@ -76,7 +76,7 @@ class JobRequirementAnalyst:
         else:  # platform_specific
             description = "\n".join([
                 "A job seeker is looking for opportunities with the following requirements: {user_input}",
-                f"Extract structured job search criteria and generate:",
+                "Extract structured job search criteria and generate:",
                 f"1. A universal search query (works everywhere)",
                 f"2. Up to {self.max_queries} platform-specific optimized search queries for LinkedIn/Indeed/RemoteOK/Wuzzuf",
                 "For platform-specific queries:",

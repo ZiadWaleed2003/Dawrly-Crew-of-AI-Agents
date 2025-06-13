@@ -1,0 +1,37 @@
+{
+  "job_titles": [
+    ".NET Developer",
+    "C# Developer",
+    "Junior .NET Developer",
+    "Junior C# Developer",
+    "Software Developer (.NET)",
+    "Entry-Level .NET Engineer"
+  ],
+  "required_skills": [
+    "C#",
+    ".NET"
+  ],
+  "preferred_skills": [],
+  "experience_level": "Entry level",
+  "min_years_experience": 0,
+  "locations": [
+    "Egypt"
+  ],
+  "remote_preference": "No preference",
+  "universal_query": "(\".NET Developer\" OR \"C# Developer\" OR \"Junior .NET Developer\" OR \"Junior C# Developer\") AND (\"entry level\" OR junior OR \"fresh graduate\" OR \"0 years experience\") AND Egypt",
+  "platform_queries": {
+    "LinkedIn": [
+      "(\".NET Developer\" OR \"C# Developer\") AND (junior OR \"entry level\" OR \"fresh graduate\") AND Egypt"
+    ],
+    "Indeed": [
+      "title:(\".NET Developer\" OR \"C# Developer\") (junior OR \"entry level\" OR \"fresh graduate\") Egypt"
+    ],
+    "RemoteOK": [
+      "junior .NET developer OR entry-level C# developer OR fresh graduate .NET"
+    ],
+    "Wuzzuf": [
+      "(\".NET Developer\" OR \"C# Developer\") AND (junior OR \"entry level\" OR \"fresh graduate\") AND Egypt",
+      "(مطور .NET OR مطور C#) AND (مبتدئ OR \"خريج حديث\" OR \"بدون خبرة\") AND مصر"
+    ]
+  }
+}
