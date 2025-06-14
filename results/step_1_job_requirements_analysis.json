@@ -1,35 +1,28 @@
 {
   "job_titles": [
-    ".NET Developer",
-    "C# Developer",
-    "Software Developer",
-    "Junior Developer",
-    "Entry-Level Developer",
-    "Fresh Graduate Developer"
+    "Machine Learning Intern",
+    "AI Intern",
+    "Artificial Intelligence Intern",
+    "ML Intern"
   ],
-  "required_skills": [
-    ".NET",
-    "C#"
-  ],
+  "required_skills": [],
   "preferred_skills": [],
-  "experience_level": "Entry level",
+  "experience_level": "Internship",
   "min_years_experience": 0,
   "locations": [
     "Egypt"
   ],
-  "remote_preference": "None specified",
+  "remote_preference": "Remote",
   "specified_websites": [
+    "LinkedIn",
     "Indeed",
-    "LinkedIn"
+    "Wuzzuf",
+    "RemoteOK"
   ],
   "search_queries": [
-    "LinkedIn: (\"C# Developer\" OR \".NET Developer\") AND (Egypt) AND (entry-level OR junior OR graduate OR fresher)",
-    "LinkedIn: (C# OR .NET) AND (Developer) AND (Egypt) AND (\"0 years\" OR \"no experience\" OR trainee)",
-    "LinkedIn: \"Software Developer\" AND (C# OR .NET) AND Egypt AND (junior OR entry-level)",
-    "LinkedIn: (\"Junior Developer\" OR \"Graduate Developer\") AND (.NET) AND (Egypt)",
-    "Indeed: title:(\".NET Developer\" OR \"C# Developer\") AND Egypt AND (entry-level OR junior OR graduate)",
-    "Indeed: title:(Developer) AND (C# OR .NET) AND Egypt AND (junior OR \"0 experience\" OR fresher)",
-    "Indeed: title:(\"Junior Software Developer\") AND (C# OR .NET) AND Egypt",
-    "Indeed: title:(\"Entry-Level Developer\") AND (.NET) AND Egypt AND (\"fresh graduate\" OR trainee)"
+    "site:linkedin.com/jobs (\"Machine Learning Intern*\" OR \"AI Intern*\" OR \"Artificial Intelligence Intern*\" OR \"ML Intern*\") AND (Egypt OR Remote)",
+    "site:indeed.com (\"Machine Learning Intern*\" OR \"AI Intern*\" OR \"Artificial Intelligence Intern*\" OR \"ML Intern*\") AND (Egypt OR Remote)",
+    "site:wuzzuf.net (\"Machine Learning Intern*\" OR \"AI Intern*\" OR \"Artificial Intelligence Intern*\" OR \"ML Intern*\") AND (Egypt OR Remote)",
+    "site:remoteok.com (\"Machine Learning Intern*\" OR \"AI Intern*\" OR \"Artificial Intelligence Intern*\" OR \"ML Intern*\")"
   ]
 }

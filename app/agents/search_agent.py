@@ -20,7 +20,7 @@ class AllJobSearchResults(BaseModel):
     results: List[SingleJobSearchResult]
 
 class SearchAgent:
-    def __init__(self, llm, search_tool, score_threshold=6.0):
+    def __init__(self, search_tool, score_threshold=6.0):
         self.llm = get_llm()
         self.search_tool = search_tool
         self.score_threshold = score_threshold
@@ -46,6 +46,32 @@ class SearchAgent:
             verbose=True,
             tools=[self.search_tool]
         )
+    
+
+
+
+    def _load_job_requirements(self, requirements_file_path="./results/step_1_job_requirements_analysis.json"):
+        """
+        Load job requirements from the previous agent's JSON output
+        
+        Args:
+            requirements_file_path: Path to the job requirements JSON file
+            
+        Returns:
+            dict: Parsed job requirements data
+        """
+        try:
+            with open(requirements_file_path, 'r', encoding='utf-8') as f:
+                requirements_data = json.load(f)
+            return requirements_data
+        except FileNotFoundError:
+            print(f"Warning: Requirements file not found at {requirements_file_path}")
+            return {}
+        except json.JSONDecodeError:
+            print(f"Warning: Invalid JSON in requirements file at {requirements_file_path}")
+            return {}
+        
+        
     
     def create_task(self, job_requirements_task, output_dir="./results/"):
         """

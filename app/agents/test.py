@@ -8,7 +8,7 @@ job_analyst_agent = JobRequirementAnalyst(
 
 # 2. Create a Crew
 crew = Crew(
-    agents=[job_analyst_agent.agent],  # Access the underlying Agent object
+    agents=[job_analyst_agent.agent],
     tasks=[job_analyst_agent.create_task()],
     verbose=1
 )
@@ -16,7 +16,6 @@ crew = Crew(
 # 3. Kick off the process
 results = crew.kickoff(
     inputs={
-        "user_input" : """I want a .net and C# developer role in Egypt you
-                        can use Indeed or Linkedin my experience is 0 years so you must look for fresh rules or juniors!"""
+        "user_input" : "ML or AI internship based in egypt or remote"
     }
 )
