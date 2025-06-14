@@ -4,6 +4,7 @@ from typing import List, Dict, Optional
 import os
 
 from app.clients import get_llm
+from datetime import datetime
 
 
 
@@ -42,7 +43,8 @@ class JobRequirementAnalyst:
     
     def _create_agent(self):
         return Agent(
-            role="Job Requirement Analyst",
+            role="Senior Job Search Query Optimizer specializing in converting natural language job requirements into highly effective search queries and keywords for various job boards.",
+            
             goal="\n".join([
                 "To analyze user job search requirements and extract structured criteria.",
                 "Generate optimized search queries for job boards and platforms.",
@@ -62,28 +64,24 @@ class JobRequirementAnalyst:
         description = "\n".join([
             "A job seeker is looking for opportunities with the following requirements: {user_input}",
             f"Extract structured job search criteria and generate up to {self.max_queries} optimized search queries.",
-            "",
-            "Generate search queries optimized for these top job platforms:",
-            "- LinkedIn: Use Boolean operators (AND/OR), quotes for exact terms, location filters",
-            "- Indeed: Focus on keywords + location, use title:() syntax for job titles",
-            "- Wuzzuf: Include Arabic/English variations, local market focus",
-            "- RemoteOK: Short, remote-focused keywords, tech stack emphasis",
-            "",
-            "If user specifies particular websites, prioritize those platforms in query generation.",
-            "If no specific websites mentioned, create general queries that work across all four platforms.",
-            "",
-            "IMPORTANT: Search queries must lead directly to actual job posting pages, not career advice blogs, job search tips, or company overview pages.",
-            "Focus on queries that will return individual job listings that can be scraped for detailed information.",
-            "",
+            "Generate search queries optimized for these top job platforms. Focus on core job titles, primary skills, and location to maximize the initial search hit rate.",
+            "For each specified platform (LinkedIn, Indeed, Wuzzuf, RemoteOK), generate a separate search query using the `site:` operator to target that platform directly.", # NEW INSTRUCTION
+            "- LinkedIn: Use core job titles and primary skills. Leverage LinkedIn's built-in filters for location and experience level. Include `site:linkedin.com`.",
+            "- Indeed: Focus on core keywords (job title, primary skills) and location. Include `site:indeed.com`.",
+            "- Wuzzuf: Include core job titles and location. Consider English variations. Include `site:wuzzuf.net` (or appropriate domain).", # Updated domain example
+            "- RemoteOK: Short, remote-focused keywords, emphasizing core tech stack relevant to the role. Include `site:remoteok.com`.",
+            "If user specifies particular websites, prioritize those platforms in query generation and ONLY generate queries for those sites.", # Clarified
+            "If no specific websites mentioned, create general queries for ALL four platforms listed above, each with its respective `site:` operator.", # Clarified
+            "IMPORTANT: The generated search queries should be designed to effectively locate actual job posting pages when executed by a search tool. Do NOT include actual job posting URLs or search results in your output.",
+            "Focus on generating queries that, when used by a search agent, will return individual job listings that can be scraped for detailed information.",
             "Focus on:",
             "- Job titles and role variations",
-            "- Required skills and technologies",
+            "- Required skills and technologies (only primary/fundamental ones for initial search)",
             "- Location preferences (including remote options)",
-            "- Experience level indicators",
             "- Industry-specific terms",
-            "",
             "Ensure queries are specific enough to avoid irrelevant results but broad enough to capture all relevant opportunities.",
-            "Ensure that the job is still available not an old one and closed"
+            "Do NOT include highly specific or niche technical keywords or any skills from the user input these won't be needed here right now (e.g., specific cloud providers like GCP/AWS/Azure, specific LLM frameworks like Hugging Face/fine tuning) in these initial search queries. These will be used by a later agent (Job Scrutinizer Agent) for detailed job description analysis.",
+            f"The search queries should aim to find open jobs, excluding expired ones. Consider that a typical maximum job age for relevance is 3 months from now (current date: {datetime.today().strftime('%Y-%m-%d')})."
         ])
 
         self.task = Task(

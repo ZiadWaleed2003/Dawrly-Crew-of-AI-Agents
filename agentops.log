@@ -1,2 +1,6 @@
-2025-06-13 21:56:10,986 - INFO - Session Replay for default trace: https://app.agentops.ai/sessions?trace_id=96c624d740de255d919b20cfb6ddb2a0
-2025-06-13 21:57:04,774 - INFO - Session Replay for default.session trace: https://app.agentops.ai/sessions?trace_id=96c624d740de255d919b20cfb6ddb2a0
+2025-06-15 01:03:22,070 - INFO - Session Replay for default trace: https://app.agentops.ai/sessions?trace_id=7f79c221dee211cfaf925a049fcdb9f9
+2025-06-15 01:08:06,812 - ERROR - Error in trace creation: 1 validation error for TaskOutput
+json_dict
+  Input should be a valid dictionary [type=dict_type, input_value='```json\n{\n  "results":...h."\n    }\n  ]\n}\n```', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/dict_type
+2025-06-15 01:08:07,476 - INFO - Session Replay for default.session trace: https://app.agentops.ai/sessions?trace_id=7f79c221dee211cfaf925a049fcdb9f9

@@ -1,35 +1,31 @@
 {
   "job_titles": [
-    ".NET Developer",
-    "C# Developer",
-    "Software Developer",
-    "Junior Developer",
-    "Entry-Level Developer",
-    "Fresh Graduate Developer"
+    "Machine Learning Intern",
+    "ML Intern",
+    "Machine Learning Internship",
+    "AI Intern",
+    "Artificial Intelligence Intern"
   ],
   "required_skills": [
-    ".NET",
-    "C#"
+    "Python"
   ],
-  "preferred_skills": [],
+  "preferred_skills": [
+    "LLM",
+    "AWS"
+  ],
   "experience_level": "Entry level",
   "min_years_experience": 0,
   "locations": [
-    "Egypt"
+    "Egypt",
+    "Remote"
   ],
-  "remote_preference": "None specified",
+  "remote_preference": "any",
   "specified_websites": [
-    "Indeed",
-    "LinkedIn"
+    "indeed.com",
+    "linkedin.com"
   ],
   "search_queries": [
-    "LinkedIn: (\"C# Developer\" OR \".NET Developer\") AND (Egypt) AND (entry-level OR junior OR graduate OR fresher)",
-    "LinkedIn: (C# OR .NET) AND (Developer) AND (Egypt) AND (\"0 years\" OR \"no experience\" OR trainee)",
-    "LinkedIn: \"Software Developer\" AND (C# OR .NET) AND Egypt AND (junior OR entry-level)",
-    "LinkedIn: (\"Junior Developer\" OR \"Graduate Developer\") AND (.NET) AND (Egypt)",
-    "Indeed: title:(\".NET Developer\" OR \"C# Developer\") AND Egypt AND (entry-level OR junior OR graduate)",
-    "Indeed: title:(Developer) AND (C# OR .NET) AND Egypt AND (junior OR \"0 experience\" OR fresher)",
-    "Indeed: title:(\"Junior Software Developer\") AND (C# OR .NET) AND Egypt",
-    "Indeed: title:(\"Entry-Level Developer\") AND (.NET) AND Egypt AND (\"fresh graduate\" OR trainee)"
+    "site:linkedin.com/jobs (\"Machine Learning Intern\" OR \"ML Intern\" OR \"Machine Learning Internship\" OR \"AI Intern\") Python (Egypt OR Remote)",
+    "site:indeed.com (\"Machine Learning Intern\" OR \"ML Intern\" OR \"Machine Learning Internship\" OR \"AI Intern\") Python (Egypt OR Remote)"
   ]
 }
