@@ -1,28 +1,31 @@
 {
   "job_titles": [
     "Machine Learning Intern",
+    "ML Intern",
+    "Machine Learning Internship",
     "AI Intern",
-    "Artificial Intelligence Intern",
-    "ML Intern"
+    "Artificial Intelligence Intern"
   ],
-  "required_skills": [],
-  "preferred_skills": [],
-  "experience_level": "Internship",
+  "required_skills": [
+    "Python"
+  ],
+  "preferred_skills": [
+    "LLM",
+    "AWS"
+  ],
+  "experience_level": "Entry level",
   "min_years_experience": 0,
   "locations": [
-    "Egypt"
+    "Egypt",
+    "Remote"
   ],
-  "remote_preference": "Remote",
+  "remote_preference": "any",
   "specified_websites": [
-    "LinkedIn",
-    "Indeed",
-    "Wuzzuf",
-    "RemoteOK"
+    "indeed.com",
+    "linkedin.com"
   ],
   "search_queries": [
-    "site:linkedin.com/jobs (\"Machine Learning Intern*\" OR \"AI Intern*\" OR \"Artificial Intelligence Intern*\" OR \"ML Intern*\") AND (Egypt OR Remote)",
-    "site:indeed.com (\"Machine Learning Intern*\" OR \"AI Intern*\" OR \"Artificial Intelligence Intern*\" OR \"ML Intern*\") AND (Egypt OR Remote)",
-    "site:wuzzuf.net (\"Machine Learning Intern*\" OR \"AI Intern*\" OR \"Artificial Intelligence Intern*\" OR \"ML Intern*\") AND (Egypt OR Remote)",
-    "site:remoteok.com (\"Machine Learning Intern*\" OR \"AI Intern*\" OR \"Artificial Intelligence Intern*\" OR \"ML Intern*\")"
+    "site:linkedin.com/jobs (\"Machine Learning Intern\" OR \"ML Intern\" OR \"Machine Learning Internship\" OR \"AI Intern\") Python (Egypt OR Remote)",
+    "site:indeed.com (\"Machine Learning Intern\" OR \"ML Intern\" OR \"Machine Learning Internship\" OR \"AI Intern\") Python (Egypt OR Remote)"
   ]
 }
