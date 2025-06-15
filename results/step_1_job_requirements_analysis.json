@@ -2,18 +2,16 @@
   "job_titles": [
     "Machine Learning Intern",
     "ML Intern",
-    "Machine Learning Internship",
     "AI Intern",
     "Artificial Intelligence Intern"
   ],
-  "required_skills": [
-    "Python"
-  ],
+  "required_skills": [],
   "preferred_skills": [
+    "Python",
     "LLM",
     "AWS"
   ],
-  "experience_level": "Entry level",
+  "experience_level": "Intern",
   "min_years_experience": 0,
   "locations": [
     "Egypt",
@@ -25,7 +23,8 @@
     "linkedin.com"
   ],
   "search_queries": [
-    "site:linkedin.com/jobs (\"Machine Learning Intern\" OR \"ML Intern\" OR \"Machine Learning Internship\" OR \"AI Intern\") Python (Egypt OR Remote)",
-    "site:indeed.com (\"Machine Learning Intern\" OR \"ML Intern\" OR \"Machine Learning Internship\" OR \"AI Intern\") Python (Egypt OR Remote)"
+    "site:indeed.com (\"Machine Learning Intern\" OR \"ML Intern\" OR \"AI Intern\" OR \"Artificial Intelligence Intern\") (Python OR LLM OR AWS) (Egypt OR Remote) after:2025-03-15",
+    "site:linkedin.com (\"Machine Learning Intern\" OR \"ML Intern\" OR \"AI Intern\" OR \"Artificial Intelligence Intern\") (Python OR LLM OR AWS) (Egypt OR Remote) after:2025-03-15",
+    "(\"Machine Learning Intern\" OR \"ML Intern\" OR \"AI Intern\" OR \"Artificial Intelligence Intern\") (Python OR LLM OR AWS) (Egypt OR Remote) after:2025-03-15"
   ]
 }
