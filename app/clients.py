@@ -2,6 +2,7 @@ from crewai import LLM
 import agentops
 from tavily import TavilyClient
 from scrapegraph_py import Client
+from crewai_tools import SerperDevTool
 from config import CONFIG
 
 
@@ -26,6 +27,12 @@ def get_search_client() -> TavilyClient:
     """Initializes and returns a shared TavilyClient instance."""
     print("--- Initializing Tavily Client (This will run only once) ---")
     return TavilyClient(api_key=CONFIG['TAVILY_API_KEY'])
+
+@lru_cache(maxsize=None)
+def get_search_client_serper() -> SerperDevTool:
+    """Initializes and returns a shared SerperClient instance."""
+    print("--- Initializing Serper Client (This will run only once) ---")
+    return SerperDevTool()
 
 @lru_cache(maxsize=None)
 def get_scrape_client() -> Client:
