@@ -1,9 +1,13 @@
 {
   "job_titles": [
     "Machine Learning Intern",
+    "Machine Learning Internship",
     "ML Intern",
+    "ML Internship",
     "AI Intern",
-    "Artificial Intelligence Intern"
+    "AI Internship",
+    "Artificial Intelligence Intern",
+    "Artificial Intelligence Internship"
   ],
   "required_skills": [],
   "preferred_skills": [
@@ -23,8 +27,8 @@
     "linkedin.com"
   ],
   "search_queries": [
-    "site:indeed.com (\"Machine Learning Intern\" OR \"ML Intern\" OR \"AI Intern\" OR \"Artificial Intelligence Intern\") (Python OR LLM OR AWS) (Egypt OR Remote) after:2025-03-15",
-    "site:linkedin.com (\"Machine Learning Intern\" OR \"ML Intern\" OR \"AI Intern\" OR \"Artificial Intelligence Intern\") (Python OR LLM OR AWS) (Egypt OR Remote) after:2025-03-15",
-    "(\"Machine Learning Intern\" OR \"ML Intern\" OR \"AI Intern\" OR \"Artificial Intelligence Intern\") (Python OR LLM OR AWS) (Egypt OR Remote) after:2025-03-15"
+    "(\"Machine Learning Intern\" OR \"Machine Learning Internship\" OR \"ML Intern\" OR \"ML Internship\" OR \"AI Intern\" OR \"AI Internship\" OR \"Artificial Intelligence Intern\" OR \"Artificial Intelligence Internship\") (Python OR \"Large Language Models\" OR LLM OR AWS) (Egypt OR Remote) after:2025-03-20",
+    "site:indeed.com (\"Machine Learning Intern\" OR \"Machine Learning Internship\" OR \"ML Intern\" OR \"ML Internship\" OR \"AI Intern\" OR \"AI Internship\" OR \"Artificial Intelligence Intern\" OR \"Artificial Intelligence Internship\") (Python OR \"Large Language Models\" OR LLM OR AWS) (Egypt OR Remote) after:2025-03-20",
+    "site:linkedin.com (\"Machine Learning Intern\" OR \"Machine Learning Internship\" OR \"ML Intern\" OR \"ML Internship\" OR \"AI Intern\" OR \"AI Internship\" OR \"Artificial Intelligence Intern\" OR \"Artificial Intelligence Internship\") (Python OR \"Large Language Models\" OR LLM OR AWS) (Egypt OR Remote) after:2025-03-20"
   ]
 }
