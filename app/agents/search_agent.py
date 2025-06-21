@@ -25,7 +25,7 @@ class SearchAgent:
         self.search_tool = [tavily_search_engine_tool]
         self.score_threshold = score_threshold
         self.agent = self._create_agent()
-        self.task = None
+        self.task = self.create_task()
     
     def _create_agent(self):
         return Agent(

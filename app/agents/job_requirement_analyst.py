@@ -24,7 +24,7 @@ class JobRequirementAnalyst:
         self.llm = get_llm()
         self.max_queries = max_queries
         self.agent = self._create_agent()
-        self.task = None
+        self.task = self.create_task()
 
     def _create_agent(self):
         return Agent(

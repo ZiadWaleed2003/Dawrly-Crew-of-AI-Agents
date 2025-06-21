@@ -1,67 +1,31 @@
 {
   "results": [
     {
-      "title": "Artificial Intelligence Intern - AGI Labs Inc. - LinkedIn",
-      "url": "https://www.linkedin.com/jobs/view/artificial-intelligence-intern-at-agi-labs-inc-4192584402",
-      "content": "AI Intern. AI Intern. Armada. Bellevue, WA 1 week ago. Machine Learning Intern (Masters/PhD), Summer 2025. Machine Learning Intern (Masters/PhD), Summer 2025.",
-      "score": 5.0,
-      "search_query": "(\"Machine Learning Intern\" OR \"Machine Learning Internship\" OR \"ML Intern\" OR \"ML Internship\" OR \"AI Intern\" OR \"AI Internship\" OR \"Artificial Intelligence Intern\" OR \"Artificial Intelligence Internship\") (Python OR \"Large Language Models\" OR LLM OR AWS) (Egypt OR Remote) after:2025-03-20",
-      "platform": "linkedin.com",
-      "relevance_notes": "Title matches exactly. Location mismatch (Bellevue, WA). Skills not confirmed in snippet."
-    },
-    {
-      "title": "Remote AI Intern Jobs | Himalayas",
-      "url": "https://himalayas.app/jobs/ai-intern",
-      "content": "... Machine Learning InternArtificial Intelligence InternGenerative AIComputer VisionPythonMachine LearningCommunication SkillsAWSPyTorch. Find your dream job.",
-      "score": 8.0,
-      "search_query": "(\"Machine Learning Intern\" OR \"Machine Learning Internship\" OR \"ML Intern\" OR \"ML Internship\" OR \"AI Intern\" OR \"AI Internship\" OR \"Artificial Intelligence Intern\" OR \"Artificial Intelligence Internship\") (Python OR \"Large Language Models\" OR LLM OR AWS) (Egypt OR Remote) after:2025-03-20",
-      "platform": "himalayas.app",
-      "relevance_notes": "Skills match (Python, AWS). Remote location. Title partially matches."
-    },
-    {
-      "title": "Machine Learning Intern at Traverse • Bengaluru - Wellfound",
-      "url": "https://wellfound.com/jobs/3291969-machine-learning-intern",
-      "content": "... ML Intern to join our dynamic team. This internship offers a unique opportunity to gain hands-on experience in applying Large Language Models ... Remote Jobs,",
+      "title": "Machine Learning Intern",
+      "url": "https://in.linkedin.com/jobs/view/machine-learning-intern-at-webboost-solutions-by-um-4253500149",
+      "content": "Machine Learning Intern (Paid). Company: WebBoost Solutions by UM. Location: Remote. Duration: 3 months. Opportunity: Full-time based on",
       "score": 10.0,
-      "search_query": "(\"Machine Learning Intern\" OR \"Machine Learning Internship\" OR \"ML Intern\" OR \"ML Internship\" OR \"AI Intern\" OR \"AI Internship\" OR \"Artificial Intelligence Intern\" OR \"Artificial Intelligence Internship\") (Python OR \"Large Language Models\" OR LLM OR AWS) (Egypt OR Remote) after:2025-03-20",
-      "platform": "wellfound.com",
-      "relevance_notes": "Title and skills match. Remote location indicated."
-    },
-    {
-      "title": "(Full Remote) Machine Learning Intern/Co-op - LinkedIn",
-      "url": "https://www.linkedin.com/jobs/view/full-remote-machine-learning-intern-co-op-at-joinrs-us-4240115952",
-      "content": "Jobs  *    Jobs  *    Job type - [x]  Full-time (41)   - [x]  Part-time (4)      Done     #### **Join or sign in to find your next job** Join to apply for the **Patient Reception Specialist - Katy** role at **Bend Memorial Clinic** Our Company does not use chat rooms for job searches or communications. *   United Health Services jobs *   Health Coordinator jobs *   Trusted Health jobs *   Patient Care Coordinator jobs *   Flatiron Health jobs *   VillageMD jobs *   Elation Health jobs *   Atlantic Health System jobs *   Oscar Health jobs *   Patient Care Technician jobs *   Clinical Assistant jobs Sign in to view more jobs",
-      "score": 7.0,
-      "search_query": "(\"Machine Learning Intern\" OR \"Machine Learning Internship\" OR \"ML Intern\" OR \"ML Internship\" OR \"AI Intern\" OR \"AI Internship\" OR \"Artificial Intelligence Intern\" OR \"Artificial Intelligence Internship\") (Python OR \"Large Language Models\" OR LLM OR AWS) (Egypt OR Remote) after:2025-03-20",
+      "search_query": "site:linkedin.com (\"Machine Learning Intern\" OR \"ML Intern\" OR \"AI Intern\") (Python OR LLM OR AWS) (\"Egypt\" OR \"Remote\")",
       "platform": "linkedin.com",
-      "relevance_notes": "Title matches. Remote location. Skills not verifiable from snippet."
+      "relevance_notes": "Title exactly matches 'Machine Learning Intern'. Location is Remote (matches preference). No required skills specified, so assumed present. Platform is highly credible."
     },
     {
-      "title": "AI & Machine Learning Intern - Remote",
-      "url": "https://www.indeed.com/viewjob?jk=92ae6351b7b6920d",
-      "content": "Flomad Labs R&D is looking for a forward-thinking AI & Machine Learning Intern to contribute to the development of intelligent systems across a wide range of",
-      "score": 8.0,
-      "search_query": "site:indeed.com (\"Machine Learning Intern\" OR \"Machine Learning Internship\" OR \"ML Intern\" OR \"ML Internship\" OR \"AI Intern\" OR \"AI Internship\" OR \"Artificial Intelligence Intern\" OR \"Artificial Intelligence Internship\") (Python OR \"Large Language Models\" OR LLM OR AWS) (Egypt OR Remote) after:2025-03-20",
-      "platform": "indeed.com",
-      "relevance_notes": "Title matches. Remote location. Skills inferred from context."
+      "title": "AI-ML Intern (Full Time -Remote)",
+      "url": "https://himalayas.app/companies/sarvm-ai/jobs/ai-ml-intern-full-time-remote",
+      "content": "SarvM.AI is hiring a remote AI-ML Intern (Full Time -Remote). Apply ... Machine Learning Intern AI Development Intern AI Intern",
+      "score": 9.0,
+      "search_query": "(\"Machine Learning Intern\" OR \"ML Intern\" OR \"AI Intern\") (Python OR LLM OR AWS) (\"Egypt\" OR \"Remote\")",
+      "platform": "himalayas.app",
+      "relevance_notes": "Title matches 'AI-ML Intern'. Location is Remote (matches preference). No required skills specified, so assumed present. Platform is acceptable but less established."
     },
     {
-      "title": "AI/ML Intern - Remote",
-      "url": "https://www.indeed.com/viewjob?jk=013dfb26c48a8ecd",
-      "content": "Position: AI/ML Intern Department: Technology Location: Remote in US Duration: 12 weeks (Summer). Key Responsibilities: •Assist in data collection,",
-      "score": 8.0,
-      "search_query": "site:indeed.com (\"Machine Learning Intern\" OR \"Machine Learning Internship\" OR \"ML Intern\" OR \"ML Internship\" OR \"AI Intern\" OR \"AI Internship\" OR \"Artificial Intelligence Intern\" OR \"Artificial Intelligence Internship\") (Python OR \"Large Language Models\" OR LLM OR AWS) (Egypt OR Remote) after:2025-03-20",
-      "platform": "indeed.com",
-      "relevance_notes": "Title matches. Remote location. Skills partially inferred."
-    },
-    {
-      "title": "SproutsAI hiring AI &amp; ML Intern in United States",
-      "url": "https://www.linkedin.com/jobs/view/ai-amp-ml-intern-at-sproutsai-4221841321",
-      "content": "As an AI & ML Intern at SproutsAI, you will gain hands-on experience in developing machine learning models, optimizing algorithms, and working with real-world",
-      "score": 7.0,
-      "search_query": "site:linkedin.com (\"Machine Learning Intern\" OR \"Machine Learning Internship\" OR \"ML Intern\" OR \"ML Internship\" OR \"AI Intern\" OR \"AI Internship\" OR \"Artificial Intelligence Intern\" OR \"Artificial Intelligence Internship\") (Python OR \"Large Language Models\" OR LLM OR AWS) (Egypt OR Remote) after:2025-03-20",
-      "platform": "linkedin.com",
-      "relevance_notes": "Title matches. Skills partially match. Location mismatch."
+      "title": "Research Intern - AI/ML (Fresh Graduates)",
+      "url": "https://www.naukri.com/job-listings-research-intern-ai-ml-fresh-graduates-netedge-computing-solutions-noida-0-to-1-years-030625030939",
+      "content": "AI/ML Intern. Webtech Softwares rating-star 4.3. company-location ... company-location Remote. company-duration 4 months duration. company",
+      "score": 9.0,
+      "search_query": "(\"Machine Learning Intern\" OR \"ML Intern\" OR \"AI Intern\") (Python OR LLM OR AWS) (\"Egypt\" OR \"Remote\")",
+      "platform": "naukri.com",
+      "relevance_notes": "Title partially matches as 'AI/ML Intern'. Location is Remote (matches preference). No required skills specified, so assumed present. Platform is credible."
     }
   ]
 }

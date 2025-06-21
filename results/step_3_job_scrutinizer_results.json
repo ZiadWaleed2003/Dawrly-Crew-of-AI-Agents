@@ -1,0 +1,43 @@
+{
+  "jobs": [
+    {
+      "job_title": "Machine Learning Intern",
+      "job_description": "Machine Learning Intern (Paid). Company: WebBoost Solutions by UM. Location: Remote. Duration: 3 months. Opportunity: Full-time based on performance.",
+      "job_url": "https://in.linkedin.com/jobs/view/machine-learning-intern-at-webboost-solutions-by-um-4253500149",
+      "agent_recommendation_rank": 4,
+      "agent_recommendation_notes": [
+        "Title exactly matches search criteria",
+        "Remote location matches preference",
+        "Platform (LinkedIn) is highly credible",
+        "Duration (3 months) suitable for internship",
+        "Skills not explicitly listed but assumed present based on search criteria"
+      ]
+    },
+    {
+      "job_title": "AI-ML Intern (Full Time -Remote)",
+      "job_description": "SarvM.AI is hiring a remote AI-ML Intern (Full Time -Remote). Apply for Machine Learning Intern, AI Development Intern, or AI Intern positions.",
+      "job_url": "https://himalayas.app/companies/sarvm-ai/jobs/ai-ml-intern-full-time-remote",
+      "agent_recommendation_rank": 3,
+      "agent_recommendation_notes": [
+        "Title matches 'AI Intern' variation",
+        "Fully remote position",
+        "Platform (Himalayas) less established than others",
+        "Full-time remote internship opportunity",
+        "Skills not explicitly listed but assumed present"
+      ]
+    },
+    {
+      "job_title": "Research Intern - AI/ML (Fresh Graduates)",
+      "job_description": "AI/ML Intern position at Webtech Softwares. Remote position with 4 months duration. For fresh graduates with 0-1 years experience.",
+      "job_url": "https://www.naukri.com/job-listings-research-intern-ai-ml-fresh-graduates-netedge-computing-solutions-noida-0-to-1-years-030625030939",
+      "agent_recommendation_rank": 4,
+      "agent_recommendation_notes": [
+        "Title partially matches as 'AI/ML Intern'",
+        "Remote location suitable",
+        "Platform (Naukri) is credible",
+        "Specifically for fresh graduates (0 experience)",
+        "4-month duration appropriate for internship"
+      ]
+    }
+  ]
+}
