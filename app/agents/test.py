@@ -1,29 +1,3 @@
-# from crewai import Crew , Process
-# from job_requirement_analyst import JobRequirementAnalyst  
-# from search_agent import SearchAgent
-
-# job_analyst_agent = JobRequirementAnalyst(
-#     max_queries=8,
-# )
-
-# search_agent = SearchAgent()
-
-# # 2. Create a Crew
-# crew = Crew(
-#     agents=[job_analyst_agent.agent , search_agent.agent],
-#     tasks=[job_analyst_agent.create_task() , search_agent.create_task()],
-#     verbose=1,
-#     process= Process.sequential
-# )
-
-# # 3. Kick off the process
-# results = crew.kickoff(
-#     inputs={
-#         "user_input" : "ML or AI internship based in egypt or remote"
-#     }
-# )
-
-
 from crewai import Crew, Process
 
 from app.agents.job_requirement_analyst import JobRequirementAnalyst
@@ -32,7 +6,7 @@ from app.agents.search_agent import SearchAgent
 
 
 job_analyst_agent_instance = JobRequirementAnalyst()
-search_agent_instance = SearchAgent()
+search_agent_instance = SearchAgent(score_threshold=4.0)
 
 # 1. Define the task for the JobRequirementAnalyst
 

@@ -11,7 +11,8 @@ def load_environment() -> Dict[str, str]:
         'OPENROUTER_API_KEY': 'OpenRouter API key',
         'TAVILY_API_KEY': 'Tavily API key',
         'SCRAPEGRAPH_API_KEY': 'ScrapeGraph API key',
-        'SERPER_API_KEY' : 'Serper API key'
+        'SERPER_API_KEY' : 'Serper API key',
+        'FIRECRAWL_API_KEY' : 'FireCrawl API key'
     }
     
     config = {}
