@@ -1,5 +1,6 @@
 from crewai import LLM
 import agentops
+from firecrawl import FirecrawlApp
 from tavily import TavilyClient
 from scrapegraph_py import Client
 from crewai_tools import SerperDevTool
@@ -39,6 +40,16 @@ def get_scrape_client() -> Client:
     """Initializes and returns a shared ScrapeGraph Client instance."""
     print("--- Initializing ScrapeGraph Client (This will run only once) ---")
     return Client(api_key=CONFIG['SCRAPEGRAPH_API_KEY'])
+
+@lru_cache(maxsize=None)
+def get_fire_crawl_client() ->FirecrawlApp:
+    """Initializes and returns a shared FireCrawl Client instance."""
+    print("--- Initializing FireCrawl Client (This will run only once) ---")
+
+    return FirecrawlApp(
+        api_key=CONFIG['FIRECRAWL_API_KEY']
+    )
+
 
 def initialize_agentops():
     """Initializes AgentOps. This doesn't need to return anything."""

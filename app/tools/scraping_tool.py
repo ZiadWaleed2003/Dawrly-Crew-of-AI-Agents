@@ -1,5 +1,5 @@
 from crewai.tools import tool
-from app.clients import get_scrape_client
+from app.clients import get_scrape_client , get_fire_crawl_client
 
 
 @tool
@@ -9,7 +9,7 @@ def web_scraping_tool(page_url : str):
 
     Example:
     web_scraping_tool(
-        page_url="https://www.noon.com/egypt-en/15-bar-fully-automatic-espresso-machine-1-8-l-1500"
+        page_url="https://www.indeed.com/viewjob?jk=013dfb26c48a8ecd"
     )
     """
     scraper = get_scrape_client()
@@ -24,5 +24,24 @@ def web_scraping_tool(page_url : str):
         "Details" : details
     }
 
+@tool
+def web_scraping_firecrawl(page_url : str):
+    """
+    An AI Tool to help an agent to scrape a web page
 
-print(web_scraping_tool(page_url="https://www.indeed.com/viewjob?jk=92ae6351b7b6920d"))
+    Example:
+    web_scraping_firecrawl(
+        page_url="https://www.indeed.com/viewjob?jk=013dfb26c48a8ecd"
+    )
+    """
+    scraper = get_fire_crawl_client()
+
+    results = scraper.scrape_url(
+        url=page_url,
+        formats=['markdown']   
+    )
+
+    return{
+        "Page URL" : page_url,
+        "Details"  : results
+    }
