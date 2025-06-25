@@ -3,7 +3,7 @@ from pydantic import BaseModel, Field
 from typing import List, Optional
 import os
 
-from app.clients import get_llm
+from app.clients import get_llm_main
 from datetime import datetime
 
 
@@ -21,7 +21,7 @@ class JobSearchCriteria(BaseModel):
 
 class JobRequirementAnalyst:
     def __init__(self, max_queries=8):
-        self.llm = get_llm()
+        self.llm = get_llm_main()
         self.max_queries = max_queries
         self.agent = self._create_agent()
         self.task = self.create_task()

@@ -3,13 +3,13 @@ from crewai import Agent, Task
 from typing import List
 import os
 
-from app.clients import get_llm3
-from app.models import SingleJobData, AllExtractedData
+from app.clients import get_llm_sec
+from app.models import AllExtractedData
 from app.tools.scraping_tool import web_scraping_firecrawl, web_scraping_tool
 
 class JobScrutinizerAgent:
     def __init__(self):
-        self.llm = get_llm3()
+        self.llm = get_llm_sec()
         self.agent = self._create_agent()
         self.task = self.create_task()
         self.scrapping_tools = [web_scraping_firecrawl]
@@ -55,7 +55,7 @@ class JobScrutinizerAgent:
           ...
         ]}
         
-        Do NOT output any additional text, markdown, or logs after emitting the JSON.
+        Do NOT output any additional text, markdown, <think> tag , or logs after emitting the JSON all i need is just a pure json response!.
         """
         
         self.task = Task(

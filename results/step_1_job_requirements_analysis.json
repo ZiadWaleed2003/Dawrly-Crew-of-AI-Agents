@@ -2,8 +2,9 @@
   "job_titles": [
     "Machine Learning Intern",
     "ML Intern",
-    "Machine Learning Internship",
-    "AI Intern"
+    "AI Intern",
+    "Artificial Intelligence Intern",
+    "Data Science Intern"
   ],
   "required_skills": null,
   "preferred_skills": null,
@@ -22,11 +23,11 @@
     "careerbuilder.com"
   ],
   "search_queries": [
-    "(\"Machine Learning Intern\" OR \"ML Intern\" OR \"Machine Learning Internship\" OR \"AI Intern\") (Egypt OR \"Remote\" OR \"Work from Home\" OR \"WFH\")",
-    "site:linkedin.com (\"Machine Learning Intern\" OR \"ML Intern\" OR \"Machine Learning Internship\" OR \"AI Intern\") (Egypt OR \"Remote\" OR \"Work from Home\" OR \"WFH\")",
-    "site:indeed.com (\"Machine Learning Intern\" OR \"ML Intern\" OR \"Machine Learning Internship\" OR \"AI Intern\") (Egypt OR \"Remote\" OR \"Work from Home\" OR \"WFH\")",
-    "site:glassdoor.com (\"Machine Learning Intern\" OR \"ML Intern\" OR \"Machine Learning Internship\" OR \"AI Intern\") (Egypt OR \"Remote\" OR \"Work from Home\" OR \"WFH\")",
-    "site:monster.com (\"Machine Learning Intern\" OR \"ML Intern\" OR \"Machine Learning Internship\" OR \"AI Intern\") (Egypt OR \"Remote\" OR \"Work from Home\" OR \"WFH\")",
-    "site:careerbuilder.com (\"Machine Learning Intern\" OR \"ML Intern\" OR \"Machine Learning Internship\" OR \"AI Intern\") (Egypt OR \"Remote\" OR \"Work from Home\" OR \"WFH\")"
+    "(\"Machine Learning Intern\" OR \"ML Intern\" OR \"AI Intern\" OR \"Artificial Intelligence Intern\" OR \"Data Science Intern\") (Egypt OR Remote OR \"work from home\" OR telecommute)",
+    "site:linkedin.com/jobs (\"Machine Learning Intern\" OR \"ML Intern\" OR \"AI Intern\") (Egypt OR Remote) entry-level",
+    "site:indeed.com/jobs (\"Machine Learning Intern\" OR \"Data Science Intern\") (location:Egypt OR remote) experience:entry_level",
+    "site:glassdoor.com/job (\"AI Intern\" OR \"Artificial Intelligence Intern\") (Egypt OR \"Remote\")",
+    "site:monster.com/jobs \"Machine Learning Intern\" (Egypt OR \"work from home\")",
+    "site:careerbuilder.com/job (\"ML Intern\" OR \"Data Science Intern\") (Egypt OR telecommute)"
   ]
 }
