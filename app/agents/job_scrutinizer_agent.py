@@ -4,7 +4,7 @@ from typing import List
 import os
 
 from app.clients import get_llm_sec
-from app.models import SingleJobData, AllExtractedData
+from app.models import AllExtractedData
 from app.tools.scraping_tool import web_scraping_firecrawl, web_scraping_tool
 
 class JobScrutinizerAgent:
@@ -55,7 +55,7 @@ class JobScrutinizerAgent:
           ...
         ]}
         
-        Do NOT output any additional text, markdown, or logs after emitting the JSON.
+        Do NOT output any additional text, markdown, <think> tag , or logs after emitting the JSON all i need is just a pure json response!.
         """
         
         self.task = Task(

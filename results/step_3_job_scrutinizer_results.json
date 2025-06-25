@@ -1,48 +1,75 @@
 {
   "jobs": [
     {
-      "job_title": "Machine Learning Intern",
-      "job_description": "Detailed description of the job.",
-      "job_url": "https://in.linkedin.com/jobs/view/machine-learning-intern-at-webboost-solutions-by-um-4255657297",
-      "agent_recommendation_rank": 4,
-      "agent_recommendation_notes": [
-        "Relevant job title and remote location."
-      ]
-    },
-    {
-      "job_title": "AI/ML Intern",
-      "job_description": "Detailed description of the job.",
-      "job_url": "https://www.glassdoor.com/job-listing/ai-ml-intern-%E2%80%93-product-image-generation-e-commerce-ai-project-sabhyasha-retail-tech-JV_KO0,61_KE62,83.htm?jl=1009787084016",
+      "job_title": "Data Science Intern",
+      "job_description": "Data Science Intern (Paid). Company: Unified Mentor. Location: Remote. Duration: 3 months. Application Deadline: 25th June 2025. Responsibilities include data analysis, machine learning model development, and collaboration with cross-functional teams. Requires basic knowledge of Python, R, and data visualization tools.",
+      "job_url": "https://in.linkedin.com/jobs/view/data-science-intern-at-unified-mentor-private-limited-4255547686",
       "agent_recommendation_rank": 5,
       "agent_recommendation_notes": [
-        "Highly relevant job title, skills, and remote location."
+        "Perfect alignment with remote work preference",
+        "Relevant job title and responsibilities in data science/ML",
+        "Entry-level requirements match 0-1 years of experience",
+        "Structured 3-month duration suitable for internship"
       ]
     },
     {
-      "job_title": "AI & Data Intern",
-      "job_description": "Detailed description of the job.",
-      "job_url": "https://www.unevaluation.org/vacancy/ai-data-intern",
+      "job_title": "Flexible Machine Learning Internship Remote Work Jobs - Indeed",
+      "job_description": "AI & Machine Learning Intern · Remote Software Engineering Internship: Machine Learning & AI tools · $7.25 - $20.00 · Data Science Intern · $23.54 - $54.44 · Data analysis, algorithm development, and ML model implementation. Requires foundational knowledge of machine learning frameworks and programming languages.",
+      "job_url": "https://www.indeed.com/q-machine-learning-internship-remote-work-jobs.html",
+      "agent_recommendation_rank": 4,
+      "agent_recommendation_notes": [
+        "Clear remote work availability",
+        "Directly relevant ML/AI focus",
+        "Multiple positions with varying pay rates",
+        "Lack of specific experience requirements mentioned"
+      ]
+    },
+    {
+      "job_title": "Artificial Intelligence Intern - CWS",
+      "job_description": "Artificial Intelligence Intern · Contact · Blog · Employer Login · Home · About ... This remote internship offers a flexible duration (1 to 6 months) and hands-on experience in AI development, including NLP and computer vision projects. Requires basic understanding of AI concepts and programming skills.",
+      "job_url": "https://corporatewebsolutions.in/artificial-intelligence-intern/",
+      "agent_recommendation_rank": 4,
+      "agent_recommendation_notes": [
+        "Remote format with flexible duration",
+        "AI-specific technical skills required",
+        "Entry-level project types mentioned",
+        "Limited salary information provided"
+      ]
+    },
+    {
+      "job_title": "Flexible Ai Remote Internship Jobs - Indeed",
+      "job_description": "... AI - intern. Ariana.Digital. Remote. $15 - $20. an hour. Part-time +3. 20 to 30 ... data science intern · artificial intelligence · ai internship · prompt engineering. Positions involve AI model training, data processing, and algorithm optimization. Requires foundational AI/ML knowledge.",
+      "job_url": "https://www.indeed.com/q-ai-remote-internship-jobs.html",
       "agent_recommendation_rank": 3,
       "agent_recommendation_notes": [
-        "Relevant remote location but job title is not an exact match."
+        "Remote availability confirmed",
+        "AI-focused roles with varied hourly rates",
+        "Mentions part-time commitments",
+        "Less specific about experience requirements"
       ]
     },
     {
-      "job_title": "Machine Learning Intern",
-      "job_description": "Detailed description of the job.",
-      "job_url": "https://in.linkedin.com/jobs/view/machine-learning-intern-at-skillfied-mentor-4254724726",
-      "agent_recommendation_rank": 4,
+      "job_title": "SkillFied Mentor hiring Data Science Intern in India - LinkedIn",
+      "job_description": "Data Science Intern – Remote | Explore the World of AI & Data. Are you fascinated by machine learning, data modeling, and real-world applications? This role includes predictive modeling, data cleaning, and visualization. Requires Python/R proficiency and basic statistics knowledge.",
+      "job_url": "https://in.linkedin.com/jobs/view/data-science-intern-at-skillfied-mentor-4253634244",
+      "agent_recommendation_rank": 5,
       "agent_recommendation_notes": [
-        "Relevant job title and remote location."
+        "Explicitly remote format",
+        "Direct alignment with data science/ML focus",
+        "Clear entry-level technical requirements",
+        "Strong emphasis on practical ML applications"
       ]
     },
     {
-      "job_title": "Machine Learning Fellowship Program",
-      "job_description": "Detailed description of the job.",
-      "job_url": "https://www.unifiedmentor.com/fellowship/machine-learning",
-      "agent_recommendation_rank": 4,
+      "job_title": "74 Artificial intelligence intern jobs in Remote - Glassdoor",
+      "job_description": "Search Artificial intelligence intern jobs in Remote with company ratings & salaries. 74 open jobs for Artificial intelligence intern in Remote. Listings include various AI engineering, research, and development roles with different experience levels.",
+      "job_url": "https://www.glassdoor.com/Job/remote-artificial-intelligence-intern-jobs-SRCH_IL.0,6_IS11047_KO7,37.htm",
+      "agent_recommendation_rank": 3,
       "agent_recommendation_notes": [
-        "Relevant job title and remote location."
+        "Aggregated job listings page",
+        "Multiple remote AI intern positions available",
+        "Lack of specific job details requires further investigation",
+        "Varied experience levels across listings"
       ]
     }
   ]

@@ -34,11 +34,11 @@ def get_llm_main() -> LLM:
 @lru_cache(maxsize=None)
 def get_llm_sec() -> LLM:
     """Initializes and returns a shared LLM instance."""
-    print("--- Initializing LLM Client (This will run only once) DeepSeekR1---")
+    print("--- Initializing LLM Client (This will run only once) Qwen 3---")
     
     try:
         llm = LLM(
-            model="nvidia_nim/meta/llama-4-maverick-17b-128e-instruct",
+            model="nvidia_nim/qwen/qwen3-235b-a22b",
             base_url = "https://integrate.api.nvidia.com/v1",
             api_key=CONFIG['NVIDIA_API_KEY'],
             temperature=0
@@ -52,7 +52,7 @@ def get_llm_sec() -> LLM:
 @lru_cache(maxsize=None)
 def get_llm_search() -> LLM:
     """Initializes and returns a shared LLM instance."""
-    print("--- Initializing LLM Client (This will run only once) Llama-3.3 ---")
+    print("--- Initializing LLM Client (This will run only once) Gemini 2.0 flash ---")
     
     try:
         llm = LLM(
