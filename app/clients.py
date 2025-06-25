@@ -13,7 +13,7 @@ from functools import lru_cache
 # This decorator ensures the function is only run once.
 # The result is cached and returned on all subsequent calls.
 @lru_cache(maxsize=None)
-def get_llm() -> LLM:
+def get_llm_main() -> LLM:
     """Initializes and returns a shared LLM instance."""
     print("--- Initializing LLM Client (This will run only once) DeepSeekR1---")
     
@@ -32,7 +32,7 @@ def get_llm() -> LLM:
 
 
 @lru_cache(maxsize=None)
-def get_llm3() -> LLM:
+def get_llm_sec() -> LLM:
     """Initializes and returns a shared LLM instance."""
     print("--- Initializing LLM Client (This will run only once) DeepSeekR1---")
     
@@ -50,7 +50,7 @@ def get_llm3() -> LLM:
 
 
 @lru_cache(maxsize=None)
-def get_llm_qwen() -> LLM:
+def get_llm_search() -> LLM:
     """Initializes and returns a shared LLM instance."""
     print("--- Initializing LLM Client (This will run only once) Llama-3.3 ---")
     
@@ -70,12 +70,6 @@ def get_search_client() -> TavilyClient:
     """Initializes and returns a shared TavilyClient instance."""
     print("--- Initializing Tavily Client (This will run only once) ---")
     return TavilyClient(api_key=CONFIG['TAVILY_API_KEY'])
-
-@lru_cache(maxsize=None)
-def get_search_client_serper() -> SerperDevTool:
-    """Initializes and returns a shared SerperClient instance."""
-    print("--- Initializing Serper Client (This will run only once) ---")
-    return SerperDevTool()
 
 @lru_cache(maxsize=None)
 def get_scrape_client() -> Client:
