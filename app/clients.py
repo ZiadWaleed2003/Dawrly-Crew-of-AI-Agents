@@ -15,13 +15,55 @@ from functools import lru_cache
 @lru_cache(maxsize=None)
 def get_llm() -> LLM:
     """Initializes and returns a shared LLM instance."""
-    print("--- Initializing LLM Client (This will run only once) ---")
-    return LLM(
-        model="openrouter/deepseek/deepseek-r1-0528:free",
-        base_url="https://openrouter.ai/api/v1",
-        api_key=CONFIG['OPENROUTER_API_KEY'],
-        temperature=0
-    )
+    print("--- Initializing LLM Client (This will run only once) DeepSeekR1---")
+    
+    try:
+        llm = LLM(
+            model="nvidia_nim/deepseek-ai/deepseek-r1-0528",
+            base_url = "https://integrate.api.nvidia.com/v1",
+            api_key=CONFIG['NVIDIA_API_KEY'],
+            temperature=0
+        )
+        return llm
+    except Exception as e:
+        print(f"ERROR initializing LLM: {str(e)}")
+        raise
+
+
+
+@lru_cache(maxsize=None)
+def get_llm3() -> LLM:
+    """Initializes and returns a shared LLM instance."""
+    print("--- Initializing LLM Client (This will run only once) DeepSeekR1---")
+    
+    try:
+        llm = LLM(
+            model="nvidia_nim/meta/llama-4-maverick-17b-128e-instruct",
+            base_url = "https://integrate.api.nvidia.com/v1",
+            api_key=CONFIG['NVIDIA_API_KEY'],
+            temperature=0
+        )
+        return llm
+    except Exception as e:
+        print(f"ERROR initializing LLM: {str(e)}")
+        raise
+
+
+@lru_cache(maxsize=None)
+def get_llm_qwen() -> LLM:
+    """Initializes and returns a shared LLM instance."""
+    print("--- Initializing LLM Client (This will run only once) Llama-3.3 ---")
+    
+    try:
+        llm = LLM(
+            model="gemini/gemini-2.0-flash",
+            api_key=CONFIG['GEMINI_API_KEY'],
+            temperature=0
+        )
+        return llm
+    except Exception as e:
+        print(f"ERROR initializing LLM: {str(e)}")
+        raise
 
 @lru_cache(maxsize=None)
 def get_search_client() -> TavilyClient:

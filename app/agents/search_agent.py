@@ -3,7 +3,7 @@ from pydantic import BaseModel, Field
 from typing import List
 import os
 
-from app.clients import get_llm
+from app.clients import get_llm_qwen
 from app.tools.search_tools import tavily_search_engine_tool
 
 
@@ -20,8 +20,8 @@ class AllJobSearchResults(BaseModel):
     results: List[SingleJobSearchResult]
 
 class SearchAgent:
-    def __init__(self, score_threshold=6.0):
-        self.llm = get_llm()
+    def __init__(self, score_threshold):
+        self.llm = get_llm_qwen()
         self.search_tool = [tavily_search_engine_tool]
         self.score_threshold = score_threshold
         self.agent = self._create_agent()
@@ -45,6 +45,7 @@ class SearchAgent:
 
                         Instruction:
                         1. For each string in `search_queries`, call the `tavily_search_engine_tool` exactly once to execute it.
+                           - Use the search_queries directly from input if available, otherwise use the ones from the previous task.
                         2. From the tool output, extract raw results; for each result:
                         - Determine `platform` based on URL domain.
                         - Visit or use the provided `content` snippet to verify presence of required skills and location.

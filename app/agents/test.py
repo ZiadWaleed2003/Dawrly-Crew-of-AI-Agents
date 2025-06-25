@@ -7,7 +7,7 @@ from app.agents.job_scrutinizer_agent import JobScrutinizerAgent
 
 
 job_analyst_agent_instance = JobRequirementAnalyst()
-search_agent_instance = SearchAgent(score_threshold=4.0)
+search_agent_instance = SearchAgent(score_threshold=0)  # Lower threshold to capture more results
 job_scrutinizer_agent = JobScrutinizerAgent()
 
 # 1. Define the task for the JobRequirementAnalyst
@@ -15,16 +15,20 @@ job_scrutinizer_agent = JobScrutinizerAgent()
 user_input_data = {
     'role': 'Machine Learning Intern',
     'years_experience': '0-1',
-    'preferred_stack': 'Python, LLM, AWS',
     'locations': ['Egypt', 'Remote'],
-    'remote_preference': 'any',
-    'specified_websites': ['indeed.com', 'linkedin.com']
+    'remote_preference': 'any'
 }
 
+# Define custom search queries that are less restrictive
+custom_search_queries = [
+    "Machine Learning Intern Remote",
+    "ML Intern Egypt",
+    "Entry Level Machine Learning Jobs Remote",
+    "Junior AI Developer Egypt"
+]
 
 
 
-# Instantiate the crew
 crew = Crew(
     agents=[
         job_analyst_agent_instance.agent,
@@ -42,5 +46,6 @@ crew = Crew(
 
 # Kickoff the crew
 results = crew.kickoff(inputs={
-    'user_input': user_input_data
+    'user_input': user_input_data,
+    'search_queries': custom_search_queries  # Pass custom search queries directly
 })

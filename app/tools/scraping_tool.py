@@ -1,4 +1,5 @@
 from crewai.tools import tool
+from firecrawl import JsonConfig
 from app.clients import get_scrape_client , get_fire_crawl_client
 from app.models import SingleJobData
 import json
@@ -25,6 +26,11 @@ def web_scraping_tool(page_url : str):
         "Details" : details
     }
 
+
+json_config = JsonConfig(
+    prompt= "Extract ```json\n" + json.dumps(SingleJobData.model_json_schema()) + "```\n From the web page"
+)
+
 @tool
 def web_scraping_firecrawl(page_url : str):
     """
@@ -39,10 +45,12 @@ def web_scraping_firecrawl(page_url : str):
 
     results = scraper.scrape_url(
         url=page_url,
-        formats=['markdown']   
+        formats=['json'],
+        json_options=json_config.model_dump(exclude_none=True),
+        only_main_content=False   
     )
 
     return{
         "Page URL" : page_url,
-        "Details"  : results
+        "Details"  : results.json
     }
