@@ -3,16 +3,16 @@ from crewai import Agent, Task
 from typing import List
 import os
 
-from app.clients import get_llm
+from app.clients import get_llm3
 from app.models import SingleJobData, AllExtractedData
 from app.tools.scraping_tool import web_scraping_firecrawl, web_scraping_tool
 
 class JobScrutinizerAgent:
     def __init__(self):
-        self.llm = get_llm()
+        self.llm = get_llm3()
         self.agent = self._create_agent()
         self.task = self.create_task()
-        self.scrapping_tools = [web_scraping_tool, web_scraping_firecrawl]
+        self.scrapping_tools = [web_scraping_firecrawl]
     
     def _create_agent(self):
         return Agent(
@@ -23,7 +23,7 @@ class JobScrutinizerAgent:
             to help job seekers find the most suitable opportunities.""",
             llm=self.llm,
             verbose=True,
-            tools=[web_scraping_tool, web_scraping_firecrawl]
+            tools=[web_scraping_firecrawl]
         )
     
     def create_task(self, output_dir="./results/"):
@@ -31,16 +31,15 @@ class JobScrutinizerAgent:
         Analyze the job URLs provided from the previous agent's search results.
         
         For each URL:
-        1. First try to scrape the job information using the web_scraping_tool.
-        2. If the first tool returns empty or fails, use the web_scraping_firecrawl tool which returns markdown content.
-        3. If both tools fail, just save the URL with minimal information.
+        1. First try to scrape the job information using the web_scraping_firecrawl.
+        3. If the tool failed, just save the URL with minimal information.
         
         For each job listing, extract:
         - Job title
         - Full job description
         - Job URL
         
-        Then evaluate each job based on the requirements and provide:
+        Then evaluate each job based on the requirements from the {user_input} and provide:
         - A recommendation rank (out of 5, higher is better)
         - Detailed notes explaining your recommendation
         
