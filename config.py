@@ -13,7 +13,9 @@ def load_environment() -> Dict[str, str]:
         'FIRECRAWL_API_KEY' : 'FireCrawl API key',
         'CEREBRAS_API_KEY' : 'Cerebas Api key',
         'NVIDIA_API_KEY':'Nvidia NIM key',
-        'GEMINI_API_KEY':'Gemini API key'
+        'GEMINI_API_KEY':'Gemini API key',
+        'EMAIL':'Google email',
+        'EMAIL_PASSWORD':'Google Password'
     }
     
     config = {}
