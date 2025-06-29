@@ -1,75 +1,47 @@
 {
   "jobs": [
     {
-      "job_title": "Data Science Intern",
-      "job_description": "Data Science Intern (Paid). Company: Unified Mentor. Location: Remote. Duration: 3 months. Application Deadline: 25th June 2025. Responsibilities include data analysis, machine learning model development, and collaboration with cross-functional teams. Requires basic knowledge of Python, R, and data visualization tools.",
-      "job_url": "https://in.linkedin.com/jobs/view/data-science-intern-at-unified-mentor-private-limited-4255547686",
+      "job_title": "Full Stack Developer (Node.js/ React.js)",
+      "job_description": "Design and develop scalable and secure RESTful APIs using Node.js and Express. Integrate frontend and backend components. Requires proficiency in Node.js, Express.js, and React.js. Remote position available.",
+      "job_url": "https://www.glassdoor.com/job-listing/full-stack-developer-node-js-react-js-team-lead-so-creative-JV_KO0,47_KE48,59.htm?jl=1009787506981",
       "agent_recommendation_rank": 5,
       "agent_recommendation_notes": [
-        "Perfect alignment with remote work preference",
-        "Relevant job title and responsibilities in data science/ML",
-        "Entry-level requirements match 0-1 years of experience",
-        "Structured 3-month duration suitable for internship"
+        "Mentions all required skills: Node.js, React.js, and Express.js",
+        "Remote position aligns with user's preference for remote work",
+        "Entry-level friendly based on search query inclusion"
       ]
     },
     {
-      "job_title": "Flexible Machine Learning Internship Remote Work Jobs - Indeed",
-      "job_description": "AI & Machine Learning Intern · Remote Software Engineering Internship: Machine Learning & AI tools · $7.25 - $20.00 · Data Science Intern · $23.54 - $54.44 · Data analysis, algorithm development, and ML model implementation. Requires foundational knowledge of machine learning frameworks and programming languages.",
-      "job_url": "https://www.indeed.com/q-machine-learning-internship-remote-work-jobs.html",
+      "job_title": "Full Stack Developer (React + Java/.NET/Node.js)",
+      "job_description": "Develop and maintain web applications using Node.js (Express.js) and React.js. Integrate frontend and backend components. Requires knowledge of Node.js, Express.js, and React.js. Remote work option available.",
+      "job_url": "https://www.glassdoor.com/job-listing/full-stack-developer-react-java-net-node-js-prosperasoft-JV_KO0,43_KE44,56.htm?jl=1009787641081",
       "agent_recommendation_rank": 4,
       "agent_recommendation_notes": [
-        "Clear remote work availability",
-        "Directly relevant ML/AI focus",
-        "Multiple positions with varying pay rates",
-        "Lack of specific experience requirements mentioned"
+        "Includes all required skills: Node.js, React.js, and Express.js",
+        "Remote work option matches user's location preference",
+        "Slightly less explicit about entry-level focus compared to other matches"
       ]
     },
     {
-      "job_title": "Artificial Intelligence Intern - CWS",
-      "job_description": "Artificial Intelligence Intern · Contact · Blog · Employer Login · Home · About ... This remote internship offers a flexible duration (1 to 6 months) and hands-on experience in AI development, including NLP and computer vision projects. Requires basic understanding of AI concepts and programming skills.",
-      "job_url": "https://corporatewebsolutions.in/artificial-intelligence-intern/",
-      "agent_recommendation_rank": 4,
-      "agent_recommendation_notes": [
-        "Remote format with flexible duration",
-        "AI-specific technical skills required",
-        "Entry-level project types mentioned",
-        "Limited salary information provided"
-      ]
-    },
-    {
-      "job_title": "Flexible Ai Remote Internship Jobs - Indeed",
-      "job_description": "... AI - intern. Ariana.Digital. Remote. $15 - $20. an hour. Part-time +3. 20 to 30 ... data science intern · artificial intelligence · ai internship · prompt engineering. Positions involve AI model training, data processing, and algorithm optimization. Requires foundational AI/ML knowledge.",
-      "job_url": "https://www.indeed.com/q-ai-remote-internship-jobs.html",
-      "agent_recommendation_rank": 3,
-      "agent_recommendation_notes": [
-        "Remote availability confirmed",
-        "AI-focused roles with varied hourly rates",
-        "Mentions part-time commitments",
-        "Less specific about experience requirements"
-      ]
-    },
-    {
-      "job_title": "SkillFied Mentor hiring Data Science Intern in India - LinkedIn",
-      "job_description": "Data Science Intern – Remote | Explore the World of AI & Data. Are you fascinated by machine learning, data modeling, and real-world applications? This role includes predictive modeling, data cleaning, and visualization. Requires Python/R proficiency and basic statistics knowledge.",
-      "job_url": "https://in.linkedin.com/jobs/view/data-science-intern-at-skillfied-mentor-4253634244",
+      "job_title": "Junior Full Stack Engineer (Node.js & React)",
+      "job_description": "Entry-level position for Full Stack Engineers with foundational knowledge in Node.js and React. Located in Cairo, Egypt. Requires basic understanding of Node.js and React frameworks.",
+      "job_url": "https://www.naukrigulf.com/junior-full-stack-engineer-jobs-in-cairo-egypt-in-vxlabs-gmbh-1-to-2-years-n-cd-40000924-jid-210525501043",
       "agent_recommendation_rank": 5,
       "agent_recommendation_notes": [
-        "Explicitly remote format",
-        "Direct alignment with data science/ML focus",
-        "Clear entry-level technical requirements",
-        "Strong emphasis on practical ML applications"
+        "Matches location preference (Egypt)",
+        "Explicitly targets junior/entry-level candidates",
+        "Mentions required skills (Node.js & React) directly in job title"
       ]
     },
     {
-      "job_title": "74 Artificial intelligence intern jobs in Remote - Glassdoor",
-      "job_description": "Search Artificial intelligence intern jobs in Remote with company ratings & salaries. 74 open jobs for Artificial intelligence intern in Remote. Listings include various AI engineering, research, and development roles with different experience levels.",
-      "job_url": "https://www.glassdoor.com/Job/remote-artificial-intelligence-intern-jobs-SRCH_IL.0,6_IS11047_KO7,37.htm",
-      "agent_recommendation_rank": 3,
+      "job_title": "Full Stack Engineer / Founding Engineer - React/Nodejs | REMOTE",
+      "job_description": "Remote full-stack development role requiring expertise in React and Node.js. Junior JavaScript Developer position available with remote work flexibility. Entry-level applicants encouraged to apply.",
+      "job_url": "https://in.linkedin.com/jobs/view/full-stack-engineer-founding-engineer-react-nodejs-remote-at-uplers-4258206231",
+      "agent_recommendation_rank": 5,
       "agent_recommendation_notes": [
-        "Aggregated job listings page",
-        "Multiple remote AI intern positions available",
-        "Lack of specific job details requires further investigation",
-        "Varied experience levels across listings"
+        "Mentions required skills (React and Node.js) in title",
+        "Fully remote position matches user's preference",
+        "Explicitly mentions junior-level remote opportunity"
       ]
     }
   ]

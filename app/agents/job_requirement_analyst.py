@@ -45,11 +45,11 @@ class JobRequirementAnalyst:
     def create_task(self):
         description = "".join([
                     f"A job seeker is looking for opportunities with the following requirements: {{user_input}}",
-                    "Extract structured job search criteria and generate up to {self.max_queries} optimized search queries.",
-                    "Generate search queries optimized for these top job platforms and a general Google query:",
+                    "Extract structured job search criteria and generate up to 8 at max optimized search queries.",
+                    "Generate search queries optimized for the top job platforms and a general Google query:",
                     "- For each specified platform in `specified_websites`, generate a separate query using `site:` to target that site.",
                     "- Additionally generate one broad, general Google query without `site:` to capture cross-platform results.",
-                    "- Ensure queries cover job titles, skills (required + preferred), and location criteria.",
+                    "- Ensure queries cover job titles and location criteria.",
                     "- IMPORTANT: The generated search queries should be designed to effectively locate actual job posting pages when executed by a search tool. Do NOT include actual URLs or expired posts.",
                     "- Focus on generating queries that when used will return individual job listings for scraping.",
                     f"- Consider relevancy within the last 3 months (current date: {datetime.today().strftime('%Y-%m-%d')})."
@@ -66,16 +66,3 @@ class JobRequirementAnalyst:
 
     def analyze_requirements(self):
         return self.create_task()
-
-# # Post-processing example (to be used after LLM response):
-# def construct_queries(criteria: JobSearchCriteria) -> List[str]:
-#     titles = " OR ".join(f'\"{t}\"' for t in criteria.job_titles)
-#     skills = " OR ".join(criteria.required_skills + criteria.preferred_skills)
-#     locations = " OR ".join(criteria.locations)
-#     # General Google query
-#     general = f"({titles}) ({skills}) ({locations})"
-#     queries = [general]
-#     # Site-specific queries
-#     for site in criteria.specified_websites:
-#         queries.append(f"site:{site} ({titles}) ({skills}) ({locations})")
-#     return queries
