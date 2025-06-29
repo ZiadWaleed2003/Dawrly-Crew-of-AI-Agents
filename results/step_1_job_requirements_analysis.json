@@ -1,33 +1,41 @@
 {
   "job_titles": [
-    "Machine Learning Intern",
-    "ML Intern",
-    "AI Intern",
-    "Artificial Intelligence Intern",
-    "Data Science Intern"
+    "Fullstack Engineer",
+    "Full Stack Engineer",
+    "Full-Stack Engineer",
+    "Fullstack Developer",
+    "Full Stack Developer"
   ],
-  "required_skills": null,
+  "required_skills": [
+    "Node.js",
+    "React",
+    "Express"
+  ],
   "preferred_skills": null,
-  "experience_level": "Intern",
+  "experience_level": "Entry level",
   "min_years_experience": 0,
   "locations": [
     "Egypt",
-    "Remote"
+    "remote"
   ],
   "remote_preference": "any",
   "specified_websites": [
-    "linkedin.com",
+    "linkedin.com/jobs",
     "indeed.com",
     "glassdoor.com",
     "monster.com",
-    "careerbuilder.com"
+    "careerbuilder.com",
+    "angel.co",
+    "stackoverflow.com/jobs"
   ],
   "search_queries": [
-    "(\"Machine Learning Intern\" OR \"ML Intern\" OR \"AI Intern\" OR \"Artificial Intelligence Intern\" OR \"Data Science Intern\") (Egypt OR Remote OR \"work from home\" OR telecommute)",
-    "site:linkedin.com/jobs (\"Machine Learning Intern\" OR \"ML Intern\" OR \"AI Intern\") (Egypt OR Remote) entry-level",
-    "site:indeed.com/jobs (\"Machine Learning Intern\" OR \"Data Science Intern\") (location:Egypt OR remote) experience:entry_level",
-    "site:glassdoor.com/job (\"AI Intern\" OR \"Artificial Intelligence Intern\") (Egypt OR \"Remote\")",
-    "site:monster.com/jobs \"Machine Learning Intern\" (Egypt OR \"work from home\")",
-    "site:careerbuilder.com/job (\"ML Intern\" OR \"Data Science Intern\") (Egypt OR telecommute)"
+    "site:linkedin.com/jobs (\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
+    "site:indeed.com (\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
+    "site:glassdoor.com (\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
+    "site:monster.com (\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
+    "site:careerbuilder.com (\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
+    "site:angel.co (\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
+    "site:stackoverflow.com/jobs (\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
+    "(\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\" OR \"Fullstack Developer\" OR \"Full Stack Developer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27"
   ]
 }

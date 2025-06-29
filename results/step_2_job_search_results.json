@@ -1,58 +1,184 @@
 {
   "results": [
     {
-      "title": "Data Science Intern",
-      "url": "https://in.linkedin.com/jobs/view/data-science-intern-at-unified-mentor-private-limited-4255547686",
-      "content": "Data Science Intern (Paid). Company: Unified Mentor. Location: Remote. Duration: 3 months. Application Deadline: 25th June 2025.",
-      "score": 8.0,
-      "search_query": "(\"Machine Learning Intern\" OR \"ML Intern\" OR \"AI Intern\" OR \"Artificial Intelligence Intern\" OR \"Data Science Intern\") (Egypt OR Remote OR \"work from home\" OR telecommute)",
+      "title": "Full Stack Engineer - Altis Technology",
+      "url": "https://ca.linkedin.com/jobs/view/full-stack-engineer-at-altis-technology-4250544127",
+      "content": "Full Stack Engineer ... Software Engineer I, Entry Level (Fall 2024-Spring 2025) - Toronto. Software Engineer I, Entry Level (Fall 2024-Spring 2025) - Toronto.",
+      "score": 1.0,
+      "search_query": "site:linkedin.com/jobs (\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
       "platform": "linkedin.com",
-      "relevance_notes": "Title match (3), Remote location (2), Platform credibility (2), Data Science relevant (1)"
+      "relevance_notes": "Title match, mentions entry level, but location is Toronto, and skills are not explicitly mentioned. Low score."
     },
     {
-      "title": "Flexible Machine Learning Internship Remote Work Jobs - Indeed",
-      "url": "https://www.indeed.com/q-machine-learning-internship-remote-work-jobs.html",
-      "content": "AI & Machine Learning Intern · Remote Software Engineering Internship: Machine Learning & AI tools · $7.25 - $20.00 · Data Science Intern · $23.54 - $54.44 · Data",
-      "score": 7.0,
-      "search_query": "(\"Machine Learning Intern\" OR \"ML Intern\" OR \"AI Intern\" OR \"Artificial Intelligence Intern\" OR \"Data Science Intern\") (Egypt OR Remote OR \"work from home\" OR telecommute)",
-      "platform": "indeed.com",
-      "relevance_notes": "Title match (2), Remote location (2), Platform credibility (2), ML/AI relevant (1)"
-    },
-    {
-      "title": "Artificial Intelligence Intern - CWS",
-      "url": "https://corporatewebsolutions.in/artificial-intelligence-intern/",
-      "content": "Artificial Intelligence Intern · Contact · Blog · Employer Login · Home · About ... This remote internship offers a flexible duration (1 to 6 months) and hands",
-      "score": 7.0,
-      "search_query": "(\"Machine Learning Intern\" OR \"ML Intern\" OR \"AI Intern\" OR \"Artificial Intelligence Intern\" OR \"Data Science Intern\") (Egypt OR Remote OR \"work from home\" OR telecommute)",
-      "platform": "corporatewebsolutions.in",
-      "relevance_notes": "Title match (3), Remote location (2), AI relevant (2)"
-    },
-    {
-      "title": "Flexible Ai Remote Internship Jobs - Indeed",
-      "url": "https://www.indeed.com/q-ai-remote-internship-jobs.html",
-      "content": "... AI - intern. Ariana.Digital. Remote. $15 - $20. an hour. Part-time +3. 20 to 30 ... data science intern · artificial intelligence · ai internship · prompt",
-      "score": 7.0,
-      "search_query": "(\"Machine Learning Intern\" OR \"ML Intern\" OR \"AI Intern\" OR \"Artificial Intelligence Intern\" OR \"Data Science Intern\") (Egypt OR Remote OR \"work from home\" OR telecommute)",
-      "platform": "indeed.com",
-      "relevance_notes": "Title match (2), Remote location (2), Platform credibility (2), AI relevant (1)"
-    },
-    {
-      "title": "SkillFied Mentor hiring Data Science Intern in India - LinkedIn",
-      "url": "https://in.linkedin.com/jobs/view/data-science-intern-at-skillfied-mentor-4253634244",
-      "content": "Data Science Intern – Remote | Explore the World of AI & Data. Are you fascinated by machine learning, data modeling, and real-world",
-      "score": 7.0,
-      "search_query": "(\"Machine Learning Intern\" OR \"ML Intern\" OR \"AI Intern\" OR \"Artificial Intelligence Intern\" OR \"Data Science Intern\") (Egypt OR Remote OR \"work from home\" OR telecommute)",
+      "title": "Full Stack Engineer / Founding Engineer - React/Nodejs",
+      "url": "https://in.linkedin.com/jobs/view/full-stack-engineer-founding-engineer-react-nodejs-remote-at-uplers-4258206231",
+      "content": "Full Stack Engineer / Founding Engineer - React/Nodejs | REMOTE. Uplers ... Junior JavaScript Developer - Remote work | REF#283748. BairesDev. New Delhi",
+      "score": 5.0,
+      "search_query": "site:linkedin.com/jobs (\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
       "platform": "linkedin.com",
-      "relevance_notes": "Title match (3), Remote location (2), Platform credibility (2)"
+      "relevance_notes": "Title match, mentions React and Node.js, and is remote. Good match."
     },
     {
-      "title": "74 Artificial intelligence intern jobs in Remote - Glassdoor",
-      "url": "https://www.glassdoor.com/Job/remote-artificial-intelligence-intern-jobs-SRCH_IL.0,6_IS11047_KO7,37.htm",
-      "content": "Search Artificial intelligence intern jobs in Remote with company ratings & salaries. 74 open jobs for Artificial intelligence intern in Remote.",
-      "score": 8.0,
-      "search_query": "site:glassdoor.com/job (\"AI Intern\" OR \"Artificial Intelligence Intern\") (Egypt OR \"Remote\")",
+      "title": "Deel hiring Full Stack Engineer in EMEA",
+      "url": "https://www.linkedin.com/jobs/view/full-stack-engineer-react-node-js-at-deel-4228504676",
+      "content": "Get notified about new Full Stack Engineer jobs in EMEA. Sign in to create job alert.",
+      "score": 1.0,
+      "search_query": "site:linkedin.com/jobs (\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
+      "platform": "linkedin.com",
+      "relevance_notes": "Title match, but very little content. Low score."
+    },
+    {
+      "title": "Full Stack Developer (ReactJS and NodeJS) - Icon",
+      "url": "https://ca.linkedin.com/jobs/view/full-stack-developer-reactjs-and-nodejs-at-icon-4255318682",
+      "content": "Get notified about new Full Stack Engineer jobs in Greater Toronto Area, Canada. ... Senior Full-Stack Developer (Node.js, Fastify, React) - Canada.",
+      "score": 4.0,
+      "search_query": "site:linkedin.com/jobs (\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
+      "platform": "linkedin.com",
+      "relevance_notes": "Title match, mentions React and Node.js, but location is Toronto. Okay match."
+    },
+    {
+      "title": "TEK NINJAS hiring Full Stack Engineer in Canada",
+      "url": "https://ca.linkedin.com/jobs/view/full-stack-engineer-at-tek-ninjas-4257478067",
+      "content": "Fullstack Engineer. Afresh. Selwyn, Ontario, Canada 3 weeks ago. Software ... Full-Stack Engineer (Remote). Fathom - AI Meeting Assistant. Canada $180,000",
+      "score": 1.0,
+      "search_query": "site:linkedin.com/jobs (\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
+      "platform": "linkedin.com",
+      "relevance_notes": "Title match, but location is Canada. Low score."
+    },
+    {
+      "title": "50+ Remote Node Js Jobs, Employment 27 June, 2025",
+      "url": "https://pk.indeed.com/q-remote-node-js-jobs.html",
+      "content": "... entry-level professionals with foundational knowledge in full-stack ... Full-Stack Engineer (React + API & Database). PanXpan. Pakistan. Deep dive into",
+      "score": 5.0,
+      "search_query": "site:indeed.com (\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
+      "platform": "indeed.com",
+      "relevance_notes": "Mentions remote, Node.js, React, and full-stack. Good match."
+    },
+    {
+      "title": "Flexible Node Js Remote Jobs",
+      "url": "https://www.indeed.com/q-node-js-remote-jobs.html",
+      "content": "... Fullstack Engineer (React Native + Node.js). AppMakersLA. Remote. $100,000 - $180,000. a year. Flextime; Work from home. Easily apply. Deep experience in",
+      "score": 5.0,
+      "search_query": "site:indeed.com (\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
+      "platform": "indeed.com",
+      "relevance_notes": "Mentions remote, Node.js, React, and fullstack. Good match."
+    },
+    {
+      "title": "Flexible Senior React Js Developer in Remote Jobs",
+      "url": "https://www.indeed.com/q-senior-react-js-developer-in-remote-jobs.html",
+      "content": "... Full Stack Engineer. Honor. Remote. $175,500 - $195,000. a year. 401(k); Health ... Entry Level Information Technology jobs in Saint Petersburg, FlDedicated",
+      "score": 2.0,
+      "search_query": "site:indeed.com (\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
+      "platform": "indeed.com",
+      "relevance_notes": "Mentions remote and React, but looking for senior. Okay match."
+    },
+    {
+      "title": "NodeJS Full Stack Developer - Remote",
+      "url": "https://www.indeed.com/viewjob?jk=0746bdf5314d12b0",
+      "content": "Full Stack Engineer jobs · Software Developer jobs · Software Engineer jobs ... How To Write an Effective Entry-level Data Analyst Resume · Learn About Tech",
+      "score": 4.0,
+      "search_query": "site:indeed.com (\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
+      "platform": "indeed.com",
+      "relevance_notes": "Title match, mentions remote. Okay match."
+    },
+    {
+      "title": "Flexible Remote Software Developer Intern Jobs",
+      "url": "https://www.indeed.com/q-remote-software-developer-intern-jobs.html",
+      "content": "Full Stack Engineer Intern – Remote. Often responds within 1 day. Greentree. Remote. Pay information not provided. Health insurance; Paid time off; Flexible",
+      "score": 2.0,
+      "search_query": "site:indeed.com (\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
+      "platform": "indeed.com",
+      "relevance_notes": "Mentions remote and full stack, but is an internship. Okay match."
+    },
+    {
+      "title": "Senior Full Stack Developer (Node.js) - Codash Solutions",
+      "url": "https://www.glassdoor.com/job-listing/senior-full-stack-developer-node-js-codash-solutions-JV_KO0,35_KE36,52.htm?jl=1009789241393",
+      "content": "Mandatory SkillsBackend: Node.js, Express.js, Python, Design PatternsFrontend: React.js, TypeScriptDatabases: MongoDB, P ... Full-Stack Engineer - Remote. Remote.",
+      "score": 7.0,
+      "search_query": "site:glassdoor.com (\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
       "platform": "glassdoor.com",
-      "relevance_notes": "Title match (3), Remote location (2), Platform credibility (2), AI relevant (1)"
+      "relevance_notes": "Title match, mentions Node.js, React, Express, and is remote. Good match, but senior."
+    },
+    {
+      "title": "Projectgrey hiring Full Stack Developer Job in Remote",
+      "url": "https://www.glassdoor.com/job-listing/full-stack-developer-projectgrey-JV_KO0,20_KE21,32.htm?jl=1009786845983",
+      "content": "Design and develop scalable and secure RESTful APIs using Node.js and Express. ... Full Stack Engineer. Remote. ₱800K - ₱1M (Employer provided). Easy Apply. 22d.",
+      "score": 7.0,
+      "search_query": "site:glassdoor.com (\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
+      "platform": "glassdoor.com",
+      "relevance_notes": "Title match, mentions Node.js, Express, and is remote. Good match."
+    },
+    {
+      "title": "So-Creative hiring Full Stack Developer - Node.js/ React. ...",
+      "url": "https://www.glassdoor.com/job-listing/full-stack-developer-node-js-react-js-team-lead-so-creative-JV_KO0,47_KE48,59.htm?jl=1009787506981",
+      "content": "Remote. 24h. Eshkon. Full Stack Engineer. Remote. ₹80K (Employer provided). Easy Apply. 5d. Farmers District 46 Logo. Farmers District 46. Junior Full-Stack",
+      "score": 7.0,
+      "search_query": "site:glassdoor.com (\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
+      "platform": "glassdoor.com",
+      "relevance_notes": "Title match, mentions Node.js, React, and is remote. Good match."
+    },
+    {
+      "title": "Brainfleck Solutions hiring Full Stack Developer Job in India",
+      "url": "https://www.glassdoor.com/job-listing/full-stack-developer-brainfleck-solutions-JV_KO0,20_KE21,41.htm?jl=1009790274070",
+      "content": "Proficiency in back-end technologies like Node.js, Express.js, Python ... Full-Stack Engineer - Remote. Remote. Easy Apply. 30d+. ViralMe. SDE I - Full",
+      "score": 6.0,
+      "search_query": "site:glassdoor.com (\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
+      "platform": "glassdoor.com",
+      "relevance_notes": "Title match, mentions Node.js, Express, and is remote. Good match."
+    },
+    {
+      "title": "ProsperaSoft hiring Full Stack Developer (React + Java/. ...",
+      "url": "https://www.glassdoor.com/job-listing/full-stack-developer-react-java-net-node-js-prosperasoft-JV_KO0,43_KE44,56.htm?jl=1009787641081",
+      "content": "NET (ASP.NET Core), or Node.js (Express.js). Integrate frontend and backend ... Full Stack Engineer. Remote. ₹80K (Employer provided). Easy Apply. 5d. GYS",
+      "score": 6.0,
+      "search_query": "site:glassdoor.com (\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
+      "platform": "glassdoor.com",
+      "relevance_notes": "Title match, mentions Node.js, React, Express, and is remote. Good match."
+    },
+    {
+      "title": "Junior Full Stack Engineer (Node.js & React) VxLabs GmbH",
+      "url": "https://www.naukrigulf.com/junior-full-stack-engineer-jobs-in-cairo-egypt-in-vxlabs-gmbh-1-to-2-years-n-cd-40000924-jid-210525501043",
+      "content": "Junior Full Stack Engineer (Node.js & React). VxLabs GmbH. Apply. This job ... Full Stack Developer (backend focused). MHMarkets. 3 - 6 Years; Dubai - United",
+      "score": 9.0,
+      "search_query": "(\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\" OR \"Fullstack Developer\" OR \"Full Stack Developer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
+      "platform": "naukrigulf.com",
+      "relevance_notes": "Title match, mentions Node.js, React, junior, and location is Cairo, Egypt. Excellent match."
+    },
+    {
+      "title": "Full Stack Developer (React/Node.js) at Kultrix - Djinni",
+      "url": "https://djinni.co/jobs/747653-full-stack-developer-react-node-js-/",
+      "content": "Full Stack Developer (React/Node.js). Kultrix. What We Seek: - 1+ years of ... Fullstack Developer (Node.js/Next.js + React) at UncleSolution. Worldwide.",
+      "score": 7.0,
+      "search_query": "(\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\" OR \"Fullstack Developer\" OR \"Full Stack Developer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
+      "platform": "djinni.co",
+      "relevance_notes": "Title match, mentions React and Node.js. Good match."
+    },
+    {
+      "title": "Full Stack Engineer / Founding Engineer - React/Nodejs | REMOTE",
+      "url": "https://in.linkedin.com/jobs/view/full-stack-engineer-founding-engineer-react-nodejs-remote-at-uplers-4258206231",
+      "content": "Full Stack Engineer / Founding Engineer - React/Nodejs | REMOTE. Uplers Ghaziabad, Uttar Pradesh, India. Just now Be among the first 25 applicants.",
+      "score": 7.0,
+      "search_query": "(\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\" OR \"Fullstack Developer\" OR \"Full Stack Developer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
+      "platform": "linkedin.com",
+      "relevance_notes": "Title match, mentions React and Node.js, and is remote. Good match."
+    },
+    {
+      "title": "Flexible Javascript Node Js React Developer Remote Jobs - Indeed",
+      "url": "https://www.indeed.com/q-javascript-node-js-react-developer-remote-jobs.html",
+      "content": "... Full Stack Developer (React.js & Node.js). ClickGUARD. Remote. $2,400 - $2,800 ... Entry Level Information Technology jobs in Saint Petersburg, FlPortland",
+      "score": 7.0,
+      "search_query": "(\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\" OR \"Fullstack Developer\" OR \"Full Stack Developer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
+      "platform": "indeed.com",
+      "relevance_notes": "Mentions remote, Node.js, React, and full stack. Good match."
+    },
+    {
+      "title": "Deel hiring Full Stack Engineer in EMEA - LinkedIn",
+      "url": "https://www.linkedin.com/jobs/view/full-stack-engineer-react-node-js-at-deel-4228504676",
+      "content": "Full Stack Engineer. Deel EMEA. 1 month ago Over 200 applicants. See who ... Junior Full Stack Developer. WAYF. Poland 1 month ago. Frontend Engineer ($100k",
+      "score": 1.0,
+      "search_query": "(\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\" OR \"Fullstack Developer\" OR \"Full Stack Developer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
+      "platform": "linkedin.com",
+      "relevance_notes": "Title match, but very little content. Low score."
     }
   ]
 }

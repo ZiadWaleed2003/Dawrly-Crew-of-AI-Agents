@@ -19,9 +19,9 @@ def get_llm_main() -> LLM:
     
     try:
         llm = LLM(
-            model="nvidia_nim/deepseek-ai/deepseek-r1-0528",
-            base_url = "https://integrate.api.nvidia.com/v1",
-            api_key=CONFIG['NVIDIA_API_KEY'],
+            model="openrouter/deepseek/deepseek-r1-0528:free",
+            base_url = "https://openrouter.ai/api/v1",
+            api_key=CONFIG['OPENROUTER_API_KEY'],
             temperature=0
         )
         return llm

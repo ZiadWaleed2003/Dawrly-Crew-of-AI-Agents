@@ -15,9 +15,10 @@ report_generator      = ReportGenerator()
 # 1. Define the task for the JobRequirementAnalyst
 
 user_input_data = {
-    'role': 'Machine Learning Intern',
+    'job_title': 'Fullstack Engineer',
+    'required_skills' : ['Node js ','React.js' , 'Express.Js'],
     'years_experience': '0-1',
-    'locations': ['Egypt', 'Remote'],
+    'locations': ['Egypt','remote'],
     'remote_preference': 'any'
 }
 

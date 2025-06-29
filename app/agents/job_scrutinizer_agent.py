@@ -42,6 +42,8 @@ class JobScrutinizerAgent:
         Then evaluate each job based on the requirements from the {user_input} and provide:
         - A recommendation rank (out of 5, higher is better)
         - Detailed notes explaining your recommendation
+        - if the job opposite the specified skills from the user input mentioned you have to neglect this job and don't include it to your answer
+        - eg if the user looking for a NodeJS developer role and the specified skills had nodejs in it and the result had C# .Net you have to neglect this result
         
         Format the results into a JSON object following the AllExtractedData schema:
         {"jobs": [
