@@ -3,6 +3,6 @@
 
 - App still under development (Main logic is finished still the and the crew is workning (check the results dir for an example of the results)) still contanerizing it , building the WebUi and deployment to go.
 
-- DW I'll try my best to finish ASAP
+- DW I'll try my best to finish it ASAP
 
 <img src="https://media.tenor.com/-iiMZcIHkE8AAAAe/sad-emoji.png" width="500" height="600"> 
