@@ -119,27 +119,3 @@ async def search_jobs(user_data: UserJobSearchRequest):
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail="An unexpected error occurred. Please try again later."
         )
-
-# Optional: Get job search status endpoint
-@app.get(
-    "/jobs/search/{search_id}/status",
-    summary="Get Job Search Status",
-    description="Get the status of a job search by ID",
-    response_model=Dict[str, Any]
-)
-async def get_search_status(search_id: str):
-    """
-    Get the status of a job search operation
-    
-    Args:
-        search_id: The ID of the job search to check
-        
-    Returns:
-        Dictionary containing search status information
-    """
-    # This is a placeholder - you'd implement actual status tracking
-    return {
-        "search_id": search_id,
-        "status": "completed",
-        "message": "Job search completed successfully"
-    }
