@@ -1,18 +1,17 @@
 {
   "job_titles": [
-    "Fullstack Engineer",
-    "Full Stack Engineer",
-    "Full-Stack Engineer",
-    "Fullstack Developer",
-    "Full Stack Developer"
+    "AI intern",
+    "Artificial Intelligence Intern",
+    "AI Internship",
+    "Artificial Intelligence Internship"
   ],
   "required_skills": [
-    "Node.js",
-    "React",
-    "Express"
+    "python",
+    "LLMs",
+    "LangChain"
   ],
   "preferred_skills": null,
-  "experience_level": "Entry level",
+  "experience_level": "Intern",
   "min_years_experience": 0,
   "locations": [
     "Egypt",
@@ -20,22 +19,18 @@
   ],
   "remote_preference": "any",
   "specified_websites": [
-    "linkedin.com/jobs",
+    "linkedin.com",
     "indeed.com",
-    "glassdoor.com",
-    "monster.com",
-    "careerbuilder.com",
-    "angel.co",
-    "stackoverflow.com/jobs"
+    "bayt.com",
+    "wuzzuf.net",
+    "glassdoor.com"
   ],
   "search_queries": [
-    "site:linkedin.com/jobs (\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
-    "site:indeed.com (\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
-    "site:glassdoor.com (\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
-    "site:monster.com (\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
-    "site:careerbuilder.com (\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
-    "site:angel.co (\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
-    "site:stackoverflow.com/jobs (\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
-    "(\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\" OR \"Fullstack Developer\" OR \"Full Stack Developer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27"
+    "(\"AI intern\" OR \"Artificial Intelligence Intern\" OR \"AI Internship\" OR \"Artificial Intelligence Internship\") python (LLMs OR \"large language models\") LangChain (Egypt OR remote OR \"work from home\" OR \"wfh\" OR \"virtual\") after:2025-05-30",
+    "site:linkedin.com (\"AI intern\" OR \"Artificial Intelligence Intern\" OR \"AI Internship\" OR \"Artificial Intelligence Internship\") python (LLMs OR \"large language models\") LangChain (Egypt OR remote OR \"work from home\" OR \"wfh\" OR \"virtual\") after:2025-05-30",
+    "site:indeed.com (\"AI intern\" OR \"Artificial Intelligence Intern\" OR \"AI Internship\" OR \"Artificial Intelligence Internship\") python (LLMs OR \"large language models\") LangChain (Egypt OR remote OR \"work from home\" OR \"wfh\" OR \"virtual\") after:2025-05-30",
+    "site:bayt.com (\"AI intern\" OR \"Artificial Intelligence Intern\" OR \"AI Internship\" OR \"Artificial Intelligence Internship\") python (LLMs OR \"large language models\") LangChain (Egypt OR remote OR \"work from home\" OR \"wfh\" OR \"virtual\") after:2025-05-30",
+    "site:wuzzuf.net (\"AI intern\" OR \"Artificial Intelligence Intern\" OR \"AI Internship\" OR \"Artificial Intelligence Internship\") python (LLMs OR \"large language models\") LangChain (Egypt OR remote OR \"work from home\" OR \"wfh\" OR \"virtual\") after:2025-05-30",
+    "site:glassdoor.com (\"AI intern\" OR \"Artificial Intelligence Intern\" OR \"AI Internship\" OR \"Artificial Intelligence Internship\") python (LLMs OR \"large language models\") LangChain (Egypt OR remote OR \"work from home\" OR \"wfh\" OR \"virtual\") after:2025-05-30"
   ]
 }

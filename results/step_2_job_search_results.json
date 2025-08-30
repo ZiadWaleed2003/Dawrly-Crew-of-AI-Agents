@@ -1,184 +1,193 @@
 {
   "results": [
     {
-      "title": "Full Stack Engineer - Altis Technology",
-      "url": "https://ca.linkedin.com/jobs/view/full-stack-engineer-at-altis-technology-4250544127",
-      "content": "Full Stack Engineer ... Software Engineer I, Entry Level (Fall 2024-Spring 2025) - Toronto. Software Engineer I, Entry Level (Fall 2024-Spring 2025) - Toronto.",
-      "score": 1.0,
-      "search_query": "site:linkedin.com/jobs (\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
-      "platform": "linkedin.com",
-      "relevance_notes": "Title match, mentions entry level, but location is Toronto, and skills are not explicitly mentioned. Low score."
-    },
-    {
-      "title": "Full Stack Engineer / Founding Engineer - React/Nodejs",
-      "url": "https://in.linkedin.com/jobs/view/full-stack-engineer-founding-engineer-react-nodejs-remote-at-uplers-4258206231",
-      "content": "Full Stack Engineer / Founding Engineer - React/Nodejs | REMOTE. Uplers ... Junior JavaScript Developer - Remote work | REF#283748. BairesDev. New Delhi",
-      "score": 5.0,
-      "search_query": "site:linkedin.com/jobs (\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
-      "platform": "linkedin.com",
-      "relevance_notes": "Title match, mentions React and Node.js, and is remote. Good match."
-    },
-    {
-      "title": "Deel hiring Full Stack Engineer in EMEA",
-      "url": "https://www.linkedin.com/jobs/view/full-stack-engineer-react-node-js-at-deel-4228504676",
-      "content": "Get notified about new Full Stack Engineer jobs in EMEA. Sign in to create job alert.",
-      "score": 1.0,
-      "search_query": "site:linkedin.com/jobs (\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
-      "platform": "linkedin.com",
-      "relevance_notes": "Title match, but very little content. Low score."
-    },
-    {
-      "title": "Full Stack Developer (ReactJS and NodeJS) - Icon",
-      "url": "https://ca.linkedin.com/jobs/view/full-stack-developer-reactjs-and-nodejs-at-icon-4255318682",
-      "content": "Get notified about new Full Stack Engineer jobs in Greater Toronto Area, Canada. ... Senior Full-Stack Developer (Node.js, Fastify, React) - Canada.",
-      "score": 4.0,
-      "search_query": "site:linkedin.com/jobs (\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
-      "platform": "linkedin.com",
-      "relevance_notes": "Title match, mentions React and Node.js, but location is Toronto. Okay match."
-    },
-    {
-      "title": "TEK NINJAS hiring Full Stack Engineer in Canada",
-      "url": "https://ca.linkedin.com/jobs/view/full-stack-engineer-at-tek-ninjas-4257478067",
-      "content": "Fullstack Engineer. Afresh. Selwyn, Ontario, Canada 3 weeks ago. Software ... Full-Stack Engineer (Remote). Fathom - AI Meeting Assistant. Canada $180,000",
-      "score": 1.0,
-      "search_query": "site:linkedin.com/jobs (\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
-      "platform": "linkedin.com",
-      "relevance_notes": "Title match, but location is Canada. Low score."
-    },
-    {
-      "title": "50+ Remote Node Js Jobs, Employment 27 June, 2025",
-      "url": "https://pk.indeed.com/q-remote-node-js-jobs.html",
-      "content": "... entry-level professionals with foundational knowledge in full-stack ... Full-Stack Engineer (React + API & Database). PanXpan. Pakistan. Deep dive into",
-      "score": 5.0,
-      "search_query": "site:indeed.com (\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
-      "platform": "indeed.com",
-      "relevance_notes": "Mentions remote, Node.js, React, and full-stack. Good match."
-    },
-    {
-      "title": "Flexible Node Js Remote Jobs",
-      "url": "https://www.indeed.com/q-node-js-remote-jobs.html",
-      "content": "... Fullstack Engineer (React Native + Node.js). AppMakersLA. Remote. $100,000 - $180,000. a year. Flextime; Work from home. Easily apply. Deep experience in",
-      "score": 5.0,
-      "search_query": "site:indeed.com (\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
-      "platform": "indeed.com",
-      "relevance_notes": "Mentions remote, Node.js, React, and fullstack. Good match."
-    },
-    {
-      "title": "Flexible Senior React Js Developer in Remote Jobs",
-      "url": "https://www.indeed.com/q-senior-react-js-developer-in-remote-jobs.html",
-      "content": "... Full Stack Engineer. Honor. Remote. $175,500 - $195,000. a year. 401(k); Health ... Entry Level Information Technology jobs in Saint Petersburg, FlDedicated",
-      "score": 2.0,
-      "search_query": "site:indeed.com (\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
-      "platform": "indeed.com",
-      "relevance_notes": "Mentions remote and React, but looking for senior. Okay match."
-    },
-    {
-      "title": "NodeJS Full Stack Developer - Remote",
-      "url": "https://www.indeed.com/viewjob?jk=0746bdf5314d12b0",
-      "content": "Full Stack Engineer jobs · Software Developer jobs · Software Engineer jobs ... How To Write an Effective Entry-level Data Analyst Resume · Learn About Tech",
-      "score": 4.0,
-      "search_query": "site:indeed.com (\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
-      "platform": "indeed.com",
-      "relevance_notes": "Title match, mentions remote. Okay match."
-    },
-    {
-      "title": "Flexible Remote Software Developer Intern Jobs",
-      "url": "https://www.indeed.com/q-remote-software-developer-intern-jobs.html",
-      "content": "Full Stack Engineer Intern – Remote. Often responds within 1 day. Greentree. Remote. Pay information not provided. Health insurance; Paid time off; Flexible",
-      "score": 2.0,
-      "search_query": "site:indeed.com (\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
-      "platform": "indeed.com",
-      "relevance_notes": "Mentions remote and full stack, but is an internship. Okay match."
-    },
-    {
-      "title": "Senior Full Stack Developer (Node.js) - Codash Solutions",
-      "url": "https://www.glassdoor.com/job-listing/senior-full-stack-developer-node-js-codash-solutions-JV_KO0,35_KE36,52.htm?jl=1009789241393",
-      "content": "Mandatory SkillsBackend: Node.js, Express.js, Python, Design PatternsFrontend: React.js, TypeScriptDatabases: MongoDB, P ... Full-Stack Engineer - Remote. Remote.",
+      "title": "AI-intern at Constructor TECH - Remote",
+      "url": "https://remote.com/jobs/constructor-tech-c1ckarjo/ai-intern-j16bos7v",
+      "content": "Strong Python programming skills. Experience with NLP and LLMs. Familiarity with chatbot architectures. 2. AI Intern - Agentic AI. Key Responsibilities",
       "score": 7.0,
-      "search_query": "site:glassdoor.com (\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
-      "platform": "glassdoor.com",
-      "relevance_notes": "Title match, mentions Node.js, React, Express, and is remote. Good match, but senior."
+      "search_query": "(\"AI intern\" OR \"Artificial Intelligence Intern\" OR \"AI Internship\" OR \"Artificial Intelligence Internship\") python (LLMs OR \"large language models\") LangChain (Egypt OR remote OR \"work from home\" OR \"wfh\" OR \"virtual\") after:2025-05-30",
+      "platform": "remote.com",
+      "relevance_notes": "Title match (3), skills match (3), remote location (2), platform credibility (2). Total: 10"
     },
     {
-      "title": "Projectgrey hiring Full Stack Developer Job in Remote",
-      "url": "https://www.glassdoor.com/job-listing/full-stack-developer-projectgrey-JV_KO0,20_KE21,32.htm?jl=1009786845983",
-      "content": "Design and develop scalable and secure RESTful APIs using Node.js and Express. ... Full Stack Engineer. Remote. ₱800K - ₱1M (Employer provided). Easy Apply. 22d.",
-      "score": 7.0,
-      "search_query": "site:glassdoor.com (\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
-      "platform": "glassdoor.com",
-      "relevance_notes": "Title match, mentions Node.js, Express, and is remote. Good match."
+      "title": "AI automation internship opportunity available - Facebook",
+      "url": "https://www.facebook.com/groups/945901372762469/posts/1687752678577331/",
+      "content": "... LLMs, RAGs Understand Prompt Engineering and GenAI best practices Build and ... virtual Summer Internship Programme 2025 aimed at graduate students",
+      "score": 5.0,
+      "search_query": "(\"AI intern\" OR \"Artificial Intelligence Intern\" OR \"AI Internship\" OR \"Artificial Intelligence Internship\") python (LLMs OR \"large language models\") LangChain (Egypt OR remote OR \"work from home\" OR \"wfh\" OR \"virtual\") after:2025-05-30",
+      "platform": "facebook.com",
+      "relevance_notes": "Title match (1), skills match (3), remote location (2), platform credibility (0). Total: 6"
     },
     {
-      "title": "So-Creative hiring Full Stack Developer - Node.js/ React. ...",
-      "url": "https://www.glassdoor.com/job-listing/full-stack-developer-node-js-react-js-team-lead-so-creative-JV_KO0,47_KE48,59.htm?jl=1009787506981",
-      "content": "Remote. 24h. Eshkon. Full Stack Engineer. Remote. ₹80K (Employer provided). Easy Apply. 5d. Farmers District 46 Logo. Farmers District 46. Junior Full-Stack",
-      "score": 7.0,
-      "search_query": "site:glassdoor.com (\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
-      "platform": "glassdoor.com",
-      "relevance_notes": "Title match, mentions Node.js, React, and is remote. Good match."
-    },
-    {
-      "title": "Brainfleck Solutions hiring Full Stack Developer Job in India",
-      "url": "https://www.glassdoor.com/job-listing/full-stack-developer-brainfleck-solutions-JV_KO0,20_KE21,41.htm?jl=1009790274070",
-      "content": "Proficiency in back-end technologies like Node.js, Express.js, Python ... Full-Stack Engineer - Remote. Remote. Easy Apply. 30d+. ViralMe. SDE I - Full",
+      "title": "AI Intern - Weekday AI - Jobs By Workable",
+      "url": "https://apply.workable.com/weekday-1/j/D3E0271942/",
+      "content": "AI Intern. RemoteWeekday's Client via platformFull time. India ... Familiarity with GenAI concepts: LLMs, prompt engineering, text-processing pipelines.",
       "score": 6.0,
-      "search_query": "site:glassdoor.com (\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
-      "platform": "glassdoor.com",
-      "relevance_notes": "Title match, mentions Node.js, Express, and is remote. Good match."
+      "search_query": "(\"AI intern\" OR \"Artificial Intelligence Intern\" OR \"AI Internship\" OR \"Artificial Intelligence Internship\") python (LLMs OR \"large language models\") LangChain (Egypt OR remote OR \"work from home\" OR \"wfh\" OR \"virtual\") after:2025-05-30",
+      "platform": "workable.com",
+      "relevance_notes": "Title match (3), skills match (2), remote location (2), platform credibility (1). Total: 8"
     },
     {
-      "title": "ProsperaSoft hiring Full Stack Developer (React + Java/. ...",
-      "url": "https://www.glassdoor.com/job-listing/full-stack-developer-react-java-net-node-js-prosperasoft-JV_KO0,43_KE44,56.htm?jl=1009787641081",
-      "content": "NET (ASP.NET Core), or Node.js (Express.js). Integrate frontend and backend ... Full Stack Engineer. Remote. ₹80K (Employer provided). Easy Apply. 5d. GYS",
+      "title": "AI Intern - Multimodal LLM & Agent Development - LinkedIn",
+      "url": "https://in.linkedin.com/jobs/view/ai-intern-multimodal-llm-agent-development-at-neuraltalk-ai-4289061345",
+      "content": "AI Intern - Multimodal LLM & Agent Development in Mountain View, CA. Expand ... Only serious candidates should apply. #AIInternship #MachineLearning #LLM #Startup",
+      "score": 5.0,
+      "search_query": "(\"AI intern\" OR \"Artificial Intelligence Intern\" OR \"AI Internship\" OR \"Artificial Intelligence Internship\") python (LLMs OR \"large language models\") LangChain (Egypt OR remote OR \"work from home\" OR \"wfh\" OR \"virtual\") after:2025-05-30",
+      "platform": "linkedin.com",
+      "relevance_notes": "Title match (3), skills match (1), location mismatch (0), platform credibility (2). Total: 6"
+    },
+    {
+      "title": "Gen AI Intern - Emplay",
+      "url": "https://www.emplay.net/devops/title-gen-ai-intern",
+      "content": "Job Title: Gen AI Intern. Location: Remote (Work from Home). Internship Duration: 6 Months. Stipend: ₹25000. Company: Emplay Analytics Inc.",
+      "score": 5.0,
+      "search_query": "(\"AI intern\" OR \"Artificial Intelligence Intern\" OR \"AI Internship\" OR \"Artificial Intelligence Internship\") python (LLMs OR \"large language models\") LangChain (Egypt OR remote OR \"work from home\" OR \"wfh\" OR \"virtual\") after:2025-05-30",
+      "platform": "emplay.net",
+      "relevance_notes": "Title match (3), skills match (0), remote location (2), platform credibility (0). Total: 5"
+    },
+    {
+      "title": "Smart Mirror.LLC hiring Machine Learning Intern - short term in ...",
+      "url": "https://www.linkedin.com/jobs/view/machine-learning-intern-short-term-at-smart-mirror-llc-4252757058",
+      "content": "Smart Mirror.LLC hiring Machine Learning Intern - short term in United States | LinkedIn We're Hiring:**Agentic AI Course Developer (Python + LLM Tools)** This course is already structured and partially developed (Modules 1–4 are done).**Your job**will be to**create content from Module 5 onward**, where we dive deep into**LLMs, APIs, Meta-Cognitive Prompting (MCP), LangChain, CrewAI, Python tools, and real-world deployment**. Our mission is to**empower learners worldwide**, especially those with limited access to tech, to build job-ready skills in AI automation and agent development. Get notified about new Machine Learning Intern jobs in **United States**. By clicking Continue to join or sign in, you agree to LinkedIn’s User Agreement, Privacy Policy, and Cookie Policy.",
+      "score": 7.0,
+      "search_query": "site:linkedin.com (\"AI intern\" OR \"Artificial Intelligence Intern\" OR \"AI Internship\" OR \"Artificial Intelligence Internship\") python (LLMs OR \"large language models\") LangChain (Egypt OR remote OR \"work from home\" OR \"wfh\" OR \"virtual\") after:2025-05-30",
+      "platform": "linkedin.com",
+      "relevance_notes": "Title match (2), skills match (3), remote location (0), platform credibility (2). Total: 7"
+    },
+    {
+      "title": "AI Intern - Multimodal LLM & Agent Development - LinkedIn",
+      "url": "https://in.linkedin.com/jobs/view/ai-intern-multimodal-llm-agent-development-at-neuraltalk-ai-4289061345",
+      "content": "AI Intern - Multimodal LLM & Agent Development in Mountain View, CA. Expand ... Only serious candidates should apply. #AIInternship #MachineLearning #LLM #Startup",
+      "score": 5.0,
+      "search_query": "site:linkedin.com (\"AI intern\" OR \"Artificial Intelligence Intern\" OR \"AI Internship\" OR \"Artificial Intelligence Internship\") python (LLMs OR \"large language models\") LangChain (Egypt OR remote OR \"work from home\" OR \"wfh\" OR \"virtual\") after:2025-05-30",
+      "platform": "linkedin.com",
+      "relevance_notes": "Title match (3), skills match (1), location mismatch (0), platform credibility (2). Total: 6"
+    },
+    {
+      "title": "DashPilots hiring Artificial Intelligence Intern in Houston, TX | LinkedIn",
+      "url": "https://www.linkedin.com/jobs/view/artificial-intelligence-intern-at-dashpilots-4283900631",
+      "content": "Title: AI Intern (Python Agent Systems) — Houston/Remote (US). About us. DashPilots is building agentic AI that customizes business interfaces on the fly",
       "score": 6.0,
-      "search_query": "site:glassdoor.com (\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
-      "platform": "glassdoor.com",
-      "relevance_notes": "Title match, mentions Node.js, React, Express, and is remote. Good match."
-    },
-    {
-      "title": "Junior Full Stack Engineer (Node.js & React) VxLabs GmbH",
-      "url": "https://www.naukrigulf.com/junior-full-stack-engineer-jobs-in-cairo-egypt-in-vxlabs-gmbh-1-to-2-years-n-cd-40000924-jid-210525501043",
-      "content": "Junior Full Stack Engineer (Node.js & React). VxLabs GmbH. Apply. This job ... Full Stack Developer (backend focused). MHMarkets. 3 - 6 Years; Dubai - United",
-      "score": 9.0,
-      "search_query": "(\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\" OR \"Fullstack Developer\" OR \"Full Stack Developer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
-      "platform": "naukrigulf.com",
-      "relevance_notes": "Title match, mentions Node.js, React, junior, and location is Cairo, Egypt. Excellent match."
-    },
-    {
-      "title": "Full Stack Developer (React/Node.js) at Kultrix - Djinni",
-      "url": "https://djinni.co/jobs/747653-full-stack-developer-react-node-js-/",
-      "content": "Full Stack Developer (React/Node.js). Kultrix. What We Seek: - 1+ years of ... Fullstack Developer (Node.js/Next.js + React) at UncleSolution. Worldwide.",
-      "score": 7.0,
-      "search_query": "(\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\" OR \"Fullstack Developer\" OR \"Full Stack Developer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
-      "platform": "djinni.co",
-      "relevance_notes": "Title match, mentions React and Node.js. Good match."
-    },
-    {
-      "title": "Full Stack Engineer / Founding Engineer - React/Nodejs | REMOTE",
-      "url": "https://in.linkedin.com/jobs/view/full-stack-engineer-founding-engineer-react-nodejs-remote-at-uplers-4258206231",
-      "content": "Full Stack Engineer / Founding Engineer - React/Nodejs | REMOTE. Uplers Ghaziabad, Uttar Pradesh, India. Just now Be among the first 25 applicants.",
-      "score": 7.0,
-      "search_query": "(\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\" OR \"Fullstack Developer\" OR \"Full Stack Developer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
+      "search_query": "site:linkedin.com (\"AI intern\" OR \"Artificial Intelligence Intern\" OR \"AI Internship\" OR \"Artificial Intelligence Internship\") python (LLMs OR \"large language models\") LangChain (Egypt OR remote OR \"work from home\" OR \"wfh\" OR \"virtual\") after:2025-05-30",
       "platform": "linkedin.com",
-      "relevance_notes": "Title match, mentions React and Node.js, and is remote. Good match."
+      "relevance_notes": "Title match (3), skills match (1), remote location (0), platform credibility (2). Total: 6"
     },
     {
-      "title": "Flexible Javascript Node Js React Developer Remote Jobs - Indeed",
-      "url": "https://www.indeed.com/q-javascript-node-js-react-developer-remote-jobs.html",
-      "content": "... Full Stack Developer (React.js & Node.js). ClickGUARD. Remote. $2,400 - $2,800 ... Entry Level Information Technology jobs in Saint Petersburg, FlPortland",
-      "score": 7.0,
-      "search_query": "(\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\" OR \"Fullstack Developer\" OR \"Full Stack Developer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
+      "title": "Artificial Intelligence (AI) Internship in Faridabad, Delhi, Noida ...",
+      "url": "https://in.linkedin.com/jobs/view/artificial-intelligence-ai-internship-in-faridabad-delhi-noida-ghaziabad-gurgaon-at-intellisqr-4281952225",
+      "content": "Artificial Intelligence (AI) Internship in Faridabad, Delhi, Noida, Ghaziabad, Gurgaon ... Work on fine-tuning and evaluation of Large Language Models (LLMs) for",
+      "score": 5.0,
+      "search_query": "site:linkedin.com (\"AI intern\" OR \"Artificial Intelligence Intern\" OR \"AI Internship\" OR \"Artificial Intelligence Internship\") python (LLMs OR \"large language models\") LangChain (Egypt OR remote OR \"work from home\" OR \"wfh\" OR \"virtual\") after:2025-05-30",
+      "platform": "linkedin.com",
+      "relevance_notes": "Title match (3), skills match (1), location mismatch (0), platform credibility (2). Total: 6"
+    },
+    {
+      "title": "Artificial Intelligence Engineer Intern - SETV global - LinkedIn",
+      "url": "https://in.linkedin.com/jobs/view/artificial-intelligence-engineer-intern-at-setv-global-4265351128",
+      "content": "SETV HEALTHCARE TECHNOLOGY PRIVATE LIMITED. Position: Artificial Intelligence (AI) Intern. Location: Hybrid. Employment Type: Internship (leading to",
+      "score": 4.0,
+      "search_query": "site:linkedin.com (\"AI intern\" OR \"Artificial Intelligence Intern\" OR \"AI Internship\" OR \"Artificial Intelligence Internship\") python (LLMs OR \"large language models\") LangChain (Egypt OR remote OR \"work from home\" OR \"wfh\" OR \"virtual\") after:2025-05-30",
+      "platform": "linkedin.com",
+      "relevance_notes": "Title match (3), skills match (0), location mismatch (0), platform credibility (2). Total: 5"
+    },
+    {
+      "title": "Google Ai jobs in Remote - Indeed",
+      "url": "https://in.indeed.com/q-google-ai-l-remote-jobs.html",
+      "content": "AI Intern – Research & Automation (Remote/Pune)*. Assist in ... Design, develop, and maintain Gen AI applications using Python, LangChain, and LLMs.",
+      "score": 8.0,
+      "search_query": "site:indeed.com (\"AI intern\" OR \"Artificial Intelligence Intern\" OR \"AI Internship\" OR \"Artificial Intelligence Internship\") python (LLMs OR \"large language models\") LangChain (Egypt OR remote OR \"work from home\" OR \"wfh\" OR \"virtual\") after:2025-05-30",
       "platform": "indeed.com",
-      "relevance_notes": "Mentions remote, Node.js, React, and full stack. Good match."
+      "relevance_notes": "Title match (3), skills match (3), remote location (2), platform credibility (2). Total: 10"
     },
     {
-      "title": "Deel hiring Full Stack Engineer in EMEA - LinkedIn",
-      "url": "https://www.linkedin.com/jobs/view/full-stack-engineer-react-node-js-at-deel-4228504676",
-      "content": "Full Stack Engineer. Deel EMEA. 1 month ago Over 200 applicants. See who ... Junior Full Stack Developer. WAYF. Poland 1 month ago. Frontend Engineer ($100k",
-      "score": 1.0,
-      "search_query": "(\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\" OR \"Fullstack Developer\" OR \"Full Stack Developer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
-      "platform": "linkedin.com",
-      "relevance_notes": "Title match, but very little content. Low score."
+      "title": "Agentic Ai Internship Jobs, Employment | Indeed",
+      "url": "https://www.indeed.com/q-agentic-ai-internship-jobs.html",
+      "content": "... ai internship. City, state, zip ... Hands-on expertise in Large Language Models (LLMs), Vision-Language-Action (VLA) models and Foundation Models. AI Intern.",
+      "score": 6.0,
+      "search_query": "site:indeed.com (\"AI intern\" OR \"Artificial Intelligence Intern\" OR \"AI Internship\" OR \"Artificial Intelligence Internship\") python (LLMs OR \"large language models\") LangChain (Egypt OR remote OR \"work from home\" OR \"wfh\" OR \"virtual\") after:2025-05-30",
+      "platform": "indeed.com",
+      "relevance_notes": "Title match (3), skills match (2), remote location (0), platform credibility (2). Total: 7"
+    },
+    {
+      "title": "AI Intern - Houston, TX 77099 - Indeed.com",
+      "url": "https://www.indeed.com/viewjob?jk=4d717fd3b62b48e9",
+      "content": "Title: AI Intern (Python Agent Systems) — Houston/Remote (US). About us DashPilots is building agentic AI that customizes business interfaces on the fly for",
+      "score": 6.0,
+      "search_query": "site:indeed.com (\"AI intern\" OR \"Artificial Intelligence Intern\" OR \"AI Internship\" OR \"Artificial Intelligence Internship\") python (LLMs OR \"large language models\") LangChain (Egypt OR remote OR \"work from home\" OR \"wfh\" OR \"virtual\") after:2025-05-30",
+      "platform": "indeed.com",
+      "relevance_notes": "Title match (3), skills match (1), remote location (0), platform credibility (2). Total: 6"
+    },
+    {
+      "title": "50 Ai Agent Internship Job Vacancies | Indeed",
+      "url": "https://in.indeed.com/q-ai-agent-internship-jobs.html",
+      "content": "Work from home ... Familiarity with advanced AI techniques such as prompt engineering, RAG (Retrieval-Augmented Generation), and LLM (Large Language Models) for",
+      "score": 6.0,
+      "search_query": "site:indeed.com (\"AI intern\" OR \"Artificial Intelligence Intern\" OR \"AI Internship\" OR \"Artificial Intelligence Internship\") python (LLMs OR \"large language models\") LangChain (Egypt OR remote OR \"work from home\" OR \"wfh\" OR \"virtual\") after:2025-05-30",
+      "platform": "indeed.com",
+      "relevance_notes": "Title match (2), skills match (2), remote location (2), platform credibility (2). Total: 8"
+    },
+    {
+      "title": "25 Artificial Intelligence Internship Job Vacancies in Electronic City ...",
+      "url": "https://in.indeed.com/q-artificial-intelligence-internship-l-electronic-city,-bengaluru,-karnataka-jobs.html",
+      "content": "Looking for an AI Intern who has completed their degree and understands the following concepts in depth. RAG, LLM, Vector Database, LangChain, and Ollama.",
+      "score": 6.0,
+      "search_query": "site:indeed.com (\"AI intern\" OR \"Artificial Intelligence Intern\" OR \"AI Internship\" OR \"Artificial Intelligence Internship\") python (LLMs OR \"large language models\") LangChain (Egypt OR remote OR \"work from home\" OR \"wfh\" OR \"virtual\") after:2025-05-30",
+      "platform": "indeed.com",
+      "relevance_notes": "Title match (3), skills match (1), remote location (0), platform credibility (2). Total: 6"
+    },
+    {
+      "title": "Bayt.com Ai Internship Jobs in Middle East (Jul 2025) - Bayt.com",
+      "url": "https://www.bayt.com/en/international/jobs/ai-internship-jobs/",
+      "content": "Apply now to over 110 Ai Internship jobs in Middle East and Gulf and make your job hunting simpler. Find the latest Ai Internship job vacancies and employment opportunities in Middle East and Gulf.",
+      "score": 6.0,
+      "search_query": "site:bayt.com (\"AI intern\" OR \"Artificial Intelligence Intern\" OR \"AI Internship\" OR \"Artificial Intelligence Internship\") python (LLMs OR \"large language models\") LangChain (Egypt OR remote OR \"work from home\" OR \"wfh\" OR \"virtual\") after:2025-05-30",
+      "platform": "bayt.com",
+      "relevance_notes": "Title match (3), skills match (1), remote location (0), platform credibility (2). Total: 6"
+    },
+    {
+      "title": "AI intern - Beagle Cyber Innovations Private Limited - Glassdoor",
+      "url": "https://www.glassdoor.com/job-listing/ai-intern-beagle-cyber-innovations-private-limited-JV_KO0,9_KE10,50.htm?jl=1009834456261",
+      "content": "AI intern · 1. Familiarity with LLMs and GEN AI applications, with proficiency in frameworks like LangChain and LlamaIndex, will be mandatory · 2. Proficiency in",
+      "score": 8.0,
+      "search_query": "site:glassdoor.com (\"AI intern\" OR \"Artificial Intelligence Intern\" OR \"AI Internship\" OR \"Artificial Intelligence Internship\") python (LLMs OR \"large language models\") LangChain (Egypt OR remote OR \"work from home\" OR \"wfh\" OR \"virtual\") after:2025-05-30",
+      "platform": "glassdoor.com",
+      "relevance_notes": "Title match (3), skills match (3), remote location (0), platform credibility (2). Total: 8"
+    },
+    {
+      "title": "515 intern jobs in Pune, August 2025 | Glassdoor",
+      "url": "https://www.glassdoor.com/Job/pune-intern-jobs-SRCH_IL.0,4_IC2856202_KO5,11.htm",
+      "content": "Build AI solutions using LLMs (GPT, Claude, LLaMA, Mistral). Potential for ... Work from home jobs in Pune · Remote jobs in Pune · No experience in Pune.",
+      "score": 7.0,
+      "search_query": "site:glassdoor.com (\"AI intern\" OR \"Artificial Intelligence Intern\" OR \"AI Internship\" OR \"Artificial Intelligence Internship\") python (LLMs OR \"large language models\") LangChain (Egypt OR remote OR \"work from home\" OR \"wfh\" OR \"virtual\") after:2025-05-30",
+      "platform": "glassdoor.com",
+      "relevance_notes": "Title match (2), skills match (3), remote location (2), platform credibility (2). Total: 9"
+    },
+    {
+      "title": "MPGQS hiring Gen AI Intern Job in Watford, East of England, England",
+      "url": "https://www.glassdoor.com/job-listing/gen-ai-intern-mpgqs-JV_IC2670717_KO0,13_KE14,19.htm?jl=1009848985488",
+      "content": "Job expiredThis job from 20 Aug 2025 is no longer available for applications. MPGQS. Gen AI Intern.",
+      "score": 4.0,
+      "search_query": "site:glassdoor.com (\"AI intern\" OR \"Artificial Intelligence Intern\" OR \"AI Internship\" OR \"Artificial Intelligence Internship\") python (LLMs OR \"large language models\") LangChain (Egypt OR remote OR \"work from home\" OR \"wfh\" OR \"virtual\") after:2025-05-30",
+      "platform": "glassdoor.com",
+      "relevance_notes": "Title match (3), skills match (0), remote location (0), platform credibility (2). Total: 5"
+    },
+    {
+      "title": "AI Engineer Intern - Generative AI & LLMs - Glassdoor",
+      "url": "https://www.glassdoor.com/job-listing/ai-engineer-intern-generative-ai-and-llms-splashgain-technology-solutions-pvt-ltd-JV_KO0,41_KE42,81.htm?jl=1009839876990",
+      "content": "AI Engineer Intern - Generative AI & LLMs. Sign in to apply. India. ·. ₹11K ... AI Intern. Remote. 11d. See more jobs. Glassdoor; About / Press · Blog · Contact",
+      "score": 6.0,
+      "search_query": "site:glassdoor.com (\"AI intern\" OR \"Artificial Intelligence Intern\" OR \"AI Internship\" OR \"Artificial Intelligence Internship\") python (LLMs OR \"large language models\") LangChain (Egypt OR remote OR \"work from home\" OR \"wfh\" OR \"virtual\") after:2025-05-30",
+      "platform": "glassdoor.com",
+      "relevance_notes": "Title match (3), skills match (1), remote location (0), platform credibility (2). Total: 6"
+    },
+    {
+      "title": "Machine Learning Engineer - National Credit Recovery Inc",
+      "url": "https://www.glassdoor.com/job-listing/machine-learning-engineer-national-credit-recovery-JV_KO0,25_KE26,50.htm?jl=1009829844626",
+      "content": "Fine-tune, prompt, and integrate state-of-the-art LLMs (e.g., OpenAI, LLaMA, Mistral). ... AI Intern. Remote. 10d. See more jobs. Glassdoor; About / Press · Blog",
+      "score": 5.0,
+      "search_query": "site:glassdoor.com (\"AI intern\" OR \"Artificial Intelligence Intern\" OR \"AI Internship\" OR \"Artificial Intelligence Internship\") python (LLMs OR \"large language models\") LangChain (Egypt OR remote OR \"work from home\" OR \"wfh\" OR \"virtual\") after:2025-05-30",
+      "platform": "glassdoor.com",
+      "relevance_notes": "Title match (1), skills match (2), remote location (0), platform credibility (2). Total: 5"
     }
   ]
 }

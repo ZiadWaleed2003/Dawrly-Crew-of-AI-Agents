@@ -15,8 +15,8 @@ report_generator      = ReportGenerator()
 # 1. Define the task for the JobRequirementAnalyst
 
 user_input_data = {
-    'job_title': 'Fullstack Engineer',
-    'required_skills' : ['Node js ','React.js' , 'Express.Js'],
+    'job_title': 'AI intern',
+    'required_skills' : ['python' , 'LLMs' , "LangChain"],
     'years_experience': '0-1',
     'locations': ['Egypt','remote'],
     'remote_preference': 'any'
@@ -51,5 +51,5 @@ crew = Crew(
 
 # Kickoff the crew
 results = crew.kickoff(inputs={
-    'user_input': user_input_data, # Pass custom search queries directly
+    'user_input': user_input_data, 
 })

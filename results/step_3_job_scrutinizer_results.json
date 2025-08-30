@@ -1,47 +1,14 @@
 {
   "jobs": [
     {
-      "job_title": "Full Stack Developer (Node.js/ React.js)",
-      "job_description": "Design and develop scalable and secure RESTful APIs using Node.js and Express. Integrate frontend and backend components. Requires proficiency in Node.js, Express.js, and React.js. Remote position available.",
-      "job_url": "https://www.glassdoor.com/job-listing/full-stack-developer-node-js-react-js-team-lead-so-creative-JV_KO0,47_KE48,59.htm?jl=1009787506981",
+      "job_title": "AI Intern – Research & Automation",
+      "job_description": "Design, develop, and maintain Gen AI applications using Python, LangChain, and LLMs. Assist in research and automation tasks related to AI development.",
+      "job_url": "https://in.indeed.com/q-google-ai-l-remote-jobs.html",
       "agent_recommendation_rank": 5,
       "agent_recommendation_notes": [
-        "Mentions all required skills: Node.js, React.js, and Express.js",
-        "Remote position aligns with user's preference for remote work",
-        "Entry-level friendly based on search query inclusion"
-      ]
-    },
-    {
-      "job_title": "Full Stack Developer (React + Java/.NET/Node.js)",
-      "job_description": "Develop and maintain web applications using Node.js (Express.js) and React.js. Integrate frontend and backend components. Requires knowledge of Node.js, Express.js, and React.js. Remote work option available.",
-      "job_url": "https://www.glassdoor.com/job-listing/full-stack-developer-react-java-net-node-js-prosperasoft-JV_KO0,43_KE44,56.htm?jl=1009787641081",
-      "agent_recommendation_rank": 4,
-      "agent_recommendation_notes": [
-        "Includes all required skills: Node.js, React.js, and Express.js",
-        "Remote work option matches user's location preference",
-        "Slightly less explicit about entry-level focus compared to other matches"
-      ]
-    },
-    {
-      "job_title": "Junior Full Stack Engineer (Node.js & React)",
-      "job_description": "Entry-level position for Full Stack Engineers with foundational knowledge in Node.js and React. Located in Cairo, Egypt. Requires basic understanding of Node.js and React frameworks.",
-      "job_url": "https://www.naukrigulf.com/junior-full-stack-engineer-jobs-in-cairo-egypt-in-vxlabs-gmbh-1-to-2-years-n-cd-40000924-jid-210525501043",
-      "agent_recommendation_rank": 5,
-      "agent_recommendation_notes": [
-        "Matches location preference (Egypt)",
-        "Explicitly targets junior/entry-level candidates",
-        "Mentions required skills (Node.js & React) directly in job title"
-      ]
-    },
-    {
-      "job_title": "Full Stack Engineer / Founding Engineer - React/Nodejs | REMOTE",
-      "job_description": "Remote full-stack development role requiring expertise in React and Node.js. Junior JavaScript Developer position available with remote work flexibility. Entry-level applicants encouraged to apply.",
-      "job_url": "https://in.linkedin.com/jobs/view/full-stack-engineer-founding-engineer-react-nodejs-remote-at-uplers-4258206231",
-      "agent_recommendation_rank": 5,
-      "agent_recommendation_notes": [
-        "Mentions required skills (React and Node.js) in title",
-        "Fully remote position matches user's preference",
-        "Explicitly mentions junior-level remote opportunity"
+        "All required skills (Python, LLMs, LangChain) explicitly mentioned.",
+        "Job location specified as Remote/Pune, aligning with remote preference.",
+        "Credible platform (Indeed) with clear alignment to internship criteria."
       ]
     }
   ]

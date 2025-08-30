@@ -11,13 +11,14 @@ logger = logging.getLogger(__name__)
 app = FastAPI(
     title="Job Search API",
     description="API for finding and managing job searches",
-    version="1.0.0"
+    version="1.0.0",
 )
 
 # Pydantic models for request/response validation
 class UserJobSearchRequest(BaseModel):
     """Request model for job search parameters"""
-    skills: List[str] = Field(..., description="List of user skills", min_items=1)
+    Job_title : str
+    skills: List[str] = Field(..., description="List of user skills", min_length=1)
     experience_level: str = Field(..., description="Experience level (entry, mid, senior)")
     location: Optional[str] = Field(None, description="Preferred job location")
     job_type: Optional[str] = Field(None, description="Job type (full-time, part-time, contract)")
@@ -38,8 +39,6 @@ class JobSearchResponse(BaseModel):
     """Response model for successful job search"""
     success: bool
     message: str
-    job_count: Optional[int] = None
-    search_id: Optional[str] = None
 
 class ErrorResponse(BaseModel):
     """Error response model"""
