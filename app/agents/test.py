@@ -7,28 +7,18 @@ from app.agents.report_generator_agent import ReportGenerator
 
 
 
-job_analyst_agent_instance = JobRequirementAnalyst()
-search_agent_instance = SearchAgent(score_threshold=0)  # Lower threshold to capture more results
-job_scrutinizer_agent = JobScrutinizerAgent()
-report_generator      = ReportGenerator()
-
-# 1. Define the task for the JobRequirementAnalyst
-
 user_input_data = {
-    'job_title': 'Fullstack Engineer',
-    'required_skills' : ['Node js ','React.js' , 'Express.Js'],
-    'years_experience': '0-1',
-    'locations': ['Egypt','remote'],
-    'remote_preference': 'any'
+    'job_title': 'Nodejs developer or fullstack js developer ',
+    'preferred_skills' : ['Reactjs' , 'Js' , "NodeJs"],
+    'years_experience': '+1',
+    'locations': ['Egypt','remote']
 }
 
-# # Define custom search queries that are less restrictive
-# custom_search_queries = [
-#     "Machine Learning Intern Remote",
-#     "ML Intern Egypt",
-#     "Entry Level Machine Learning Jobs Remote",
-#     "Junior AI Developer Egypt"
-# ]
+job_analyst_agent_instance = JobRequirementAnalyst(input= user_input_data)
+search_agent_instance = SearchAgent(score_threshold=0)
+job_scrutinizer_agent = JobScrutinizerAgent(input=user_input_data)
+report_generator      = ReportGenerator()
+
 
 
 
@@ -51,5 +41,6 @@ crew = Crew(
 
 # Kickoff the crew
 results = crew.kickoff(inputs={
-    'user_input': user_input_data, # Pass custom search queries directly
+    "user_input" : user_input_data
 })
+

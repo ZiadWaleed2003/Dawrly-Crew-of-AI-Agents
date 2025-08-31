@@ -1,41 +1,33 @@
 {
   "job_titles": [
-    "Fullstack Engineer",
-    "Full Stack Engineer",
-    "Full-Stack Engineer",
-    "Fullstack Developer",
-    "Full Stack Developer"
+    "Nodejs developer",
+    "fullstack js developer"
   ],
-  "required_skills": [
-    "Node.js",
-    "React",
-    "Express"
+  "preferred_skills": [
+    "Reactjs",
+    "Js",
+    "NodeJs"
   ],
-  "preferred_skills": null,
-  "experience_level": "Entry level",
-  "min_years_experience": 0,
+  "experience_level": "Entry to Mid-level",
+  "min_years_experience": 1,
   "locations": [
-    "Egypt",
-    "remote"
+    "Egypt"
   ],
-  "remote_preference": "any",
+  "remote_preference": "Remote or Hybrid",
   "specified_websites": [
-    "linkedin.com/jobs",
+    "linkedin.com",
     "indeed.com",
     "glassdoor.com",
-    "monster.com",
-    "careerbuilder.com",
-    "angel.co",
-    "stackoverflow.com/jobs"
+    "wuzzuf.net",
+    "bayt.com"
   ],
   "search_queries": [
-    "site:linkedin.com/jobs (\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
-    "site:indeed.com (\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
-    "site:glassdoor.com (\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
-    "site:monster.com (\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
-    "site:careerbuilder.com (\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
-    "site:angel.co (\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
-    "site:stackoverflow.com/jobs (\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27",
-    "(\"Fullstack Engineer\" OR \"Full Stack Engineer\" OR \"Full-Stack Engineer\" OR \"Fullstack Developer\" OR \"Full Stack Developer\") (Node.js OR Nodejs) React (Express OR Express.js) (Egypt OR remote) (\"entry level\" OR junior OR \"0-1 years\") after:2025-03-27"
+    "site:linkedin.com/jobs \"Nodejs developer\" OR \"fullstack js developer\" Reactjs OR Js OR NodeJs \"1+ years\" Egypt OR remote after:2025-06-01",
+    "site:indeed.com \"Nodejs developer\" OR \"fullstack js developer\" Reactjs OR JavaScript OR Node.js \"1 year experience\" Egypt OR remote after:2025-06-01",
+    "site:glassdoor.com/Job \"Nodejs developer\" OR \"fullstack javascript developer\" React OR JS OR Node.js \"at least 1 year\" Egypt OR \"work from home\" after:2025-06-01",
+    "site:wuzzuf.net \"Nodejs developer\" OR \"full stack js developer\" Reactjs OR JavaScript OR Node.js \"1+ years experience\" Egypt OR \"remote work\" after:2025-06-01",
+    "site:bayt.com \"Nodejs developer\" OR \"full stack javascript developer\" React OR JS OR Node.js \"minimum 1 year\" Egypt OR \"telecommute\" after:2025-06-01",
+    "\"Nodejs developer\" OR \"fullstack js developer\" Reactjs OR JavaScript OR Node.js \"1+ years experience\" Egypt OR remote OR \"work from home\" site:linkedin.com OR site:indeed.com OR site:glassdoor.com after:2025-06-01",
+    "\"Nodejs developer\" OR \"fullstack javascript developer\" React OR JS OR Node.js \"at least 1 year\" Egypt OR \"remote position\" after:2025-06-01"
   ]
 }

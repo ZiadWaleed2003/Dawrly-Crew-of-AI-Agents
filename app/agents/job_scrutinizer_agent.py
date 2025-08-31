@@ -1,18 +1,21 @@
+from datetime import datetime
 from crewai import Agent, Task
-
-from typing import List
+import json
 import os
 
-from app.clients import get_llm_sec
+from app.clients import get_llm_with_tool_use
 from app.models import AllExtractedData
-from app.tools.scraping_tool import web_scraping_firecrawl, web_scraping_tool
+from app.tools.scraping_tool import web_scraping_firecrawl
 
 class JobScrutinizerAgent:
-    def __init__(self):
-        self.llm = get_llm_sec()
+    def __init__(self , input = None):
+        self.llm = get_llm_with_tool_use()
+        self.user_input = input
+        self.scrapping_tools = [web_scraping_firecrawl]
         self.agent = self._create_agent()
         self.task = self.create_task()
-        self.scrapping_tools = [web_scraping_firecrawl]
+        
+        
     
     def _create_agent(self):
         return Agent(
@@ -23,42 +26,32 @@ class JobScrutinizerAgent:
             to help job seekers find the most suitable opportunities.""",
             llm=self.llm,
             verbose=True,
-            tools=[web_scraping_firecrawl]
+            tools=self.scrapping_tools
         )
     
     def create_task(self, output_dir="./results/"):
-        description = """
-        Analyze the job URLs provided from the previous agent's search results.
-        
-        For each URL:
-        1. First try to scrape the job information using the web_scraping_firecrawl.
-        3. If the tool failed, just save the URL with minimal information.
-        
-        For each job listing, extract:
-        - Job title
-        - Full job description
-        - Job URL
-        
-        Then evaluate each job based on the requirements from the {user_input} and provide:
-        - A recommendation rank (out of 5, higher is better)
-        - Detailed notes explaining your recommendation
-        - if the job opposite the specified skills from the user input mentioned you have to neglect this job and don't include it to your answer
-        - eg if the user looking for a NodeJS developer role and the specified skills had nodejs in it and the result had C# .Net you have to neglect this result
-        
-        Format the results into a JSON object following the AllExtractedData schema:
-        {"jobs": [
-          {
-            "job_title": "...",
-            "job_description": "...",
-            "job_url": "...",
-            "agent_recommendation_rank": 5,
-            "agent_recommendation_notes": ["...", "..."]
-          },
-          ...
-        ]}
-        
-        Do NOT output any additional text, markdown, <think> tag , or logs after emitting the JSON all i need is just a pure json response!.
-        """
+
+
+        description = "".join([
+                    "Analyze the job URLs provided from the previous agent's search results.\n\n",
+                    "For each URL:\n",
+                    "1. First try to scrape the job information using the web_scraping_firecrawl tool.\n",
+                    "2. If the tool failed, just save the URL with minimal information.\n\n",
+                    "For each job listing, extract:\n",
+                    "- Job title\n",
+                    "- Full job description\n",
+                    "- Job URL\n\n",
+                    "Then evaluate each job based on the requirements from the user input: ""\n\n",
+                    "Provide:\n",
+                    "- A recommendation rank (out of 5, higher is better)\n",
+                    "- Detailed notes explaining your recommendation\n",
+                    "- EXCLUDE jobs that use completely different technology stacks or domains from what the user specified (e.g., if user wants Node.js full-stack, exclude .NET or Python backend roles; if user wants AI/ML, exclude pure frontend or system admin roles)\n",
+                    "- INCLUDE jobs with similar or related technologies even if not exact matches (e.g., if user wants LangChain, include jobs with LangGraph, LlamaIndex, or similar frameworks; if user wants React, include jobs with Vue or Angular)\n",
+                    "- Focus on the DOMAIN and CORE TECHNOLOGY STACK rather than requiring exact tool matches\n\n",
+                    "Consider relevancy within the last 3 months (current date: ", datetime.today().strftime('%Y-%m-%d'), ").\n\n",
+                    f"CRITICAL: You must return ONLY a valid JSON object that matches this schema {AllExtractedData.model_json_schema()}exact structure:\n",
+                    "Do NOT include any text before or after the JSON. Do NOT use markdown formatting. Do NOT include explanations, thoughts, or any other content. Return ONLY the raw JSON object.",
+                    "Revise your answer again before sending it as the final answer to ensure that it includes only the results following the schema no additional texts or anything else other than the results!"])
         
         self.task = Task(
             description=description,
