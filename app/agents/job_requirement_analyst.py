@@ -9,20 +9,20 @@ from datetime import datetime
 
 class JobSearchCriteria(BaseModel):
     job_titles: List[str] = Field(..., description="Primary job titles/roles")
-    required_skills: Optional[List[str]] = Field(..., description="Must-have skills")
     preferred_skills: Optional[List[str]] = Field(default=[], description="Nice-to-have skills")
     experience_level: str = Field(..., description="Fresh/Junior/Mid/Senior/Lead")
     min_years_experience: Optional[int] = Field(default=None)
     locations: List[str] = Field(default=[], description="Preferred locations")
     remote_preference: str = Field(default="any", description="remote/hybrid/onsite/any")
     specified_websites: List[str] = Field(default=[], description="User-specified websites to prioritize")
-    search_queries: List[str] = Field(..., description="Optimized search queries for job platforms", min_items=1)
+    search_queries: List[str] = Field(..., description="Optimized search queries for job platforms", min_length=1)
 
 
 class JobRequirementAnalyst:
-    def __init__(self, max_queries=8):
+    def __init__(self, input=None ,max_queries=8):
         self.llm = get_llm_main()
         self.max_queries = max_queries
+        self.user_input = input
         self.agent = self._create_agent()
         self.task = self.create_task()
 
@@ -44,7 +44,7 @@ class JobRequirementAnalyst:
 
     def create_task(self):
         description = "".join([
-                    f"A job seeker is looking for opportunities with the following requirements: {{user_input}}",
+                    "A job seeker is looking for opportunities with the following requirements: {user_input}",
                     "Extract structured job search criteria and generate up to 8 at max optimized search queries.",
                     "Generate search queries optimized for the top job platforms and a general Google query:",
                     "- For each specified platform in `specified_websites`, generate a separate query using `site:` to target that site.",

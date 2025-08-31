@@ -1,14 +1,55 @@
 {
   "jobs": [
     {
-      "job_title": "AI Intern – Research & Automation",
-      "job_description": "Design, develop, and maintain Gen AI applications using Python, LangChain, and LLMs. Assist in research and automation tasks related to AI development.",
-      "job_url": "https://in.indeed.com/q-google-ai-l-remote-jobs.html",
+      "job_title": "React/Node.js Developer",
+      "job_description": "We are looking for a talented and experienced React/Node.js Developer to join our development team. The successful candidate will be responsible for designing, developing, and maintaining web applications using React and Node.js. This role requires a highly skilled individual with a strong background in front-end and back-end development, as well as a passion for creating efficient and scalable applications and websites with our website development services .\n### React/Node.js Developer Responsibilities:\n#### Application Developments:\n- Design and develop web applications using React and Node.js.\n- Write clean, maintainable, and efficient code.\n- Ensure the technical feasibility of UI/UX designs.\n- Optimize applications for maximum speed and scalability.\n#### Collaboration:\n- Work closely with designers, product managers, and other developers to deliver high-quality products.\n- Participate in code reviews and provide constructive feedback to team members.\n- Collaborate with the back-end team to integrate user-facing elements with server-side logic.\n#### Testing and Debugging:\n- Develop and execute unit tests to ensure the quality and functionality of the code.\n- Identify and troubleshoot issues and bugs in the application.\n- Perform debugging and performance tuning to improve application performance.\n#### Continuous Improvement:\n- Stay up-to-date with the latest industry trends and technologies.\n- Continuously improve development processes and workflows.\n- Participate in team meetings and contribute to the planning and execution of projects.\n#### React/Node.js Developer Requirements:\n- Strong experience with React and Node.js.\n- Proficiency in JavaScript, HTML, and CSS.\n- Experience with front-end build tools and libraries (e.g., Webpack, Babel).\n- Knowledge of RESTful APIs and web services.\n- Familiarity with version control systems (e.g., Git).\n- Strong understanding of responsive design and cross-browser compatibility.\n- Excellent problem-solving skills and attention to detail.\n- Ability to work independently and as part of a team.\n- Good communication skills and the ability to collaborate effectively with team members.\n#### Preferred Qualifications:\n- Bachelor's degree in Computer Science, Engineering, or a related field.\n- Experience with other front-end frameworks and libraries (e.g., Angular, Vue.js).\n- Knowledge of database technologies (e.g., MongoDB, MySQL).\n- Familiarity with cloud platforms and services (e.g., AWS, Azure).\n- Understanding of Agile development methodologies.\n#### Benefits:\n- Competitive salary and performance-based incentives.\n- Health and wellness benefits.\n- Opportunities for professional development and career growth.\n- Collaborative and supportive work environment.\nIf you are a driven and enthusiastic individual with a passion for business development, we would love to hear from you. Apply now and join our team!",
+      "job_url": "https://www.glassdoor.com/job-listing/react-node-js-developer-optimize-for-seo-JV_KO0,23_KE24,40.htm?jl=1009845490527",
       "agent_recommendation_rank": 5,
       "agent_recommendation_notes": [
-        "All required skills (Python, LLMs, LangChain) explicitly mentioned.",
-        "Job location specified as Remote/Pune, aligning with remote preference.",
-        "Credible platform (Indeed) with clear alignment to internship criteria."
+        "Perfect match for user's requirements - includes both React and Node.js technologies",
+        "Full-stack development role aligns with user's preference for full-stack JS developer positions",
+        "Entry to mid-level friendly - doesn't specify excessive experience requirements",
+        "Modern tech stack with React, Node.js, JavaScript, HTML, CSS",
+        "Includes remote work possibilities and professional development opportunities"
+      ]
+    },
+    {
+      "job_title": "NodeJS Developer",
+      "job_description": "We are s looking for a Node.js Developer who will take ownership of backend development and API creation for healthcare applications. You will work on end-to-end SDLC activities, from analyzing requirements to deployment and maintenance, while directly collaborating with international clients.\n\n**Key Responsibilities**\n\n● Develop backend services and RESTful APIs using Node.js\n\n● Analyze requirements and provide technical recommendations\n\n● Collaborate with frontend developers to ensure seamless integration\n\n● Write efficient database queries (SQL/NoSQL)\n\n● Conduct unit testing and resolve defects ● Communicate directly with clients and participate in daily scrums\n\n● Adhere to coding standards and development best practices\n\n**Performance Indicators**\n\n● Timely and high-quality delivery of backend features\n\n● Low defect rates and fast resolution turnaround\n\n● Positive feedback from client collaboration and support\n\n● Effective communication during agile ceremonies\n\n● Active participation in continuous improvement and learning initiatives\n\n**Qualifications**\n\n● 1+ year of experience in application development\n\n● 6–12 months of hands-on experience with Node.js and databases (SQL/NoSQL)\n\n● Bachelor's Degree in IT, Computer Science, or related field\n\n● Good written and spoken English communication skills\n\n● Willingness to learn new technologies and take part in end-to-end SDLC\n\n● Available for mid-shift and modified night shifts as needed\n\n**Nice to Have:**\n\n● Experience with AWS/Azure\n\n● Familiarity with Angular, .NET, or Java\n\n● Team leadership or mentoring experience\n\nJob Type: Full-time\n\nBenefits:\n\n- Work from home\n\nExperience:\n\n- Node.js: 1 year (Preferred)\n\nWork Location: Remote",
+      "job_url": "https://ph.indeed.com/viewjob?jk=f9cf6218c8d989f1",
+      "agent_recommendation_rank": 4,
+      "agent_recommendation_notes": [
+        "Strong match for Node.js developer role with 1+ year experience requirement",
+        "Remote work option available which matches user's preference",
+        "Healthcare domain provides stable industry experience",
+        "Includes both SQL and NoSQL database experience",
+        "Requires night shift availability which may not suit all candidates"
+      ]
+    },
+    {
+      "job_title": "Software Developer",
+      "job_description": "Exciting opportunity for Software Developers to enhance their careers while learning Chinese for free in Wenzhou, China. This program offers a one-year job placement after completion. Ideal candidates are those with at least two years of work experience and a degree. Classes are held every Friday and Saturday, providing a unique chance to gain valuable skills and secure a high-paying job abroad.\n\nMid career · 2-6 Years of Experience",
+      "job_url": "https://www.bayt.com/en/china/jobs/software-developer-5359947/",
+      "agent_recommendation_rank": 1,
+      "agent_recommendation_notes": [
+        "Location in China doesn't match user's Egypt/remote preference",
+        "Requires 2-6 years experience which exceeds user's 1+ year requirement",
+        "Focus on learning Chinese rather than JavaScript/Node.js development",
+        "Not specifically a Node.js or React role - too generic",
+        "Relocation requirement makes this unsuitable for user's criteria"
+      ]
+    },
+    {
+      "job_title": "Fullstack JavaScript Developer",
+      "job_description": "Based on the Facebook post content mentioning fullstack JavaScript development with at least 1 year experience requirement. Details suggest this is an opportunity for JavaScript developers in Egypt or remote positions.",
+      "job_url": "https://www.facebook.com/groups/4891513004239692/posts/24397629709868064/",
+      "agent_recommendation_rank": 2,
+      "agent_recommendation_notes": [
+        "Facebook platform is less credible than professional job sites",
+        "Limited job details available from the post",
+        "Mentions fullstack JavaScript which aligns with user's interests",
+        "1 year experience requirement matches user's criteria",
+        "Location appears to be Egypt or remote based on context"
       ]
     }
   ]

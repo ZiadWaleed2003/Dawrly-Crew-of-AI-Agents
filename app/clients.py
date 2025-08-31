@@ -3,11 +3,9 @@ import agentops
 from firecrawl import FirecrawlApp
 from tavily import TavilyClient
 from scrapegraph_py import Client
-from crewai_tools import SerperDevTool
 from config import CONFIG
 
 
-import os
 from functools import lru_cache
 
 # This decorator ensures the function is only run once.
@@ -15,19 +13,36 @@ from functools import lru_cache
 @lru_cache(maxsize=None)
 def get_llm_main() -> LLM:
     """Initializes and returns a shared LLM instance."""
-    print("--- Initializing LLM Client (This will run only once) DeepSeekR1---")
+    print("--- Initializing LLM Client (This will run only once) deepseek---")
     
     try:
         llm = LLM(
-            model="openrouter/deepseek/deepseek-r1-0528:free",
-            base_url = "https://openrouter.ai/api/v1",
-            api_key=CONFIG['OPENROUTER_API_KEY'],
+            model="deepseek-ai/deepseek-v3.1",
+            base_url = "https://integrate.api.nvidia.com/v1",
+            api_key=CONFIG['NVIDIA_API_KEY'],
             temperature=0
         )
         return llm
     except Exception as e:
         print(f"ERROR initializing LLM: {str(e)}")
         raise
+
+# @lru_cache(maxsize=None)
+# def get_llm_main() -> LLM:
+#     """Initializes and returns a shared LLM instance."""
+#     print("--- Initializing LLM Client (This will run only once) deepseek from openrouter---")
+    
+#     try:
+#         llm = LLM(
+#             model="openrouter/deepseek/deepseek-r1-0528:free",
+#             base_url = "https://openrouter.ai/api/v1",
+#             api_key=CONFIG['OPENROUTER_API_KEY'],
+#             temperature=0
+#         )
+#         return llm
+#     except Exception as e:
+#         print(f"ERROR initializing LLM: {str(e)}")
+#         raise
 
 
 
@@ -39,6 +54,23 @@ def get_llm_sec() -> LLM:
     try:
         llm = LLM(
             model="nvidia_nim/qwen/qwen3-235b-a22b",
+            base_url = "https://integrate.api.nvidia.com/v1",
+            api_key=CONFIG['NVIDIA_API_KEY'],
+            temperature=0
+        )
+        return llm
+    except Exception as e:
+        print(f"ERROR initializing LLM: {str(e)}")
+        raise
+
+@lru_cache(maxsize=None)
+def get_llm_with_tool_use() -> LLM:
+    """Initializes and returns a shared LLM instance."""
+    print("--- Initializing LLM Client (This will run only once) Kimi-k2---")
+    
+    try:
+        llm = LLM(
+            model="moonshotai/kimi-k2-instruct",
             base_url = "https://integrate.api.nvidia.com/v1",
             api_key=CONFIG['NVIDIA_API_KEY'],
             temperature=0
