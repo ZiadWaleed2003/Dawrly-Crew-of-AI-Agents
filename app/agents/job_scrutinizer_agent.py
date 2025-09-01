@@ -36,7 +36,7 @@ class JobScrutinizerAgent:
                     "Analyze the job URLs provided from the previous agent's search results.\n\n",
                     "For each URL:\n",
                     "1. First try to scrape the job information using the web_scraping_firecrawl tool.\n",
-                    "2. If the tool failed, just save the URL with minimal information.\n\n",
+                    "2. If the tool failed, just save the URL\n\n",
                     "For each job listing, extract:\n",
                     "- Job title\n",
                     "- Full job description\n",
@@ -56,7 +56,7 @@ class JobScrutinizerAgent:
         self.task = Task(
             description=description,
             expected_output="A JSON object containing job data entries with detailed analysis.",
-            output_json=AllExtractedData,
+            # output_json=AllExtractedData,
             output_file=os.path.join(output_dir, "step_3_job_scrutinizer_results.json"),
             agent=self.agent
         )

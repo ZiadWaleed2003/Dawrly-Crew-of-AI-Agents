@@ -70,7 +70,7 @@ def get_llm_with_tool_use() -> LLM:
     
     try:
         llm = LLM(
-            model="moonshotai/kimi-k2-instruct",
+            model="meta/llama-3.3-70b-instruct",
             base_url = "https://integrate.api.nvidia.com/v1",
             api_key=CONFIG['NVIDIA_API_KEY'],
             temperature=0

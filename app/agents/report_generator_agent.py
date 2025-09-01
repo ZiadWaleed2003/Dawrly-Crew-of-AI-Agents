@@ -43,8 +43,6 @@ class ReportGenerator:
                 "- Cards/sections: style='background-color: #ffffff; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1); margin-bottom: 3rem;'",
                 "The report should be structured with the following sections:",
                 "1. Include all the found jobs from the previous agent results in a well formatted table",
-                "2. Job Requirements Analysis: Details from the job requirements analysis phase.",
-                "3. Job Search Results: Comprehensive list of job opportunities found from the previous agent results",
                 "4. Order the jobs descendingly in the table based on the agent_recommendation_rank",
                 "5. Include a simple <style> block in the <head> with basic email-safe CSS for table borders and list formatting",
                 "IMPORTANT: Do NOT output any additional intros, explanation, text, markdown, ```html , or logs just output pure HTML code response with inline CSS styling."

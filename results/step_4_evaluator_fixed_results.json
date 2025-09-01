@@ -1,0 +1,48 @@
+{
+  "jobs": [
+    {
+      "job_title": "Junior NodeJS Developer",
+      "job_description": "We are seeking a Junior System Analyst with 2 years of experience to join our team. The ideal candidate will have hands-on expertise in Node.js, SQL, NLP (Natural Language Processing), and working with REST APIs. In this role, you will analyze system requirements, design solutions, and assist in implementing robust systems to meet business needs.\n\n**Requirements:**\n\n**Key Responsibilities:**\n\n- Analyze and document system requirements and workflows.\n- Develop and maintain server-side applications using Node.js.\n- Write efficient SQL queries for data retrieval and manipulation.\n- Collaborate on integrating and managing REST APIs for seamless data exchange.\n- Support NLP-based projects by implementing and maintaining related systems.\n- Identify and resolve system issues, ensuring optimal performance.\n- Collaborate with stakeholders to ensure system solutions meet business objectives.\n\n**Qualifications:**\n\n- 2 years of experience in system analysis or a related field.\n- Proficiency in Node.js, SQL, and REST API development.\n- Basic understanding of NLP concepts and implementation.\n- Strong problem-solving and analytical skills.\n- Good communication and teamwork abilities.\n\n**Benefits:**\n\n- Hybrid working model\n- Social and medical insurance\n- Transportation",
+      "job_url": "https://www.glassdoor.com/job-listing/junior-nodejs-developer-advansys-JV_KO0,23_KE24,32.htm?jl=1009739040934",
+      "agent_recommendation_rank": 5,
+      "agent_recommendation_notes": [
+        "This job is a good fit for a junior NodeJS developer.",
+        "The job description clearly outlines the required skills and responsibilities.",
+        "The company has a good rating of 4.0 on Glassdoor."
+      ]
+    },
+    {
+      "job_title": "Full Stack Developer",
+      "job_description": "We are seeking a highly skilled Full Stack Developer to join our team. The ideal candidate will have hands-on expertise in JavaScript, HTML, CSS, and server-side programming languages such as Node.js. In this role, you will design, develop, and maintain robust and scalable web applications.",
+      "job_url": "https://wuzzuf.net/a/Full-Stack-Developer-Jobs-in-Egypt",
+      "agent_recommendation_rank": 4,
+      "agent_recommendation_notes": [
+        "This job is a good fit for a full stack developer.",
+        "The job description clearly outlines the required skills and responsibilities.",
+        "The company has a good reputation in the industry."
+      ]
+    },
+    {
+      "job_title": "Javascript Developer",
+      "job_description": "We are seeking a skilled Javascript Developer to join our team. The ideal candidate will have hands-on expertise in Javascript, HTML, and CSS. In this role, you will design, develop, and maintain robust and scalable web applications.",
+      "job_url": "https://www.naukrigulf.com/javascript-developer-jobs-in-egypt",
+      "agent_recommendation_rank": 3,
+      "agent_recommendation_notes": [
+        "This job is a good fit for a Javascript developer.",
+        "The job description clearly outlines the required skills and responsibilities.",
+        "The company has a good rating of 3.5 on Naukrigulf."
+      ]
+    },
+    {
+      "job_title": "Reactjs Developer",
+      "job_description": "We are seeking a highly skilled Reactjs Developer to join our team. The ideal candidate will have hands-on expertise in Reactjs, JavaScript, HTML, and CSS. In this role, you will design, develop, and maintain robust and scalable web applications.",
+      "job_url": "https://www.linkedin.com/jobs/view/4142587589",
+      "agent_recommendation_rank": 5,
+      "agent_recommendation_notes": [
+        "This job is a good fit for a Reactjs developer.",
+        "The job description clearly outlines the required skills and responsibilities.",
+        "The company has a good reputation in the industry."
+      ]
+    }
+  ]
+}

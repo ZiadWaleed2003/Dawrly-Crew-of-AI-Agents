@@ -8,26 +8,24 @@
     "Js",
     "NodeJs"
   ],
-  "experience_level": "Entry to Mid-level",
+  "experience_level": "mid-level",
   "min_years_experience": 1,
   "locations": [
     "Egypt"
   ],
-  "remote_preference": "Remote or Hybrid",
+  "remote_preference": "any",
   "specified_websites": [
-    "linkedin.com",
-    "indeed.com",
-    "glassdoor.com",
-    "wuzzuf.net",
-    "bayt.com"
+    "linkedin.com/jobs",
+    "indeed.com"
   ],
   "search_queries": [
-    "site:linkedin.com/jobs \"Nodejs developer\" OR \"fullstack js developer\" Reactjs OR Js OR NodeJs \"1+ years\" Egypt OR remote after:2025-06-01",
-    "site:indeed.com \"Nodejs developer\" OR \"fullstack js developer\" Reactjs OR JavaScript OR Node.js \"1 year experience\" Egypt OR remote after:2025-06-01",
-    "site:glassdoor.com/Job \"Nodejs developer\" OR \"fullstack javascript developer\" React OR JS OR Node.js \"at least 1 year\" Egypt OR \"work from home\" after:2025-06-01",
-    "site:wuzzuf.net \"Nodejs developer\" OR \"full stack js developer\" Reactjs OR JavaScript OR Node.js \"1+ years experience\" Egypt OR \"remote work\" after:2025-06-01",
-    "site:bayt.com \"Nodejs developer\" OR \"full stack javascript developer\" React OR JS OR Node.js \"minimum 1 year\" Egypt OR \"telecommute\" after:2025-06-01",
-    "\"Nodejs developer\" OR \"fullstack js developer\" Reactjs OR JavaScript OR Node.js \"1+ years experience\" Egypt OR remote OR \"work from home\" site:linkedin.com OR site:indeed.com OR site:glassdoor.com after:2025-06-01",
-    "\"Nodejs developer\" OR \"fullstack javascript developer\" React OR JS OR Node.js \"at least 1 year\" Egypt OR \"remote position\" after:2025-06-01"
+    "Nodejs developer jobs Egypt hiring 2025",
+    "fullstack js developer careers Egypt new opening",
+    "JavaScript developer vacancy Egypt position",
+    "Nodejs Reactjs developer \"1+ years experience\" remote jobs Egypt site:linkedin.com/jobs",
+    "fullstack JavaScript Nodejs \"years experience\" Egypt hiring 2025 site:indeed.com",
+    "Nodejs developer React remote position Egypt \"1 year experience\"",
+    "JavaScript fullstack developer jobs Egypt remote hiring new",
+    "Nodejs developer \"Reactjs experience\" Egypt careers site:linkedin.com/jobs"
   ]
 }
