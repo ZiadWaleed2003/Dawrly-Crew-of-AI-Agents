@@ -8,9 +8,10 @@ from app.agents.report_generator_agent import ReportGenerator
 
 
 user_input_data = {
-    'job_title': 'Nodejs developer or fullstack js developer ',
-    'preferred_skills' : ['Reactjs' , 'Js' , "NodeJs"],
-    'years_experience': '+1',
+    'job_title': 'NlP engineer',
+    'preferred_skills' : ['NLP' , 'LLM' , "python"],
+    'experience_level' : "fresh",
+    'min_years_experience' : '0',
     'locations': ['Egypt','remote']
 }
 
