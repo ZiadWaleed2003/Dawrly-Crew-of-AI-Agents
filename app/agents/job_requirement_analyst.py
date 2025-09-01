@@ -44,16 +44,36 @@ class JobRequirementAnalyst:
 
     def create_task(self):
         description = "".join([
-                    "A job seeker is looking for opportunities with the following requirements: {user_input}",
-                    "Extract structured job search criteria and generate up to 8 at max optimized search queries.",
-                    "Generate search queries optimized for the top job platforms and a general Google query:",
-                    "- For each specified platform in `specified_websites`, generate a separate query using `site:` to target that site.",
-                    "- Additionally generate one broad, general Google query without `site:` to capture cross-platform results.",
-                    "- Ensure queries cover job titles and location criteria.",
-                    "- IMPORTANT: The generated search queries should be designed to effectively locate actual job posting pages when executed by a search tool. Do NOT include actual URLs or expired posts.",
-                    "- Focus on generating queries that when used will return individual job listings for scraping.",
-                    f"- Consider relevancy within the last 3 months (current date: {datetime.today().strftime('%Y-%m-%d')})."
-                    ])
+                "A job seeker is looking for opportunities with the following requirements: {user_input}",
+                "",
+                "Extract structured job search criteria and generate 8 optimized search queries using a multi-tier strategy.",
+                "",
+                "CRITICAL: ALL queries must include job-specific keywords to ensure they return actual job postings, not courses, profiles, or articles.",
+                "",
+                "Generate two types of queries:",
+                "",
+                "BROAD QUERIES (3-4 total): Simple but job-focused",
+                "- Must include job indicator words: 'jobs', 'careers', 'hiring', 'vacancy', 'opening', 'position'",
+                "- Use core job title + location + job indicator",
+                "- Example: 'data scientist jobs New York', 'software engineer hiring San Francisco'",
+                "- NOT like this: 'NLP Cairo' (too vague, will return non-job results)",
+                "",
+                "PRECISE QUERIES (4-5 total): Detailed with all requirements",
+                "- Include specific skills, experience level, and multiple criteria",
+                "- Use site: operator for platforms mentioned by user",
+                "- Include phrases like 'years experience', specific technologies, seniority level",
+                "- Example: 'senior data scientist Python machine learning \"5+ years\" remote jobs'",
+                "",
+                "MANDATORY RULES:",
+                "1. EVERY query must be job-focused - include words like: jobs, hiring, careers, vacancy, opening, position",
+                "2. Even broad queries must be clearly about job postings",
+                "3. Do NOT prefix queries with tier labels or numbers",
+                "4. Mix query order naturally - don't group all broad or all precise together",
+                f"5. Add recency hints where relevant: 'hiring 2024', 'new opening', etc. (current: {datetime.today().strftime('%Y-%m-%d')})",
+                "6. For specific platforms use: site:linkedin.com/jobs or site:indeed.com",
+                "",
+                "OUTPUT: Return exactly 8 search query strings, one per line, no labels or categories."
+            ])
         
         self.task = Task(
             description=description,

@@ -1,0 +1,36 @@
+{
+  "results": [
+    {
+      "title": "Nodejs Developer",
+      "url": "https://www.glassdoor.com/Job/node-jobs-SRCH_IN69_KO0,4.htm",
+      "score": 8.0,
+      "search_query": "Nodejs developer jobs Egypt hiring 2025",
+      "platform": "Glassdoor",
+      "relevance_notes": "The job posting matches the search query and requires Nodejs skills"
+    },
+    {
+      "title": "Full Stack Developer",
+      "url": "https://wuzzuf.net/a/Full-Stack-Developer-Jobs-in-Egypt",
+      "score": 7.0,
+      "search_query": "fullstack js developer careers Egypt new opening",
+      "platform": "Wuzzuf",
+      "relevance_notes": "The job posting matches the search query and requires full stack development skills"
+    },
+    {
+      "title": "Javascript Developer",
+      "url": "https://www.naukrigulf.com/javascript-developer-jobs-in-egypt",
+      "score": 6.0,
+      "search_query": "JavaScript developer vacancy Egypt position",
+      "platform": "Naukrigulf",
+      "relevance_notes": "The job posting matches the search query and requires Javascript skills"
+    },
+    {
+      "title": "Reactjs Developer",
+      "url": "https://www.linkedin.com/jobs/view/4142587589",
+      "score": 5.0,
+      "search_query": "Nodejs Reactjs developer \"1+ years experience\" remote jobs Egypt site:linkedin.com/jobs",
+      "platform": "LinkedIn",
+      "relevance_notes": "The job posting matches the search query and requires Reactjs skills"
+    }
+  ]
+}

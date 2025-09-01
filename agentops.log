@@ -1,6 +1,5 @@
-2025-09-02 00:16:41,276 - INFO - Session Replay for default trace: https://app.agentops.ai/sessions?trace_id=a9f437fa352cf4bcb8f25c2fb59be2e6
-2025-09-02 00:16:48,324 - ERROR - [agentops.InternalSpanProcessor] Error uploading logfile: Upload failed: 401
-2025-09-02 00:16:50,223 - WARNING - ToolEvent() is deprecated and will be removed in v4 in the future. Automatically tracked in v4.
-2025-09-02 00:17:41,742 - WARNING - ErrorEvent() is deprecated and will be removed in v4 in the future. Automatically tracked in v4.
-2025-09-02 00:22:01,852 - WARNING - end_session() is deprecated and will be removed in v4 in the future. Use agentops.end_trace() instead.
-2025-09-02 00:22:02,889 - INFO - Session Replay for default.session trace: https://app.agentops.ai/sessions?trace_id=a9f437fa352cf4bcb8f25c2fb59be2e6
+2025-09-02 00:44:28,963 - INFO - Session Replay for default trace: https://app.agentops.ai/sessions?trace_id=b2dc0792b033c9de42925139e4731dc9
+2025-09-02 00:44:35,748 - ERROR - [agentops.InternalSpanProcessor] Error uploading logfile: Upload failed: 401
+2025-09-02 00:44:37,112 - WARNING - ToolEvent() is deprecated and will be removed in v4 in the future. Automatically tracked in v4.
+2025-09-02 00:49:02,904 - WARNING - end_session() is deprecated and will be removed in v4 in the future. Use agentops.end_trace() instead.
+2025-09-02 00:49:04,646 - INFO - Session Replay for default.session trace: https://app.agentops.ai/sessions?trace_id=b2dc0792b033c9de42925139e4731dc9

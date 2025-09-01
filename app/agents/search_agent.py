@@ -5,7 +5,7 @@ from pydantic import BaseModel, Field
 from typing import List
 import os
 
-from app.clients import get_llm_search
+from app.clients import get_llm_with_tool_use
 from app.tools.search_tools import tavily_search_engine_tool
 
 
@@ -22,7 +22,7 @@ class AllJobSearchResults(BaseModel):
 
 class SearchAgent:
     def __init__(self, score_threshold=0):
-        self.llm = get_llm_search()
+        self.llm = get_llm_with_tool_use()
         self.search_tool = [tavily_search_engine_tool]
         self.score_threshold = score_threshold
         self.agent = self._create_agent()
