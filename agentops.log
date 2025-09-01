@@ -1,31 +1,6 @@
-2025-09-01 23:52:38,921 - INFO - Session Replay for default trace: https://app.agentops.ai/sessions?trace_id=29979680ff036fca96efc6106e79775d
-2025-09-01 23:52:39,874 - INFO - You're on the agentops free plan 🤔
-2025-09-01 23:52:47,884 - WARNING - ToolEvent() is deprecated and will be removed in v4 in the future. Automatically tracked in v4.
-2025-09-01 23:55:04,861 - ERROR - Error in span Analyze the job URLs provided from the previous agent's search results.
-
-For each URL:
-1. First try to scrape the job information using the web_scraping_firecrawl tool.
-2. If the tool failed, just save the URL
-
-For each job listing, extract:
-- Job title
-- Full job description
-- Job URL
-
-Then evaluate each job based on the requirements from the user input: 
-
-Provide:
-- A recommendation rank (out of 5, higher is better)
-- Detailed notes explaining your recommendation
-- EXCLUDE jobs that use completely different technology stacks or domains from what the user specified (e.g., if user wants Node.js full-stack, exclude .NET or Python backend roles; if user wants AI/ML, exclude pure frontend or system admin roles)
-- INCLUDE jobs with similar or related technologies even if not exact matches (e.g., if user wants LangChain, include jobs with LangGraph, LlamaIndex, or similar frameworks; if user wants React, include jobs with Vue or Angular)
-- Focus on the DOMAIN and CORE TECHNOLOGY STACK rather than requiring exact tool matches
-
-Consider relevancy within the last 3 months (current date: 2025-09-01).
-
-CRITICAL: You must return ONLY a valid JSON object that matches this schema {'$defs': {'SingleJobData': {'properties': {'job_title': {'title': 'Job Title', 'type': 'string'}, 'job_description': {'title': 'Job Description', 'type': 'string'}, 'job_url': {'title': 'Job Url', 'type': 'string'}, 'agent_recommendation_rank': {'anyOf': [{'type': 'integer'}, {'type': 'null'}], 'title': 'The rank of the job to be considered in the final procurement report. (out of 5, Higher is Better) in the recommendation list ordering from the best to the worst'}, 'agent_recommendation_notes': {'anyOf': [{'items': {'type': 'string'}, 'type': 'array'}, {'type': 'null'}], 'title': 'A set of notes why would you recommend or not recommend this job for the user, compared to other jobs.'}}, 'required': ['job_title', 'job_description', 'job_url', 'agent_recommendation_rank', 'agent_recommendation_notes'], 'title': 'SingleJobData', 'type': 'object'}}, 'properties': {'jobs': {'items': {'$ref': '#/$defs/SingleJobData'}, 'title': 'Jobs', 'type': 'array'}}, 'required': ['jobs'], 'title': 'AllExtractedData', 'type': 'object'}exact structure:
-Do NOT include any text before or after the JSON. Do NOT use markdown formatting. Do NOT include explanations, thoughts, or any other content. Return ONLY the raw JSON object.Revise your answer again before sending it as the final answer to ensure that it includes only the results following the schema no additional texts or anything else other than the results!.task: 1 validation error for TaskOutput
-json_dict
-  Input should be a valid dictionary [type=dict_type, input_value='```json\n{\n  "jobs": [\...  ]\n    }\n  ]\n}\n```', input_type=str]
-    For further information visit https://errors.pydantic.dev/2.11/v/dict_type
-2025-09-01 23:55:05,612 - INFO - Session Replay for default.session trace: https://app.agentops.ai/sessions?trace_id=29979680ff036fca96efc6106e79775d
+2025-09-02 00:16:41,276 - INFO - Session Replay for default trace: https://app.agentops.ai/sessions?trace_id=a9f437fa352cf4bcb8f25c2fb59be2e6
+2025-09-02 00:16:48,324 - ERROR - [agentops.InternalSpanProcessor] Error uploading logfile: Upload failed: 401
+2025-09-02 00:16:50,223 - WARNING - ToolEvent() is deprecated and will be removed in v4 in the future. Automatically tracked in v4.
+2025-09-02 00:17:41,742 - WARNING - ErrorEvent() is deprecated and will be removed in v4 in the future. Automatically tracked in v4.
+2025-09-02 00:22:01,852 - WARNING - end_session() is deprecated and will be removed in v4 in the future. Use agentops.end_trace() instead.
+2025-09-02 00:22:02,889 - INFO - Session Replay for default.session trace: https://app.agentops.ai/sessions?trace_id=a9f437fa352cf4bcb8f25c2fb59be2e6

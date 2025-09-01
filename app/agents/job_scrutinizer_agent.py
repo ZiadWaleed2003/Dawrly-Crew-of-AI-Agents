@@ -56,7 +56,7 @@ class JobScrutinizerAgent:
         self.task = Task(
             description=description,
             expected_output="A JSON object containing job data entries with detailed analysis.",
-            output_json=AllExtractedData,
+            # output_json=AllExtractedData,
             output_file=os.path.join(output_dir, "step_3_job_scrutinizer_results.json"),
             agent=self.agent
         )
