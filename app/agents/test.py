@@ -10,10 +10,12 @@ from app.tools.mail_sender import send_email
 user_input_data = {
     'job_title': 'Junior Software Engineer',
     'preferred_skills' : ["Nodejs" , "js"],
-    'years_experience': '0',
+    'years_experience': '1',
     'locations': ['Egypt'],
     'remote_preference' : "any"
 }
+
+email = "ziadwaleedmohamed2003@gmail.com"
 
 job_analyst_agent_instance = JobRequirementAnalyst(input= user_input_data)
 search_agent_instance = SearchAgent(score_threshold=0)
@@ -22,7 +24,7 @@ evaluator_agent = EvaluatorAgent()
 
 
 
-
+logs = f"./logs/{email}.txt"
 
 crew = Crew(
             agents=[
@@ -39,24 +41,30 @@ crew = Crew(
             ],
             process=Process.sequential,
             verbose=True,
-            cache=False
+            cache=False,
+            output_log_file=logs,
         )
 
-# Kickoff the crew
-results , success = crew.kickoff(inputs={
-    "user_input" : user_input_data
-})
+try:
+    # Kickoff the crew
+    results = crew.kickoff(inputs={
+        "user_input" : user_input_data
+    })
 
+    if results.raw:
+        res = json_to_html_table()
 
-if results.raw:
+        if res:
+            send_email(to_email=email)
+        else:
+            print("Couldn't send the email bruhh")
+            raise Exception
 
-    res = json_to_html_table()
+    else:
+        print("error happened couln't make the HTML file")
+        raise Exception
 
-    if res:
+except Exception as e:
 
-        send_email(to_email="sohilaibrahim555@gmail.com")
-
-else:
-
-    print("error happened couln't make the HTML file")
+    print("The crew Failed miserably bruhhhh")
 
