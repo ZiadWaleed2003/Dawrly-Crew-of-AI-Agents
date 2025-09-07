@@ -48,7 +48,7 @@ class JobScrutinizerAgent:
                     "- EXCLUDE jobs that use completely different technology stacks or domains from what the user specified (e.g., if user wants Node.js full-stack, exclude .NET or Python backend roles; if user wants AI/ML, exclude pure frontend or system admin roles)\n",
                     "- INCLUDE jobs with similar or related technologies even if not exact matches (e.g., if user wants LangChain, include jobs with LangGraph, LlamaIndex, or similar frameworks; if user wants React, include jobs with Vue or Angular)\n",
                     "- Focus on the DOMAIN and CORE TECHNOLOGY STACK rather than requiring exact tool matches\n\n",
-                    "Consider relevancy within the last 3 months (current date: ", datetime.today().strftime('%Y-%m-%d'), ").\n\n",
+                    "make sure that the jobs aren't older the last 3 months (current date: ", datetime.today().strftime('%Y-%m-%d'), ").\n\n if not then eliminate it",
                     f"CRITICAL: You must return ONLY a valid JSON object that matches this schema {AllExtractedData.model_json_schema()}exact structure:\n",
                     "Do NOT include any text before or after the JSON. Do NOT use markdown formatting. Do NOT include explanations, thoughts, or any other content. Return ONLY the raw JSON object.",
                     "Revise your answer again before sending it as the final answer to ensure that it includes only the results following the schema no additional texts or anything else other than the results!"])

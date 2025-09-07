@@ -1,36 +1,52 @@
 {
   "results": [
     {
-      "title": "Nodejs Developer",
-      "url": "https://www.glassdoor.com/Job/node-jobs-SRCH_IN69_KO0,4.htm",
-      "score": 8.0,
-      "search_query": "Nodejs developer jobs Egypt hiring 2025",
-      "platform": "Glassdoor",
-      "relevance_notes": "The job posting matches the search query and requires Nodejs skills"
-    },
-    {
-      "title": "Full Stack Developer",
-      "url": "https://wuzzuf.net/a/Full-Stack-Developer-Jobs-in-Egypt",
+      "title": "TimeAI hiring Junior Backend Developer in Cairo, Egypt | LinkedIn",
+      "url": "https://www.linkedin.com/jobs/view/junior-backend-developer-at-time-ai-4274658820?_l=en",
       "score": 7.0,
-      "search_query": "fullstack js developer careers Egypt new opening",
-      "platform": "Wuzzuf",
-      "relevance_notes": "The job posting matches the search query and requires full stack development skills"
-    },
-    {
-      "title": "Javascript Developer",
-      "url": "https://www.naukrigulf.com/javascript-developer-jobs-in-egypt",
-      "score": 6.0,
-      "search_query": "JavaScript developer vacancy Egypt position",
-      "platform": "Naukrigulf",
-      "relevance_notes": "The job posting matches the search query and requires Javascript skills"
-    },
-    {
-      "title": "Reactjs Developer",
-      "url": "https://www.linkedin.com/jobs/view/4142587589",
-      "score": 5.0,
-      "search_query": "Nodejs Reactjs developer \"1+ years experience\" remote jobs Egypt site:linkedin.com/jobs",
+      "search_query": "Junior Software Engineer vacancy Egypt remote Nodejs",
       "platform": "LinkedIn",
-      "relevance_notes": "The job posting matches the search query and requires Reactjs skills"
+      "relevance_notes": "Title contains 'Junior', 'Backend Developer', location is Cairo, Egypt, and mentions remote work. Nodejs is likely used. Platform is LinkedIn."
+    },
+    {
+      "title": "Junior Nodejs Developer Remote Jobs in Egypt - Cairo - Wuzzuf",
+      "url": "https://wuzzuf.net/a/Junior-Nodejs-Developer---Remote-Jobs-in-Egypt",
+      "score": 7.0,
+      "search_query": "Junior Software Engineer vacancy Egypt remote Nodejs",
+      "platform": "Wuzzuf",
+      "relevance_notes": "Title contains 'Junior', 'Nodejs Developer', 'Remote', and location is Egypt. Platform is Wuzzuf."
+    },
+    {
+      "title": "Junior Node JS Developer Jobs in Egypt - Cairo - Wuzzuf",
+      "url": "https://wuzzuf.net/a/Junior-Node-JS-Developer-Jobs-in-Egypt",
+      "score": 6.0,
+      "search_query": "Junior Software Engineer vacancy Egypt remote Nodejs",
+      "platform": "Wuzzuf",
+      "relevance_notes": "Title contains 'Junior', 'Node JS Developer', and location is Egypt. Platform is Wuzzuf. Remote is not explicitly mentioned."
+    },
+    {
+      "title": "Junior Software Engineer - ENGN AI - LinkedIn",
+      "url": "https://eg.linkedin.com/jobs/view/junior-software-engineer-at-engn-ai-4266434485",
+      "score": 7.0,
+      "search_query": "site:linkedin.com/jobs Junior Software Engineer Nodejs 0 years experience Egypt",
+      "platform": "LinkedIn",
+      "relevance_notes": "Title contains 'Junior Software Engineer', location is Egypt, and content mentions 'Node'. Platform is LinkedIn."
+    },
+    {
+      "title": "Nodejs Developer Jobs In Egypt - Naukri.com",
+      "url": "https://www.naukri.com/nodejs-developer-jobs-in-egypt",
+      "score": 6.0,
+      "search_query": "Software Engineer careers Egypt '0 years experience' Node.js JavaScript",
+      "platform": "Other",
+      "relevance_notes": "Title contains 'Nodejs Developer', location is Egypt, and content mentions 'JavaScript'. Experience is also mentioned. Platform is Naukri.com."
+    },
+    {
+      "title": "Nawy Tech. Summer Internship 2025 - LinkedIn",
+      "url": "https://www.linkedin.com/jobs/view/4219893873/?refId=0ab0a10a-b000-47e6-be10-9b52469f159a&trackingId=lEC65MOPS7S349h02fi71Q%3D%3D&trk=flagship3_job_home_savedjobs",
+      "score": 6.0,
+      "search_query": "Junior Developer position Egypt remote site:linkedin.com/jobs 2025 hiring",
+      "platform": "LinkedIn",
+      "relevance_notes": "Title contains 'Internship', location is Egypt, and is on LinkedIn. Mentions Junior Back-end Developer, Software Developer, NodeJs Developer."
     }
   ]
 }

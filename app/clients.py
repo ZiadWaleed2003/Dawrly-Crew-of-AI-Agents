@@ -13,11 +13,11 @@ from functools import lru_cache
 @lru_cache(maxsize=None)
 def get_llm_main() -> LLM:
     """Initializes and returns a shared LLM instance."""
-    print("--- Initializing LLM Client (This will run only once) deepseek---")
+    print("--- Initializing LLM Client (This will run only once) deepseek r1---")
     
     try:
         llm = LLM(
-            model="deepseek-ai/deepseek-v3.1",
+            model="deepseek-ai/deepseek-r1",
             base_url = "https://integrate.api.nvidia.com/v1",
             api_key=CONFIG['NVIDIA_API_KEY'],
             temperature=0
@@ -34,7 +34,7 @@ def get_llm_main() -> LLM:
     
 #     try:
 #         llm = LLM(
-#             model="openrouter/deepseek/deepseek-r1-0528:free",
+#             model="openrouter/tngtech/deepseek-r1t2-chimera:free",
 #             base_url = "https://openrouter.ai/api/v1",
 #             api_key=CONFIG['OPENROUTER_API_KEY'],
 #             temperature=0
@@ -49,13 +49,12 @@ def get_llm_main() -> LLM:
 @lru_cache(maxsize=None)
 def get_llm_sec() -> LLM:
     """Initializes and returns a shared LLM instance."""
-    print("--- Initializing LLM Client (This will run only once) Qwen 3---")
+    print("--- Initializing LLM Client (This will run only once) LLama 3 from cerebras---")
     
     try:
         llm = LLM(
-            model="nvidia_nim/qwen/qwen3-235b-a22b",
-            base_url = "https://integrate.api.nvidia.com/v1",
-            api_key=CONFIG['NVIDIA_API_KEY'],
+            model="cerebras/llama-3.3-70b",
+            api_key=CONFIG['CEREBRAS_API_KEY'],
             temperature=0
         )
         return llm
@@ -66,7 +65,7 @@ def get_llm_sec() -> LLM:
 @lru_cache(maxsize=None)
 def get_llm_with_tool_use() -> LLM:
     """Initializes and returns a shared LLM instance."""
-    print("--- Initializing LLM Client (This will run only once) Kimi-k2---")
+    print("--- Initializing LLM Client (This will run only once) LLama 3 from Nvidia NIM---")
     
     try:
         llm = LLM(

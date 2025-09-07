@@ -83,10 +83,20 @@ def web_scraping_firecrawl(page_url : str):
 #         page_url="https://www.indeed.com/viewjob?jk=013dfb26c48a8ecd"
 #     )
 #     """
-#     scraper = get_fire_crawl_client()
 
+#     global cnt
+#     cnt += 1 
+    
+#     scraper = get_fire_crawl_client()
 #     print("="*50)
 #     print("Visited Firecrawl tool")
+#     print(f"Function call count: {cnt}")
+    
+#     # Check if we need to rate limit (every 10 calls)
+#     if cnt % 10 == 0:
+#         print(f"Rate limit reached after {cnt} calls. Waiting 60 seconds...")
+#         time.sleep(60)
+#         print("Rate limit wait completed. Continuing...")
 
 #     extracted_data_list = scraper.extract(
 #         urls=[page_url],

@@ -14,7 +14,7 @@ class JobSearchCriteria(BaseModel):
     min_years_experience: Optional[int] = Field(default=None)
     locations: List[str] = Field(default=[], description="Preferred locations")
     remote_preference: str = Field(default="any", description="remote/hybrid/onsite/any")
-    specified_websites: List[str] = Field(default=[], description="User-specified websites to prioritize")
+    specified_websites: List[str] = Field(default=['linkedin','indeed','glassdoor'], description="User-specified websites to prioritize")
     search_queries: List[str] = Field(..., description="Optimized search queries for job platforms", min_length=1)
 
 
@@ -54,7 +54,7 @@ class JobRequirementAnalyst:
                 "",
                 "BROAD QUERIES (3-4 total): Simple but job-focused",
                 "- Must include job indicator words: 'jobs', 'careers', 'hiring', 'vacancy', 'opening', 'position'",
-                "- Use core job title + location + job indicator",
+                "- Use core job title provided by the user like {user_input['job_title']} + location like user_input['locations'] + job indicator",
                 "- Example: 'data scientist jobs New York', 'software engineer hiring San Francisco'",
                 "- NOT like this: 'NLP Cairo' (too vague, will return non-job results)",
                 "",
