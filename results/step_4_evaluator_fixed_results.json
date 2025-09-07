@@ -1,48 +1,497 @@
 {
   "jobs": [
     {
-      "job_title": "Junior Backend Developer",
-      "job_description": "We are seeking a highly motivated Junior Backend Developer to join our team. The successful candidate will have a strong foundation in computer science and software engineering principles, as well as excellent problem-solving skills. Experience with Node.js is a plus.",
-      "job_url": "https://www.linkedin.com/jobs/view/junior-backend-developer-at-time-ai-4274658820?_l=en",
+      "job_title": "Junior software engineer jobs in Egypt - Jooble",
+      "job_description": "Job title match, location match",
+      "job_url": "https://eg.jooble.org/jobs-junior-software-engineer/Egypt",
       "agent_recommendation_rank": 4,
       "agent_recommendation_notes": [
-        "The job title contains 'Junior' and 'Backend Developer', which matches the user's search query. The job description mentions Node.js, which is one of the user's preferred skills. The job is located in Egypt, which matches the user's location preference."
+        "Title match",
+        "Location match"
       ]
     },
     {
-      "job_title": "Junior Nodejs Developer",
-      "job_description": "We are looking for a Junior Nodejs Developer to join our team. The successful candidate will have experience with Node.js and JavaScript, as well as excellent problem-solving skills. Experience with remote work is a plus.",
-      "job_url": "https://wuzzuf.net/a/Junior-Nodejs-Developer---Remote-Jobs-in-Egypt",
+      "job_title": "Junior Software Engineer Jobs in Egypt - 370 Vacancies Sep 2025",
+      "job_description": "Title match, location match, multiple vacancies",
+      "job_url": "https://www.naukrigulf.com/junior-software-engineer-jobs-in-egypt",
       "agent_recommendation_rank": 5,
       "agent_recommendation_notes": [
-        "The job title contains 'Junior' and 'Nodejs Developer', which matches the user's search query. The job description mentions Node.js and JavaScript, which are both preferred skills of the user. The job is located in Egypt and offers remote work, which matches the user's location and remote preference."
+        "Title match",
+        "Location match",
+        "Multiple vacancies"
       ]
     },
     {
-      "job_title": "Junior Software Engineer",
-      "job_description": "We are seeking a highly motivated Junior Software Engineer to join our team. The successful candidate will have a strong foundation in computer science and software engineering principles, as well as excellent problem-solving skills. Experience with Node.js is a plus.",
-      "job_url": "https://eg.linkedin.com/jobs/view/junior-software-engineer-at-engn-ai-4266434485",
+      "job_title": "117 junior software engineer Jobs in Egypt, August 2025 | Glassdoor",
+      "job_description": "Title match, location match, recent posting",
+      "job_url": "https://www.glassdoor.com/Job/egypt-junior-software-engineer-jobs-SRCH_IL.0,5_IN69_KO6,30.htm",
+      "agent_recommendation_rank": 5,
+      "agent_recommendation_notes": [
+        "Title match",
+        "Location match",
+        "Recent posting"
+      ]
+    },
+    {
+      "job_title": "Junior Software Developer Jobs in Egypt - 367 Vacancies Sep 2025",
+      "job_description": "Title match, location match, multiple vacancies",
+      "job_url": "https://www.naukrigulf.com/junior-software-developer-jobs-in-egypt",
       "agent_recommendation_rank": 4,
       "agent_recommendation_notes": [
-        "The job title contains 'Junior' and 'Software Engineer', which matches the user's search query. The job description mentions Node.js, which is one of the user's preferred skills. The job is located in Egypt, which matches the user's location preference."
+        "Title match",
+        "Location match",
+        "Multiple vacancies"
       ]
     },
     {
-      "job_title": "Nodejs Developer",
-      "job_description": "We are looking for a Nodejs Developer to join our team. The successful candidate will have experience with Node.js and JavaScript, as well as excellent problem-solving skills.",
-      "job_url": "https://www.naukri.com/nodejs-developer-jobs-in-egypt",
-      "agent_recommendation_rank": 3,
+      "job_title": "Junior Software Engineering Jobs in Cairo (Jul 2025) - Bayt.com",
+      "job_description": "Title match, location match, recent posting",
+      "job_url": "https://www.bayt.com/en/egypt/jobs/junior-software-engineering-jobs-in-cairo/",
+      "agent_recommendation_rank": 4,
       "agent_recommendation_notes": [
-        "The job title contains 'Nodejs Developer', which matches one of the user's preferred skills. The job description mentions Node.js and JavaScript, which are both preferred skills of the user. However, the job does not mention 'Junior' or 'Entry-level', which are the user's preferred experience levels."
+        "Title match",
+        "Location match",
+        "Recent posting"
       ]
     },
     {
-      "job_title": "Summer Internship 2025",
-      "job_description": "We are offering a Summer Internship 2025 for a Junior Backend Developer. The successful candidate will have a strong foundation in computer science and software engineering principles, as well as excellent problem-solving skills. Experience with Node.js is a plus.",
-      "job_url": "https://www.linkedin.com/jobs/view/4219893873/?refId=0ab0a10a-b000-47e6-be10-9b52469f159a&trackingId=lEC65MOPS7S349h02fi71Q%3D%3D&trk=flagship3_job_home_savedjobs",
+      "job_title": "Urgent! Node js developer jobs in Egypt - September 2025 - Jooble",
+      "job_description": "Skills match, location match, urgent hiring",
+      "job_url": "https://eg.jooble.org/jobs-node-js-developer/Egypt",
+      "agent_recommendation_rank": 6,
+      "agent_recommendation_notes": [
+        "Skills match",
+        "Location match",
+        "Urgent hiring"
+      ]
+    },
+    {
+      "job_title": "87 Node JS Jobs in Egypt – Apply Now! - Wuzzuf",
+      "job_description": "Skills match, location match, multiple vacancies",
+      "job_url": "https://wuzzuf.net/a/Node-JS-Jobs-in-Egypt",
+      "agent_recommendation_rank": 5,
+      "agent_recommendation_notes": [
+        "Skills match",
+        "Location match",
+        "Multiple vacancies"
+      ]
+    },
+    {
+      "job_title": "126 node Jobs in Egypt, August 2025 - Glassdoor",
+      "job_description": "Skills match, location match, recent posting",
+      "job_url": "https://www.glassdoor.com/Job/node-jobs-SRCH_IN69_KO0,4.htm",
+      "agent_recommendation_rank": 5,
+      "agent_recommendation_notes": [
+        "Skills match",
+        "Location match",
+        "Recent posting"
+      ]
+    },
+    {
+      "job_title": "Node Dot Js Jobs in Egypt - 535 Vacancies May 2025 - Naukrigulf",
+      "job_description": "Skills match, location match, multiple vacancies",
+      "job_url": "https://www.naukrigulf.com/node-dot-js-jobs-in-egypt",
+      "agent_recommendation_rank": 5,
+      "agent_recommendation_notes": [
+        "Skills match",
+        "Location match",
+        "Multiple vacancies"
+      ]
+    },
+    {
+      "job_title": "121 node Jobs in Egypt, September 2025 - Glassdoor",
+      "job_description": "Skills match, location match, recent posting",
+      "job_url": "https://www.glassdoor.com/Job/egypt-node-jobs-SRCH_IL.0,5_IN69_KO6,10.htm",
+      "agent_recommendation_rank": 5,
+      "agent_recommendation_notes": [
+        "Skills match",
+        "Location match",
+        "Recent posting"
+      ]
+    },
+    {
+      "job_title": "Software Engineer | New Cairo, Al Qahirah, Egypt - Jobs at Siemens",
+      "job_description": "Title match, location match, reputable company",
+      "job_url": "https://jobs.siemens.com/careers/job/563156126236008-software-engineer-new-cairo-al-qahirah-egypt?domain=siemens.com&microsite=siemens.com",
+      "agent_recommendation_rank": 4,
+      "agent_recommendation_notes": [
+        "Title match",
+        "Location match",
+        "Reputable company"
+      ]
+    },
+    {
+      "job_title": "2,467 Junior Software Engineer Jobs in Cairo – Apply Now! - Wuzzuf",
+      "job_description": "Title match, location match, multiple vacancies",
+      "job_url": "https://wuzzuf.net/a/Junior-Software-Engineer-Jobs-in-Cairo",
+      "agent_recommendation_rank": 5,
+      "agent_recommendation_notes": [
+        "Title match",
+        "Location match",
+        "Multiple vacancies"
+      ]
+    },
+    {
+      "job_title": "16 Entry level software jobs in Cairo, Egypt - Glassdoor",
+      "job_description": "Title match, location match, recent posting",
+      "job_url": "https://www.glassdoor.com/Job/cairo-entry-level-software-jobs-SRCH_IL.0,5_IM1175_KO6,26.htm",
+      "agent_recommendation_rank": 4,
+      "agent_recommendation_notes": [
+        "Title match",
+        "Location match",
+        "Recent posting"
+      ]
+    },
+    {
+      "job_title": "Entry Level Software Engineer Salary in Cairo, Egypt - Levels.fyi",
+      "job_description": "Title match, location match, salary information",
+      "job_url": "https://www.levels.fyi/t/software-engineer/levels/entry-level/locations/cairo-egy",
       "agent_recommendation_rank": 2,
       "agent_recommendation_notes": [
-        "The job title contains 'Internship', which does not match the user's search query. The job description mentions Node.js, which is one of the user's preferred skills. However, the job is an internship, which may not be what the user is looking for."
+        "Title match",
+        "Location match",
+        "Salary information"
+      ]
+    },
+    {
+      "job_title": "Staff Software Engineer - Backend - Cairo, C, Egypt",
+      "job_description": "Title match, location match, reputable company",
+      "job_url": "https://careers.procore.com/jobs/07025784-20d1-4385-bfba-6c3c81bcf0b9",
+      "agent_recommendation_rank": 2,
+      "agent_recommendation_notes": [
+        "Title match",
+        "Location match",
+        "Reputable company"
+      ]
+    },
+    {
+      "job_title": "Junior Software Engineer - Jobright.ai - LinkedIn",
+      "job_description": "Title match, skills match, experience match",
+      "job_url": "https://www.linkedin.com/jobs/view/junior-software-engineer-at-jobright-ai-4280095745",
+      "agent_recommendation_rank": 7,
+      "agent_recommendation_notes": [
+        "Title match",
+        "Skills match",
+        "Experience match"
+      ]
+    },
+    {
+      "job_title": "Junior Software Engineer (Angular) - CACI International Inc - LinkedIn",
+      "job_description": "Title match, skills match, experience match",
+      "job_url": "https://www.linkedin.com/jobs/view/junior-software-engineer-angular-at-caci-international-inc-4292968085",
+      "agent_recommendation_rank": 6,
+      "agent_recommendation_notes": [
+        "Title match",
+        "Skills match",
+        "Experience match"
+      ]
+    },
+    {
+      "job_title": "ReactJs/NodeJs Full-Stack Developer - LinkedIn",
+      "job_description": "Skills match, experience match, reputable company",
+      "job_url": "https://www.linkedin.com/jobs/view/reactjs-nodejs-full-stack-developer-at-general-dynamics-information-technology-4289156528",
+      "agent_recommendation_rank": 5,
+      "agent_recommendation_notes": [
+        "Skills match",
+        "Experience match",
+        "Reputable company"
+      ]
+    },
+    {
+      "job_title": "Junior Software Development Engineer - Jobright.ai - LinkedIn",
+      "job_description": "Title match, experience match, reputable company",
+      "job_url": "https://www.linkedin.com/jobs/view/junior-software-development-engineer-at-jobright-ai-4285492506",
+      "agent_recommendation_rank": 4,
+      "agent_recommendation_notes": [
+        "Title match",
+        "Experience match",
+        "Reputable company"
+      ]
+    },
+    {
+      "job_title": "Dev.Pro hiring Junior Software Engineer (Angular.js, Node.js ...",
+      "job_description": "Title match, skills match, experience match",
+      "job_url": "https://bg.linkedin.com/jobs/view/junior-software-engineer-angular-js-node-js-op01651-00-at-dev-pro-4173058241",
+      "agent_recommendation_rank": 5,
+      "agent_recommendation_notes": [
+        "Title match",
+        "Skills match",
+        "Experience match"
+      ]
+    },
+    {
+      "job_title": "JavaScript Developer Jobs in Cairo, Egypt - Crossover",
+      "job_description": "Skills match, location match, reputable company",
+      "job_url": "https://www.crossover.com/jobs/javascript-developer/eg/cairo",
+      "agent_recommendation_rank": 6,
+      "agent_recommendation_notes": [
+        "Skills match",
+        "Location match",
+        "Reputable company"
+      ]
+    },
+    {
+      "job_title": "7401 Remote Full Stack JavaScript Nodejs Developer Jobs in Egypt",
+      "job_description": "Skills match, location match, remote job",
+      "job_url": "https://wuzzuf.net/a/Remote-Full-Stack-JavaScript-Nodejs-Developer-Jobs-in-Egypt?start=1",
+      "agent_recommendation_rank": 6,
+      "agent_recommendation_notes": [
+        "Skills match",
+        "Location match",
+        "Remote job"
+      ]
+    },
+    {
+      "job_title": "26 Frontend Developer jobs in Egypt - LinkedIn",
+      "job_description": "Skills match, location match, reputable company",
+      "job_url": "https://www.linkedin.com/jobs/search/?currentJobId=3417204619&distance=25&f_TPR=r604800&geoId=106155005&keywords=frontend%20developer",
+      "agent_recommendation_rank": 4,
+      "agent_recommendation_notes": [
+        "Skills match",
+        "Location match",
+        "Reputable company"
+      ]
+    },
+    {
+      "job_title": "338 javascript Jobs in Heliopolis, June 2025 - Glassdoor",
+      "job_description": "Skills match, location match, recent posting",
+      "job_url": "https://www.glassdoor.com/Job/heliopolis-javascript-jobs-SRCH_IL.0,10_IC3439000_KO11,21.htm",
+      "agent_recommendation_rank": 3,
+      "agent_recommendation_notes": [
+        "Skills match",
+        "Location match",
+        "Recent posting"
+      ]
+    },
+    {
+      "job_title": "Javascript Developer Jobs, Employment in Egypt, MA | Indeed",
+      "job_description": "Skills match, location match, reputable company",
+      "job_url": "https://www.indeed.com/q-javascript-developer-l-egypt,-ma-jobs.html",
+      "agent_recommendation_rank": 3,
+      "agent_recommendation_notes": [
+        "Skills match",
+        "Location match",
+        "Reputable company"
+      ]
+    },
+    {
+      "job_title": "Junior Full Stack Engineer (Node.js & React) VxLabs GmbH",
+      "job_description": "Title match, skills match, experience match",
+      "job_url": "https://www.naukrigulf.com/junior-full-stack-engineer-jobs-in-cairo-egypt-in-vxlabs-gmbh-1-to-2-years-n-cd-40000924-jid-210525501043",
+      "agent_recommendation_rank": 7,
+      "agent_recommendation_notes": [
+        "Title match",
+        "Skills match",
+        "Experience match"
+      ]
+    },
+    {
+      "job_title": "Urgent! Junior node js developer jobs - September 2025 - Jooble",
+      "job_description": "Title match, skills match, urgent hiring",
+      "job_url": "https://eg.jooble.org/jobs-junior-node-js-developer",
+      "agent_recommendation_rank": 5,
+      "agent_recommendation_notes": [
+        "Title match",
+        "Skills match",
+        "Urgent hiring"
+      ]
+    },
+    {
+      "job_title": "4186 Junior Node JS Developer Jobs in Egypt - Cairo - Wuzzuf",
+      "job_description": "Title match, skills match, multiple vacancies",
+      "job_url": "https://wuzzuf.net/a/Junior-Node-JS-Developer-Jobs-in-Egypt",
+      "agent_recommendation_rank": 5,
+      "agent_recommendation_notes": [
+        "Title match",
+        "Skills match",
+        "Multiple vacancies"
+      ]
+    },
+    {
+      "job_title": "Urgent! Node js developer jobs in Egypt - September 2025 - Jooble",
+      "job_description": "Skills match, location match, urgent hiring",
+      "job_url": "https://eg.jooble.org/jobs-node-js-developer/Egypt",
+      "agent_recommendation_rank": 4,
+      "agent_recommendation_notes": [
+        "Skills match",
+        "Location match",
+        "Urgent hiring"
+      ]
+    },
+    {
+      "job_title": "126 node Jobs in Egypt, August 2025 - Glassdoor",
+      "job_description": "Skills match, location match, recent posting",
+      "job_url": "https://www.glassdoor.com/Job/node-jobs-SRCH_IN69_KO0,4.htm",
+      "agent_recommendation_rank": 4,
+      "agent_recommendation_notes": [
+        "Skills match",
+        "Location match",
+        "Recent posting"
+      ]
+    },
+    {
+      "job_title": "Node Js Software Engineer Jobs, Employment | Indeed",
+      "job_description": "Skills match, title match, reputable company",
+      "job_url": "https://www.indeed.com/q-node-js-software-engineer-jobs.html",
+      "agent_recommendation_rank": 4,
+      "agent_recommendation_notes": [
+        "Skills match",
+        "Title match",
+        "Reputable company"
+      ]
+    },
+    {
+      "job_title": "Software Engineer Javascript Jobs, Employment - Indeed",
+      "job_description": "Title match, skills match, reputable company",
+      "job_url": "https://www.indeed.com/m/jobs?q=Software+Engineer+Javascript",
+      "agent_recommendation_rank": 3,
+      "agent_recommendation_notes": [
+        "Title match",
+        "Skills match",
+        "Reputable company"
+      ]
+    },
+    {
+      "job_title": "Node Js Developer Jobs, Employment in Charlotte, NC | Indeed",
+      "job_description": "Skills match, location match, reputable company",
+      "job_url": "https://www.indeed.com/q-node-js-developer-l-charlotte,-nc-jobs.html",
+      "agent_recommendation_rank": 2,
+      "agent_recommendation_notes": [
+        "Skills match",
+        "Location match",
+        "Reputable company"
+      ]
+    },
+    {
+      "job_title": "Node Js Developer Jobs, Employment in San Francisco, CA | Indeed",
+      "job_description": "Skills match, location match, reputable company",
+      "job_url": "https://www.indeed.com/q-node-js-developer-l-san-francisco,-ca-jobs.html",
+      "agent_recommendation_rank": 2,
+      "agent_recommendation_notes": [
+        "Skills match",
+        "Location match",
+        "Reputable company"
+      ]
+    },
+    {
+      "job_title": "Node Js Developer jobs in Houston, Tx - Indeed",
+      "job_description": "Skills match, location match, reputable company",
+      "job_url": "https://www.indeed.com/q-node-js-developer-l-houston,-tx-jobs.html",
+      "agent_recommendation_rank": 2,
+      "agent_recommendation_notes": [
+        "Skills match",
+        "Location match",
+        "Reputable company"
+      ]
+    },
+    {
+      "job_title": "Software Engineer Node.js JavaScript Jobs, Employment in Egypt | Indeed.com",
+      "job_description": "Title match, skills match, location match",
+      "job_url": "https://www.indeed.com/jobs?q=Software+Engineer+Node.js+JavaScript&l=Egypt&fromage=1",
+      "agent_recommendation_rank": 7,
+      "agent_recommendation_notes": [
+        "Title match",
+        "Skills match",
+        "Location match"
+      ]
+    },
+    {
+      "job_title": "Software Engineer jobs in Cairo - Indeed",
+      "job_description": "Title match, location match, reputable company",
+      "job_url": "https://www.indeed.com/jobs?q=Software+Engineer+-Node.js+-JavaScript&l=cairo&radius=25",
+      "agent_recommendation_rank": 5,
+      "agent_recommendation_notes": [
+        "Title match",
+        "Location match",
+        "Reputable company"
+      ]
+    },
+    {
+      "job_title": "Software Engineer Jobs, Employment in Egypt | Indeed.com",
+      "job_description": "Title match, location match, reputable company",
+      "job_url": "https://www.indeed.com/jobs?q=Software+Engineer&l=egypt&radius=25",
+      "agent_recommendation_rank": 4,
+      "agent_recommendation_notes": [
+        "Title match",
+        "Location match",
+        "Reputable company"
+      ]
+    },
+    {
+      "job_title": "Javascript Jobs, Employment in Egypt | Indeed.com",
+      "job_description": "Skills match, location match, reputable company",
+      "job_url": "https://www.indeed.com/jobs?q=javascript&l=egypt&radius=25",
+      "agent_recommendation_rank": 4,
+      "agent_recommendation_notes": [
+        "Skills match",
+        "Location match",
+        "Reputable company"
+      ]
+    },
+    {
+      "job_title": "Node.js Jobs, Employment in Egypt | Indeed.com",
+      "job_description": "Skills match, location match, reputable company",
+      "job_url": "https://www.indeed.com/jobs?q=node.js&l=egypt&radius=25",
+      "agent_recommendation_rank": 4,
+      "agent_recommendation_notes": [
+        "Skills match",
+        "Location match",
+        "Reputable company"
+      ]
+    },
+    {
+      "job_title": "1,000+ Software Developer jobs in Egypt - LinkedIn",
+      "job_description": "Title match, location match, reputable company",
+      "job_url": "https://www.linkedin.com/jobs/search/?currentJobId=3545310127&geoId=106155005&keywords=software%20developer&location=Egypt&refresh=true",
+      "agent_recommendation_rank": 3,
+      "agent_recommendation_notes": [
+        "Title match",
+        "Location match",
+        "Reputable company"
+      ]
+    },
+    {
+      "job_title": "108 junior developer Jobs in Egypt, September 2025 | Glassdoor",
+      "job_description": "Title match, location match, recent posting",
+      "job_url": "https://www.glassdoor.com/Job/egypt-junior-developer-jobs-SRCH_IL.0,5_IN69_KO6,22.htm",
+      "agent_recommendation_rank": 2,
+      "agent_recommendation_notes": [
+        "Title match",
+        "Location match",
+        "Recent posting"
+      ]
+    },
+    {
+      "job_title": "Junior Remote Node.js Jobs In Africa",
+      "job_description": "Title match, skills match, remote job",
+      "job_url": "https://rubyonremote.com/junior-remote-node-js-jobs-in-africa/",
+      "agent_recommendation_rank": 2,
+      "agent_recommendation_notes": [
+        "Title match",
+        "Skills match",
+        "Remote job"
+      ]
+    },
+    {
+      "job_title": "Remote Egypt Node Js Developer Jobs - Work From Home",
+      "job_description": "Skills match, location match, remote job",
+      "job_url": "https://jobgether.com/remote-jobs/egypt-node-js-developer",
+      "agent_recommendation_rank": 2,
+      "agent_recommendation_notes": [
+        "Skills match",
+        "Location match",
+        "Remote job"
+      ]
+    },
+    {
+      "job_title": "121 node Jobs in Egypt, September 2025 - Glassdoor",
+      "job_description": "Skills match, location match, recent posting",
+      "job_url": "https://www.glassdoor.com/Job/egypt-node-jobs-SRCH_IL.0,5_IN69_KO6,10.htm",
+      "agent_recommendation_rank": 2,
+      "agent_recommendation_notes": [
+        "Skills match",
+        "Location match",
+        "Recent posting"
       ]
     }
   ]
