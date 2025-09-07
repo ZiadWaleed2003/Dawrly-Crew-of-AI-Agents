@@ -54,7 +54,7 @@ if results.raw:
 
     if res:
 
-        send_email(to_email="sohilaibrahim555@gmail.com")
+        send_email(to_email="")
 
 else:
 
