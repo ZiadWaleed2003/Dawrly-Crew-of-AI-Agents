@@ -8,7 +8,7 @@ from datetime import datetime
 
 
 class JobSearchCriteria(BaseModel):
-    job_titles: List[str] = Field(..., description="Primary job titles/roles")
+    job_title: List[str] = Field(..., description="Primary job titles/roles")
     preferred_skills: Optional[List[str]] = Field(default=[], description="Nice-to-have skills")
     experience_level: str = Field(..., description="Fresh/Junior/Mid/Senior/Lead")
     min_years_experience: Optional[int] = Field(default=None)

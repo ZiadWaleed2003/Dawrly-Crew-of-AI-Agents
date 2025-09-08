@@ -239,3 +239,5 @@ yarl=1.20.1=pypi_0
 zipp=3.23.0=pypi_0
 zlib=1.2.13=h5eee18b_1
 zstandard=0.23.0=pypi_0
+fastapi 
+uvicorn[standard]
