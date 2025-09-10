@@ -62,6 +62,7 @@ class SearchAgent:
                     "{\"results\": [ ... ]}\n",
                     "5. Do NOT output any additional text, markdown, Thought/Action logs, or make any further tool calls after emitting the JSON.\n",
                     "Use the previous agent search_queries to get the URLs",
+                    "Important : Don't generate URLs like example.com if you failed to get any results!"
                     f"- Consider relevancy within the last 3 months (current date: ", datetime.today().strftime('%Y-%m-%d'), ")."
                 ])
         self.task = Task(

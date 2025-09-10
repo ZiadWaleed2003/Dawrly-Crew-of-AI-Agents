@@ -141,7 +141,8 @@ def search_jobs(user_data: UserJobSearchRequest):
         return JobSearchResponse(
             success=True,
             message="Job search completed successfully",
-            search_id=f"search_{hash(str(user_dict))}" 
+            search_id=f"search_{hash(str(user_dict))}" ,
+            status_code=200
         )
         
     except ValueError as e:

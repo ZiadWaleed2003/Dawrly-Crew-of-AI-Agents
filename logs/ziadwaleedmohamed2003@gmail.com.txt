@@ -1,26 +1,26 @@
-2025-09-07 23:45:17: task_name="None", task="A job seeker is looking for opportunities with the following requirements: {'job_title': 'Junior Software Engineer', 'preferred_skills': ['Nodejs', 'js'], 'years_experience': '0', 'locations': ['Egypt'], 'remote_preference': 'any'}Extract structured job search criteria and generate 8 optimized search queries using a multi-tier strategy.CRITICAL: ALL queries must include job-specific keywords to ensure they return actual job postings, not courses, profiles, or articles.Generate two types of queries:BROAD QUERIES (3-4 total): Simple but job-focused- Must include job indicator words: 'jobs', 'careers', 'hiring', 'vacancy', 'opening', 'position'- Use core job title provided by the user like {user_input['job_title']} + location like user_input['locations'] + job indicator- Example: 'data scientist jobs New York', 'software engineer hiring San Francisco'- NOT like this: 'NLP Cairo' (too vague, will return non-job results)PRECISE QUERIES (4-5 total): Detailed with all requirements- Include specific skills, experience level, and multiple criteria- Use site: operator for platforms mentioned by user- Include phrases like 'years experience', specific technologies, seniority level- Example: 'senior data scientist Python machine learning "5+ years" remote jobs'MANDATORY RULES:1. EVERY query must be job-focused - include words like: jobs, hiring, careers, vacancy, opening, position2. Even broad queries must be clearly about job postings3. Do NOT prefix queries with tier labels or numbers4. Mix query order naturally - don't group all broad or all precise together5. Add recency hints where relevant: 'hiring 2024', 'new opening', etc. (current: 2025-09-07)6. For specific platforms use: site:linkedin.com/jobs or site:indeed.comOUTPUT: Return exactly 8 search query strings, one per line, no labels or categories.", agent="Senior Job Search Query Optimizer specializing in converting natural language job requirements into highly effective search queries and keywords for various job boards.", status="started"
-2025-09-07 23:45:27: task_name="None", task="A job seeker is looking for opportunities with the following requirements: {'job_title': 'Junior Software Engineer', 'preferred_skills': ['Nodejs', 'js'], 'years_experience': '0', 'locations': ['Egypt'], 'remote_preference': 'any'}Extract structured job search criteria and generate 8 optimized search queries using a multi-tier strategy.CRITICAL: ALL queries must include job-specific keywords to ensure they return actual job postings, not courses, profiles, or articles.Generate two types of queries:BROAD QUERIES (3-4 total): Simple but job-focused- Must include job indicator words: 'jobs', 'careers', 'hiring', 'vacancy', 'opening', 'position'- Use core job title provided by the user like {user_input['job_title']} + location like user_input['locations'] + job indicator- Example: 'data scientist jobs New York', 'software engineer hiring San Francisco'- NOT like this: 'NLP Cairo' (too vague, will return non-job results)PRECISE QUERIES (4-5 total): Detailed with all requirements- Include specific skills, experience level, and multiple criteria- Use site: operator for platforms mentioned by user- Include phrases like 'years experience', specific technologies, seniority level- Example: 'senior data scientist Python machine learning "5+ years" remote jobs'MANDATORY RULES:1. EVERY query must be job-focused - include words like: jobs, hiring, careers, vacancy, opening, position2. Even broad queries must be clearly about job postings3. Do NOT prefix queries with tier labels or numbers4. Mix query order naturally - don't group all broad or all precise together5. Add recency hints where relevant: 'hiring 2024', 'new opening', etc. (current: 2025-09-07)6. For specific platforms use: site:linkedin.com/jobs or site:indeed.comOUTPUT: Return exactly 8 search query strings, one per line, no labels or categories.", agent="Senior Job Search Query Optimizer specializing in converting natural language job requirements into highly effective search queries and keywords for various job boards.", status="completed", output="
+2025-09-10 20:37:24: task_name="None", task="A job seeker is looking for opportunities with the following requirements: {'Job_title': 'Machine Learning Engineer', 'job_type': ['Full-Time'], 'preferred_skills': ['python', 'Machine learning'], 'experience_level': 'Fresh', 'min_years_experience': 0, 'locations': ['Egypt'], 'remote_preference': ['any']}Extract structured job search criteria and generate 8 optimized search queries using a multi-tier strategy.CRITICAL: ALL queries must include job-specific keywords to ensure they return actual job postings, not courses, profiles, or articles.Generate two types of queries:BROAD QUERIES (3-4 total): Simple but job-focused- Must include job indicator words: 'jobs', 'careers', 'hiring', 'vacancy', 'opening', 'position'- Use core job title provided by the user like {user_input['job_title']} + location like user_input['locations'] + job indicator- Example: 'data scientist jobs New York', 'software engineer hiring San Francisco'- NOT like this: 'NLP Cairo' (too vague, will return non-job results)PRECISE QUERIES (4-5 total): Detailed with all requirements- Include specific skills, experience level, and multiple criteria- Use site: operator for platforms mentioned by user- Include phrases like 'years experience', specific technologies, seniority level- Example: 'senior data scientist Python machine learning "5+ years" remote jobs'MANDATORY RULES:1. EVERY query must be job-focused - include words like: jobs, hiring, careers, vacancy, opening, position2. Even broad queries must be clearly about job postings3. Do NOT prefix queries with tier labels or numbers4. Mix query order naturally - don't group all broad or all precise together5. Add recency hints where relevant: 'hiring 2024', 'new opening', etc. (current: 2025-09-10)6. For specific platforms use: site:linkedin.com/jobs or site:indeed.comOUTPUT: Return exactly 8 search query strings, one per line, no labels or categories.", agent="Senior Job Search Query Optimizer specializing in converting natural language job requirements into highly effective search queries and keywords for various job boards.", status="started"
+2025-09-10 20:37:44: task_name="None", task="A job seeker is looking for opportunities with the following requirements: {'Job_title': 'Machine Learning Engineer', 'job_type': ['Full-Time'], 'preferred_skills': ['python', 'Machine learning'], 'experience_level': 'Fresh', 'min_years_experience': 0, 'locations': ['Egypt'], 'remote_preference': ['any']}Extract structured job search criteria and generate 8 optimized search queries using a multi-tier strategy.CRITICAL: ALL queries must include job-specific keywords to ensure they return actual job postings, not courses, profiles, or articles.Generate two types of queries:BROAD QUERIES (3-4 total): Simple but job-focused- Must include job indicator words: 'jobs', 'careers', 'hiring', 'vacancy', 'opening', 'position'- Use core job title provided by the user like {user_input['job_title']} + location like user_input['locations'] + job indicator- Example: 'data scientist jobs New York', 'software engineer hiring San Francisco'- NOT like this: 'NLP Cairo' (too vague, will return non-job results)PRECISE QUERIES (4-5 total): Detailed with all requirements- Include specific skills, experience level, and multiple criteria- Use site: operator for platforms mentioned by user- Include phrases like 'years experience', specific technologies, seniority level- Example: 'senior data scientist Python machine learning "5+ years" remote jobs'MANDATORY RULES:1. EVERY query must be job-focused - include words like: jobs, hiring, careers, vacancy, opening, position2. Even broad queries must be clearly about job postings3. Do NOT prefix queries with tier labels or numbers4. Mix query order naturally - don't group all broad or all precise together5. Add recency hints where relevant: 'hiring 2024', 'new opening', etc. (current: 2025-09-10)6. For specific platforms use: site:linkedin.com/jobs or site:indeed.comOUTPUT: Return exactly 8 search query strings, one per line, no labels or categories.", agent="Senior Job Search Query Optimizer specializing in converting natural language job requirements into highly effective search queries and keywords for various job boards.", status="completed", output="
 
 {
-  "job_titles": ["Junior Software Engineer", "Software Engineer"],
-  "preferred_skills": ["Node.js", "JavaScript"],
-  "experience_level": "entry-level",
+  "job_title": ["Machine Learning Engineer"],
+  "preferred_skills": ["python", "Machine learning"],
+  "experience_level": "Fresh",
   "min_years_experience": 0,
   "locations": ["Egypt"],
   "remote_preference": "any",
-  "specified_websites": ["site:linkedin.com/jobs", "site:indeed.com"],
+  "specified_websites": ["linkedin.com/jobs", "indeed.com"],
   "search_queries": [
-    "Junior Software Engineer jobs Egypt careers",
-    "Software Engineer hiring entry level Egypt 2025",
-    "Junior Software Developer vacancy Egypt",
-    "junior software engineer Node.js JavaScript '0 years experience' Egypt site:linkedin.com/jobs",
-    "software engineer entry level Node.js JavaScript remote Egypt new opening site:indeed.com",
-    "hiring junior software engineer Egypt Node.js JavaScript 'entry level' 2025",
-    "Egypt software engineer vacancy Node.js JavaScript remote jobs site:linkedin.com/jobs",
-    "Junior Software Engineer position Node.js entry level Egypt site:indeed.com"
+    "Machine Learning Engineer jobs Egypt",
+    "Careers Machine Learning Engineer Egypt 2025",
+    "Hiring Machine Learning Engineer Python Egypt",
+    "Machine Learning Engineer vacancy Egypt full-time",
+    "site:linkedin.com/jobs Machine Learning Engineer Python \"0 years experience\" Egypt",
+    "Entry-level Machine Learning Engineer jobs Python machine learning Egypt site:indeed.com",
+    "2025 Machine Learning Engineer Python jobs \"no experience\" Egypt",
+    "Full-Time Machine Learning Engineer Python machine learning entry-level jobs site:linkedin.com/jobs"
   ]
 }"
-2025-09-07 23:45:27: task_name="None", task="You have the following context objects available:
+2025-09-10 20:37:44: task_name="None", task="You have the following context objects available:
 - search_queries: List of search query strings to run (with or without site: operator).
 - job_titles, required_skills, locations, remote_preference from the previous task.
 
@@ -41,8 +41,8 @@ Instruction:
 4. After processing *all* queries, output exactly one pure JSON object matching this `{'$defs': {'SingleJobSearchResult': {'properties': {'title': {'title': 'Title', 'type': 'string'}, 'url': {'title': 'the job posting page url', 'type': 'string'}, 'score': {'title': 'Score', 'type': 'number'}, 'search_query': {'title': 'Search Query', 'type': 'string'}, 'platform': {'description': 'LinkedIn/Indeed/Wuzzuf/RemoteOK/Glassdoor/Other', 'title': 'Platform', 'type': 'string'}, 'relevance_notes': {'description': 'Why this result matches the criteria', 'title': 'Relevance Notes', 'type': 'string'}}, 'required': ['title', 'url', 'score', 'search_query', 'platform', 'relevance_notes'], 'title': 'SingleJobSearchResult', 'type': 'object'}}, 'properties': {'results': {'items': {'$ref': '#/$defs/SingleJobSearchResult'}, 'title': 'Results', 'type': 'array'}}, 'required': ['results'], 'title': 'AllJobSearchResults', 'type': 'object'}` schema:
 {"results": [ ... ]}
 5. Do NOT output any additional text, markdown, Thought/Action logs, or make any further tool calls after emitting the JSON.
-Use the previous agent search_queries to get the URLs- Consider relevancy within the last 3 months (current date: 2025-09-07).", agent="Job Search Specialist", status="started"
-2025-09-07 23:46:07: task_name="None", task="You have the following context objects available:
+Use the previous agent search_queries to get the URLsImportant : Don't generate URLs like example.com if you failed to get any results!- Consider relevancy within the last 3 months (current date: 2025-09-10).", agent="Job Search Specialist", status="started"
+2025-09-10 20:42:23: task_name="None", task="You have the following context objects available:
 - search_queries: List of search query strings to run (with or without site: operator).
 - job_titles, required_skills, locations, remote_preference from the previous task.
 
@@ -63,480 +63,221 @@ Instruction:
 4. After processing *all* queries, output exactly one pure JSON object matching this `{'$defs': {'SingleJobSearchResult': {'properties': {'title': {'title': 'Title', 'type': 'string'}, 'url': {'title': 'the job posting page url', 'type': 'string'}, 'score': {'title': 'Score', 'type': 'number'}, 'search_query': {'title': 'Search Query', 'type': 'string'}, 'platform': {'description': 'LinkedIn/Indeed/Wuzzuf/RemoteOK/Glassdoor/Other', 'title': 'Platform', 'type': 'string'}, 'relevance_notes': {'description': 'Why this result matches the criteria', 'title': 'Relevance Notes', 'type': 'string'}}, 'required': ['title', 'url', 'score', 'search_query', 'platform', 'relevance_notes'], 'title': 'SingleJobSearchResult', 'type': 'object'}}, 'properties': {'results': {'items': {'$ref': '#/$defs/SingleJobSearchResult'}, 'title': 'Results', 'type': 'array'}}, 'required': ['results'], 'title': 'AllJobSearchResults', 'type': 'object'}` schema:
 {"results": [ ... ]}
 5. Do NOT output any additional text, markdown, Thought/Action logs, or make any further tool calls after emitting the JSON.
-Use the previous agent search_queries to get the URLs- Consider relevancy within the last 3 months (current date: 2025-09-07).", agent="Job Search Specialist", status="completed", output="Your final answer must be the great and the most complete as possible, it must be outcome described
-
-```
-
-You ONLY have access to the following tools, and should NEVER make up tools that are not listed here:
-
-Tool Name: tavily_search_engine_tool
-Tool Arguments: {'query': {'description': None, 'type': 'str'}}
-Tool Description: Useful for search-based queries. Use this to find current information about any query related pages using a search engine
-
-IMPORTANT: Use the following format in your response:
-
-```
-Thought: you should always think about what to do
-Action: the action to take, only one name of [tavily_search_engine_tool], just the name, exactly as it's written.
-Action Input: the input to the action, just a simple JSON object, enclosed in curly braces, using " to wrap keys and values."
-2025-09-07 23:46:07: task_name="None", task="Analyze the job URLs provided from the previous agent's search results.
-
-For each URL:
-1. First try to scrape the job information using the web_scraping_firecrawl tool.
-2. If the tool failed, just save the URL
-
-For each job listing, extract:
-- Job title
-- Full job description
-- Job URL
-
-Then evaluate each job based on the requirements from the user input: 
-
-Provide:
-- A recommendation rank (out of 5, higher is better)
-- Detailed notes explaining your recommendation
-- EXCLUDE jobs that use completely different technology stacks or domains from what the user specified (e.g., if user wants Node.js full-stack, exclude .NET or Python backend roles; if user wants AI/ML, exclude pure frontend or system admin roles)
-- INCLUDE jobs with similar or related technologies even if not exact matches (e.g., if user wants LangChain, include jobs with LangGraph, LlamaIndex, or similar frameworks; if user wants React, include jobs with Vue or Angular)
-- Focus on the DOMAIN and CORE TECHNOLOGY STACK rather than requiring exact tool matches
-
-make sure that the jobs aren't older the last 3 months (current date: 2025-09-07).
-
- if not then eliminate itCRITICAL: You must return ONLY a valid JSON object that matches this schema {'$defs': {'SingleJobData': {'properties': {'job_title': {'title': 'Job Title', 'type': 'string'}, 'job_description': {'title': 'Job Description', 'type': 'string'}, 'job_url': {'title': 'Job Url', 'type': 'string'}, 'agent_recommendation_rank': {'anyOf': [{'type': 'integer'}, {'type': 'null'}], 'title': 'The rank of the job to be considered in the final procurement report. (out of 5, Higher is Better) in the recommendation list ordering from the best to the worst'}, 'agent_recommendation_notes': {'anyOf': [{'items': {'type': 'string'}, 'type': 'array'}, {'type': 'null'}], 'title': 'A set of notes why would you recommend or not recommend this job for the user, compared to other jobs.'}}, 'required': ['job_title', 'job_description', 'job_url', 'agent_recommendation_rank', 'agent_recommendation_notes'], 'title': 'SingleJobData', 'type': 'object'}}, 'properties': {'jobs': {'items': {'$ref': '#/$defs/SingleJobData'}, 'title': 'Jobs', 'type': 'array'}}, 'required': ['jobs'], 'title': 'AllExtractedData', 'type': 'object'}exact structure:
-Do NOT include any text before or after the JSON. Do NOT use markdown formatting. Do NOT include explanations, thoughts, or any other content. Return ONLY the raw JSON object.Revise your answer again before sending it as the final answer to ensure that it includes only the results following the schema no additional texts or anything else other than the results!", agent="Job Scrutinizer", status="started"
-2025-09-07 23:52:19: task_name="None", task="A job seeker is looking for opportunities with the following requirements: {'job_title': 'Junior Software Engineer', 'preferred_skills': ['Nodejs', 'js'], 'years_experience': '0', 'locations': ['Egypt'], 'remote_preference': 'any'}Extract structured job search criteria and generate 8 optimized search queries using a multi-tier strategy.CRITICAL: ALL queries must include job-specific keywords to ensure they return actual job postings, not courses, profiles, or articles.Generate two types of queries:BROAD QUERIES (3-4 total): Simple but job-focused- Must include job indicator words: 'jobs', 'careers', 'hiring', 'vacancy', 'opening', 'position'- Use core job title provided by the user like {user_input['job_title']} + location like user_input['locations'] + job indicator- Example: 'data scientist jobs New York', 'software engineer hiring San Francisco'- NOT like this: 'NLP Cairo' (too vague, will return non-job results)PRECISE QUERIES (4-5 total): Detailed with all requirements- Include specific skills, experience level, and multiple criteria- Use site: operator for platforms mentioned by user- Include phrases like 'years experience', specific technologies, seniority level- Example: 'senior data scientist Python machine learning "5+ years" remote jobs'MANDATORY RULES:1. EVERY query must be job-focused - include words like: jobs, hiring, careers, vacancy, opening, position2. Even broad queries must be clearly about job postings3. Do NOT prefix queries with tier labels or numbers4. Mix query order naturally - don't group all broad or all precise together5. Add recency hints where relevant: 'hiring 2024', 'new opening', etc. (current: 2025-09-07)6. For specific platforms use: site:linkedin.com/jobs or site:indeed.comOUTPUT: Return exactly 8 search query strings, one per line, no labels or categories.", agent="Senior Job Search Query Optimizer specializing in converting natural language job requirements into highly effective search queries and keywords for various job boards.", status="started"
-2025-09-07 23:52:37: task_name="None", task="A job seeker is looking for opportunities with the following requirements: {'job_title': 'Junior Software Engineer', 'preferred_skills': ['Nodejs', 'js'], 'years_experience': '1', 'locations': ['Egypt'], 'remote_preference': 'any'}Extract structured job search criteria and generate 8 optimized search queries using a multi-tier strategy.CRITICAL: ALL queries must include job-specific keywords to ensure they return actual job postings, not courses, profiles, or articles.Generate two types of queries:BROAD QUERIES (3-4 total): Simple but job-focused- Must include job indicator words: 'jobs', 'careers', 'hiring', 'vacancy', 'opening', 'position'- Use core job title provided by the user like {user_input['job_title']} + location like user_input['locations'] + job indicator- Example: 'data scientist jobs New York', 'software engineer hiring San Francisco'- NOT like this: 'NLP Cairo' (too vague, will return non-job results)PRECISE QUERIES (4-5 total): Detailed with all requirements- Include specific skills, experience level, and multiple criteria- Use site: operator for platforms mentioned by user- Include phrases like 'years experience', specific technologies, seniority level- Example: 'senior data scientist Python machine learning "5+ years" remote jobs'MANDATORY RULES:1. EVERY query must be job-focused - include words like: jobs, hiring, careers, vacancy, opening, position2. Even broad queries must be clearly about job postings3. Do NOT prefix queries with tier labels or numbers4. Mix query order naturally - don't group all broad or all precise together5. Add recency hints where relevant: 'hiring 2024', 'new opening', etc. (current: 2025-09-07)6. For specific platforms use: site:linkedin.com/jobs or site:indeed.comOUTPUT: Return exactly 8 search query strings, one per line, no labels or categories.", agent="Senior Job Search Query Optimizer specializing in converting natural language job requirements into highly effective search queries and keywords for various job boards.", status="started"
-2025-09-07 23:52:44: task_name="None", task="A job seeker is looking for opportunities with the following requirements: {'job_title': 'Junior Software Engineer', 'preferred_skills': ['Nodejs', 'js'], 'years_experience': '1', 'locations': ['Egypt'], 'remote_preference': 'any'}Extract structured job search criteria and generate 8 optimized search queries using a multi-tier strategy.CRITICAL: ALL queries must include job-specific keywords to ensure they return actual job postings, not courses, profiles, or articles.Generate two types of queries:BROAD QUERIES (3-4 total): Simple but job-focused- Must include job indicator words: 'jobs', 'careers', 'hiring', 'vacancy', 'opening', 'position'- Use core job title provided by the user like {user_input['job_title']} + location like user_input['locations'] + job indicator- Example: 'data scientist jobs New York', 'software engineer hiring San Francisco'- NOT like this: 'NLP Cairo' (too vague, will return non-job results)PRECISE QUERIES (4-5 total): Detailed with all requirements- Include specific skills, experience level, and multiple criteria- Use site: operator for platforms mentioned by user- Include phrases like 'years experience', specific technologies, seniority level- Example: 'senior data scientist Python machine learning "5+ years" remote jobs'MANDATORY RULES:1. EVERY query must be job-focused - include words like: jobs, hiring, careers, vacancy, opening, position2. Even broad queries must be clearly about job postings3. Do NOT prefix queries with tier labels or numbers4. Mix query order naturally - don't group all broad or all precise together5. Add recency hints where relevant: 'hiring 2024', 'new opening', etc. (current: 2025-09-07)6. For specific platforms use: site:linkedin.com/jobs or site:indeed.comOUTPUT: Return exactly 8 search query strings, one per line, no labels or categories.", agent="Senior Job Search Query Optimizer specializing in converting natural language job requirements into highly effective search queries and keywords for various job boards.", status="completed", output="
-
-{
-  "job_titles": ["Junior Software Engineer"],
-  "preferred_skills": ["Nodejs", "JavaScript"],
-  "experience_level": "Junior",
-  "min_years_experience": 1,
-  "locations": ["Egypt"],
-  "remote_preference": "any",
-  "specified_websites": ["site:linkedin.com/jobs", "site:indeed.com"],
-  "search_queries": [
-    "Junior Software Engineer jobs Egypt hiring 2025",
-    "Node.js JavaScript jobs in Egypt careers",
-    "Entry-level Software Engineer vacancy Cairo new opening",
-    "'1+ years experience' Junior Software Engineer Node.js site:linkedin.com/jobs",
-    "JavaScript developer position Egypt hiring remote onsite",
-    "Junior Node.js engineer careers Egypt '1 year experience'",
-    "Software Engineer opening Node.js JavaScript site:indeed.com",
-    "Junior developer vacancy Egypt Node.js '1 year' remote hybrid"
-  ]
-}"
-2025-09-07 23:52:44: task_name="None", task="You have the following context objects available:
-- search_queries: List of search query strings to run (with or without site: operator).
-- job_titles, required_skills, locations, remote_preference from the previous task.
-
-Instruction:
-1. For each string in `search_queries`, call the `tavily_search_engine_tool` exactly once to execute it.
-   - Use the search_queries directly from input if available, otherwise use the ones from the previous task.
-2. From the tool output, extract raw results; for each result:
-- Determine `platform` based on URL domain.
-- Visit or use the provided `content` snippet to verify presence of required skills and location.
-- Score each result (0-10) according to:
-    * Title match (3)
-    * Required skills presence (3)
-    * Location/remote alignment (2)
-    * Platform credibility (2)
-- Only include results with `score` >= 0.
-- Populate `relevance_notes` explaining the score.
-3. Collect all valid ```json{'properties': {'title': {'title': 'Title', 'type': 'string'}, 'url': {'title': 'the job posting page url', 'type': 'string'}, 'score': {'title': 'Score', 'type': 'number'}, 'search_query': {'title': 'Search Query', 'type': 'string'}, 'platform': {'description': 'LinkedIn/Indeed/Wuzzuf/RemoteOK/Glassdoor/Other', 'title': 'Platform', 'type': 'string'}, 'relevance_notes': {'description': 'Why this result matches the criteria', 'title': 'Relevance Notes', 'type': 'string'}}, 'required': ['title', 'url', 'score', 'search_query', 'platform', 'relevance_notes'], 'title': 'SingleJobSearchResult', 'type': 'object'} items into a list.
-4. After processing *all* queries, output exactly one pure JSON object matching this `{'$defs': {'SingleJobSearchResult': {'properties': {'title': {'title': 'Title', 'type': 'string'}, 'url': {'title': 'the job posting page url', 'type': 'string'}, 'score': {'title': 'Score', 'type': 'number'}, 'search_query': {'title': 'Search Query', 'type': 'string'}, 'platform': {'description': 'LinkedIn/Indeed/Wuzzuf/RemoteOK/Glassdoor/Other', 'title': 'Platform', 'type': 'string'}, 'relevance_notes': {'description': 'Why this result matches the criteria', 'title': 'Relevance Notes', 'type': 'string'}}, 'required': ['title', 'url', 'score', 'search_query', 'platform', 'relevance_notes'], 'title': 'SingleJobSearchResult', 'type': 'object'}}, 'properties': {'results': {'items': {'$ref': '#/$defs/SingleJobSearchResult'}, 'title': 'Results', 'type': 'array'}}, 'required': ['results'], 'title': 'AllJobSearchResults', 'type': 'object'}` schema:
-{"results": [ ... ]}
-5. Do NOT output any additional text, markdown, Thought/Action logs, or make any further tool calls after emitting the JSON.
-Use the previous agent search_queries to get the URLs- Consider relevancy within the last 3 months (current date: 2025-09-07).", agent="Job Search Specialist", status="started"
-2025-09-07 23:54:08: task_name="None", task="You have the following context objects available:
-- search_queries: List of search query strings to run (with or without site: operator).
-- job_titles, required_skills, locations, remote_preference from the previous task.
-
-Instruction:
-1. For each string in `search_queries`, call the `tavily_search_engine_tool` exactly once to execute it.
-   - Use the search_queries directly from input if available, otherwise use the ones from the previous task.
-2. From the tool output, extract raw results; for each result:
-- Determine `platform` based on URL domain.
-- Visit or use the provided `content` snippet to verify presence of required skills and location.
-- Score each result (0-10) according to:
-    * Title match (3)
-    * Required skills presence (3)
-    * Location/remote alignment (2)
-    * Platform credibility (2)
-- Only include results with `score` >= 0.
-- Populate `relevance_notes` explaining the score.
-3. Collect all valid ```json{'properties': {'title': {'title': 'Title', 'type': 'string'}, 'url': {'title': 'the job posting page url', 'type': 'string'}, 'score': {'title': 'Score', 'type': 'number'}, 'search_query': {'title': 'Search Query', 'type': 'string'}, 'platform': {'description': 'LinkedIn/Indeed/Wuzzuf/RemoteOK/Glassdoor/Other', 'title': 'Platform', 'type': 'string'}, 'relevance_notes': {'description': 'Why this result matches the criteria', 'title': 'Relevance Notes', 'type': 'string'}}, 'required': ['title', 'url', 'score', 'search_query', 'platform', 'relevance_notes'], 'title': 'SingleJobSearchResult', 'type': 'object'} items into a list.
-4. After processing *all* queries, output exactly one pure JSON object matching this `{'$defs': {'SingleJobSearchResult': {'properties': {'title': {'title': 'Title', 'type': 'string'}, 'url': {'title': 'the job posting page url', 'type': 'string'}, 'score': {'title': 'Score', 'type': 'number'}, 'search_query': {'title': 'Search Query', 'type': 'string'}, 'platform': {'description': 'LinkedIn/Indeed/Wuzzuf/RemoteOK/Glassdoor/Other', 'title': 'Platform', 'type': 'string'}, 'relevance_notes': {'description': 'Why this result matches the criteria', 'title': 'Relevance Notes', 'type': 'string'}}, 'required': ['title', 'url', 'score', 'search_query', 'platform', 'relevance_notes'], 'title': 'SingleJobSearchResult', 'type': 'object'}}, 'properties': {'results': {'items': {'$ref': '#/$defs/SingleJobSearchResult'}, 'title': 'Results', 'type': 'array'}}, 'required': ['results'], 'title': 'AllJobSearchResults', 'type': 'object'}` schema:
-{"results": [ ... ]}
-5. Do NOT output any additional text, markdown, Thought/Action logs, or make any further tool calls after emitting the JSON.
-Use the previous agent search_queries to get the URLs- Consider relevancy within the last 3 months (current date: 2025-09-07).", agent="Job Search Specialist", status="completed", output="
-```json
+Use the previous agent search_queries to get the URLsImportant : Don't generate URLs like example.com if you failed to get any results!- Consider relevancy within the last 3 months (current date: 2025-09-10).", agent="Job Search Specialist", status="completed", output="```json
 {
   "results": [
     {
-      "title": "Junior software engineer jobs in Egypt - Jooble",
-      "url": "https://eg.jooble.org/jobs-junior-software-engineer/Egypt",
-      "score": 4.0,
-      "search_query": "Junior Software Engineer jobs Egypt hiring 2025",
-      "platform": "Jooble",
-      "relevance_notes": "Title match (2), Location match (2)"
-    },
-    {
-      "title": "Junior Software Engineer Jobs in Egypt - 370 Vacancies Sep 2025",
-      "url": "https://www.naukrigulf.com/junior-software-engineer-jobs-in-egypt",
-      "score": 5.0,
-      "search_query": "Junior Software Engineer jobs Egypt hiring 2025",
-      "platform": "Naukrigulf",
-      "relevance_notes": "Title match (3), Location match (2)"
-    },
-    {
-      "title": "117 junior software engineer Jobs in Egypt, August 2025 | Glassdoor",
-      "url": "https://www.glassdoor.com/Job/egypt-junior-software-engineer-jobs-SRCH_IL.0,5_IN69_KO6,30.htm",
-      "score": 5.0,
-      "search_query": "Junior Software Engineer jobs Egypt hiring 2025",
-      "platform": "Glassdoor",
-      "relevance_notes": "Title match (3), Location match (2)"
-    },
-    {
-      "title": "Junior Software Developer Jobs in Egypt - 367 Vacancies Sep 2025",
-      "url": "https://www.naukrigulf.com/junior-software-developer-jobs-in-egypt",
-      "score": 4.0,
-      "search_query": "Junior Software Engineer jobs Egypt hiring 2025",
-      "platform": "Naukrigulf",
-      "relevance_notes": "Title match (2), Location match (2)"
-    },
-    {
-      "title": "Junior Software Engineering Jobs in Cairo (Jul 2025) - Bayt.com",
-      "url": "https://www.bayt.com/en/egypt/jobs/junior-software-engineering-jobs-in-cairo/",
-      "score": 4.0,
-      "search_query": "Junior Software Engineer jobs Egypt hiring 2025",
-      "platform": "Bayt.com",
-      "relevance_notes": "Title match (2), Location match (2)"
-    },
-    {
-      "title": "Urgent! Node js developer jobs in Egypt - September 2025 - Jooble",
-      "url": "https://eg.jooble.org/jobs-node-js-developer/Egypt",
-      "score": 6.0,
-      "search_query": "Node.js JavaScript jobs in Egypt careers",
-      "platform": "Jooble",
-      "relevance_notes": "Skills match (3), Location match (2), Platform credibility (1)"
-    },
-    {
-      "title": "87 Node JS Jobs in Egypt – Apply Now! - Wuzzuf",
-      "url": "https://wuzzuf.net/a/Node-JS-Jobs-in-Egypt",
-      "score": 5.0,
-      "search_query": "Node.js JavaScript jobs in Egypt careers",
-      "platform": "Wuzzuf",
-      "relevance_notes": "Skills match (2), Location match (2), Platform credibility (1)"
-    },
-    {
-      "title": "126 node Jobs in Egypt, August 2025 - Glassdoor",
-      "url": "https://www.glassdoor.com/Job/node-jobs-SRCH_IN69_KO0,4.htm",
-      "score": 5.0,
-      "search_query": "Node.js JavaScript jobs in Egypt careers",
-      "platform": "Glassdoor",
-      "relevance_notes": "Skills match (2), Location match (2), Platform credibility (1)"
-    },
-    {
-      "title": "Node Dot Js Jobs in Egypt - 535 Vacancies May 2025 - Naukrigulf",
-      "url": "https://www.naukrigulf.com/node-dot-js-jobs-in-egypt",
-      "score": 5.0,
-      "search_query": "Node.js JavaScript jobs in Egypt careers",
-      "platform": "Naukrigulf",
-      "relevance_notes": "Skills match (2), Location match (2), Platform credibility (1)"
-    },
-    {
-      "title": "121 node Jobs in Egypt, September 2025 - Glassdoor",
-      "url": "https://www.glassdoor.com/Job/egypt-node-jobs-SRCH_IL.0,5_IN69_KO6,10.htm",
-      "score": 5.0,
-      "search_query": "Node.js JavaScript jobs in Egypt careers",
-      "platform": "Glassdoor",
-      "relevance_notes": "Skills match (2), Location match (2), Platform credibility (1)"
-    },
-    {
-      "title": "Software Engineer | New Cairo, Al Qahirah, Egypt - Jobs at Siemens",
-      "url": "https://jobs.siemens.com/careers/job/563156126236008-software-engineer-new-cairo-al-qahirah-egypt?domain=siemens.com&microsite=siemens.com",
-      "score": 4.0,
-      "search_query": "Entry-level Software Engineer vacancy Cairo new opening",
-      "platform": "Other",
-      "relevance_notes": "Title match (2), Location match (2)"
-    },
-    {
-      "title": "2,467 Junior Software Engineer Jobs in Cairo – Apply Now! - Wuzzuf",
-      "url": "https://wuzzuf.net/a/Junior-Software-Engineer-Jobs-in-Cairo",
-      "score": 5.0,
-      "search_query": "Entry-level Software Engineer vacancy Cairo new opening",
-      "platform": "Wuzzuf",
-      "relevance_notes": "Title match (3), Location match (2)"
-    },
-    {
-      "title": "16 Entry level software jobs in Cairo, Egypt - Glassdoor",
-      "url": "https://www.glassdoor.com/Job/cairo-entry-level-software-jobs-SRCH_IL.0,5_IM1175_KO6,26.htm",
-      "score": 4.0,
-      "search_query": "Entry-level Software Engineer vacancy Cairo new opening",
-      "platform": "Glassdoor",
-      "relevance_notes": "Title match (2), Location match (2)"
-    },
-    {
-      "title": "Entry Level Software Engineer Salary in Cairo, Egypt - Levels.fyi",
-      "url": "https://www.levels.fyi/t/software-engineer/levels/entry-level/locations/cairo-egy",
-      "score": 2.0,
-      "search_query": "Entry-level Software Engineer vacancy Cairo new opening",
-      "platform": "Other",
-      "relevance_notes": "Location match (2)"
-    },
-    {
-      "title": "Staff Software Engineer - Backend - Cairo, C, Egypt",
-      "url": "https://careers.procore.com/jobs/07025784-20d1-4385-bfba-6c3c81bcf0b9",
-      "score": 2.0,
-      "search_query": "Entry-level Software Engineer vacancy Cairo new opening",
-      "platform": "Other",
-      "relevance_notes": "Location match (2)"
-    },
-    {
-      "title": "Junior Software Engineer - Jobright.ai - LinkedIn",
-      "url": "https://www.linkedin.com/jobs/view/junior-software-engineer-at-jobright-ai-4280095745",
+      "title": "Glassdoor 74 machine learning engineer Jobs in Egypt, July 2025 | Glassdoor",
+      "url": "https://www.glassdoor.com/Job/egypt-machine-learning-engineer-jobs-SRCH_IL.0,5_IN69_KO6,31.htm",
       "score": 7.0,
-      "search_query": "'1+ years experience' Junior Software Engineer Node.js site:linkedin.com/jobs",
-      "platform": "LinkedIn",
-      "relevance_notes": "Title match (3), Skills match (2), Experience (2)"
-    },
-    {
-      "title": "Junior Software Engineer (Angular) - CACI International Inc - LinkedIn",
-      "url": "https://www.linkedin.com/jobs/view/junior-software-engineer-angular-at-caci-international-inc-4292968085",
-      "score": 6.0,
-      "search_query": "'1+ years experience' Junior Software Engineer Node.js site:linkedin.com/jobs",
-      "platform": "LinkedIn",
-      "relevance_notes": "Title match (3), Skills match (1), Experience (2)"
-    },
-    {
-      "title": "ReactJs/NodeJs Full-Stack Developer - LinkedIn",
-      "url": "https://www.linkedin.com/jobs/view/reactjs-nodejs-full-stack-developer-at-general-dynamics-information-technology-4289156528",
-      "score": 5.0,
-      "search_query": "'1+ years experience' Junior Software Engineer Node.js site:linkedin.com/jobs",
-      "platform": "LinkedIn",
-      "relevance_notes": "Skills match (2), Experience (2), Platform credibility (1)"
-    },
-    {
-      "title": "Junior Software Development Engineer - Jobright.ai - LinkedIn",
-      "url": "https://www.linkedin.com/jobs/view/junior-software-development-engineer-at-jobright-ai-4285492506",
-      "score": 4.0,
-      "search_query": "'1+ years experience' Junior Software Engineer Node.js site:linkedin.com/jobs",
-      "platform": "LinkedIn",
-      "relevance_notes": "Experience (2), Platform credibility (2)"
-    },
-    {
-      "title": "Dev.Pro hiring Junior Software Engineer (Angular.js, Node.js ...",
-      "url": "https://bg.linkedin.com/jobs/view/junior-software-engineer-angular-js-node-js-op01651-00-at-dev-pro-4173058241",
-      "score": 5.0,
-      "search_query": "'1+ years experience' Junior Software Engineer Node.js site:linkedin.com/jobs",
-      "platform": "LinkedIn",
-      "relevance_notes": "Skills match (2), Experience (1), Platform credibility (2)"
-    },
-    {
-      "title": "JavaScript Developer Jobs in Cairo, Egypt - Crossover",
-      "url": "https://www.crossover.com/jobs/javascript-developer/eg/cairo",
-      "score": 6.0,
-      "search_query": "JavaScript developer position Egypt hiring remote onsite",
-      "platform": "Other",
-      "relevance_notes": "Title match (2), Skills match (2), Location match (2)"
-    },
-    {
-      "title": "7401 Remote Full Stack JavaScript Nodejs Developer Jobs in Egypt",
-      "url": "https://wuzzuf.net/a/Remote-Full-Stack-JavaScript-Nodejs-Developer-Jobs-in-Egypt?start=1",
-      "score": 6.0,
-      "search_query": "JavaScript developer position Egypt hiring remote onsite",
-      "platform": "Wuzzuf",
-      "relevance_notes": "Skills match (3), Location match (2), Remote (1)"
-    },
-    {
-      "title": "26 Frontend Developer jobs in Egypt - LinkedIn",
-      "url": "https://www.linkedin.com/jobs/search/?currentJobId=3417204619&distance=25&f_TPR=r604800&geoId=106155005&keywords=frontend%20developer",
-      "score": 4.0,
-      "search_query": "JavaScript developer position Egypt hiring remote onsite",
-      "platform": "LinkedIn",
-      "relevance_notes": "Skills match (1), Location match (2), Platform credibility (1)"
-    },
-    {
-      "title": "338 javascript Jobs in Heliopolis, June 2025 - Glassdoor",
-      "url": "https://www.glassdoor.com/Job/heliopolis-javascript-jobs-SRCH_IL.0,10_IC3439000_KO11,21.htm",
-      "score": 3.0,
-      "search_query": "JavaScript developer position Egypt hiring remote onsite",
+      "search_query": "Careers Machine Learning Engineer Egypt 2025",
       "platform": "Glassdoor",
-      "relevance_notes": "Skills match (1), Location match (2)"
+      "relevance_notes": "Title match (3), Location match (2), Platform credibility (2). Skills not explicitly mentioned but implied."
     },
     {
-      "title": "Javascript Developer Jobs, Employment in Egypt, MA | Indeed",
-      "url": "https://www.indeed.com/q-javascript-developer-l-egypt,-ma-jobs.html",
-      "score": 3.0,
-      "search_query": "JavaScript developer position Egypt hiring remote onsite",
-      "platform": "Indeed",
-      "relevance_notes": "Skills match (1), Location match (2)"
-    },
-    {
-      "title": "Junior Full Stack Engineer (Node.js & React) VxLabs GmbH",
-      "url": "https://www.naukrigulf.com/junior-full-stack-engineer-jobs-in-cairo-egypt-in-vxlabs-gmbh-1-to-2-years-n-cd-40000924-jid-210525501043",
+      "title": "Glassdoor 179 machine learning Jobs in Egypt, July 2025 | Glassdoor",
+      "url": "https://www.glassdoor.com/Job/egypt-machine-learning-jobs-SRCH_IL.0,5_IN69_KO6,22.htm",
       "score": 7.0,
-      "search_query": "Junior Node.js engineer careers Egypt '1 year experience'",
-      "platform": "Naukrigulf",
-      "relevance_notes": "Title match (3), Skills match (2), Location match (2)"
-    },
-    {
-      "title": "Urgent! Junior node js developer jobs - September 2025 - Jooble",
-      "url": "https://eg.jooble.org/jobs-junior-node-js-developer",
-      "score": 5.0,
-      "search_query": "Junior Node.js engineer careers Egypt '1 year experience'",
-      "platform": "Jooble",
-      "relevance_notes": "Title match (2), Skills match (1), Location match (2)"
-    },
-    {
-      "title": "4186 Junior Node JS Developer Jobs in Egypt - Cairo - Wuzzuf",
-      "url": "https://wuzzuf.net/a/Junior-Node-JS-Developer-Jobs-in-Egypt",
-      "score": 5.0,
-      "search_query": "Junior Node.js engineer careers Egypt '1 year experience'",
-      "platform": "Wuzzuf",
-      "relevance_notes": "Title match (2), Skills match (1), Location match (2)"
-    },
-    {
-      "title": "Urgent! Node js developer jobs in Egypt - September 2025 - Jooble",
-      "url": "https://eg.jooble.org/jobs-node-js-developer/Egypt",
-      "score": 4.0,
-      "search_query": "Junior Node.js engineer careers Egypt '1 year experience'",
-      "platform": "Jooble",
-      "relevance_notes": "Skills match (1), Location match (2), Platform credibility (1)"
-    },
-    {
-      "title": "126 node Jobs in Egypt, August 2025 - Glassdoor",
-      "url": "https://www.glassdoor.com/Job/node-jobs-SRCH_IN69_KO0,4.htm",
-      "score": 4.0,
-      "search_query": "Junior Node.js engineer careers Egypt '1 year experience'",
+      "search_query": "Careers Machine Learning Engineer Egypt 2025",
       "platform": "Glassdoor",
-      "relevance_notes": "Skills match (1), Location match (2), Platform credibility (1)"
-    },
-        {
-      "title": "Node Js Software Engineer Jobs, Employment | Indeed",
-      "url": "https://www.indeed.com/q-node-js-software-engineer-jobs.html",
-      "score": 4.0,
-      "search_query": "Software Engineer opening Node.js JavaScript site:indeed.com",
-      "platform": "Indeed",
-      "relevance_notes": "Skills match (1), Title match (1), Platform credibility (2)"
+      "relevance_notes": "Title match (3), Location match (2), Platform credibility (2). Skills not explicitly mentioned but implied."
     },
     {
-      "title": "Software Engineer Javascript Jobs, Employment - Indeed",
-      "url": "https://www.indeed.com/m/jobs?q=Software+Engineer+Javascript",
-      "score": 3.0,
-      "search_query": "Software Engineer opening Node.js JavaScript site:indeed.com",
-      "platform": "Indeed",
-      "relevance_notes": "Skills match (1), Title match (1), Platform credibility (1)"
-    },
-    {
-      "title": "Node Js Developer Jobs, Employment in Charlotte, NC | Indeed",
-      "url": "https://www.indeed.com/q-node-js-developer-l-charlotte,-nc-jobs.html",
-      "score": 2.0,
-      "search_query": "Software Engineer opening Node.js JavaScript site:indeed.com",
-      "platform": "Indeed",
-      "relevance_notes": "Skills match (1), Platform credibility (1)"
-    },
-    {
-      "title": "Node Js Developer Jobs, Employment in San Francisco, CA | Indeed",
-      "url": "https://www.indeed.com/q-node-js-developer-l-san-francisco,-ca-jobs.html",
-      "score": 2.0,
-      "search_query": "Software Engineer opening Node.js JavaScript site:indeed.com",
-      "platform": "Indeed",
-      "relevance_notes": "Skills match (1), Platform credibility (1)"
-    },
-    {
-      "title": "Node Js Developer jobs in Houston, Tx - Indeed",
-      "url": "https://www.indeed.com/q-node-js-developer-l-houston,-tx-jobs.html",
-      "score": 2.0,
-      "search_query": "Software Engineer opening Node.js JavaScript site:indeed.com",
-      "platform": "Indeed",
-      "relevance_notes": "Skills match (1), Platform credibility (1)"
-    },
-    {
-      "title": "Software Engineer Node.js JavaScript Jobs, Employment in Egypt | Indeed.com",
-      "url": "https://www.indeed.com/jobs?q=Software+Engineer+Node.js+JavaScript&l=Egypt&fromage=1",
+      "title": "Machine Learning Engineer Jobs in Egypt - 20 Vacancies Jan 2025",
+      "url": "https://www.naukrigulf.com/machine-learning-engineer-jobs-in-egypt",
       "score": 7.0,
-      "search_query": "Software Engineer opening Node.js JavaScript site:indeed.com",
-      "platform": "Indeed",
-      "relevance_notes": "Title match (2), Skills match (3), Location match (2)"
+      "search_query": "Careers Machine Learning Engineer Egypt 2025",
+      "platform": "Other",
+      "relevance_notes": "Title match (3), Location match (2), Platform credibility (2). Skills not explicitly mentioned but implied."
     },
     {
-      "title": "Software Engineer jobs in Cairo - Indeed",
-      "url": "https://www.indeed.com/jobs?q=Software+Engineer+-Node.js+-JavaScript&l=cairo&radius=25",
-      "score": 5.0,
-      "search_query": "Software Engineer opening Node.js JavaScript site:indeed.com",
-      "platform": "Indeed",
-      "relevance_notes": "Title match (2), Location match (2), Platform credibility (1)"
+      "title": "Machine Learning Engineer Jobs in Egypt (Sep 2025) - GulfTalent",
+      "url": "https://www.gulftalent.com/egypt/jobs/title/machine-learning-engineer",
+      "score": 7.0,
+      "search_query": "Careers Machine Learning Engineer Egypt 2025",
+      "platform": "Other",
+      "relevance_notes": "Title match (3), Location match (2), Platform credibility (2). Skills not explicitly mentioned but implied."
     },
     {
-      "title": "Software Engineer Jobs, Employment in Egypt | Indeed.com",
-      "url": "https://www.indeed.com/jobs?q=Software+Engineer&l=egypt&radius=25",
-      "score": 4.0,
-      "search_query": "Software Engineer opening Node.js JavaScript site:indeed.com",
-      "platform": "Indeed",
-      "relevance_notes": "Title match (2), Location match (2)"
+      "title": "Bayt.com Machine Learning Engineer Jobs in Egypt (Jul 2025) - Bayt.com",
+      "url": "https://www.bayt.com/en/egypt/jobs/machine-learning-engineer-jobs/",
+      "score": 7.0,
+      "search_query": "Careers Machine Learning Engineer Egypt 2025",
+      "platform": "Other",
+      "relevance_notes": "Title match (3), Location match (2), Platform credibility (2). Skills not explicitly mentioned but implied."
     },
     {
-      "title": "Javascript Jobs, Employment in Egypt | Indeed.com",
-      "url": "https://www.indeed.com/jobs?q=javascript&l=egypt&radius=25",
-      "score": 4.0,
-      "search_query": "Software Engineer opening Node.js JavaScript site:indeed.com",
-      "platform": "Indeed",
-      "relevance_notes": "Skills match (2), Location match (2)"
+      "title": "Machine Learning Engineer Jobs in Egypt - 20 Vacancies Jan 2025",
+      "url": "https://www.naukrigulf.com/machine-learning-engineer-jobs-in-egypt",
+      "score": 8.0,
+      "search_query": "Hiring Machine Learning Engineer Python Egypt",
+      "platform": "Other",
+      "relevance_notes": "Title match (3), Location match (2), Skills match (1), Platform credibility (2)."
     },
     {
-      "title": "Node.js Jobs, Employment in Egypt | Indeed.com",
-      "url": "https://www.indeed.com/jobs?q=node.js&l=egypt&radius=25",
-      "score": 4.0,
-      "search_query": "Software Engineer opening Node.js JavaScript site:indeed.com",
-      "platform": "Indeed",
-      "relevance_notes": "Skills match (2), Location match (2)"
+      "title": "Machine Learning Engineer Job Opportunities in Egypt",
+      "url": "https://jobs-egypt.com/general/engineer-egypt-jobs-learning-machine",
+      "score": 8.0,
+      "search_query": "Hiring Machine Learning Engineer Python Egypt",
+      "platform": "Other",
+      "relevance_notes": "Title match (3), Location match (2), Skills match (1), Platform credibility (2)."
     },
     {
-      "title": "1,000+ Software Developer jobs in Egypt - LinkedIn",
-      "url": "https://www.linkedin.com/jobs/search/?currentJobId=3545310127&geoId=106155005&keywords=software%20developer&location=Egypt&refresh=true",
-      "score": 3.0,
-      "search_query": "Junior developer vacancy Egypt Node.js '1 year' remote hybrid",
+      "title": "78 machine learning engineer Jobs in Egypt, September 2025 ...",
+      "url": "https://www.glassdoor.com/Job/egypt-machine-learning-engineer-jobs-SRCH_IL.0,5_IN69_KO6,31.htm",
+      "score": 7.0,
+      "search_query": "Hiring Machine Learning Engineer Python Egypt",
+      "platform": "Glassdoor",
+      "relevance_notes": "Title match (3), Location match (2), Platform credibility (2). Skills not explicitly mentioned but implied."
+    },
+    {
+      "title": "1,077 Machine Learning With Python Jobs in Egypt – Apply Now!",
+      "url": "https://wuzzuf.net/a/Machine-Learning-With-Python-Jobs-in-Egypt",
+      "score": 7.0,
+      "search_query": "Hiring Machine Learning Engineer Python Egypt",
+      "platform": "Wuzzuf",
+      "relevance_notes": "Title match (3), Location match (2), Skills match (0), Platform credibility (2)."
+    },
+    {
+      "title": "Machine Learning Engineer jobs in Egypt, Ma",
+      "url": "https://www.indeed.com/q-machine-learning-engineer-l-egypt,-ma-jobs.html",
+      "score": 6.0,
+      "search_query": "Hiring Machine Learning Engineer Python Egypt",
+      "platform": "Indeed",
+      "relevance_notes": "Title match (3), Location match (1), Platform credibility (2)."
+    },
+    {
+      "title": "Machine Learning Engineer - Giza, Al Jizah, Egypt",
+      "url": "https://www.linkedin.com/jobs/view/machine-learning-engineer-at-2p-perfect-presentation-4274230321?_l=en",
+      "score": 8.0,
+      "search_query": "Machine Learning Engineer vacancy Egypt full-time",
       "platform": "LinkedIn",
-      "relevance_notes": "Location match (2), Platform credibility (1)"
+      "relevance_notes": "Title match (3), Location match (2), Platform credibility (2), Full time (1)."
     },
     {
-      "title": "108 junior developer Jobs in Egypt, September 2025 | Glassdoor",
-      "url": "https://www.glassdoor.com/Job/egypt-junior-developer-jobs-SRCH_IL.0,5_IN69_KO6,22.htm",
-      "score": 2.0,
-      "search_query": "Junior developer vacancy Egypt Node.js '1 year' remote hybrid",
-      "platform": "Glassdoor",
-      "relevance_notes": "Location match (2)"
-    },
-    {
-      "title": "Junior Remote Node.js Jobs In Africa",
-      "url": "https://rubyonremote.com/junior-remote-node-js-jobs-in-africa/",
-      "score": 2.0,
-      "search_query": "Junior developer vacancy Egypt Node.js '1 year' remote hybrid",
+      "title": "AI/ML Engineer - Grand Technology",
+      "url": "https://jobs.qureos.com/jobs/6005345-ai-ml-engineer-grand-technology",
+      "score": 7.0,
+      "search_query": "Machine Learning Engineer vacancy Egypt full-time",
       "platform": "Other",
-      "relevance_notes": "Skills match (1), Title match (1)"
+      "relevance_notes": "Title match (3), Location match (2), Platform credibility (2)."
     },
     {
-      "title": "Remote Egypt Node Js Developer Jobs - Work From Home",
-      "url": "https://jobgether.com/remote-jobs/egypt-node-js-developer",
-      "score": 2.0,
-      "search_query": "Junior developer vacancy Egypt Node.js '1 year' remote hybrid",
-      "platform": "Other",
-      "relevance_notes": "Skills match (1), Location match (1)"
+      "title": "3246 Machine Learning Engineer Jobs in Egypt - Cairo",
+      "url": "https://wuzzuf.net/a/Machine-Learning-Engineer-Jobs-in-Egypt",
+      "score": 6.0,
+      "search_query": "Machine Learning Engineer vacancy Egypt full-time",
+      "platform": "Wuzzuf",
+      "relevance_notes": "Title match (3), Location match (1), Platform credibility (2)."
     },
     {
-      "title": "121 node Jobs in Egypt, September 2025 - Glassdoor",
-      "url": "https://www.glassdoor.com/Job/egypt-node-jobs-SRCH_IL.0,5_IN69_KO6,10.htm",
-      "score": 2.0,
-      "search_query": "Junior developer vacancy Egypt Node.js '1 year' remote hybrid",
+      "title": "78 Machine learning engineer jobs in Egypt",
+      "url": "https://www.glassdoor.com/Job/egypt-machine-learning-engineer-jobs-SRCH_IL.0,5_IN69_KO6,31.htm",
+      "score": 6.0,
+      "search_query": "Machine Learning Engineer vacancy Egypt full-time",
       "platform": "Glassdoor",
-      "relevance_notes": "Location match (2)"
-    }
-  ]
-}
-```"
-2025-09-07 23:54:08: task_name="None", task="Analyze the job URLs provided from the previous agent's search results.
+      "relevance_notes": "Title match (3), Location match (1), Platform credibility (2)."
+    },
+    {
+      "title": "Machine Learning Engineer jobs in Egypt, Ma",
+      "url": "https://www.indeed.com/q-machine-learning-engineer-l-egypt,-ma-jobs.html",
+      "score": 6.0,
+      "search_query": "Machine Learning Engineer vacancy Egypt full-time",
+      "platform": "Indeed",
+      "relevance_notes": "Title match (3), Location match (1), Platform credibility (2)."
+    },
+    {
+      "title": "LinkedIn 501 من وظائف Machine Learning Engineer في مصر",
+      "url": "https://eg.linkedin.com/jobs/machine-learning-engineer-jobs?countryRedirected=1",
+      "score": 5.0,
+      "search_query": "site:linkedin.com/jobs Machine Learning Engineer Python \"0 years experience\" Egypt",
+      "platform": "LinkedIn",
+      "relevance_notes": "Title match (3), Location match (0), Platform credibility (2)."
+    },
+    {
+      "title": "LinkedIn 510 Machine Learning Engineer jobs in Egypt (40 new)",
+      "url": "https://www.linkedin.com/jobs/machine-learning-engineer-jobs/?currentJobId=3392347003&originalSubdomain=eg",
+      "score": 5.0,
+      "search_query": "site:linkedin.com/jobs Machine Learning Engineer Python \"0 years experience\" Egypt",
+      "platform": "LinkedIn",
+      "relevance_notes": "Title match (3), Location match (0), Platform credibility (2)."
+    },
+    {
+      "title": "LinkedIn وظائف ٤٨٨ Machine Learning في Egypt (١٢ جديد)",
+      "url": "https://eg.linkedin.com/jobs/machine-learning-jobs?countryRedirected=1",
+      "score": 5.0,
+      "search_query": "site:linkedin.com/jobs Machine Learning Engineer Python \"0 years experience\" Egypt",
+      "platform": "LinkedIn",
+      "relevance_notes": "Title match (3), Location match (0), Platform credibility (2)."
+    },
+    {
+      "title": "LinkedIn ASAP Systems Egypt hiring Senior Machine Learning Engineer ...",
+      "url": "https://www.linkedin.com/jobs/view/3960627045/",
+      "score": 5.0,
+      "search_query": "site:linkedin.com/jobs Machine Learning Engineer Python \"0 years experience\" Egypt",
+      "platform": "LinkedIn",
+      "relevance_notes": "Title match (3), Location match (0), Platform credibility (2)."
+    },
+    {
+      "title": "LinkedIn Machine Learning Engineer (FinTech) - Cairo, Egypt",
+      "url": "https://www.linkedin.com/jobs/view/4139323549/",
+      "score": 7.0,
+      "search_query": "site:linkedin.com/jobs Machine Learning Engineer Python \"0 years experience\" Egypt",
+      "platform": "LinkedIn",
+      "relevance_notes": "Title match (3), Location match (2), Platform credibility (2)."
+    },
+    {
+      "title": "Entry Level Python Machine Learning No Experience Jobs ...",
+      "url": "https://www.indeed.com/q-entry-level-python-machine-learning-no-experience-jobs.html",
+      "score": 7.0,
+      "search_query": "Entry-level Machine Learning Engineer jobs Python machine learning Egypt site:indeed.com",
+      "platform": "Indeed",
+      "relevance_notes": "Title match (3), Location match (2), Skills match (0), Platform credibility (2)."
+    },
+    {
+      "title": "entry level python developer jobs in egypt, ma",
+      "url": "https://www.indeed.com/q-entry-level-python-developer-l-egypt,-ma-jobs.html",
+      "score": 6.0,
+      "search_query": "Entry-level Machine Learning Engineer jobs Python machine learning Egypt site:indeed.com",
+      "platform": "Indeed",
+      "relevance_notes": "Title match (3), Location match (1), Skills match (0), Platform credibility (2)."
+    },
+    {
+      "title": "Entry Level Machine Learning Jobs, Employment",
+      "url": "https://www.indeed.com/q-entry-level-machine-learning-jobs.html",
+      "score": 6.0,
+      "search_query": "Entry-level Machine Learning Engineer jobs Python machine learning Egypt site:indeed.com",
+      "platform": "Indeed",
+      "relevance_notes": "Title match (3), Location match (1), Skills match (0), Platform credibility (2)."
+    },
+    {
+      "title": "Machine Learning Engineer Jobs, Employment",
+      "url": "https://www.indeed.com/q-machine-learning-engineer-jobs.html",
+      "score": 5.0,
+      "search_query": "Entry-level Machine Learning Engineer jobs Python machine learning Egypt site:indeed.com",
+      "platform": "Indeed",
+      "relevance_notes": "Title match (3), Location match (0), Skills match (0), Platform credibility (2)."
+    },
+    {
+      "title": "Junior Machine Learning Engineer Jobs, Employment",
+      "url": "https://www.indeed.com/q-junior-machine-learning-engineer-jobs.html",
+      "score": 5.0,
+      "search_query": "Entry-level Machine Learning Engineer jobs Python machine learning Egypt site:indeed.com",
+      "platform": "Indeed",
+      "relevance_notes": "Title match (3), Location match (0), Skills match (0), Platform credibility (2)."
+    },
+    {
+      "title": "LyRise hiring Senior Machine Learning Engineer (NLP) in Egypt ...",
+      "url": "https://www.linkedin.com/jobs/view/3173014312/?refId=Ung+V6/oTSmaGEWZfW31jw==",
+      "score": 8.0,
+      "search_query": "2025 Machine Learning Engineer Python jobs \"no experience\" Egypt",
+      "platform": "LinkedIn",
+      "relevance_notes": "Title match (3), Location match (2), Skills match (1), Platform credibility (2)."
+    },
+    {
+      "title": "Urgent! Python developer no experience jobs - August 2025 ...",
+      "url": "https://eg.jooble"
+2025-09-10 20:42:23: task_name="None", task="Analyze the job URLs provided from the previous agent's search results.
 
 For each URL:
 1. First try to scrape the job information using the web_scraping_firecrawl tool.
@@ -556,11 +297,11 @@ Provide:
 - INCLUDE jobs with similar or related technologies even if not exact matches (e.g., if user wants LangChain, include jobs with LangGraph, LlamaIndex, or similar frameworks; if user wants React, include jobs with Vue or Angular)
 - Focus on the DOMAIN and CORE TECHNOLOGY STACK rather than requiring exact tool matches
 
-make sure that the jobs aren't older the last 3 months (current date: 2025-09-07).
+make sure that the jobs aren't older the last 3 months (current date: 2025-09-10).
 
- if not then eliminate itCRITICAL: You must return ONLY a valid JSON object that matches this schema {'$defs': {'SingleJobData': {'properties': {'job_title': {'title': 'Job Title', 'type': 'string'}, 'job_description': {'title': 'Job Description', 'type': 'string'}, 'job_url': {'title': 'Job Url', 'type': 'string'}, 'agent_recommendation_rank': {'anyOf': [{'type': 'integer'}, {'type': 'null'}], 'title': 'The rank of the job to be considered in the final procurement report. (out of 5, Higher is Better) in the recommendation list ordering from the best to the worst'}, 'agent_recommendation_notes': {'anyOf': [{'items': {'type': 'string'}, 'type': 'array'}, {'type': 'null'}], 'title': 'A set of notes why would you recommend or not recommend this job for the user, compared to other jobs.'}}, 'required': ['job_title', 'job_description', 'job_url', 'agent_recommendation_rank', 'agent_recommendation_notes'], 'title': 'SingleJobData', 'type': 'object'}}, 'properties': {'jobs': {'items': {'$ref': '#/$defs/SingleJobData'}, 'title': 'Jobs', 'type': 'array'}}, 'required': ['jobs'], 'title': 'AllExtractedData', 'type': 'object'}exact structure:
+ if not then eliminate itCRITICAL: You must return ONLY a valid JSON object that matches this schema {'$defs': {'SingleJobData': {'properties': {'job_title': {'title': 'Job Title', 'type': 'string'}, 'job_description': {'title': 'Job Description', 'type': 'string'}, 'job_url': {'title': 'Job Url', 'type': 'string'}, 'agent_recommendation_rank': {'anyOf': [{'type': 'integer'}, {'type': 'null'}], 'title': 'The rank of the job to be considered in the final procurement report. (out of 5, Higher is Better) in the recommendation list ordering from the best to the worst'}, 'agent_recommendation_notes': {'anyOf': [{'items': {'type': 'string'}, 'type': 'array'}, {'type': 'null'}], 'description': 'A set of notes why the agent would recommend or not recommend this job for the user, compared to other jobs.', 'title': 'Agent Recommendation Notes'}}, 'required': ['job_title', 'job_description', 'job_url', 'agent_recommendation_rank', 'agent_recommendation_notes'], 'title': 'SingleJobData', 'type': 'object'}}, 'properties': {'jobs': {'items': {'$ref': '#/$defs/SingleJobData'}, 'title': 'Jobs', 'type': 'array'}}, 'required': ['jobs'], 'title': 'AllExtractedData', 'type': 'object'}exact structure:
 Do NOT include any text before or after the JSON. Do NOT use markdown formatting. Do NOT include explanations, thoughts, or any other content. Return ONLY the raw JSON object.Revise your answer again before sending it as the final answer to ensure that it includes only the results following the schema no additional texts or anything else other than the results!", agent="Job Scrutinizer", status="started"
-2025-09-07 23:55:25: task_name="None", task="Analyze the job URLs provided from the previous agent's search results.
+2025-09-10 20:50:24: task_name="None", task="Analyze the job URLs provided from the previous agent's search results.
 
 For each URL:
 1. First try to scrape the job information using the web_scraping_firecrawl tool.
@@ -580,11 +321,11 @@ Provide:
 - INCLUDE jobs with similar or related technologies even if not exact matches (e.g., if user wants LangChain, include jobs with LangGraph, LlamaIndex, or similar frameworks; if user wants React, include jobs with Vue or Angular)
 - Focus on the DOMAIN and CORE TECHNOLOGY STACK rather than requiring exact tool matches
 
-make sure that the jobs aren't older the last 3 months (current date: 2025-09-07).
+make sure that the jobs aren't older the last 3 months (current date: 2025-09-10).
 
- if not then eliminate itCRITICAL: You must return ONLY a valid JSON object that matches this schema {'$defs': {'SingleJobData': {'properties': {'job_title': {'title': 'Job Title', 'type': 'string'}, 'job_description': {'title': 'Job Description', 'type': 'string'}, 'job_url': {'title': 'Job Url', 'type': 'string'}, 'agent_recommendation_rank': {'anyOf': [{'type': 'integer'}, {'type': 'null'}], 'title': 'The rank of the job to be considered in the final procurement report. (out of 5, Higher is Better) in the recommendation list ordering from the best to the worst'}, 'agent_recommendation_notes': {'anyOf': [{'items': {'type': 'string'}, 'type': 'array'}, {'type': 'null'}], 'title': 'A set of notes why would you recommend or not recommend this job for the user, compared to other jobs.'}}, 'required': ['job_title', 'job_description', 'job_url', 'agent_recommendation_rank', 'agent_recommendation_notes'], 'title': 'SingleJobData', 'type': 'object'}}, 'properties': {'jobs': {'items': {'$ref': '#/$defs/SingleJobData'}, 'title': 'Jobs', 'type': 'array'}}, 'required': ['jobs'], 'title': 'AllExtractedData', 'type': 'object'}exact structure:
-Do NOT include any text before or after the JSON. Do NOT use markdown formatting. Do NOT include explanations, thoughts, or any other content. Return ONLY the raw JSON object.Revise your answer again before sending it as the final answer to ensure that it includes only the results following the schema no additional texts or anything else other than the results!", agent="Job Scrutinizer", status="completed", output="{"jobs": [{"job_title": "Junior Software Developer C++", "job_description": "...client since 2018 in ensuring that the **Software** Components, System Functions, adaptive AUTOSAR...\xa0\xa0...with software architects and senior **engineers,** with the ability to contribute towards...\xa0\xa0...Seniority\n**Junior**... \n\nRemote job", "job_url": "https://eg.jooble.org/desc/4847721535920569036?ckey=junior+software+engineer&rgn=0&pos=1&elckey=-4840437577612283825&pageType=20&p=1&sid=5971648687301549408&jobAge=72&relb=100&brelb=100&bscr=5084.412&scr=5084.412&iid=502303802159241121", "agent_recommendation_rank": 5, "agent_recommendation_notes": ["This is a Junior Software Developer role with C++ focus.", "The description mentions working with software architects and senior engineers, which is good for learning.", "It's a remote job, which offers flexibility.", "The company has been a client since 2018, suggesting stability."]}]}"
-2025-09-07 23:55:25: task_name="None", task="Evaluate and fix the job scrutinizer agent's response from the previous task.
+ if not then eliminate itCRITICAL: You must return ONLY a valid JSON object that matches this schema {'$defs': {'SingleJobData': {'properties': {'job_title': {'title': 'Job Title', 'type': 'string'}, 'job_description': {'title': 'Job Description', 'type': 'string'}, 'job_url': {'title': 'Job Url', 'type': 'string'}, 'agent_recommendation_rank': {'anyOf': [{'type': 'integer'}, {'type': 'null'}], 'title': 'The rank of the job to be considered in the final procurement report. (out of 5, Higher is Better) in the recommendation list ordering from the best to the worst'}, 'agent_recommendation_notes': {'anyOf': [{'items': {'type': 'string'}, 'type': 'array'}, {'type': 'null'}], 'description': 'A set of notes why the agent would recommend or not recommend this job for the user, compared to other jobs.', 'title': 'Agent Recommendation Notes'}}, 'required': ['job_title', 'job_description', 'job_url', 'agent_recommendation_rank', 'agent_recommendation_notes'], 'title': 'SingleJobData', 'type': 'object'}}, 'properties': {'jobs': {'items': {'$ref': '#/$defs/SingleJobData'}, 'title': 'Jobs', 'type': 'array'}}, 'required': ['jobs'], 'title': 'AllExtractedData', 'type': 'object'}exact structure:
+Do NOT include any text before or after the JSON. Do NOT use markdown formatting. Do NOT include explanations, thoughts, or any other content. Return ONLY the raw JSON object.Revise your answer again before sending it as the final answer to ensure that it includes only the results following the schema no additional texts or anything else other than the results!", agent="Job Scrutinizer", status="completed", output="{"jobs": [{"job_title": "Machine Learning Engineer", "job_description": "No description available", "job_url": "https://www.linkedin.com/jobs/view/machine-learning-engineer-at-2p-perfect-presentation-4274230321?_l=en", "agent_recommendation_rank": 5, "agent_recommendation_notes": ["Title match", "Location match", "Platform credibility"]}, {"job_title": "AI/ML Engineer", "job_description": "No description available", "job_url": "https://jobs.qureos.com/jobs/6005345-ai-ml-engineer-grand-technology", "agent_recommendation_rank": 4, "agent_recommendation_notes": ["Title match", "Location match", "Platform credibility"]}, {"job_title": "Senior Machine Learning Engineer (NLP)", "job_description": "No description available", "job_url": "https://www.linkedin.com/jobs/view/3173014312/?refId=Ung+V6/oTSmaGEWZfW31jw==", "agent_recommendation_rank": 5, "agent_recommendation_notes": ["Title match", "Location match", "Skills match", "Platform credibility"]}, {"job_title": "Machine Learning Engineer (FinTech)", "job_description": "No description available", "job_url": "https://www.linkedin.com/jobs/view/4139323549/", "agent_recommendation_rank": 5, "agent_recommendation_notes": ["Title match", "Location match", "Platform credibility"]}, {"job_title": "Entry Level Python Machine Learning No Experience", "job_description": "No description available", "job_url": "https://www.indeed.com/q-entry-level-python-machine-learning-no-experience-jobs.html", "agent_recommendation_rank": 4, "agent_recommendation_notes": ["Title match", "Location match", "Platform credibility"]}, {"job_title": "Junior Machine Learning Engineer", "job_description": "No description available", "job_url": "https://www.indeed.com/q-junior-machine-learning-engineer-jobs.html", "agent_recommendation_rank": 4, "agent_recommendation_notes": ["Title match", "Location match", "Platform credibility"]}, {"job_title": "Machine Learning Engineer", "job_description": "No description available", "job_url": "https://www.glassdoor.com/Job/egypt-machine-learning-engineer-jobs-SRCH_IL.0,5_IN69_KO6,31.htm", "agent_recommendation_rank": 4, "agent_recommendation_notes": ["Title match", "Location match", "Platform credibility"]}, {"job_title": "Machine Learning Engineer", "job_description": "No description available", "job_url": "https://www.naukrigulf.com/machine-learning-engineer-jobs-in-egypt", "agent_recommendation_rank": 4, "agent_recommendation_notes": ["Title match", "Location match", "Platform credibility"]}, {"job_title": "Machine Learning Engineer", "job_description": "No description available", "job_url": "https://www.gulftalent.com/egypt/jobs/title/machine-learning-engineer", "agent_recommendation_rank": 4, "agent_recommendation_notes": ["Title match", "Location match", "Platform credibility"]}, {"job_title": "Machine Learning Engineer", "job_description": "No description available", "job_url": "https://www.bayt.com/en/egypt/jobs/machine-learning-engineer-jobs/", "agent_recommendation_rank": 4, "agent_recommendation_notes": ["Title match", "Location match", "Platform credibility"]}]}""
+2025-09-10 20:50:24: task_name="None", task="Evaluate and fix the job scrutinizer agent's response from the previous task.
 
 Your task is to:
 1. Analyze the job scrutinizer's output from the previous task
@@ -598,7 +339,7 @@ Your task is to:
 4. If the response is VALID:
    - Simply pass through the valid JSON unchanged
 
-Required schema structure: {'$defs': {'SingleJobData': {'properties': {'job_title': {'title': 'Job Title', 'type': 'string'}, 'job_description': {'title': 'Job Description', 'type': 'string'}, 'job_url': {'title': 'Job Url', 'type': 'string'}, 'agent_recommendation_rank': {'anyOf': [{'type': 'integer'}, {'type': 'null'}], 'title': 'The rank of the job to be considered in the final procurement report. (out of 5, Higher is Better) in the recommendation list ordering from the best to the worst'}, 'agent_recommendation_notes': {'anyOf': [{'items': {'type': 'string'}, 'type': 'array'}, {'type': 'null'}], 'title': 'A set of notes why would you recommend or not recommend this job for the user, compared to other jobs.'}}, 'required': ['job_title', 'job_description', 'job_url', 'agent_recommendation_rank', 'agent_recommendation_notes'], 'title': 'SingleJobData', 'type': 'object'}}, 'properties': {'jobs': {'items': {'$ref': '#/$defs/SingleJobData'}, 'title': 'Jobs', 'type': 'array'}}, 'required': ['jobs'], 'title': 'AllExtractedData', 'type': 'object'}
+Required schema structure: {'$defs': {'SingleJobData': {'properties': {'job_title': {'title': 'Job Title', 'type': 'string'}, 'job_description': {'title': 'Job Description', 'type': 'string'}, 'job_url': {'title': 'Job Url', 'type': 'string'}, 'agent_recommendation_rank': {'anyOf': [{'type': 'integer'}, {'type': 'null'}], 'title': 'The rank of the job to be considered in the final procurement report. (out of 5, Higher is Better) in the recommendation list ordering from the best to the worst'}, 'agent_recommendation_notes': {'anyOf': [{'items': {'type': 'string'}, 'type': 'array'}, {'type': 'null'}], 'description': 'A set of notes why the agent would recommend or not recommend this job for the user, compared to other jobs.', 'title': 'Agent Recommendation Notes'}}, 'required': ['job_title', 'job_description', 'job_url', 'agent_recommendation_rank', 'agent_recommendation_notes'], 'title': 'SingleJobData', 'type': 'object'}}, 'properties': {'jobs': {'items': {'$ref': '#/$defs/SingleJobData'}, 'title': 'Jobs', 'type': 'array'}}, 'required': ['jobs'], 'title': 'AllExtractedData', 'type': 'object'}
 
 CRITICAL: You must ALWAYS return a valid JSON object that matches the AllExtractedData schema.
 Do NOT include any text before or after the JSON. Do NOT use markdown formatting.
@@ -608,7 +349,7 @@ Return ONLY the corrected/validated JSON object that can be parsed directly.
 If the original response was valid, return it as-is.
 If it was invalid, fix it and return the corrected version.
 Your output will be used directly by the next agent, so it must be perfect JSON.", agent="Response Evaluator and Fixer", status="started"
-2025-09-07 23:55:28: task_name="None", task="Evaluate and fix the job scrutinizer agent's response from the previous task.
+2025-09-10 20:50:26: task_name="None", task="Evaluate and fix the job scrutinizer agent's response from the previous task.
 
 Your task is to:
 1. Analyze the job scrutinizer's output from the previous task
@@ -622,7 +363,7 @@ Your task is to:
 4. If the response is VALID:
    - Simply pass through the valid JSON unchanged
 
-Required schema structure: {'$defs': {'SingleJobData': {'properties': {'job_title': {'title': 'Job Title', 'type': 'string'}, 'job_description': {'title': 'Job Description', 'type': 'string'}, 'job_url': {'title': 'Job Url', 'type': 'string'}, 'agent_recommendation_rank': {'anyOf': [{'type': 'integer'}, {'type': 'null'}], 'title': 'The rank of the job to be considered in the final procurement report. (out of 5, Higher is Better) in the recommendation list ordering from the best to the worst'}, 'agent_recommendation_notes': {'anyOf': [{'items': {'type': 'string'}, 'type': 'array'}, {'type': 'null'}], 'title': 'A set of notes why would you recommend or not recommend this job for the user, compared to other jobs.'}}, 'required': ['job_title', 'job_description', 'job_url', 'agent_recommendation_rank', 'agent_recommendation_notes'], 'title': 'SingleJobData', 'type': 'object'}}, 'properties': {'jobs': {'items': {'$ref': '#/$defs/SingleJobData'}, 'title': 'Jobs', 'type': 'array'}}, 'required': ['jobs'], 'title': 'AllExtractedData', 'type': 'object'}
+Required schema structure: {'$defs': {'SingleJobData': {'properties': {'job_title': {'title': 'Job Title', 'type': 'string'}, 'job_description': {'title': 'Job Description', 'type': 'string'}, 'job_url': {'title': 'Job Url', 'type': 'string'}, 'agent_recommendation_rank': {'anyOf': [{'type': 'integer'}, {'type': 'null'}], 'title': 'The rank of the job to be considered in the final procurement report. (out of 5, Higher is Better) in the recommendation list ordering from the best to the worst'}, 'agent_recommendation_notes': {'anyOf': [{'items': {'type': 'string'}, 'type': 'array'}, {'type': 'null'}], 'description': 'A set of notes why the agent would recommend or not recommend this job for the user, compared to other jobs.', 'title': 'Agent Recommendation Notes'}}, 'required': ['job_title', 'job_description', 'job_url', 'agent_recommendation_rank', 'agent_recommendation_notes'], 'title': 'SingleJobData', 'type': 'object'}}, 'properties': {'jobs': {'items': {'$ref': '#/$defs/SingleJobData'}, 'title': 'Jobs', 'type': 'array'}}, 'required': ['jobs'], 'title': 'AllExtractedData', 'type': 'object'}
 
 CRITICAL: You must ALWAYS return a valid JSON object that matches the AllExtractedData schema.
 Do NOT include any text before or after the JSON. Do NOT use markdown formatting.
@@ -634,319 +375,115 @@ If it was invalid, fix it and return the corrected version.
 Your output will be used directly by the next agent, so it must be perfect JSON.", agent="Response Evaluator and Fixer", status="completed", output="{
   "jobs": [
     {
-      "job_title": "Junior software engineer jobs in Egypt - Jooble",
-      "job_description": "Job title match, location match",
-      "job_url": "https://eg.jooble.org/jobs-junior-software-engineer/Egypt",
-      "agent_recommendation_rank": 4,
-      "agent_recommendation_notes": ["Title match", "Location match"]
-    },
-    {
-      "job_title": "Junior Software Engineer Jobs in Egypt - 370 Vacancies Sep 2025",
-      "job_description": "Title match, location match, multiple vacancies",
-      "job_url": "https://www.naukrigulf.com/junior-software-engineer-jobs-in-egypt",
+      "job_title": "Machine Learning Engineer",
+      "job_description": "No description available",
+      "job_url": "https://www.linkedin.com/jobs/view/machine-learning-engineer-at-2p-perfect-presentation-4274230321?_l=en",
       "agent_recommendation_rank": 5,
-      "agent_recommendation_notes": ["Title match", "Location match", "Multiple vacancies"]
+      "agent_recommendation_notes": [
+        "Title match",
+        "Location match",
+        "Platform credibility"
+      ]
     },
     {
-      "job_title": "117 junior software engineer Jobs in Egypt, August 2025 | Glassdoor",
-      "job_description": "Title match, location match, recent posting",
-      "job_url": "https://www.glassdoor.com/Job/egypt-junior-software-engineer-jobs-SRCH_IL.0,5_IN69_KO6,30.htm",
+      "job_title": "AI/ML Engineer",
+      "job_description": "No description available",
+      "job_url": "https://jobs.qureos.com/jobs/6005345-ai-ml-engineer-grand-technology",
+      "agent_recommendation_rank": 4,
+      "agent_recommendation_notes": [
+        "Title match",
+        "Location match",
+        "Platform credibility"
+      ]
+    },
+    {
+      "job_title": "Senior Machine Learning Engineer (NLP)",
+      "job_description": "No description available",
+      "job_url": "https://www.linkedin.com/jobs/view/3173014312/?refId=Ung+V6/oTSmaGEWZfW31jw==",
       "agent_recommendation_rank": 5,
-      "agent_recommendation_notes": ["Title match", "Location match", "Recent posting"]
+      "agent_recommendation_notes": [
+        "Title match",
+        "Location match",
+        "Skills match",
+        "Platform credibility"
+      ]
     },
     {
-      "job_title": "Junior Software Developer Jobs in Egypt - 367 Vacancies Sep 2025",
-      "job_description": "Title match, location match, multiple vacancies",
-      "job_url": "https://www.naukrigulf.com/junior-software-developer-jobs-in-egypt",
-      "agent_recommendation_rank": 4,
-      "agent_recommendation_notes": ["Title match", "Location match", "Multiple vacancies"]
-    },
-    {
-      "job_title": "Junior Software Engineering Jobs in Cairo (Jul 2025) - Bayt.com",
-      "job_description": "Title match, location match, recent posting",
-      "job_url": "https://www.bayt.com/en/egypt/jobs/junior-software-engineering-jobs-in-cairo/",
-      "agent_recommendation_rank": 4,
-      "agent_recommendation_notes": ["Title match", "Location match", "Recent posting"]
-    },
-    {
-      "job_title": "Urgent! Node js developer jobs in Egypt - September 2025 - Jooble",
-      "job_description": "Skills match, location match, urgent hiring",
-      "job_url": "https://eg.jooble.org/jobs-node-js-developer/Egypt",
-      "agent_recommendation_rank": 6,
-      "agent_recommendation_notes": ["Skills match", "Location match", "Urgent hiring"]
-    },
-    {
-      "job_title": "87 Node JS Jobs in Egypt – Apply Now! - Wuzzuf",
-      "job_description": "Skills match, location match, multiple vacancies",
-      "job_url": "https://wuzzuf.net/a/Node-JS-Jobs-in-Egypt",
+      "job_title": "Machine Learning Engineer (FinTech)",
+      "job_description": "No description available",
+      "job_url": "https://www.linkedin.com/jobs/view/4139323549/",
       "agent_recommendation_rank": 5,
-      "agent_recommendation_notes": ["Skills match", "Location match", "Multiple vacancies"]
+      "agent_recommendation_notes": [
+        "Title match",
+        "Location match",
+        "Platform credibility"
+      ]
     },
     {
-      "job_title": "126 node Jobs in Egypt, August 2025 - Glassdoor",
-      "job_description": "Skills match, location match, recent posting",
-      "job_url": "https://www.glassdoor.com/Job/node-jobs-SRCH_IN69_KO0,4.htm",
-      "agent_recommendation_rank": 5,
-      "agent_recommendation_notes": ["Skills match", "Location match", "Recent posting"]
-    },
-    {
-      "job_title": "Node Dot Js Jobs in Egypt - 535 Vacancies May 2025 - Naukrigulf",
-      "job_description": "Skills match, location match, multiple vacancies",
-      "job_url": "https://www.naukrigulf.com/node-dot-js-jobs-in-egypt",
-      "agent_recommendation_rank": 5,
-      "agent_recommendation_notes": ["Skills match", "Location match", "Multiple vacancies"]
-    },
-    {
-      "job_title": "121 node Jobs in Egypt, September 2025 - Glassdoor",
-      "job_description": "Skills match, location match, recent posting",
-      "job_url": "https://www.glassdoor.com/Job/egypt-node-jobs-SRCH_IL.0,5_IN69_KO6,10.htm",
-      "agent_recommendation_rank": 5,
-      "agent_recommendation_notes": ["Skills match", "Location match", "Recent posting"]
-    },
-    {
-      "job_title": "Software Engineer | New Cairo, Al Qahirah, Egypt - Jobs at Siemens",
-      "job_description": "Title match, location match, reputable company",
-      "job_url": "https://jobs.siemens.com/careers/job/563156126236008-software-engineer-new-cairo-al-qahirah-egypt?domain=siemens.com&microsite=siemens.com",
+      "job_title": "Entry Level Python Machine Learning No Experience",
+      "job_description": "No description available",
+      "job_url": "https://www.indeed.com/q-entry-level-python-machine-learning-no-experience-jobs.html",
       "agent_recommendation_rank": 4,
-      "agent_recommendation_notes": ["Title match", "Location match", "Reputable company"]
+      "agent_recommendation_notes": [
+        "Title match",
+        "Location match",
+        "Platform credibility"
+      ]
     },
     {
-      "job_title": "2,467 Junior Software Engineer Jobs in Cairo – Apply Now! - Wuzzuf",
-      "job_description": "Title match, location match, multiple vacancies",
-      "job_url": "https://wuzzuf.net/a/Junior-Software-Engineer-Jobs-in-Cairo",
-      "agent_recommendation_rank": 5,
-      "agent_recommendation_notes": ["Title match", "Location match", "Multiple vacancies"]
-    },
-    {
-      "job_title": "16 Entry level software jobs in Cairo, Egypt - Glassdoor",
-      "job_description": "Title match, location match, recent posting",
-      "job_url": "https://www.glassdoor.com/Job/cairo-entry-level-software-jobs-SRCH_IL.0,5_IM1175_KO6,26.htm",
+      "job_title": "Junior Machine Learning Engineer",
+      "job_description": "No description available",
+      "job_url": "https://www.indeed.com/q-junior-machine-learning-engineer-jobs.html",
       "agent_recommendation_rank": 4,
-      "agent_recommendation_notes": ["Title match", "Location match", "Recent posting"]
+      "agent_recommendation_notes": [
+        "Title match",
+        "Location match",
+        "Platform credibility"
+      ]
     },
     {
-      "job_title": "Entry Level Software Engineer Salary in Cairo, Egypt - Levels.fyi",
-      "job_description": "Title match, location match, salary information",
-      "job_url": "https://www.levels.fyi/t/software-engineer/levels/entry-level/locations/cairo-egy",
-      "agent_recommendation_rank": 2,
-      "agent_recommendation_notes": ["Title match", "Location match", "Salary information"]
-    },
-    {
-      "job_title": "Staff Software Engineer - Backend - Cairo, C, Egypt",
-      "job_description": "Title match, location match, reputable company",
-      "job_url": "https://careers.procore.com/jobs/07025784-20d1-4385-bfba-6c3c81bcf0b9",
-      "agent_recommendation_rank": 2,
-      "agent_recommendation_notes": ["Title match", "Location match", "Reputable company"]
-    },
-    {
-      "job_title": "Junior Software Engineer - Jobright.ai - LinkedIn",
-      "job_description": "Title match, skills match, experience match",
-      "job_url": "https://www.linkedin.com/jobs/view/junior-software-engineer-at-jobright-ai-4280095745",
-      "agent_recommendation_rank": 7,
-      "agent_recommendation_notes": ["Title match", "Skills match", "Experience match"]
-    },
-    {
-      "job_title": "Junior Software Engineer (Angular) - CACI International Inc - LinkedIn",
-      "job_description": "Title match, skills match, experience match",
-      "job_url": "https://www.linkedin.com/jobs/view/junior-software-engineer-angular-at-caci-international-inc-4292968085",
-      "agent_recommendation_rank": 6,
-      "agent_recommendation_notes": ["Title match", "Skills match", "Experience match"]
-    },
-    {
-      "job_title": "ReactJs/NodeJs Full-Stack Developer - LinkedIn",
-      "job_description": "Skills match, experience match, reputable company",
-      "job_url": "https://www.linkedin.com/jobs/view/reactjs-nodejs-full-stack-developer-at-general-dynamics-information-technology-4289156528",
-      "agent_recommendation_rank": 5,
-      "agent_recommendation_notes": ["Skills match", "Experience match", "Reputable company"]
-    },
-    {
-      "job_title": "Junior Software Development Engineer - Jobright.ai - LinkedIn",
-      "job_description": "Title match, experience match, reputable company",
-      "job_url": "https://www.linkedin.com/jobs/view/junior-software-development-engineer-at-jobright-ai-4285492506",
+      "job_title": "Machine Learning Engineer",
+      "job_description": "No description available",
+      "job_url": "https://www.glassdoor.com/Job/egypt-machine-learning-engineer-jobs-SRCH_IL.0,5_IN69_KO6,31.htm",
       "agent_recommendation_rank": 4,
-      "agent_recommendation_notes": ["Title match", "Experience match", "Reputable company"]
+      "agent_recommendation_notes": [
+        "Title match",
+        "Location match",
+        "Platform credibility"
+      ]
     },
     {
-      "job_title": "Dev.Pro hiring Junior Software Engineer (Angular.js, Node.js ...",
-      "job_description": "Title match, skills match, experience match",
-      "job_url": "https://bg.linkedin.com/jobs/view/junior-software-engineer-angular-js-node-js-op01651-00-at-dev-pro-4173058241",
-      "agent_recommendation_rank": 5,
-      "agent_recommendation_notes": ["Title match", "Skills match", "Experience match"]
-    },
-    {
-      "job_title": "JavaScript Developer Jobs in Cairo, Egypt - Crossover",
-      "job_description": "Skills match, location match, reputable company",
-      "job_url": "https://www.crossover.com/jobs/javascript-developer/eg/cairo",
-      "agent_recommendation_rank": 6,
-      "agent_recommendation_notes": ["Skills match", "Location match", "Reputable company"]
-    },
-    {
-      "job_title": "7401 Remote Full Stack JavaScript Nodejs Developer Jobs in Egypt",
-      "job_description": "Skills match, location match, remote job",
-      "job_url": "https://wuzzuf.net/a/Remote-Full-Stack-JavaScript-Nodejs-Developer-Jobs-in-Egypt?start=1",
-      "agent_recommendation_rank": 6,
-      "agent_recommendation_notes": ["Skills match", "Location match", "Remote job"]
-    },
-    {
-      "job_title": "26 Frontend Developer jobs in Egypt - LinkedIn",
-      "job_description": "Skills match, location match, reputable company",
-      "job_url": "https://www.linkedin.com/jobs/search/?currentJobId=3417204619&distance=25&f_TPR=r604800&geoId=106155005&keywords=frontend%20developer",
+      "job_title": "Machine Learning Engineer",
+      "job_description": "No description available",
+      "job_url": "https://www.naukrigulf.com/machine-learning-engineer-jobs-in-egypt",
       "agent_recommendation_rank": 4,
-      "agent_recommendation_notes": ["Skills match", "Location match", "Reputable company"]
+      "agent_recommendation_notes": [
+        "Title match",
+        "Location match",
+        "Platform credibility"
+      ]
     },
     {
-      "job_title": "338 javascript Jobs in Heliopolis, June 2025 - Glassdoor",
-      "job_description": "Skills match, location match, recent posting",
-      "job_url": "https://www.glassdoor.com/Job/heliopolis-javascript-jobs-SRCH_IL.0,10_IC3439000_KO11,21.htm",
-      "agent_recommendation_rank": 3,
-      "agent_recommendation_notes": ["Skills match", "Location match", "Recent posting"]
-    },
-    {
-      "job_title": "Javascript Developer Jobs, Employment in Egypt, MA | Indeed",
-      "job_description": "Skills match, location match, reputable company",
-      "job_url": "https://www.indeed.com/q-javascript-developer-l-egypt,-ma-jobs.html",
-      "agent_recommendation_rank": 3,
-      "agent_recommendation_notes": ["Skills match", "Location match", "Reputable company"]
-    },
-    {
-      "job_title": "Junior Full Stack Engineer (Node.js & React) VxLabs GmbH",
-      "job_description": "Title match, skills match, experience match",
-      "job_url": "https://www.naukrigulf.com/junior-full-stack-engineer-jobs-in-cairo-egypt-in-vxlabs-gmbh-1-to-2-years-n-cd-40000924-jid-210525501043",
-      "agent_recommendation_rank": 7,
-      "agent_recommendation_notes": ["Title match", "Skills match", "Experience match"]
-    },
-    {
-      "job_title": "Urgent! Junior node js developer jobs - September 2025 - Jooble",
-      "job_description": "Title match, skills match, urgent hiring",
-      "job_url": "https://eg.jooble.org/jobs-junior-node-js-developer",
-      "agent_recommendation_rank": 5,
-      "agent_recommendation_notes": ["Title match", "Skills match", "Urgent hiring"]
-    },
-    {
-      "job_title": "4186 Junior Node JS Developer Jobs in Egypt - Cairo - Wuzzuf",
-      "job_description": "Title match, skills match, multiple vacancies",
-      "job_url": "https://wuzzuf.net/a/Junior-Node-JS-Developer-Jobs-in-Egypt",
-      "agent_recommendation_rank": 5,
-      "agent_recommendation_notes": ["Title match", "Skills match", "Multiple vacancies"]
-    },
-    {
-      "job_title": "Urgent! Node js developer jobs in Egypt - September 2025 - Jooble",
-      "job_description": "Skills match, location match, urgent hiring",
-      "job_url": "https://eg.jooble.org/jobs-node-js-developer/Egypt",
+      "job_title": "Machine Learning Engineer",
+      "job_description": "No description available",
+      "job_url": "https://www.gulftalent.com/egypt/jobs/title/machine-learning-engineer",
       "agent_recommendation_rank": 4,
-      "agent_recommendation_notes": ["Skills match", "Location match", "Urgent hiring"]
+      "agent_recommendation_notes": [
+        "Title match",
+        "Location match",
+        "Platform credibility"
+      ]
     },
     {
-      "job_title": "126 node Jobs in Egypt, August 2025 - Glassdoor",
-      "job_description": "Skills match, location match, recent posting",
-      "job_url": "https://www.glassdoor.com/Job/node-jobs-SRCH_IN69_KO0,4.htm",
+      "job_title": "Machine Learning Engineer",
+      "job_description": "No description available",
+      "job_url": "https://www.bayt.com/en/egypt/jobs/machine-learning-engineer-jobs/",
       "agent_recommendation_rank": 4,
-      "agent_recommendation_notes": ["Skills match", "Location match", "Recent posting"]
-    },
-    {
-      "job_title": "Node Js Software Engineer Jobs, Employment | Indeed",
-      "job_description": "Skills match, title match, reputable company",
-      "job_url": "https://www.indeed.com/q-node-js-software-engineer-jobs.html",
-      "agent_recommendation_rank": 4,
-      "agent_recommendation_notes": ["Skills match", "Title match", "Reputable company"]
-    },
-    {
-      "job_title": "Software Engineer Javascript Jobs, Employment - Indeed",
-      "job_description": "Title match, skills match, reputable company",
-      "job_url": "https://www.indeed.com/m/jobs?q=Software+Engineer+Javascript",
-      "agent_recommendation_rank": 3,
-      "agent_recommendation_notes": ["Title match", "Skills match", "Reputable company"]
-    },
-    {
-      "job_title": "Node Js Developer Jobs, Employment in Charlotte, NC | Indeed",
-      "job_description": "Skills match, location match, reputable company",
-      "job_url": "https://www.indeed.com/q-node-js-developer-l-charlotte,-nc-jobs.html",
-      "agent_recommendation_rank": 2,
-      "agent_recommendation_notes": ["Skills match", "Location match", "Reputable company"]
-    },
-    {
-      "job_title": "Node Js Developer Jobs, Employment in San Francisco, CA | Indeed",
-      "job_description": "Skills match, location match, reputable company",
-      "job_url": "https://www.indeed.com/q-node-js-developer-l-san-francisco,-ca-jobs.html",
-      "agent_recommendation_rank": 2,
-      "agent_recommendation_notes": ["Skills match", "Location match", "Reputable company"]
-    },
-    {
-      "job_title": "Node Js Developer jobs in Houston, Tx - Indeed",
-      "job_description": "Skills match, location match, reputable company",
-      "job_url": "https://www.indeed.com/q-node-js-developer-l-houston,-tx-jobs.html",
-      "agent_recommendation_rank": 2,
-      "agent_recommendation_notes": ["Skills match", "Location match", "Reputable company"]
-    },
-    {
-      "job_title": "Software Engineer Node.js JavaScript Jobs, Employment in Egypt | Indeed.com",
-      "job_description": "Title match, skills match, location match",
-      "job_url": "https://www.indeed.com/jobs?q=Software+Engineer+Node.js+JavaScript&l=Egypt&fromage=1",
-      "agent_recommendation_rank": 7,
-      "agent_recommendation_notes": ["Title match", "Skills match", "Location match"]
-    },
-    {
-      "job_title": "Software Engineer jobs in Cairo - Indeed",
-      "job_description": "Title match, location match, reputable company",
-      "job_url": "https://www.indeed.com/jobs?q=Software+Engineer+-Node.js+-JavaScript&l=cairo&radius=25",
-      "agent_recommendation_rank": 5,
-      "agent_recommendation_notes": ["Title match", "Location match", "Reputable company"]
-    },
-    {
-      "job_title": "Software Engineer Jobs, Employment in Egypt | Indeed.com",
-      "job_description": "Title match, location match, reputable company",
-      "job_url": "https://www.indeed.com/jobs?q=Software+Engineer&l=egypt&radius=25",
-      "agent_recommendation_rank": 4,
-      "agent_recommendation_notes": ["Title match", "Location match", "Reputable company"]
-    },
-    {
-      "job_title": "Javascript Jobs, Employment in Egypt | Indeed.com",
-      "job_description": "Skills match, location match, reputable company",
-      "job_url": "https://www.indeed.com/jobs?q=javascript&l=egypt&radius=25",
-      "agent_recommendation_rank": 4,
-      "agent_recommendation_notes": ["Skills match", "Location match", "Reputable company"]
-    },
-    {
-      "job_title": "Node.js Jobs, Employment in Egypt | Indeed.com",
-      "job_description": "Skills match, location match, reputable company",
-      "job_url": "https://www.indeed.com/jobs?q=node.js&l=egypt&radius=25",
-      "agent_recommendation_rank": 4,
-      "agent_recommendation_notes": ["Skills match", "Location match", "Reputable company"]
-    },
-    {
-      "job_title": "1,000+ Software Developer jobs in Egypt - LinkedIn",
-      "job_description": "Title match, location match, reputable company",
-      "job_url": "https://www.linkedin.com/jobs/search/?currentJobId=3545310127&geoId=106155005&keywords=software%20developer&location=Egypt&refresh=true",
-      "agent_recommendation_rank": 3,
-      "agent_recommendation_notes": ["Title match", "Location match", "Reputable company"]
-    },
-    {
-      "job_title": "108 junior developer Jobs in Egypt, September 2025 | Glassdoor",
-      "job_description": "Title match, location match, recent posting",
-      "job_url": "https://www.glassdoor.com/Job/egypt-junior-developer-jobs-SRCH_IL.0,5_IN69_KO6,22.htm",
-      "agent_recommendation_rank": 2,
-      "agent_recommendation_notes": ["Title match", "Location match", "Recent posting"]
-    },
-    {
-      "job_title": "Junior Remote Node.js Jobs In Africa",
-      "job_description": "Title match, skills match, remote job",
-      "job_url": "https://rubyonremote.com/junior-remote-node-js-jobs-in-africa/",
-      "agent_recommendation_rank": 2,
-      "agent_recommendation_notes": ["Title match", "Skills match", "Remote job"]
-    },
-    {
-      "job_title": "Remote Egypt Node Js Developer Jobs - Work From Home",
-      "job_description": "Skills match, location match, remote job",
-      "job_url": "https://jobgether.com/remote-jobs/egypt-node-js-developer",
-      "agent_recommendation_rank": 2,
-      "agent_recommendation_notes": ["Skills match", "Location match", "Remote job"]
-    },
-    {
-      "job_title": "121 node Jobs in Egypt, September 2025 - Glassdoor",
-      "job_description": "Skills match, location match, recent posting",
-      "job_url": "https://www.glassdoor.com/Job/egypt-node-jobs-SRCH_IL.0,5_IN69_KO6,10.htm",
-      "agent_recommendation_rank": 2,
-      "agent_recommendation_notes": ["Skills match", "Location match", "Recent posting"]
+      "agent_recommendation_notes": [
+        "Title match",
+        "Location match",
+        "Platform credibility"
+      ]
     }
   ]
 }"

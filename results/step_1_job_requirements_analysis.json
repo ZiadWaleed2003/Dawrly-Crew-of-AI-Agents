@@ -1,29 +1,29 @@
 {
-  "job_titles": [
-    "Junior Software Engineer"
+  "job_title": [
+    "Machine Learning Engineer"
   ],
   "preferred_skills": [
-    "Nodejs",
-    "JavaScript"
+    "python",
+    "Machine learning"
   ],
-  "experience_level": "Junior",
-  "min_years_experience": 1,
+  "experience_level": "Fresh",
+  "min_years_experience": 0,
   "locations": [
     "Egypt"
   ],
   "remote_preference": "any",
   "specified_websites": [
-    "site:linkedin.com/jobs",
-    "site:indeed.com"
+    "linkedin.com/jobs",
+    "indeed.com"
   ],
   "search_queries": [
-    "Junior Software Engineer jobs Egypt hiring 2025",
-    "Node.js JavaScript jobs in Egypt careers",
-    "Entry-level Software Engineer vacancy Cairo new opening",
-    "'1+ years experience' Junior Software Engineer Node.js site:linkedin.com/jobs",
-    "JavaScript developer position Egypt hiring remote onsite",
-    "Junior Node.js engineer careers Egypt '1 year experience'",
-    "Software Engineer opening Node.js JavaScript site:indeed.com",
-    "Junior developer vacancy Egypt Node.js '1 year' remote hybrid"
+    "Machine Learning Engineer jobs Egypt",
+    "Careers Machine Learning Engineer Egypt 2025",
+    "Hiring Machine Learning Engineer Python Egypt",
+    "Machine Learning Engineer vacancy Egypt full-time",
+    "site:linkedin.com/jobs Machine Learning Engineer Python \"0 years experience\" Egypt",
+    "Entry-level Machine Learning Engineer jobs Python machine learning Egypt site:indeed.com",
+    "2025 Machine Learning Engineer Python jobs \"no experience\" Egypt",
+    "Full-Time Machine Learning Engineer Python machine learning entry-level jobs site:linkedin.com/jobs"
   ]
 }

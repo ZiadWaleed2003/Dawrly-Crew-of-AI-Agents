@@ -14,7 +14,7 @@ class JobSearchCriteria(BaseModel):
     min_years_experience: Optional[int] = Field(default=None)
     locations: List[str] = Field(default=[], description="Preferred locations")
     remote_preference: str = Field(default="any", description="remote/hybrid/onsite/any")
-    specified_websites: List[str] = Field(default=['linkedin','indeed','glassdoor'], description="User-specified websites to prioritize")
+    specified_websites: List[str] = Field(default=[], description="User-specified websites to prioritize")
     search_queries: List[str] = Field(..., description="Optimized search queries for job platforms", min_length=1)
 
 
