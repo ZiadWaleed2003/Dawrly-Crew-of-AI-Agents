@@ -29,7 +29,7 @@ class JobScrutinizerAgent:
             tools=self.scrapping_tools
         )
     
-    def create_task(self, output_dir="./results/"):
+    def create_task(self, output_dir="./backend/results/"):
 
 
         description = "".join([
@@ -62,5 +62,5 @@ class JobScrutinizerAgent:
         )
         return self.task
     
-    def scrutinize_jobs(self, output_dir="./results/"):
+    def scrutinize_jobs(self, output_dir="./backend/results/"):
         return self.create_task(output_dir) 

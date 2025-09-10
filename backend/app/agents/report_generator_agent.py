@@ -1,7 +1,7 @@
 import json
 import html
 
-def json_to_html_table(json_file_path="./results/step_4_evaluator_fixed_results.json", output_html_path="./results/final_result.html"):
+def json_to_html_table(json_file_path="./backend/results/step_4_evaluator_fixed_results.json", output_html_path="./backend/results/final_result.html"):
     """
     Convert JSON job data to a clean sheet-like HTML table
     

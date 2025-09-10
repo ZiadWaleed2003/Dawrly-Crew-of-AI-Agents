@@ -24,7 +24,7 @@ def initialize_crew(user_input_data : dict):
 
 
 
-    logs = f"./logs/{email}.txt"
+    logs = f"./backend/logs/{email}.txt"
 
     crew = Crew(
                 agents=[
@@ -67,5 +67,5 @@ def initialize_crew(user_input_data : dict):
     except Exception as e:
 
         print(f"The crew Failed miserably bruhhhh : {e}")
-        send_email(to_email=email , html_file_path="./error_template/error_email_template.html")
+        send_email(to_email=email , html_file_path="./backend/error_template/error_email_template.html")
 

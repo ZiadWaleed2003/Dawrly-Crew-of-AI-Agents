@@ -487,3 +487,47 @@ Your output will be used directly by the next agent, so it must be perfect JSON.
     }
   ]
 }"
+2025-09-10 23:20:47: task_name="None", task="A job seeker is looking for opportunities with the following requirements: {'Job_title': 'Machine Learning Engineer', 'job_type': ['Full-Time'], 'preferred_skills': ['python', 'Machine learning'], 'experience_level': 'Fresh', 'min_years_experience': 0, 'locations': ['Egypt'], 'remote_preference': ['any']}Extract structured job search criteria and generate 8 optimized search queries using a multi-tier strategy.CRITICAL: ALL queries must include job-specific keywords to ensure they return actual job postings, not courses, profiles, or articles.Generate two types of queries:BROAD QUERIES (3-4 total): Simple but job-focused- Must include job indicator words: 'jobs', 'careers', 'hiring', 'vacancy', 'opening', 'position'- Use core job title provided by the user like {user_input['job_title']} + location like user_input['locations'] + job indicator- Example: 'data scientist jobs New York', 'software engineer hiring San Francisco'- NOT like this: 'NLP Cairo' (too vague, will return non-job results)PRECISE QUERIES (4-5 total): Detailed with all requirements- Include specific skills, experience level, and multiple criteria- Use site: operator for platforms mentioned by user- Include phrases like 'years experience', specific technologies, seniority level- Example: 'senior data scientist Python machine learning "5+ years" remote jobs'MANDATORY RULES:1. EVERY query must be job-focused - include words like: jobs, hiring, careers, vacancy, opening, position2. Even broad queries must be clearly about job postings3. Do NOT prefix queries with tier labels or numbers4. Mix query order naturally - don't group all broad or all precise together5. Add recency hints where relevant: 'hiring 2024', 'new opening', etc. (current: 2025-09-10)6. For specific platforms use: site:linkedin.com/jobs or site:indeed.comOUTPUT: Return exactly 8 search query strings, one per line, no labels or categories.", agent="Senior Job Search Query Optimizer specializing in converting natural language job requirements into highly effective search queries and keywords for various job boards.", status="started"
+2025-09-10 23:21:17: task_name="None", task="A job seeker is looking for opportunities with the following requirements: {'Job_title': 'Machine Learning Engineer', 'job_type': ['Full-Time'], 'preferred_skills': ['python', 'Machine learning'], 'experience_level': 'Fresh', 'min_years_experience': 0, 'locations': ['Egypt'], 'remote_preference': ['any']}Extract structured job search criteria and generate 8 optimized search queries using a multi-tier strategy.CRITICAL: ALL queries must include job-specific keywords to ensure they return actual job postings, not courses, profiles, or articles.Generate two types of queries:BROAD QUERIES (3-4 total): Simple but job-focused- Must include job indicator words: 'jobs', 'careers', 'hiring', 'vacancy', 'opening', 'position'- Use core job title provided by the user like {user_input['job_title']} + location like user_input['locations'] + job indicator- Example: 'data scientist jobs New York', 'software engineer hiring San Francisco'- NOT like this: 'NLP Cairo' (too vague, will return non-job results)PRECISE QUERIES (4-5 total): Detailed with all requirements- Include specific skills, experience level, and multiple criteria- Use site: operator for platforms mentioned by user- Include phrases like 'years experience', specific technologies, seniority level- Example: 'senior data scientist Python machine learning "5+ years" remote jobs'MANDATORY RULES:1. EVERY query must be job-focused - include words like: jobs, hiring, careers, vacancy, opening, position2. Even broad queries must be clearly about job postings3. Do NOT prefix queries with tier labels or numbers4. Mix query order naturally - don't group all broad or all precise together5. Add recency hints where relevant: 'hiring 2024', 'new opening', etc. (current: 2025-09-10)6. For specific platforms use: site:linkedin.com/jobs or site:indeed.comOUTPUT: Return exactly 8 search query strings, one per line, no labels or categories.", agent="Senior Job Search Query Optimizer specializing in converting natural language job requirements into highly effective search queries and keywords for various job boards.", status="completed", output="
+
+{
+  "job_title": ["Machine Learning Engineer"],
+  "preferred_skills": ["python", "Machine learning"],
+  "experience_level": "Fresh",
+  "min_years_experience": 0,
+  "locations": ["Egypt"],
+  "remote_preference": "any",
+  "specified_websites": [],
+  "search_queries": [
+    "Machine Learning Engineer jobs Egypt",
+    "Machine Learning Engineer hiring Egypt",
+    "Entry Level Machine Learning Engineer vacancy Egypt",
+    "Machine Learning Engineer Python Machine learning entry-level 0 years experience jobs Egypt",
+    "Machine Learning Engineer Egypt Python Machine learning no experience required new opening",
+    "Entry level Machine learning Engineer job Python fresher Egypt site:linkedin.com/jobs",
+    "Machine Learning Engineer hiring Egypt Python Machine learning 0+ years experience site:indeed.com",
+    "Junior Machine Learning Engineer vacancy Python Machine learning Egypt"
+  ]
+}"
+2025-09-10 23:21:17: task_name="None", task="You have the following context objects available:
+- search_queries: List of search query strings to run (with or without site: operator).
+- job_titles, required_skills, locations, remote_preference from the previous task.
+
+Instruction:
+1. For each string in `search_queries`, call the `tavily_search_engine_tool` exactly once to execute it.
+   - Use the search_queries directly from input if available, otherwise use the ones from the previous task.
+2. From the tool output, extract raw results; for each result:
+- Determine `platform` based on URL domain.
+- Visit or use the provided `content` snippet to verify presence of required skills and location.
+- Score each result (0-10) according to:
+    * Title match (3)
+    * Required skills presence (3)
+    * Location/remote alignment (2)
+    * Platform credibility (2)
+- Only include results with `score` >= 0.
+- Populate `relevance_notes` explaining the score.
+3. Collect all valid ```json{'properties': {'title': {'title': 'Title', 'type': 'string'}, 'url': {'title': 'the job posting page url', 'type': 'string'}, 'score': {'title': 'Score', 'type': 'number'}, 'search_query': {'title': 'Search Query', 'type': 'string'}, 'platform': {'description': 'LinkedIn/Indeed/Wuzzuf/RemoteOK/Glassdoor/Other', 'title': 'Platform', 'type': 'string'}, 'relevance_notes': {'description': 'Why this result matches the criteria', 'title': 'Relevance Notes', 'type': 'string'}}, 'required': ['title', 'url', 'score', 'search_query', 'platform', 'relevance_notes'], 'title': 'SingleJobSearchResult', 'type': 'object'} items into a list.
+4. After processing *all* queries, output exactly one pure JSON object matching this `{'$defs': {'SingleJobSearchResult': {'properties': {'title': {'title': 'Title', 'type': 'string'}, 'url': {'title': 'the job posting page url', 'type': 'string'}, 'score': {'title': 'Score', 'type': 'number'}, 'search_query': {'title': 'Search Query', 'type': 'string'}, 'platform': {'description': 'LinkedIn/Indeed/Wuzzuf/RemoteOK/Glassdoor/Other', 'title': 'Platform', 'type': 'string'}, 'relevance_notes': {'description': 'Why this result matches the criteria', 'title': 'Relevance Notes', 'type': 'string'}}, 'required': ['title', 'url', 'score', 'search_query', 'platform', 'relevance_notes'], 'title': 'SingleJobSearchResult', 'type': 'object'}}, 'properties': {'results': {'items': {'$ref': '#/$defs/SingleJobSearchResult'}, 'title': 'Results', 'type': 'array'}}, 'required': ['results'], 'title': 'AllJobSearchResults', 'type': 'object'}` schema:
+{"results": [ ... ]}
+5. Do NOT output any additional text, markdown, Thought/Action logs, or make any further tool calls after emitting the JSON.
+Use the previous agent search_queries to get the URLsImportant : Don't generate URLs like example.com if you failed to get any results!- Consider relevancy within the last 3 months (current date: 2025-09-10).", agent="Job Search Specialist", status="started"

@@ -37,7 +37,7 @@ class SearchAgent:
             tools=self.search_tool
         )
     
-    def create_task(self, output_dir="./results/"):
+    def create_task(self, output_dir="./backend/results/"):
 
 
         description = "".join([
@@ -74,5 +74,5 @@ class SearchAgent:
         )
         return self.task
     
-    def search_jobs(self, output_dir="./results/"):
+    def search_jobs(self, output_dir="./backend/results/"):
         return self.create_task(output_dir)
