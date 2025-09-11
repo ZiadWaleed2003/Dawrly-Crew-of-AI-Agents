@@ -1,114 +1,53 @@
 {
   "jobs": [
     {
-      "job_title": "Machine Learning Engineer",
-      "job_description": "No description available",
-      "job_url": "https://www.linkedin.com/jobs/view/machine-learning-engineer-at-2p-perfect-presentation-4274230321?_l=en",
+      "job_title": "Machine Learning Engineer jobs in Dubai",
+      "job_description": "Title match (3), Location match (2), Platform credibility (2.5). Skills not explicitly mentioned but implied.",
+      "job_url": "https://ae.indeed.com/q-machine-learning-engineer-l-dubai-jobs.html",
+      "agent_recommendation_rank": 1,
+      "agent_recommendation_notes": [
+        "Highly relevant job title",
+        "Location matches the search query"
+      ]
+    },
+    {
+      "job_title": "AI & Machine Learning in Dubai, United Arab Emirates",
+      "job_description": "Title match (2), Location match (2), Platform credibility (3). Skills not explicitly mentioned but implied.",
+      "job_url": "https://www.linkedin.com/jobs/view/3958777570/",
+      "agent_recommendation_rank": 2,
+      "agent_recommendation_notes": [
+        "Relevant job title",
+        "Location matches the search query"
+      ]
+    },
+    {
+      "job_title": "Machine Learning jobs in Dubai",
+      "job_description": "Title match (1), Location match (2), Platform credibility (3). Skills not explicitly mentioned but implied.",
+      "job_url": "https://ae.indeed.com/q-machine-learning-l-dubai-jobs.html",
+      "agent_recommendation_rank": 3,
+      "agent_recommendation_notes": [
+        "Somewhat relevant job title",
+        "Location matches the search query"
+      ]
+    },
+    {
+      "job_title": "Machine Learning Research Engineer job in Dubai",
+      "job_description": "Title match (2), Location match (2), Platform credibility (1.5). Skills not explicitly mentioned but implied.",
+      "job_url": "https://www.selbyjennings.com/en-ch/job/machine-learning-research-engineer-pr553761_1753088663",
+      "agent_recommendation_rank": 4,
+      "agent_recommendation_notes": [
+        "Relevant job title",
+        "Location matches the search query"
+      ]
+    },
+    {
+      "job_title": "Machine Learning Engineer - Intern Salary at Property Finder",
+      "job_description": "Title match (3), Location match (2), Platform credibility (2). Skills not explicitly mentioned but implied.",
+      "job_url": "https://zerotaxjobs.com/salaries/companies/property-finder/machine-learning-engineer-intern-3l7mcrxo",
       "agent_recommendation_rank": 5,
       "agent_recommendation_notes": [
-        "Title match",
-        "Location match",
-        "Platform credibility"
-      ]
-    },
-    {
-      "job_title": "AI/ML Engineer",
-      "job_description": "No description available",
-      "job_url": "https://jobs.qureos.com/jobs/6005345-ai-ml-engineer-grand-technology",
-      "agent_recommendation_rank": 4,
-      "agent_recommendation_notes": [
-        "Title match",
-        "Location match",
-        "Platform credibility"
-      ]
-    },
-    {
-      "job_title": "Senior Machine Learning Engineer (NLP)",
-      "job_description": "No description available",
-      "job_url": "https://www.linkedin.com/jobs/view/3173014312/?refId=Ung+V6/oTSmaGEWZfW31jw==",
-      "agent_recommendation_rank": 5,
-      "agent_recommendation_notes": [
-        "Title match",
-        "Location match",
-        "Skills match",
-        "Platform credibility"
-      ]
-    },
-    {
-      "job_title": "Machine Learning Engineer (FinTech)",
-      "job_description": "No description available",
-      "job_url": "https://www.linkedin.com/jobs/view/4139323549/",
-      "agent_recommendation_rank": 5,
-      "agent_recommendation_notes": [
-        "Title match",
-        "Location match",
-        "Platform credibility"
-      ]
-    },
-    {
-      "job_title": "Entry Level Python Machine Learning No Experience",
-      "job_description": "No description available",
-      "job_url": "https://www.indeed.com/q-entry-level-python-machine-learning-no-experience-jobs.html",
-      "agent_recommendation_rank": 4,
-      "agent_recommendation_notes": [
-        "Title match",
-        "Location match",
-        "Platform credibility"
-      ]
-    },
-    {
-      "job_title": "Junior Machine Learning Engineer",
-      "job_description": "No description available",
-      "job_url": "https://www.indeed.com/q-junior-machine-learning-engineer-jobs.html",
-      "agent_recommendation_rank": 4,
-      "agent_recommendation_notes": [
-        "Title match",
-        "Location match",
-        "Platform credibility"
-      ]
-    },
-    {
-      "job_title": "Machine Learning Engineer",
-      "job_description": "No description available",
-      "job_url": "https://www.glassdoor.com/Job/egypt-machine-learning-engineer-jobs-SRCH_IL.0,5_IN69_KO6,31.htm",
-      "agent_recommendation_rank": 4,
-      "agent_recommendation_notes": [
-        "Title match",
-        "Location match",
-        "Platform credibility"
-      ]
-    },
-    {
-      "job_title": "Machine Learning Engineer",
-      "job_description": "No description available",
-      "job_url": "https://www.naukrigulf.com/machine-learning-engineer-jobs-in-egypt",
-      "agent_recommendation_rank": 4,
-      "agent_recommendation_notes": [
-        "Title match",
-        "Location match",
-        "Platform credibility"
-      ]
-    },
-    {
-      "job_title": "Machine Learning Engineer",
-      "job_description": "No description available",
-      "job_url": "https://www.gulftalent.com/egypt/jobs/title/machine-learning-engineer",
-      "agent_recommendation_rank": 4,
-      "agent_recommendation_notes": [
-        "Title match",
-        "Location match",
-        "Platform credibility"
-      ]
-    },
-    {
-      "job_title": "Machine Learning Engineer",
-      "job_description": "No description available",
-      "job_url": "https://www.bayt.com/en/egypt/jobs/machine-learning-engineer-jobs/",
-      "agent_recommendation_rank": 4,
-      "agent_recommendation_notes": [
-        "Title match",
-        "Location match",
-        "Platform credibility"
+        "Highly relevant job title",
+        "Location matches the search query"
       ]
     }
   ]
