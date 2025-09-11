@@ -1,10 +1,12 @@
 from collections import defaultdict
 from datetime import datetime, timedelta
 from fastapi import Depends, FastAPI, HTTPException, Request, status 
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 from typing import Optional, List, Dict
-from app.crew import initialize_crew
 import logging
+
+from app.crew import initialize_crew
 
 
 logging.basicConfig(level=logging.INFO)
@@ -17,19 +19,27 @@ app = FastAPI(
     version="1.0.0",
 )
 
+origins = [
+    "https://dawrly-crew-of-ai-agents.vercel.app",
+    "http://localhost",
+    "http://localhost:8000",
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_methods=["GET","POST"],
+    allow_headers=["*"],
+)
 
 
-# yeah the time window is 1 day so 3 RPD (I'm broke as hell broski fa credits FireCrawl btroh mny)
+
+# yeah the time window is 1 day so 3 RPD (I'm broke as hell broski credits FireCrawl is going to be out soon)
 RATE_LIMIT_PER_DAY = 3
 TIME_WINDOW = timedelta(days=1)
 
 
 ip_request_store: Dict[str, List[datetime]] = defaultdict(list)
-
-app = FastAPI(
-    title="FastAPI Rate Limiter",
-    description="An example of a simple IP-based rate limiter for a FastAPI application."
-)
 
 # The Rate limiter
 def rate_limiter(request: Request):
@@ -83,6 +93,15 @@ class ErrorResponse(BaseModel):
     error: str
     detail: str
     status_code: int
+
+#root endpoint
+
+@app.get(
+        "/"
+)
+def main():
+    return {"message": "Yeah it's working broski"}
+
 
 # Health check endpoint
 @app.get(
