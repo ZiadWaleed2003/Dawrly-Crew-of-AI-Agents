@@ -5,7 +5,7 @@ from email.mime.application import MIMEApplication
 import os
 from dotenv import load_dotenv
 
-def send_email(to_email,html_file_path="./results/final_result.html"):
+def send_email(to_email,html_file_path="./backend/results/final_result.html"):
 
     """
         this function is used to send an email to the user containing the results of the Dawrly Crew 
@@ -53,7 +53,7 @@ def send_email(to_email,html_file_path="./results/final_result.html"):
         return False
 
 
-def read_file_content(file_path="./results/final_result.html"):
+def read_file_content(file_path="./backend/results/final_result.html"):
     # Read the HTML content from the file
     try:
         with open(file_path, 'r', encoding='utf-8') as file:
