@@ -1,0 +1,1050 @@
+2025-09-14 22:50:33: task_name="None", task="A job seeker is looking for opportunities with the following requirements: {'Job_title': 'Machine Learning Engineer', 'job_type': ['Full-Time'], 'preferred_skills': ['Python'], 'experience_level': 'Fresh', 'min_years_experience': 0, 'locations': ['Egypt'], 'remote_preference': ['any']}Extract structured job search criteria and generate 8 optimized search queries using a multi-tier strategy.CRITICAL: ALL queries must include job-specific keywords to ensure they return actual job postings, not courses, profiles, or articles.Generate two types of queries:BROAD QUERIES (3-4 total): Simple but job-focused- Must include job indicator words: 'jobs', 'careers', 'hiring', 'vacancy', 'opening', 'position'- Use core job title provided by the user like {user_input['job_title']} + location like user_input['locations'] + job indicator- Example: 'data scientist jobs New York', 'software engineer hiring San Francisco'- NOT like this: 'NLP Cairo' (too vague, will return non-job results)PRECISE QUERIES (4-5 total): Detailed with all requirements- Include specific skills, experience level, and multiple criteria- Use site: operator for platforms mentioned by user- Include phrases like 'years experience', specific technologies, seniority level- Example: 'senior data scientist Python machine learning "5+ years" remote jobs'MANDATORY RULES:1. EVERY query must be job-focused - include words like: jobs, hiring, careers, vacancy, opening, position2. Even broad queries must be clearly about job postings3. Do NOT prefix queries with tier labels or numbers4. Mix query order naturally - don't group all broad or all precise together5. Add recency hints where relevant: 'hiring 2024', 'new opening', etc. (current: 2025-09-14)6. For specific platforms use: site:linkedin.com/jobs or site:indeed.comOUTPUT: Return exactly 8 search query strings, one per line, no labels or categories.", agent="Senior Job Search Query Optimizer specializing in converting natural language job requirements into highly effective search queries and keywords for various job boards.", status="started"
+2025-09-14 23:07:35: task_name="None", task="A job seeker is looking for opportunities with the following requirements: {'Job_title': 'Machine Learning Engineer', 'job_type': ['Full-Time'], 'preferred_skills': ['Python'], 'experience_level': 'Fresh', 'min_years_experience': 0, 'locations': ['Egypt'], 'remote_preference': ['any']}Extract structured job search criteria and generate 8 optimized search queries using a multi-tier strategy.CRITICAL: ALL queries must include job-specific keywords to ensure they return actual job postings, not courses, profiles, or articles.Generate two types of queries:BROAD QUERIES (3-4 total): Simple but job-focused- Must include job indicator words: 'jobs', 'careers', 'hiring', 'vacancy', 'opening', 'position'- Use core job title provided by the user like {user_input['job_title']} + location like user_input['locations'] + job indicator- Example: 'data scientist jobs New York', 'software engineer hiring San Francisco'- NOT like this: 'NLP Cairo' (too vague, will return non-job results)PRECISE QUERIES (4-5 total): Detailed with all requirements- Include specific skills, experience level, and multiple criteria- Use site: operator for platforms mentioned by user- Include phrases like 'years experience', specific technologies, seniority level- Example: 'senior data scientist Python machine learning "5+ years" remote jobs'MANDATORY RULES:1. EVERY query must be job-focused - include words like: jobs, hiring, careers, vacancy, opening, position2. Even broad queries must be clearly about job postings3. Do NOT prefix queries with tier labels or numbers4. Mix query order naturally - don't group all broad or all precise together5. Add recency hints where relevant: 'hiring 2024', 'new opening', etc. (current: 2025-09-14)6. For specific platforms use: site:linkedin.com/jobs or site:indeed.comOUTPUT: Return exactly 8 search query strings, one per line, no labels or categories.", agent="Senior Job Search Query Optimizer specializing in converting natural language job requirements into highly effective search queries and keywords for various job boards.", status="started"
+2025-09-14 23:08:22: task_name="None", task="A job seeker is looking for opportunities with the following requirements: {'Job_title': 'Machine Learning Engineer', 'job_type': ['Full-Time'], 'preferred_skills': ['Python'], 'experience_level': 'Fresh', 'min_years_experience': 0, 'locations': ['Egypt'], 'remote_preference': ['any']}Extract structured job search criteria and generate 8 optimized search queries using a multi-tier strategy.CRITICAL: ALL queries must include job-specific keywords to ensure they return actual job postings, not courses, profiles, or articles.Generate two types of queries:BROAD QUERIES (3-4 total): Simple but job-focused- Must include job indicator words: 'jobs', 'careers', 'hiring', 'vacancy', 'opening', 'position'- Use core job title provided by the user like {user_input['job_title']} + location like user_input['locations'] + job indicator- Example: 'data scientist jobs New York', 'software engineer hiring San Francisco'- NOT like this: 'NLP Cairo' (too vague, will return non-job results)PRECISE QUERIES (4-5 total): Detailed with all requirements- Include specific skills, experience level, and multiple criteria- Use site: operator for platforms mentioned by user- Include phrases like 'years experience', specific technologies, seniority level- Example: 'senior data scientist Python machine learning "5+ years" remote jobs'MANDATORY RULES:1. EVERY query must be job-focused - include words like: jobs, hiring, careers, vacancy, opening, position2. Even broad queries must be clearly about job postings3. Do NOT prefix queries with tier labels or numbers4. Mix query order naturally - don't group all broad or all precise together5. Add recency hints where relevant: 'hiring 2024', 'new opening', etc. (current: 2025-09-14)6. For specific platforms use: site:linkedin.com/jobs or site:indeed.comOUTPUT: Return exactly 8 search query strings, one per line, no labels or categories.", agent="Senior Job Search Query Optimizer specializing in converting natural language job requirements into highly effective search queries and keywords for various job boards.", status="started"
+2025-09-14 23:08:46: task_name="None", task="A job seeker is looking for opportunities with the following requirements: {'Job_title': 'Machine Learning Engineer', 'job_type': ['Full-Time'], 'preferred_skills': ['Python'], 'experience_level': 'Fresh', 'min_years_experience': 0, 'locations': ['Egypt'], 'remote_preference': ['any']}Extract structured job search criteria and generate 8 optimized search queries using a multi-tier strategy.CRITICAL: ALL queries must include job-specific keywords to ensure they return actual job postings, not courses, profiles, or articles.Generate two types of queries:BROAD QUERIES (3-4 total): Simple but job-focused- Must include job indicator words: 'jobs', 'careers', 'hiring', 'vacancy', 'opening', 'position'- Use core job title provided by the user like {user_input['job_title']} + location like user_input['locations'] + job indicator- Example: 'data scientist jobs New York', 'software engineer hiring San Francisco'- NOT like this: 'NLP Cairo' (too vague, will return non-job results)PRECISE QUERIES (4-5 total): Detailed with all requirements- Include specific skills, experience level, and multiple criteria- Use site: operator for platforms mentioned by user- Include phrases like 'years experience', specific technologies, seniority level- Example: 'senior data scientist Python machine learning "5+ years" remote jobs'MANDATORY RULES:1. EVERY query must be job-focused - include words like: jobs, hiring, careers, vacancy, opening, position2. Even broad queries must be clearly about job postings3. Do NOT prefix queries with tier labels or numbers4. Mix query order naturally - don't group all broad or all precise together5. Add recency hints where relevant: 'hiring 2024', 'new opening', etc. (current: 2025-09-14)6. For specific platforms use: site:linkedin.com/jobs or site:indeed.comOUTPUT: Return exactly 8 search query strings, one per line, no labels or categories.", agent="Senior Job Search Query Optimizer specializing in converting natural language job requirements into highly effective search queries and keywords for various job boards.", status="completed", output="
+
+{
+  "job_title": ["Machine Learning Engineer"],
+  "preferred_skills": ["Python"],
+  "experience_level": "Fresh",
+  "min_years_experience": 0,
+  "locations": ["Egypt"],
+  "remote_preference": "any",
+  "specified_websites": [],
+  "search_queries": [
+    "Machine Learning Engineer jobs Egypt",
+    "entry level Machine Learning Engineer Python 0 years experience jobs Egypt",
+    "Machine Learning Engineer hiring Egypt",
+    "Python Machine Learning Engineer jobs Egypt full-time 'hiring 2024'",
+    "Machine Learning Engineer careers Egypt",
+    "Machine Learning Engineer Python fresh graduate jobs Egypt 'no experience' remote",
+    "Machine Learning Engineer openings Egypt",
+    "Machine Learning Engineer opening Egypt Python '0 years' experience"
+  ]
+}"
+2025-09-14 23:08:46: task_name="None", task="You have the following context objects available:
+- search_queries: List of search query strings to run (with or without site: operator).
+- job_titles, required_skills, locations, remote_preference from the previous task.
+
+Instruction:
+1. For each string in `search_queries`, call the `tavily_search_engine_tool` exactly once to execute it.
+   - Use the search_queries directly from input if available, otherwise use the ones from the previous task.
+2. From the tool output, extract raw results; for each result:
+- Determine `platform` based on URL domain.
+- Visit or use the provided `content` snippet to verify presence of required skills and location.
+- Score each result (0-10) according to:
+    * Title match (3)
+    * Required skills presence (3)
+    * Location/remote alignment (2)
+    * Platform credibility (2)
+- Only include results with `score` >= 0.
+- Populate `relevance_notes` explaining the score.
+3. Collect all valid ```json{'properties': {'title': {'title': 'Title', 'type': 'string'}, 'url': {'title': 'the job posting page url', 'type': 'string'}, 'score': {'title': 'Score', 'type': 'number'}, 'search_query': {'title': 'Search Query', 'type': 'string'}, 'platform': {'description': 'LinkedIn/Indeed/Wuzzuf/RemoteOK/Glassdoor/Other', 'title': 'Platform', 'type': 'string'}, 'relevance_notes': {'description': 'Why this result matches the criteria', 'title': 'Relevance Notes', 'type': 'string'}}, 'required': ['title', 'url', 'score', 'search_query', 'platform', 'relevance_notes'], 'title': 'SingleJobSearchResult', 'type': 'object'} items into a list.
+4. After processing *all* queries, output exactly one pure JSON object matching this `{'$defs': {'SingleJobSearchResult': {'properties': {'title': {'title': 'Title', 'type': 'string'}, 'url': {'title': 'the job posting page url', 'type': 'string'}, 'score': {'title': 'Score', 'type': 'number'}, 'search_query': {'title': 'Search Query', 'type': 'string'}, 'platform': {'description': 'LinkedIn/Indeed/Wuzzuf/RemoteOK/Glassdoor/Other', 'title': 'Platform', 'type': 'string'}, 'relevance_notes': {'description': 'Why this result matches the criteria', 'title': 'Relevance Notes', 'type': 'string'}}, 'required': ['title', 'url', 'score', 'search_query', 'platform', 'relevance_notes'], 'title': 'SingleJobSearchResult', 'type': 'object'}}, 'properties': {'results': {'items': {'$ref': '#/$defs/SingleJobSearchResult'}, 'title': 'Results', 'type': 'array'}}, 'required': ['results'], 'title': 'AllJobSearchResults', 'type': 'object'}` schema:
+{"results": [ ... ]}
+5. Do NOT output any additional text, markdown, Thought/Action logs, or make any further tool calls after emitting the JSON.
+Use the previous agent search_queries to get the URLsImportant : Don't generate URLs like example.com if you failed to get any results!- Consider relevancy within the last 3 months (current date: 2025-09-14).", agent="Job Search Specialist", status="started"
+2025-09-14 23:10:44: task_name="None", task="You have the following context objects available:
+- search_queries: List of search query strings to run (with or without site: operator).
+- job_titles, required_skills, locations, remote_preference from the previous task.
+
+Instruction:
+1. For each string in `search_queries`, call the `tavily_search_engine_tool` exactly once to execute it.
+   - Use the search_queries directly from input if available, otherwise use the ones from the previous task.
+2. From the tool output, extract raw results; for each result:
+- Determine `platform` based on URL domain.
+- Visit or use the provided `content` snippet to verify presence of required skills and location.
+- Score each result (0-10) according to:
+    * Title match (3)
+    * Required skills presence (3)
+    * Location/remote alignment (2)
+    * Platform credibility (2)
+- Only include results with `score` >= 0.
+- Populate `relevance_notes` explaining the score.
+3. Collect all valid ```json{'properties': {'title': {'title': 'Title', 'type': 'string'}, 'url': {'title': 'the job posting page url', 'type': 'string'}, 'score': {'title': 'Score', 'type': 'number'}, 'search_query': {'title': 'Search Query', 'type': 'string'}, 'platform': {'description': 'LinkedIn/Indeed/Wuzzuf/RemoteOK/Glassdoor/Other', 'title': 'Platform', 'type': 'string'}, 'relevance_notes': {'description': 'Why this result matches the criteria', 'title': 'Relevance Notes', 'type': 'string'}}, 'required': ['title', 'url', 'score', 'search_query', 'platform', 'relevance_notes'], 'title': 'SingleJobSearchResult', 'type': 'object'} items into a list.
+4. After processing *all* queries, output exactly one pure JSON object matching this `{'$defs': {'SingleJobSearchResult': {'properties': {'title': {'title': 'Title', 'type': 'string'}, 'url': {'title': 'the job posting page url', 'type': 'string'}, 'score': {'title': 'Score', 'type': 'number'}, 'search_query': {'title': 'Search Query', 'type': 'string'}, 'platform': {'description': 'LinkedIn/Indeed/Wuzzuf/RemoteOK/Glassdoor/Other', 'title': 'Platform', 'type': 'string'}, 'relevance_notes': {'description': 'Why this result matches the criteria', 'title': 'Relevance Notes', 'type': 'string'}}, 'required': ['title', 'url', 'score', 'search_query', 'platform', 'relevance_notes'], 'title': 'SingleJobSearchResult', 'type': 'object'}}, 'properties': {'results': {'items': {'$ref': '#/$defs/SingleJobSearchResult'}, 'title': 'Results', 'type': 'array'}}, 'required': ['results'], 'title': 'AllJobSearchResults', 'type': 'object'}` schema:
+{"results": [ ... ]}
+5. Do NOT output any additional text, markdown, Thought/Action logs, or make any further tool calls after emitting the JSON.
+Use the previous agent search_queries to get the URLsImportant : Don't generate URLs like example.com if you failed to get any results!- Consider relevancy within the last 3 months (current date: 2025-09-14).", agent="Job Search Specialist", status="completed", output="
+I encountered an error in the previous turn. I will now proceed to process the search results and generate the JSON output.
+
+```json
+{
+  "results": [
+    {
+      "title": "Machine Learning Engineer Jobs in Egypt - 35 Vacancies Sep 2025",
+      "url": "https://www.naukrigulf.com/machine-learning-engineer-jobs-in-egypt",
+      "score": 7.0,
+      "search_query": "Machine Learning Engineer jobs Egypt",
+      "platform": "NaukriGulf",
+      "relevance_notes": "Title match, location match, mentions machine learning."
+    },
+    {
+      "title": "79 machine learning engineer Jobs in Egypt, September 2025",
+      "url": "https://www.glassdoor.com/Job/egypt-machine-learning-engineer-jobs-SRCH_IL.0,5_IN69_KO6,31.htm",
+      "score": 6.0,
+      "search_query": "Machine Learning Engineer jobs Egypt",
+      "platform": "Glassdoor",
+      "relevance_notes": "Title match, location match, general relevance."
+    },
+    {
+      "title": "AI/ML Engineer - Grand Technology - Qureos Inc",
+      "url": "https://jobs.qureos.com/jobs/6005345-ai-ml-engineer-grand-technology",
+      "score": 5.0,
+      "search_query": "Machine Learning Engineer jobs Egypt",
+      "platform": "Other",
+      "relevance_notes": "Title contains ML Engineer, location Egypt."
+    },
+    {
+      "title": "Machine Learning Engineer jobs in Egypt, Ma - Indeed",
+      "url": "https://www.indeed.com/q-machine-learning-engineer-l-egypt,-ma-jobs.html",
+      "score": 5.0,
+      "search_query": "Machine Learning Engineer jobs Egypt",
+      "platform": "Indeed",
+      "relevance_notes": "Title match, location Egypt."
+    },
+    {
+      "title": "66 machine learning engineer Jobs in Cairo, Egypt, August 2025",
+      "url": "https://www.glassdoor.com/Job/cairo-machine-learning-engineer-jobs-SRCH_IL.0,5_IM1175_KO6,31.htm",
+      "score": 6.0,
+      "search_query": "Machine Learning Engineer jobs Egypt",
+      "platform": "Glassdoor",
+      "relevance_notes": "Title match, location Cairo, Egypt."
+    },
+    {
+      "title": "300 Data Science jobs in Egypt - LinkedIn",
+      "url": "https://www.linkedin.com/jobs/search/?f_E=1%2C2&geoId=106155005&keywords=data%20science&location=Egypt&start=25",
+      "score": 4.0,
+      "search_query": "entry level Machine Learning Engineer Python 0 years experience jobs Egypt",
+      "platform": "LinkedIn",
+      "relevance_notes": "Location Egypt, contains Machine Learning Engineer."
+    },
+    {
+      "title": "14 Machine Learning Jobs in Egypt – Apply Now! - Cairo",
+      "url": "https://wuzzuf.net/a/Machine-Learning-Jobs-in-Egypt",
+      "score": 6.0,
+      "search_query": "entry level Machine Learning Engineer Python 0 years experience jobs Egypt",
+      "platform": "Wuzzuf",
+      "relevance_notes": "Title match, location Egypt, mentions Python."
+    },
+    {
+      "title": "Software Engineer - Machine Learning - JB4827111 | Cairo, Egypt",
+      "url": "https://www.gizasystemscareers.com/en/egypt/jobs/software-engineer-machine-learning-4827111/",
+      "score": 5.0,
+      "search_query": "entry level Machine Learning Engineer Python 0 years experience jobs Egypt",
+      "platform": "Other",
+      "relevance_notes": "Title contains Machine Learning, location Cairo, Egypt."
+    },
+    {
+      "title": "Machine Learning Engineer Intern Jobs in Egypt, AR - ZipRecruiter",
+      "url": "https://www.ziprecruiter.com/Jobs/Machine-Learning-Engineer-Intern/-in-Egypt,AR",
+      "score": 4.0,
+      "search_query": "entry level Machine Learning Engineer Python 0 years experience jobs Egypt",
+      "platform": "ZipRecruiter",
+      "relevance_notes": "Title contains Machine Learning Engineer, location Egypt."
+    },
+    {
+      "title": "Entry Level Python Machine Learning No Experience Jobs ... - Indeed",
+      "url": "https://www.indeed.com/q-entry-level-python-machine-learning-no-experience-jobs.html",
+      "score": 5.0,
+      "search_query": "entry level Machine Learning Engineer Python 0 years experience jobs Egypt",
+      "platform": "Indeed",
+      "relevance_notes": "Title match, mentions Python and Machine Learning."
+    },
+    {
+      "title": "Machine Learning Engineer - BlackStone eIT | Built In",
+      "url": "https://builtin.com/job/machine-learning-engineer/6186209",
+      "score": 7.0,
+      "search_query": "Machine Learning Engineer hiring Egypt",
+      "platform": "Built In",
+      "relevance_notes": "Title match, location Egypt, hiring."
+    },
+    {
+      "title": "Specright hiring Machine Learning Engineer in Egypt - LinkedIn",
+      "url": "https://www.linkedin.com/jobs/view/machine-learning-engineer-at-specright-4250943394",
+      "score": 7.0,
+      "search_query": "Machine Learning Engineer hiring Egypt",
+      "platform": "LinkedIn",
+      "relevance_notes": "Title match, location Egypt, hiring."
+    },
+    {
+      "title": "AI/ML Engineer - Grand Technology - Qureos Inc",
+      "url": "https://jobs.qureos.com/jobs/6005345-ai-ml-engineer-grand-technology",
+      "score": 5.0,
+      "search_query": "Machine Learning Engineer hiring Egypt",
+      "platform": "Other",
+      "relevance_notes": "Title contains ML Engineer, location Egypt."
+    },
+    {
+      "title": "79 machine learning engineer Jobs in Egypt, September 2025",
+      "url": "https://www.glassdoor.com/Job/egypt-machine-learning-engineer-jobs-SRCH_IL.0,5_IN69_KO6,31.htm",
+      "score": 6.0,
+      "search_query": "Machine Learning Engineer hiring Egypt",
+      "platform": "Glassdoor",
+      "relevance_notes": "Title match, location Egypt."
+    },
+    {
+      "title": "Machine Learning Engineer jobs in Egypt, Ma - Indeed",
+      "url": "https://www.indeed.com/q-machine-learning-engineer-l-egypt,-ma-jobs.html",
+      "score": 5.0,
+      "search_query": "Machine Learning Engineer hiring Egypt",
+      "platform": "Indeed",
+      "relevance_notes": "Title match, location Egypt."
+    },
+    {
+      "title": "Hire the best Artificial Intelligence Engineers in Egypt - Upwork",
+      "url": "https://www.upwork.com/hire/artificial-intelligence-engineers/eg/",
+      "score": 4.0,
+      "search_query": "Python Machine Learning Engineer jobs Egypt full-time 'hiring 2024'",
+      "platform": "Upwork",
+      "relevance_notes": "Location Egypt, mentions Machine Learning Engineer and Python."
+    },
+    {
+      "title": "Machine Learning Engineer jobs in Egypt, Ma - Indeed",
+      "url": "https://www.indeed.com/q-machine-learning-engineer-l-egypt,-ma-jobs.html",
+      "score": 5.0,
+      "search_query": "Python Machine Learning Engineer jobs Egypt full-time 'hiring 2024'",
+      "platform": "Indeed",
+      "relevance_notes": "Title match, location Egypt."
+    },
+    {
+      "title": "59 python machine learning engineer Jobs in Egypt, August 2025",
+      "url": "https://www.glassdoor.com/Job/egypt-python-machine-learning-engineer-jobs-SRCH_IL.0,5_IN69_KO6,38.htm",
+      "score": 6.0,
+      "search_query": "Python Machine Learning Engineer jobs Egypt full-time 'hiring 2024'",
+      "platform": "Glassdoor",
+      "relevance_notes": "Title match, location Egypt, mentions Python."
+    },
+    {
+      "title": "Crypto Data Scientist / Machine Learning Engineer (Egypt-Remote)",
+      "url": "https://www.karkidi.com/job-details/80446-crypto-data-scientist-machine-learning-engineer-egypt-remote-job",
+      "score": 5.0,
+      "search_query": "Python Machine Learning Engineer jobs Egypt full-time 'hiring 2024'",
+      "platform": "Other",
+      "relevance_notes": "Title contains Machine Learning Engineer, location Egypt, remote."
+    },
+    {
+      "title": "14 Machine Learning Jobs in Egypt – Apply Now! - Cairo",
+      "url": "https://wuzzuf.net/a/Machine-Learning-Jobs-in-Egypt",
+      "score": 4.0,
+      "search_query": "Python Machine Learning Engineer jobs Egypt full-time 'hiring 2024'",
+      "platform": "Wuzzuf",
+      "relevance_notes": "Location Egypt, mentions Machine Learning and Python."
+    },
+    {
+      "title": "Machine Learning Engineer Jobs in Egypt - 35 Vacancies Sep 2025",
+      "url": "https://www.naukrigulf.com/machine-learning-engineer-jobs-in-egypt",
+      "score": 7.0,
+      "search_query": "Machine Learning Engineer careers Egypt",
+      "platform": "NaukriGulf",
+      "relevance_notes": "Title match, location Egypt, mentions machine learning."
+    },
+    {
+      "title": "Machine Learning Engineer - BlackStone eIT | Built In",
+      "url": "https://builtin.com/job/machine-learning-engineer/6186209",
+      "score": 7.0,
+      "search_query": "Machine Learning Engineer careers Egypt",
+      "platform": "Built In",
+      "relevance_notes": "Title match, location Egypt."
+    },
+    {
+      "title": "Specright hiring Machine Learning Engineer in Egypt - LinkedIn",
+      "url": "https://www.linkedin.com/jobs/view/machine-learning-engineer-at-specright-4250943394",
+      "score": 7.0,
+      "search_query": "Machine Learning Engineer careers Egypt",
+      "platform": "LinkedIn",
+      "relevance_notes": "Title match, location Egypt."
+    },
+    {
+      "title": "79 machine learning engineer Jobs in Egypt, September 2025",
+      "url": "https://www.glassdoor.com/Job/egypt-machine-learning-engineer-jobs-SRCH_IL.0,5_IN69_KO6,31.htm",
+      "score": 6.0,
+      "search_query": "Machine Learning Engineer careers Egypt",
+      "platform": "Glassdoor",
+      "relevance_notes": "Title match, location Egypt."
+    },
+    {
+      "title": "Machine Learning Engineer jobs in Egypt, Ma - Indeed",
+      "url": "https://www.indeed.com/q-machine-learning-engineer-l-egypt,-ma-jobs.html",
+      "score": 5.0,
+      "search_query": "Machine Learning Engineer careers Egypt",
+      "platform": "Indeed",
+      "relevance_notes": "Title match, location Egypt."
+    },
+    {
+      "title": "79 machine learning engineer Jobs in Egypt, September 2025",
+      "url": "https://www.glassdoor.com/Job/egypt-machine-learning-engineer-jobs-SRCH_IL.0,5_IN69_KO6,31.htm",
+      "score": 6.0,
+      "search_query": "Machine Learning Engineer Python fresh graduate jobs Egypt 'no experience' remote",
+      "platform": "Glassdoor",
+      "relevance_notes": "Title match, location Egypt."
+    },
+    {
+      "title": "59 python machine learning engineer Jobs in Egypt, August 2025",
+      "url": "https://www.glassdoor.com/Job/egypt-python-machine-learning-engineer-jobs-SRCH_IL.0,5_IN69_KO6,38.htm",
+      "score": 6.0,
+      "search_query": "Machine Learning Engineer Python fresh graduate jobs Egypt 'no experience' remote",
+      "platform": "Glassdoor",
+      "relevance_notes": "Title match, location Egypt, mentions Python."
+    },
+    {
+      "title": "14 Machine Learning Jobs in Egypt – Apply Now! - Cairo",
+      "url": "https://wuzzuf.net/a/Machine-Learning-Jobs-in-Egypt",
+      "score": 4.0,
+      "search_query": "Machine Learning Engineer Python fresh graduate jobs Egypt 'no experience' remote",
+      "platform": "Wuzzuf",
+      "relevance_notes": "Location Egypt, mentions Machine Learning."
+    },
+    {
+      "title": "139 Data Science Work From Home Jobs in Giza\\-egypt - Internshala",
+      "url": "https://internshala.com/jobs/data-science-jobs-in-giza-egypt/work-from-home/",
+      "score": 4.0,
+      "search_query": "Machine Learning Engineer Python fresh graduate jobs Egypt 'no experience' remote",
+      "platform": "Internshala",
+      "relevance_notes": "Location Giza, Egypt, work from home, mentions Python and Machine Learning."
+    },
+    {
+      "title": "505 Machine Learning Engineer jobs in Egypt (10 new) - LinkedIn",
+      "url": "https://www.linkedin.com/jobs/machine-learning-engineer-jobs/?currentJobId=3392347003&originalSubdomain=eg",
+      "score": 4.0,
+      "search_query": "Machine Learning Engineer Python fresh graduate jobs Egypt 'no experience' remote",
+      "platform": "LinkedIn",
+      "relevance_notes": "Title match, location Egypt."
+    },
+    {
+      "title": "Machine Learning Engineer Jobs in Egypt - 35 Vacancies Sep 2025",
+      "url": "https://www.naukrigulf.com/machine-learning-engineer-jobs-in-egypt",
+      "score": 7.0,
+      "search_query": "Machine Learning Engineer openings Egypt",
+      "platform": "NaukriGulf",
+      "relevance_notes": "Title match, location Egypt, mentions machine learning."
+    },
+    {
+      "title": "Machine Learning Engineer - BlackStone eIT | Built In",
+      "url": "https://builtin.com/job/machine-learning-engineer/6186209",
+      "score": 7.0,
+      "search_query": "Machine Learning Engineer openings Egypt",
+      "platform": "Built In",
+      "relevance_notes": "Title match, location Egypt."
+    },
+    {
+      "title": "66 machine learning engineer Jobs in Cairo, Egypt, August 2025",
+      "url": "https://www.glassdoor.com/Job/cairo-machine-learning-engineer-jobs-SRCH_IL.0,5_IM1175_KO6,31.htm",
+      "score": 6.0,
+      "search_query": "Machine Learning Engineer openings Egypt",
+      "platform": "Glassdoor",
+      "relevance_notes": "Title match, location Cairo, Egypt."
+    },
+    {
+      "title": "AI/ML Engineer - Grand Technology - Qureos Inc",
+      "url": "https://jobs.qureos.com/jobs/6005345-ai-ml-engineer-grand-technology",
+      "score": 5.0,
+      "search_query": "Machine Learning Engineer openings Egypt",
+      "platform": "Other",
+      "relevance_notes": "Title contains ML Engineer, location Egypt."
+    },
+    {
+      "title": "Machine Learning Engineer jobs in Egypt, Ma - Indeed",
+      "url": "https://www.indeed.com/q-machine-learning-engineer-l-egypt,-ma-jobs.html",
+      "score": 5.0,
+      "search_query": "Machine Learning Engineer openings Egypt",
+      "platform": "Indeed",
+      "relevance_notes": "Title match, location Egypt."
+    },
+        {
+      "title": "500+ Machine Learning Engineer jobs in Egypt - LinkedIn",
+      "url": "https://www.linkedin.com/jobs/search/?keywords=Machine%20Learning%20Engineer&location=Egypt",
+      "score": 7.0,
+      "search_query": "Machine Learning Engineer openings Egypt",
+      "platform": "LinkedIn",
+      "relevance_notes": "Title match, location Egypt."
+    },
+    {
+      "title": "79 machine learning engineer Jobs in Egypt, September 2025",
+      "url": "https://www.glassdoor.com/Job/egypt-machine-learning-engineer-jobs-SRCH_IL.0,5_IN69_KO6,31.htm",
+      "score": 6.0,
+      "search_query": "Machine Learning Engineer openings Egypt",
+      "platform": "Glassdoor",
+      "relevance_notes": "Title match, location Egypt."
+    },
+    {
+      "title": "Machine Learning Engineer jobs in Egypt, Ma - Indeed",
+      "url": "https://www.indeed.com/q-machine-learning-engineer-l-egypt,-ma-jobs.html",
+      "score": 5.0,
+      "search_query": "Machine Learning Engineer openings Egypt",
+      "platform": "Indeed",
+      "relevance_notes": "Title match, location Egypt."
+    },
+    {
+      "title": "14 Machine Learning Jobs in Egypt – Apply Now! - Cairo",
+      "url": "https://wuzzuf.net/a/Machine-Learning-Jobs-in-Egypt",
+      "score": 4.0,
+      "search_query": "Machine Learning Engineer openings Egypt",
+      "platform": "Wuzzuf",
+      "relevance_notes": "Location Egypt, mentions Machine Learning."
+    },
+    {
+      "title": "Machine Learning Engineer Jobs in Egypt",
+      "url": "https://www.jobsearch.monster.com/jobs/?q=machine-learning-engineer&l=egypt",
+      "score": 4.0,
+      "search_query": "Machine Learning Engineer openings Egypt",
+      "platform": "Monster",
+      "relevance_notes": "Title match, location Egypt."
+    }
+  ]
+}
+```"
+2025-09-14 23:10:44: task_name="None", task="Analyze the job URLs provided from the previous agent's search results.
+
+For each URL:
+1. First try to scrape the job information using the web_scraping_firecrawl tool.
+2. If the tool failed, just save the URL
+
+For each job listing, extract:
+- Job title
+- Full job description
+- Job URL
+
+Then evaluate each job based on the requirements from the user input: 
+
+Provide:
+- A recommendation rank (out of 5, higher is better)
+- Detailed notes explaining your recommendation
+- EXCLUDE jobs that use completely different technology stacks or domains from what the user specified (e.g., if user wants Node.js full-stack, exclude .NET or Python backend roles; if user wants AI/ML, exclude pure frontend or system admin roles)
+- INCLUDE jobs with similar or related technologies even if not exact matches (e.g., if user wants LangChain, include jobs with LangGraph, LlamaIndex, or similar frameworks; if user wants React, include jobs with Vue or Angular)
+- Focus on the DOMAIN and CORE TECHNOLOGY STACK rather than requiring exact tool matches
+
+make sure that the jobs aren't older the last 3 months (current date: 2025-09-14).
+
+ if not then eliminate itCRITICAL: You must return ONLY a valid JSON object that matches this schema {'$defs': {'SingleJobData': {'properties': {'job_title': {'title': 'Job Title', 'type': 'string'}, 'job_description': {'title': 'Job Description', 'type': 'string'}, 'job_url': {'title': 'Job Url', 'type': 'string'}, 'agent_recommendation_rank': {'anyOf': [{'type': 'integer'}, {'type': 'null'}], 'title': 'The rank of the job to be considered in the final procurement report. (out of 5, Higher is Better) in the recommendation list ordering from the best to the worst'}, 'agent_recommendation_notes': {'anyOf': [{'items': {'type': 'string'}, 'type': 'array'}, {'type': 'null'}], 'description': 'A set of notes why the agent would recommend or not recommend this job for the user, compared to other jobs.', 'title': 'Agent Recommendation Notes'}}, 'required': ['job_title', 'job_description', 'job_url', 'agent_recommendation_rank', 'agent_recommendation_notes'], 'title': 'SingleJobData', 'type': 'object'}}, 'properties': {'jobs': {'items': {'$ref': '#/$defs/SingleJobData'}, 'title': 'Jobs', 'type': 'array'}}, 'required': ['jobs'], 'title': 'AllExtractedData', 'type': 'object'}exact structure:
+Do NOT include any text before or after the JSON. Do NOT use markdown formatting. Do NOT include explanations, thoughts, or any other content. Return ONLY the raw JSON object.Revise your answer again before sending it as the final answer to ensure that it includes only the results following the schema no additional texts or anything else other than the results!", agent="Job Scrutinizer", status="started"
+2025-09-14 23:11:38: task_name="None", task="Analyze the job URLs provided from the previous agent's search results.
+
+For each URL:
+1. First try to scrape the job information using the web_scraping_firecrawl tool.
+2. If the tool failed, just save the URL
+
+For each job listing, extract:
+- Job title
+- Full job description
+- Job URL
+
+Then evaluate each job based on the requirements from the user input: 
+
+Provide:
+- A recommendation rank (out of 5, higher is better)
+- Detailed notes explaining your recommendation
+- EXCLUDE jobs that use completely different technology stacks or domains from what the user specified (e.g., if user wants Node.js full-stack, exclude .NET or Python backend roles; if user wants AI/ML, exclude pure frontend or system admin roles)
+- INCLUDE jobs with similar or related technologies even if not exact matches (e.g., if user wants LangChain, include jobs with LangGraph, LlamaIndex, or similar frameworks; if user wants React, include jobs with Vue or Angular)
+- Focus on the DOMAIN and CORE TECHNOLOGY STACK rather than requiring exact tool matches
+
+make sure that the jobs aren't older the last 3 months (current date: 2025-09-14).
+
+ if not then eliminate itCRITICAL: You must return ONLY a valid JSON object that matches this schema {'$defs': {'SingleJobData': {'properties': {'job_title': {'title': 'Job Title', 'type': 'string'}, 'job_description': {'title': 'Job Description', 'type': 'string'}, 'job_url': {'title': 'Job Url', 'type': 'string'}, 'agent_recommendation_rank': {'anyOf': [{'type': 'integer'}, {'type': 'null'}], 'title': 'The rank of the job to be considered in the final procurement report. (out of 5, Higher is Better) in the recommendation list ordering from the best to the worst'}, 'agent_recommendation_notes': {'anyOf': [{'items': {'type': 'string'}, 'type': 'array'}, {'type': 'null'}], 'description': 'A set of notes why the agent would recommend or not recommend this job for the user, compared to other jobs.', 'title': 'Agent Recommendation Notes'}}, 'required': ['job_title', 'job_description', 'job_url', 'agent_recommendation_rank', 'agent_recommendation_notes'], 'title': 'SingleJobData', 'type': 'object'}}, 'properties': {'jobs': {'items': {'$ref': '#/$defs/SingleJobData'}, 'title': 'Jobs', 'type': 'array'}}, 'required': ['jobs'], 'title': 'AllExtractedData', 'type': 'object'}exact structure:
+Do NOT include any text before or after the JSON. Do NOT use markdown formatting. Do NOT include explanations, thoughts, or any other content. Return ONLY the raw JSON object.Revise your answer again before sending it as the final answer to ensure that it includes only the results following the schema no additional texts or anything else other than the results!", agent="Job Scrutinizer", status="completed", output="{"jobs": [{"job_title": "Machine Learning Engineer", "job_description": "Develop and deploy deep learning and machine learning models using Python, TensorFlow, and PyTorch, focusing on healthcare applications.", "job_url": "https://www.naukrigulf.com/senior-machine-learning-engineer-jobs-in-cairo-egypt-in-oncoustics-5-to-7-years-n-cd-10007458-jid-240325500306", "agent_recommendation_rank": 4, "agent_recommendation_notes": ["This job is for a Senior Machine Learning Engineer with 5-7 years of experience.", "The role involves developing and deploying deep learning and machine learning models using Python, TensorFlow, and PyTorch, with a focus on healthcare applications.", "The location is Cairo, Egypt.", "The company is Oncoustics."]}, {"job_title": "Junior Machine Learning Engineer", "job_description": "Advansys is looking for a Junior Machine Learning Engineer to join our dynamic team. This is an excellent opportunity for recent graduates or individuals with foundational experience in machine learning to advance their careers in a supportive and innovative environment. You will assist in the development, implementation, and monitoring of machine learning models and algorithms.", "job_url": "https://www.glassdoor.com/job-listing/junior-machine-learning-engineer-advansys-JV_IC3438994_KO0,32_KE33,41.htm?jl=1009749858774", "agent_recommendation_rank": 1, "agent_recommendation_notes": ["This is a junior role, which might be suitable for someone starting their career in machine learning.", "The job description is detailed and outlines clear responsibilities and requirements.", "The company, Advansys, has a decent rating of 4.0 on Glassdoor.", "The location is Mad\u012bnat an Na\u015fr, Egypt."]}, {"job_title": "AI/ML Engineer - Grand Technology", "job_description": "Grand Technology is seeking a highly motivated and skilled AI/ML Engineer to join our growing team in Cairo, Egypt. This is a full-time position offering an exciting opportunity to work on cutting-edge AI/ML projects and contribute to the development of innovative solutions.", "job_url": "https://app.qureos.com/jobs/aiml-engineer-611311", "agent_recommendation_rank": 4, "agent_recommendation_notes": ["The job description is comprehensive and details the responsibilities and qualifications clearly.", "The salary range is provided, which is helpful for candidates.", "The location is specified as Cairo, Egypt.", "The job is for an AI/ML Engineer, which is a high-demand role.", "The company is Qureos Inc, which appears to be a legitimate company based on the career site."]}]}"
+2025-09-14 23:11:38: task_name="None", task="Evaluate and fix the job scrutinizer agent's response from the previous task.
+
+Your task is to:
+1. Analyze the job scrutinizer's output from the previous task
+2. Check if the response is valid JSON format
+3. If the response is INVALID:
+   - Extract the JSON content from any extra text or markdown
+   - Remove explanations, thoughts, or content outside the JSON
+   - Fix any JSON syntax errors
+   - Ensure it matches the AllExtractedData schema
+   - Output the corrected JSON
+4. If the response is VALID:
+   - Simply pass through the valid JSON unchanged
+
+Required schema structure: {'$defs': {'SingleJobData': {'properties': {'job_title': {'title': 'Job Title', 'type': 'string'}, 'job_description': {'title': 'Job Description', 'type': 'string'}, 'job_url': {'title': 'Job Url', 'type': 'string'}, 'agent_recommendation_rank': {'anyOf': [{'type': 'integer'}, {'type': 'null'}], 'title': 'The rank of the job to be considered in the final procurement report. (out of 5, Higher is Better) in the recommendation list ordering from the best to the worst'}, 'agent_recommendation_notes': {'anyOf': [{'items': {'type': 'string'}, 'type': 'array'}, {'type': 'null'}], 'description': 'A set of notes why the agent would recommend or not recommend this job for the user, compared to other jobs.', 'title': 'Agent Recommendation Notes'}}, 'required': ['job_title', 'job_description', 'job_url', 'agent_recommendation_rank', 'agent_recommendation_notes'], 'title': 'SingleJobData', 'type': 'object'}}, 'properties': {'jobs': {'items': {'$ref': '#/$defs/SingleJobData'}, 'title': 'Jobs', 'type': 'array'}}, 'required': ['jobs'], 'title': 'AllExtractedData', 'type': 'object'}
+
+CRITICAL: You must ALWAYS return a valid JSON object that matches the AllExtractedData schema.
+Do NOT include any text before or after the JSON. Do NOT use markdown formatting.
+Do NOT include explanations or validation reports.
+Return ONLY the corrected/validated JSON object that can be parsed directly.
+
+If the original response was valid, return it as-is.
+If it was invalid, fix it and return the corrected version.
+Your output will be used directly by the next agent, so it must be perfect JSON.", agent="Response Evaluator and Fixer", status="started"
+2025-09-14 23:11:39: task_name="None", task="Evaluate and fix the job scrutinizer agent's response from the previous task.
+
+Your task is to:
+1. Analyze the job scrutinizer's output from the previous task
+2. Check if the response is valid JSON format
+3. If the response is INVALID:
+   - Extract the JSON content from any extra text or markdown
+   - Remove explanations, thoughts, or content outside the JSON
+   - Fix any JSON syntax errors
+   - Ensure it matches the AllExtractedData schema
+   - Output the corrected JSON
+4. If the response is VALID:
+   - Simply pass through the valid JSON unchanged
+
+Required schema structure: {'$defs': {'SingleJobData': {'properties': {'job_title': {'title': 'Job Title', 'type': 'string'}, 'job_description': {'title': 'Job Description', 'type': 'string'}, 'job_url': {'title': 'Job Url', 'type': 'string'}, 'agent_recommendation_rank': {'anyOf': [{'type': 'integer'}, {'type': 'null'}], 'title': 'The rank of the job to be considered in the final procurement report. (out of 5, Higher is Better) in the recommendation list ordering from the best to the worst'}, 'agent_recommendation_notes': {'anyOf': [{'items': {'type': 'string'}, 'type': 'array'}, {'type': 'null'}], 'description': 'A set of notes why the agent would recommend or not recommend this job for the user, compared to other jobs.', 'title': 'Agent Recommendation Notes'}}, 'required': ['job_title', 'job_description', 'job_url', 'agent_recommendation_rank', 'agent_recommendation_notes'], 'title': 'SingleJobData', 'type': 'object'}}, 'properties': {'jobs': {'items': {'$ref': '#/$defs/SingleJobData'}, 'title': 'Jobs', 'type': 'array'}}, 'required': ['jobs'], 'title': 'AllExtractedData', 'type': 'object'}
+
+CRITICAL: You must ALWAYS return a valid JSON object that matches the AllExtractedData schema.
+Do NOT include any text before or after the JSON. Do NOT use markdown formatting.
+Do NOT include explanations or validation reports.
+Return ONLY the corrected/validated JSON object that can be parsed directly.
+
+If the original response was valid, return it as-is.
+If it was invalid, fix it and return the corrected version.
+Your output will be used directly by the next agent, so it must be perfect JSON.", agent="Response Evaluator and Fixer", status="completed", output="{
+  "jobs": [
+    {
+      "job_title": "Machine Learning Engineer",
+      "job_description": "Develop and deploy deep learning and machine learning models using Python, TensorFlow, and PyTorch, focusing on healthcare applications.",
+      "job_url": "https://www.naukrigulf.com/senior-machine-learning-engineer-jobs-in-cairo-egypt-in-oncoustics-5-to-7-years-n-cd-10007458-jid-240325500306",
+      "agent_recommendation_rank": 4,
+      "agent_recommendation_notes": [
+        "This job is for a Senior Machine Learning Engineer with 5-7 years of experience.",
+        "The role involves developing and deploying deep learning and machine learning models using Python, TensorFlow, and PyTorch, with a focus on healthcare applications.",
+        "The location is Cairo, Egypt.",
+        "The company is Oncoustics."
+      ]
+    },
+    {
+      "job_title": "Junior Machine Learning Engineer",
+      "job_description": "Advansys is looking for a Junior Machine Learning Engineer to join our dynamic team. This is an excellent opportunity for recent graduates or individuals with foundational experience in machine learning to advance their careers in a supportive and innovative environment. You will assist in the development, implementation, and monitoring of machine learning models and algorithms.",
+      "job_url": "https://www.glassdoor.com/job-listing/junior-machine-learning-engineer-advansys-JV_IC3438994_KO0,32_KE33,41.htm?jl=1009749858774",
+      "agent_recommendation_rank": 1,
+      "agent_recommendation_notes": [
+        "This is a junior role, which might be suitable for someone starting their career in machine learning.",
+        "The job description is detailed and outlines clear responsibilities and requirements.",
+        "The company, Advansys, has a decent rating of 4.0 on Glassdoor.",
+        "The location is Mad\u012bnat an Na\u015fr, Egypt."
+      ]
+    },
+    {
+      "job_title": "AI/ML Engineer - Grand Technology",
+      "job_description": "Grand Technology is seeking a highly motivated and skilled AI/ML Engineer to join our growing team in Cairo, Egypt. This is a full-time position offering an exciting opportunity to work on cutting-edge AI/ML projects and contribute to the development of innovative solutions.",
+      "job_url": "https://app.qureos.com/jobs/aiml-engineer-611311",
+      "agent_recommendation_rank": 4,
+      "agent_recommendation_notes": [
+        "The job description is comprehensive and details the responsibilities and qualifications clearly.",
+        "The salary range is provided, which is helpful for candidates.",
+        "The location is specified as Cairo, Egypt.",
+        "The job is for an AI/ML Engineer, which is a high-demand role.",
+        "The company is Qureos Inc, which appears to be a legitimate company based on the career site."
+      ]
+    }
+  ]
+}"
+2025-09-14 23:15:01: task_name="None", task="A job seeker is looking for opportunities with the following requirements: {'Job_title': 'Machine Learning Engineer', 'job_type': ['Full-Time'], 'preferred_skills': ['Python'], 'experience_level': 'Fresh', 'min_years_experience': 0, 'locations': ['Egypt'], 'remote_preference': ['any']}Extract structured job search criteria and generate 8 optimized search queries using a multi-tier strategy.CRITICAL: ALL queries must include job-specific keywords to ensure they return actual job postings, not courses, profiles, or articles.Generate two types of queries:BROAD QUERIES (3-4 total): Simple but job-focused- Must include job indicator words: 'jobs', 'careers', 'hiring', 'vacancy', 'opening', 'position'- Use core job title provided by the user like {user_input['job_title']} + location like user_input['locations'] + job indicator- Example: 'data scientist jobs New York', 'software engineer hiring San Francisco'- NOT like this: 'NLP Cairo' (too vague, will return non-job results)PRECISE QUERIES (4-5 total): Detailed with all requirements- Include specific skills, experience level, and multiple criteria- Use site: operator for platforms mentioned by user- Include phrases like 'years experience', specific technologies, seniority level- Example: 'senior data scientist Python machine learning "5+ years" remote jobs'MANDATORY RULES:1. EVERY query must be job-focused - include words like: jobs, hiring, careers, vacancy, opening, position2. Even broad queries must be clearly about job postings3. Do NOT prefix queries with tier labels or numbers4. Mix query order naturally - don't group all broad or all precise together5. Add recency hints where relevant: 'hiring 2024', 'new opening', etc. (current: 2025-09-14)6. For specific platforms use: site:linkedin.com/jobs or site:indeed.comOUTPUT: Return exactly 8 search query strings, one per line, no labels or categories.", agent="Senior Job Search Query Optimizer specializing in converting natural language job requirements into highly effective search queries and keywords for various job boards.", status="started"
+2025-09-14 23:20:28: task_name="None", task="A job seeker is looking for opportunities with the following requirements: {'Job_title': 'Machine Learning Engineer', 'job_type': ['Full-Time'], 'preferred_skills': ['Python'], 'experience_level': 'Fresh', 'min_years_experience': 0, 'locations': ['Egypt'], 'remote_preference': ['any']}Extract structured job search criteria and generate 8 optimized search queries using a multi-tier strategy.CRITICAL: ALL queries must include job-specific keywords to ensure they return actual job postings, not courses, profiles, or articles.Generate two types of queries:BROAD QUERIES (3-4 total): Simple but job-focused- Must include job indicator words: 'jobs', 'careers', 'hiring', 'vacancy', 'opening', 'position'- Use core job title provided by the user like {user_input['job_title']} + location like user_input['locations'] + job indicator- Example: 'data scientist jobs New York', 'software engineer hiring San Francisco'- NOT like this: 'NLP Cairo' (too vague, will return non-job results)PRECISE QUERIES (4-5 total): Detailed with all requirements- Include specific skills, experience level, and multiple criteria- Use site: operator for platforms mentioned by user- Include phrases like 'years experience', specific technologies, seniority level- Example: 'senior data scientist Python machine learning "5+ years" remote jobs'MANDATORY RULES:1. EVERY query must be job-focused - include words like: jobs, hiring, careers, vacancy, opening, position2. Even broad queries must be clearly about job postings3. Do NOT prefix queries with tier labels or numbers4. Mix query order naturally - don't group all broad or all precise together5. Add recency hints where relevant: 'hiring 2024', 'new opening', etc. (current: 2025-09-14)6. For specific platforms use: site:linkedin.com/jobs or site:indeed.comOUTPUT: Return exactly 8 search query strings, one per line, no labels or categories.", agent="Senior Job Search Query Optimizer specializing in converting natural language job requirements into highly effective search queries and keywords for various job boards.", status="completed", output="
+
+{
+  "job_title": ["Machine Learning Engineer"],
+  "preferred_skills": ["Python"],
+  "experience_level": "Fresh",
+  "min_years_experience": 0,
+  "locations": ["Egypt"],
+  "remote_preference": "any",
+  "specified_websites": ["linkedin.com/jobs", "indeed.com"],
+  "search_queries": [
+    "Machine Learning Engineer jobs Egypt",
+    "Careers Machine Learning Engineer Egypt",
+    "Hiring Machine Learning Engineer Egypt",
+    "Machine Learning Engineer vacancy Egypt 2025 new hiring",
+    "Python Machine Learning Engineer jobs Egypt full-time entry-level 0 years experience site:indeed.com",
+    "Entry-level Machine Learning Engineer Python jobs Egypt site:linkedin.com/jobs",
+    "New opening Machine Learning Engineer vacancy Egypt Python no experience required",
+    "Full-time Machine Learning Engineer Python entry-level 0+ years hiring Egypt site:indeed.com"
+  ]
+}"
+2025-09-14 23:20:28: task_name="None", task="You have the following context objects available:
+- search_queries: List of search query strings to run (with or without site: operator).
+- job_titles, required_skills, locations, remote_preference from the previous task.
+
+Instruction:
+1. For each string in `search_queries`, call the `tavily_search_engine_tool` exactly once to execute it.
+   - Use the search_queries directly from input if available, otherwise use the ones from the previous task.
+2. From the tool output, extract raw results; for each result:
+- Determine `platform` based on URL domain.
+- Visit or use the provided `content` snippet to verify presence of required skills and location.
+- Score each result (0-10) according to:
+    * Title match (3)
+    * Required skills presence (3)
+    * Location/remote alignment (2)
+    * Platform credibility (2)
+- Only include results with `score` >= 0.
+- Populate `relevance_notes` explaining the score.
+3. Collect all valid ```json{'properties': {'title': {'title': 'Title', 'type': 'string'}, 'url': {'title': 'the job posting page url', 'type': 'string'}, 'score': {'title': 'Score', 'type': 'number'}, 'search_query': {'title': 'Search Query', 'type': 'string'}, 'platform': {'description': 'LinkedIn/Indeed/Wuzzuf/RemoteOK/Glassdoor/Other', 'title': 'Platform', 'type': 'string'}, 'relevance_notes': {'description': 'Why this result matches the criteria', 'title': 'Relevance Notes', 'type': 'string'}}, 'required': ['title', 'url', 'score', 'search_query', 'platform', 'relevance_notes'], 'title': 'SingleJobSearchResult', 'type': 'object'} items into a list.
+4. After processing *all* queries, output exactly one pure JSON object matching this `{'$defs': {'SingleJobSearchResult': {'properties': {'title': {'title': 'Title', 'type': 'string'}, 'url': {'title': 'the job posting page url', 'type': 'string'}, 'score': {'title': 'Score', 'type': 'number'}, 'search_query': {'title': 'Search Query', 'type': 'string'}, 'platform': {'description': 'LinkedIn/Indeed/Wuzzuf/RemoteOK/Glassdoor/Other', 'title': 'Platform', 'type': 'string'}, 'relevance_notes': {'description': 'Why this result matches the criteria', 'title': 'Relevance Notes', 'type': 'string'}}, 'required': ['title', 'url', 'score', 'search_query', 'platform', 'relevance_notes'], 'title': 'SingleJobSearchResult', 'type': 'object'}}, 'properties': {'results': {'items': {'$ref': '#/$defs/SingleJobSearchResult'}, 'title': 'Results', 'type': 'array'}}, 'required': ['results'], 'title': 'AllJobSearchResults', 'type': 'object'}` schema:
+{"results": [ ... ]}
+5. Do NOT output any additional text, markdown, Thought/Action logs, or make any further tool calls after emitting the JSON.
+Use the previous agent search_queries to get the URLsImportant : Don't generate URLs like example.com if you failed to get any results!- Consider relevancy within the last 3 months (current date: 2025-09-14).", agent="Job Search Specialist", status="started"
+2025-09-14 23:22:22: task_name="None", task="You have the following context objects available:
+- search_queries: List of search query strings to run (with or without site: operator).
+- job_titles, required_skills, locations, remote_preference from the previous task.
+
+Instruction:
+1. For each string in `search_queries`, call the `tavily_search_engine_tool` exactly once to execute it.
+   - Use the search_queries directly from input if available, otherwise use the ones from the previous task.
+2. From the tool output, extract raw results; for each result:
+- Determine `platform` based on URL domain.
+- Visit or use the provided `content` snippet to verify presence of required skills and location.
+- Score each result (0-10) according to:
+    * Title match (3)
+    * Required skills presence (3)
+    * Location/remote alignment (2)
+    * Platform credibility (2)
+- Only include results with `score` >= 0.
+- Populate `relevance_notes` explaining the score.
+3. Collect all valid ```json{'properties': {'title': {'title': 'Title', 'type': 'string'}, 'url': {'title': 'the job posting page url', 'type': 'string'}, 'score': {'title': 'Score', 'type': 'number'}, 'search_query': {'title': 'Search Query', 'type': 'string'}, 'platform': {'description': 'LinkedIn/Indeed/Wuzzuf/RemoteOK/Glassdoor/Other', 'title': 'Platform', 'type': 'string'}, 'relevance_notes': {'description': 'Why this result matches the criteria', 'title': 'Relevance Notes', 'type': 'string'}}, 'required': ['title', 'url', 'score', 'search_query', 'platform', 'relevance_notes'], 'title': 'SingleJobSearchResult', 'type': 'object'} items into a list.
+4. After processing *all* queries, output exactly one pure JSON object matching this `{'$defs': {'SingleJobSearchResult': {'properties': {'title': {'title': 'Title', 'type': 'string'}, 'url': {'title': 'the job posting page url', 'type': 'string'}, 'score': {'title': 'Score', 'type': 'number'}, 'search_query': {'title': 'Search Query', 'type': 'string'}, 'platform': {'description': 'LinkedIn/Indeed/Wuzzuf/RemoteOK/Glassdoor/Other', 'title': 'Platform', 'type': 'string'}, 'relevance_notes': {'description': 'Why this result matches the criteria', 'title': 'Relevance Notes', 'type': 'string'}}, 'required': ['title', 'url', 'score', 'search_query', 'platform', 'relevance_notes'], 'title': 'SingleJobSearchResult', 'type': 'object'}}, 'properties': {'results': {'items': {'$ref': '#/$defs/SingleJobSearchResult'}, 'title': 'Results', 'type': 'array'}}, 'required': ['results'], 'title': 'AllJobSearchResults', 'type': 'object'}` schema:
+{"results": [ ... ]}
+5. Do NOT output any additional text, markdown, Thought/Action logs, or make any further tool calls after emitting the JSON.
+Use the previous agent search_queries to get the URLsImportant : Don't generate URLs like example.com if you failed to get any results!- Consider relevancy within the last 3 months (current date: 2025-09-14).", agent="Job Search Specialist", status="completed", output="```json
+{
+  "results": [
+    {
+      "title": "Machine Learning Engineer Jobs in Egypt - 35 Vacancies Sep 2025",
+      "url": "https://www.naukrigulf.com/machine-learning-engineer-jobs-in-egypt",
+      "score": 7.0,
+      "search_query": "Machine Learning Engineer jobs Egypt",
+      "platform": "NaukriGulf",
+      "relevance_notes": "Title match, location match, some skill match."
+    },
+    {
+      "title": "79 machine learning engineer Jobs in Egypt, September 2025",
+      "url": "https://www.glassdoor.com/Job/egypt-machine-learning-engineer-jobs-SRCH_IL.0,5_IN69_KO6,31.htm",
+      "score": 7.0,
+      "search_query": "Machine Learning Engineer jobs Egypt",
+      "platform": "Glassdoor",
+      "relevance_notes": "Title match, location match, some skill match."
+    },
+    {
+      "title": "AI/ML Engineer - Grand Technology - Qureos Inc",
+      "url": "https://jobs.qureos.com/jobs/6005345-ai-ml-engineer-grand-technology",
+      "score": 6.0,
+      "search_query": "Machine Learning Engineer jobs Egypt",
+      "platform": "Other",
+      "relevance_notes": "Title match, location match."
+    },
+    {
+      "title": "Machine Learning Engineer jobs in Egypt, Ma - Indeed",
+      "url": "https://www.indeed.com/q-machine-learning-engineer-l-egypt,-ma-jobs.html",
+      "score": 6.0,
+      "search_query": "Machine Learning Engineer jobs Egypt",
+      "platform": "Indeed",
+      "relevance_notes": "Title match, location match."
+    },
+    {
+      "title": "66 machine learning engineer Jobs in Cairo, Egypt, August 2025",
+      "url": "https://www.glassdoor.com/Job/cairo-machine-learning-engineer-jobs-SRCH_IL.0,5_IM1175_KO6,31.htm",
+      "score": 7.0,
+      "search_query": "Machine Learning Engineer jobs Egypt",
+      "platform": "Glassdoor",
+      "relevance_notes": "Title match, location match, some skill match."
+    },
+    {
+      "title": "Machine Learning Jobs in Egypt (Sep 2025) - Cairo - Bayt.com",
+      "url": "https://www.bayt.com/en/egypt/jobs/machine-learning-jobs/",
+      "score": 7.0,
+      "search_query": "Careers Machine Learning Engineer Egypt",
+      "platform": "Other",
+      "relevance_notes": "Title match, location match, some skill match."
+    },
+    {
+      "title": "66 machine learning engineer Jobs in Cairo, Egypt, August 2025",
+      "url": "https://www.glassdoor.com/Job/cairo-machine-learning-engineer-jobs-SRCH_IL.0,5_IM1175_KO6,31.htm",
+      "score": 7.0,
+      "search_query": "Careers Machine Learning Engineer Egypt",
+      "platform": "Glassdoor",
+      "relevance_notes": "Title match, location match, some skill match."
+    },
+    {
+      "title": "79 machine learning engineer Jobs in Egypt, September 2025",
+      "url": "https://www.glassdoor.com/Job/egypt-machine-learning-engineer-jobs-SRCH_IL.0,5_IN69_KO6,31.htm",
+      "score": 7.0,
+      "search_query": "Careers Machine Learning Engineer Egypt",
+      "platform": "Glassdoor",
+      "relevance_notes": "Title match, location match, some skill match."
+    },
+    {
+      "title": "Machine Learning Engineer jobs in Egypt, Ma - Indeed",
+      "url": "https://www.indeed.com/q-machine-learning-engineer-l-egypt,-ma-jobs.html",
+      "score": 6.0,
+      "search_query": "Careers Machine Learning Engineer Egypt",
+      "platform": "Indeed",
+      "relevance_notes": "Title match, location match."
+    },
+    {
+      "title": "Machine Learning Jobs in Egypt - 120 Vacancies Sep 2025",
+      "url": "https://www.naukrigulf.com/machine-learning-jobs-in-egypt",
+      "score": 6.0,
+      "search_query": "Careers Machine Learning Engineer Egypt",
+      "platform": "NaukriGulf",
+      "relevance_notes": "Title match, location match."
+    },
+    {
+      "title": "Machine Learning Engineer Jobs in Egypt - 35 Vacancies Sep 2025",
+      "url": "https://www.naukrigulf.com/machine-learning-engineer-jobs-in-egypt",
+      "score": 7.0,
+      "search_query": "Hiring Machine Learning Engineer Egypt",
+      "platform": "NaukriGulf",
+      "relevance_notes": "Title match, location match, some skill match."
+    },
+    {
+      "title": "Hire the best Machine Learning Engineers in Egypt - Upwork",
+      "url": "https://www.upwork.com/hire/machine-learning-experts/eg/",
+      "score": 6.0,
+      "search_query": "Hiring Machine Learning Engineer Egypt",
+      "platform": "Upwork",
+      "relevance_notes": "Title match, location match."
+    },
+    {
+      "title": "Machine Learning Engineer - Giza, Al Jizah, Egypt - LinkedIn",
+      "url": "https://www.linkedin.com/jobs/view/machine-learning-engineer-at-2p-perfect-presentation-4274230321?_l=en",
+      "score": 7.0,
+      "search_query": "Hiring Machine Learning Engineer Egypt",
+      "platform": "LinkedIn",
+      "relevance_notes": "Title match, location match, some skill match."
+    },
+    {
+      "title": "66 machine learning engineer Jobs in Cairo, Egypt, August 2025",
+      "url": "https://www.glassdoor.com/Job/cairo-machine-learning-engineer-jobs-SRCH_IL.0,5_IM1175_KO6,31.htm",
+      "score": 7.0,
+      "search_query": "Hiring Machine Learning Engineer Egypt",
+      "platform": "Glassdoor",
+      "relevance_notes": "Title match, location match, some skill match."
+    },
+    {
+      "title": "79 machine learning engineer Jobs in Egypt, September 2025",
+      "url": "https://www.glassdoor.com/Job/egypt-machine-learning-engineer-jobs-SRCH_IL.0,5_IN69_KO6,31.htm",
+      "score": 7.0,
+      "search_query": "Hiring Machine Learning Engineer Egypt",
+      "platform": "Glassdoor",
+      "relevance_notes": "Title match, location match, some skill match."
+    },
+    {
+      "title": "79 machine learning engineer Jobs in Egypt, September 2025",
+      "url": "https://www.glassdoor.com/Job/egypt-machine-learning-engineer-jobs-SRCH_IL.0,5_IN69_KO6,31.htm",
+      "score": 7.0,
+      "search_query": "Machine Learning Engineer vacancy Egypt 2025 new hiring",
+      "platform": "Glassdoor",
+      "relevance_notes": "Title match, location match, some skill match."
+    },
+    {
+      "title": "509 Machine Learning Engineer jobs in Egypt (35 new) - LinkedIn",
+      "url": "https://www.linkedin.com/jobs/machine-learning-engineer-jobs/?currentJobId=3392347003&originalSubdomain=eg",
+      "score": 7.0,
+      "search_query": "Machine Learning Engineer vacancy Egypt 2025 new hiring",
+      "platform": "LinkedIn",
+      "relevance_notes": "Title match, location match, some skill match."
+    },
+    {
+      "title": "Machine Learning Engineer jobs in Egypt, Ma - Indeed",
+      "url": "https://www.indeed.com/q-machine-learning-engineer-l-egypt,-ma-jobs.html",
+      "score": 6.0,
+      "search_query": "Machine Learning Engineer vacancy Egypt 2025 new hiring",
+      "platform": "Indeed",
+      "relevance_notes": "Title match, location match."
+    },
+    {
+      "title": "Machine Learning Engineer Jobs in Egypt - 35 Vacancies Sep 2025",
+      "url": "https://www.naukrigulf.com/machine-learning-engineer-jobs-in-egypt",
+      "score": 7.0,
+      "search_query": "Machine Learning Engineer vacancy Egypt 2025 new hiring",
+      "platform": "NaukriGulf",
+      "relevance_notes": "Title match, location match, some skill match."
+    },
+    {
+      "title": "66 machine learning engineer Jobs in Cairo, Egypt, August 2025",
+      "url": "https://www.glassdoor.com/Job/cairo-machine-learning-engineer-jobs-SRCH_IL.0,5_IM1175_KO6,31.htm",
+      "score": 7.0,
+      "search_query": "Machine Learning Engineer vacancy Egypt 2025 new hiring",
+      "platform": "Glassdoor",
+      "relevance_notes": "Title match, location match, some skill match."
+    },
+    {
+      "title": "66 machine learning engineer Jobs in Cairo, Egypt, August 2025",
+      "url": "https://www.glassdoor.com/Job/cairo-machine-learning-engineer-jobs-SRCH_IL.0,5_IM1175_KO6,31.htm",
+      "score": 5.0,
+      "search_query": "Python Machine Learning Engineer jobs Egypt full-time entry-level 0 years experience",
+      "platform": "Glassdoor",
+      "relevance_notes": "Title match, location match."
+    },
+    {
+      "title": "14 Machine Learning Jobs in Egypt – Apply Now! - Cairo",
+      "url": "https://wuzzuf.net/a/Machine-Learning-Jobs-in-Egypt",
+      "score": 5.0,
+      "search_query": "Python Machine Learning Engineer jobs Egypt full-time entry-level 0 years experience",
+      "platform": "Wuzzuf",
+      "relevance_notes": "Title match, location match."
+    },
+    {
+      "title": "Machine Learning Engineer (Computer Vision & NLP) is ... - Facebook",
+      "url": "https://www.facebook.com/groups/150506592291748/posts/machine-learning-engineer-computer-vision-nlp-is-needed-to-join-our-ai-team-loca/1512577392751321/",
+      "score": 4.0,
+      "search_query": "Python Machine Learning Engineer jobs Egypt full-time entry-level 0 years experience",
+      "platform": "Other",
+      "relevance_notes": "Title match, location match."
+    },
+    {
+      "title": "Machine Learning Engineer jobs in Egypt, Ma - Indeed",
+      "url": "https://www.indeed.com/q-machine-learning-engineer-l-egypt,-ma-jobs.html",
+      "score": 4.0,
+      "search_query": "Python Machine Learning Engineer jobs Egypt full-time entry-level 0 years experience",
+      "platform": "Indeed",
+      "relevance_notes": "Title match, location match."
+    },
+    {
+      "title": "Entry Level Python Machine Learning No Experience Jobs ... - Indeed",
+      "url": "https://www.indeed.com/q-entry-level-python-machine-learning-no-experience-jobs.html",
+      "score": 4.0,
+      "search_query": "Python Machine Learning Engineer jobs Egypt full-time entry-level 0 years experience",
+      "platform": "Indeed",
+      "relevance_notes": "Title match."
+    },
+    {
+      "title": "14 Machine Learning Jobs in Egypt – Apply Now! - Cairo",
+      "url": "https://wuzzuf.net/a/Machine-Learning-Jobs-in-Egypt",
+      "score": 6.0,
+      "search_query": "Entry-level Machine Learning Engineer Python jobs Egypt",
+      "platform": "Wuzzuf",
+      "relevance_notes": "Title match, location match, Python skill."
+    },
+    {
+      "title": "53 Python Jobs in Egypt – Apply Now! - Wuzzuf",
+      "url": "https://wuzzuf.net/a/Python-Jobs-in-Egypt",
+      "score": 5.0,
+      "search_query": "Entry-level Machine Learning Engineer Python jobs Egypt",
+      "platform": "Wuzzuf",
+      "relevance_notes": "Location match, Python skill."
+    },
+    {
+      "title": "173 machine learning Jobs in Egypt, September 2025 | Glassdoor",
+      "url": "https://www.glassdoor.com/Job/egypt-machine-learning-jobs-SRCH_IL.0,5_IN69_KO6,22.htm",
+      "score": 5.0,
+      "search_query": "Entry-level Machine Learning Engineer Python jobs Egypt",
+      "platform": "Glassdoor",
+      "relevance_notes": "Location match."
+    },
+    {
+      "title": "Software Engineer - Machine Learning - JB4827111 | Cairo, Egypt",
+      "url": "https://www.gizasystemscareers.com/en/egypt/jobs/software-engineer-machine-learning-4827111/",
+      "score": 5.0,
+      "search_query": "Entry-level Machine Learning Engineer Python jobs Egypt",
+      "platform": "Other",
+      "relevance_notes": "Location match."
+    },
+    {
+      "title": "1,000+ AI Jobs jobs in Egypt - LinkedIn",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=3732240165&geoId=106155005&keywords=AI%20jobs&location=Egypt&origin=JOB_SEARCH_PAGE_SEARCH_BUTTON&refresh=true",
+      "score": 4.0,
+      "search_query": "Entry-level Machine Learning Engineer Python jobs Egypt",
+      "platform": "LinkedIn",
+      "relevance_notes": "Location match."
+    },
+    {
+      "title": "1,000+ AI Jobs jobs in Egypt - LinkedIn",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=3732240165&geoId=106155005&keywords=AI%20jobs&location=Egypt&origin=JOB_SEARCH_PAGE_SEARCH_BUTTON&refresh=true",
+      "score": 5.0,
+      "search_query": "New opening Machine Learning Engineer vacancy Egypt Python no experience required",
+      "platform": "LinkedIn",
+      "relevance_notes": "Location match."
+    },
+    {
+      "title": "Software Engineer - Machine Learning - JB4827111 | Cairo, Egypt",
+      "url": "https://www.gizasystemscareers.com/en/egypt/jobs/software-engineer-machine-learning-4827111/",
+      "score": 5.0,
+      "search_query": "New opening Machine Learning Engineer vacancy Egypt Python no experience required",
+      "platform": "Other",
+      "relevance_notes": "Location match."
+    },
+    {
+      "title": "59 python machine learning engineer Jobs in Egypt, August 2025",
+      "url": "https://www.glassdoor.com/Job/egypt-python-machine-learning-engineer-jobs-SRCH_IL.0,5_IN69_KO6,38.htm",
+      "score": 5.0,
+      "search_query": "New opening Machine Learning Engineer vacancy Egypt Python no experience required",
+      "platform": "Glassdoor",
+      "relevance_notes": "Location match."
+    },
+    {
+      "title": "79 machine learning engineer Jobs in Egypt, September 2025",
+      "url": "https://www.glassdoor.com/Job/egypt-machine-learning-engineer-jobs-SRCH_IL.0,5_IN69_KO6,31.htm",
+      "score": 5.0,
+      "search_query": "New opening Machine Learning Engineer vacancy Egypt Python no experience required",
+      "platform": "Glassdoor",
+      "relevance_notes": "Location match."
+    },
+    {
+      "title": "Machine Learning Engineer jobs in Egypt, Ma - Indeed",
+      "url": "https://www.indeed.com/q-machine-learning-engineer-l-egypt,-ma-jobs.html",
+      "score": 4.0,
+      "search_query": "New opening Machine Learning Engineer vacancy Egypt Python no experience required",
+      "platform": "Indeed",
+      "relevance_notes": "Location match."
+    }
+  ]
+}
+```"
+2025-09-14 23:22:22: task_name="None", task="Analyze the job URLs provided from the previous agent's search results.
+
+For each URL:
+1. First try to scrape the job information using the web_scraping_firecrawl tool.
+2. If the tool failed, just save the URL
+
+For each job listing, extract:
+- Job title
+- Full job description
+- Job URL
+
+Then evaluate each job based on the requirements from the user input: 
+
+Provide:
+- A recommendation rank (out of 5, higher is better)
+- Detailed notes explaining your recommendation
+- EXCLUDE jobs that use completely different technology stacks or domains from what the user specified (e.g., if user wants Node.js full-stack, exclude .NET or Python backend roles; if user wants AI/ML, exclude pure frontend or system admin roles)
+- INCLUDE jobs with similar or related technologies even if not exact matches (e.g., if user wants LangChain, include jobs with LangGraph, LlamaIndex, or similar frameworks; if user wants React, include jobs with Vue or Angular)
+- Focus on the DOMAIN and CORE TECHNOLOGY STACK rather than requiring exact tool matches
+
+make sure that the jobs aren't older the last 3 months (current date: 2025-09-14).
+
+ if not then eliminate itCRITICAL: You must return ONLY a valid JSON object that matches this schema {'$defs': {'SingleJobData': {'properties': {'job_title': {'title': 'Job Title', 'type': 'string'}, 'job_description': {'title': 'Job Description', 'type': 'string'}, 'job_url': {'title': 'Job Url', 'type': 'string'}, 'agent_recommendation_rank': {'anyOf': [{'type': 'integer'}, {'type': 'null'}], 'title': 'The rank of the job to be considered in the final procurement report. (out of 5, Higher is Better) in the recommendation list ordering from the best to the worst'}, 'agent_recommendation_notes': {'anyOf': [{'items': {'type': 'string'}, 'type': 'array'}, {'type': 'null'}], 'description': 'A set of notes why the agent would recommend or not recommend this job for the user, compared to other jobs.', 'title': 'Agent Recommendation Notes'}}, 'required': ['job_title', 'job_description', 'job_url', 'agent_recommendation_rank', 'agent_recommendation_notes'], 'title': 'SingleJobData', 'type': 'object'}}, 'properties': {'jobs': {'items': {'$ref': '#/$defs/SingleJobData'}, 'title': 'Jobs', 'type': 'array'}}, 'required': ['jobs'], 'title': 'AllExtractedData', 'type': 'object'}exact structure:
+Do NOT include any text before or after the JSON. Do NOT use markdown formatting. Do NOT include explanations, thoughts, or any other content. Return ONLY the raw JSON object.Revise your answer again before sending it as the final answer to ensure that it includes only the results following the schema no additional texts or anything else other than the results!", agent="Job Scrutinizer", status="started"
+2025-09-14 23:22:41: task_name="None", task="Analyze the job URLs provided from the previous agent's search results.
+
+For each URL:
+1. First try to scrape the job information using the web_scraping_firecrawl tool.
+2. If the tool failed, just save the URL
+
+For each job listing, extract:
+- Job title
+- Full job description
+- Job URL
+
+Then evaluate each job based on the requirements from the user input: 
+
+Provide:
+- A recommendation rank (out of 5, higher is better)
+- Detailed notes explaining your recommendation
+- EXCLUDE jobs that use completely different technology stacks or domains from what the user specified (e.g., if user wants Node.js full-stack, exclude .NET or Python backend roles; if user wants AI/ML, exclude pure frontend or system admin roles)
+- INCLUDE jobs with similar or related technologies even if not exact matches (e.g., if user wants LangChain, include jobs with LangGraph, LlamaIndex, or similar frameworks; if user wants React, include jobs with Vue or Angular)
+- Focus on the DOMAIN and CORE TECHNOLOGY STACK rather than requiring exact tool matches
+
+make sure that the jobs aren't older the last 3 months (current date: 2025-09-14).
+
+ if not then eliminate itCRITICAL: You must return ONLY a valid JSON object that matches this schema {'$defs': {'SingleJobData': {'properties': {'job_title': {'title': 'Job Title', 'type': 'string'}, 'job_description': {'title': 'Job Description', 'type': 'string'}, 'job_url': {'title': 'Job Url', 'type': 'string'}, 'agent_recommendation_rank': {'anyOf': [{'type': 'integer'}, {'type': 'null'}], 'title': 'The rank of the job to be considered in the final procurement report. (out of 5, Higher is Better) in the recommendation list ordering from the best to the worst'}, 'agent_recommendation_notes': {'anyOf': [{'items': {'type': 'string'}, 'type': 'array'}, {'type': 'null'}], 'description': 'A set of notes why the agent would recommend or not recommend this job for the user, compared to other jobs.', 'title': 'Agent Recommendation Notes'}}, 'required': ['job_title', 'job_description', 'job_url', 'agent_recommendation_rank', 'agent_recommendation_notes'], 'title': 'SingleJobData', 'type': 'object'}}, 'properties': {'jobs': {'items': {'$ref': '#/$defs/SingleJobData'}, 'title': 'Jobs', 'type': 'array'}}, 'required': ['jobs'], 'title': 'AllExtractedData', 'type': 'object'}exact structure:
+Do NOT include any text before or after the JSON. Do NOT use markdown formatting. Do NOT include explanations, thoughts, or any other content. Return ONLY the raw JSON object.Revise your answer again before sending it as the final answer to ensure that it includes only the results following the schema no additional texts or anything else other than the results!", agent="Job Scrutinizer", status="completed", output="{"jobs": [
+{"job_title": "Machine Learning Engineer", "job_description": "Develop and deploy deep learning and machine learning models using Python, TensorFlow, and PyTorch, focusing on healthcare applications.", "job_url": "https://www.naukrigulf.com/senior-machine-learning-engineer-jobs-in-cairo-egypt-in-oncoustics-5-to-7-years-n-cd-10007458-jid-240325500306", "agent_recommendation_rank": 4, "agent_recommendation_notes": ["This job is for a Senior Machine Learning Engineer with 5-7 years of experience.", "The role involves developing and deploying deep learning and machine learning models using Python, TensorFlow, and PyTorch, with a focus on healthcare applications.", "The location is Cairo, Egypt.", "The company is Oncoustics."]},
+{"job_title": "Machine Learning Engineer (Computer Vision & NLP)", "job_description": "Design and develop machine learning models and algorithms for computer vision and natural language processing applications.", "job_url": "https://www.facebook.com/groups/150506592291748/posts/machine-learning-engineer-computer-vision-nlp-is-needed-to-join-our-ai-team-loca/1512577392751321/", "agent_recommendation_rank": 3, "agent_recommendation_notes": ["This job is for a Machine Learning Engineer with experience in computer vision and NLP.", "The role involves designing and developing machine learning models and algorithms for computer vision and NLP applications.", "The location is Egypt.", "The company is not specified."]},
+{"job_title": "Software Engineer - Machine Learning", "job_description": "Develop and deploy machine learning models using Python, TensorFlow, and PyTorch, focusing on software development.", "job_url": "https://www.gizasystemscareers.com/en/egypt/jobs/software-engineer-machine-learning-4827111/", "agent_recommendation_rank": 4, "agent_recommendation_notes": ["This job is for a Software Engineer with experience in machine learning.", "The role involves developing and deploying machine learning models using Python, TensorFlow, and PyTorch, with a focus on software development.", "The location is Cairo, Egypt.", "The company is Giza Systems."]},
+{"job_title": "Machine Learning Engineer", "job_description": "Develop and deploy deep learning and machine learning models using Python, TensorFlow, and PyTorch, focusing on various applications.", "job_url": "https://www.indeed.com/q-machine-learning-engineer-l-egypt,-ma-jobs.html", "agent_recommendation_rank": 3, "agent_recommendation_notes": ["This job is for a Machine Learning Engineer with experience in developing and deploying deep learning and machine learning models.", "The role involves developing and deploying deep learning and machine learning models using Python, TensorFlow, and PyTorch, with a focus on various applications.", "The location is Egypt.", "The company is not specified."]},
+{"job_title": "Entry Level Python Machine Learning Engineer", "job_description": "Develop and deploy machine learning models using Python, focusing on entry-level applications.", "job_url": "https://www.indeed.com/q-entry-level-python-machine-learning-no-experience-jobs.html", "agent_recommendation_rank": 2, "agent_recommendation_notes": ["This job is for an Entry Level Python Machine Learning Engineer with no experience.", "The role involves developing and deploying machine learning models using Python, with a focus on entry-level applications.", "The location is Egypt.", "The company is not specified."]}
+]}"
+2025-09-14 23:22:41: task_name="None", task="Evaluate and fix the job scrutinizer agent's response from the previous task.
+
+Your task is to:
+1. Analyze the job scrutinizer's output from the previous task
+2. Check if the response is valid JSON format
+3. If the response is INVALID:
+   - Extract the JSON content from any extra text or markdown
+   - Remove explanations, thoughts, or content outside the JSON
+   - Fix any JSON syntax errors
+   - Ensure it matches the AllExtractedData schema
+   - Output the corrected JSON
+4. If the response is VALID:
+   - Simply pass through the valid JSON unchanged
+
+Required schema structure: {'$defs': {'SingleJobData': {'properties': {'job_title': {'title': 'Job Title', 'type': 'string'}, 'job_description': {'title': 'Job Description', 'type': 'string'}, 'job_url': {'title': 'Job Url', 'type': 'string'}, 'agent_recommendation_rank': {'anyOf': [{'type': 'integer'}, {'type': 'null'}], 'title': 'The rank of the job to be considered in the final procurement report. (out of 5, Higher is Better) in the recommendation list ordering from the best to the worst'}, 'agent_recommendation_notes': {'anyOf': [{'items': {'type': 'string'}, 'type': 'array'}, {'type': 'null'}], 'description': 'A set of notes why the agent would recommend or not recommend this job for the user, compared to other jobs.', 'title': 'Agent Recommendation Notes'}}, 'required': ['job_title', 'job_description', 'job_url', 'agent_recommendation_rank', 'agent_recommendation_notes'], 'title': 'SingleJobData', 'type': 'object'}}, 'properties': {'jobs': {'items': {'$ref': '#/$defs/SingleJobData'}, 'title': 'Jobs', 'type': 'array'}}, 'required': ['jobs'], 'title': 'AllExtractedData', 'type': 'object'}
+
+CRITICAL: You must ALWAYS return a valid JSON object that matches the AllExtractedData schema.
+Do NOT include any text before or after the JSON. Do NOT use markdown formatting.
+Do NOT include explanations or validation reports.
+Return ONLY the corrected/validated JSON object that can be parsed directly.
+
+If the original response was valid, return it as-is.
+If it was invalid, fix it and return the corrected version.
+Your output will be used directly by the next agent, so it must be perfect JSON.", agent="Response Evaluator and Fixer", status="started"
+2025-09-14 23:24:58: task_name="None", task="Evaluate and fix the job scrutinizer agent's response from the previous task.
+
+Your task is to:
+1. Analyze the job scrutinizer's output from the previous task
+2. Check if the response is valid JSON format
+3. If the response is INVALID:
+   - Extract the JSON content from any extra text or markdown
+   - Remove explanations, thoughts, or content outside the JSON
+   - Fix any JSON syntax errors
+   - Ensure it matches the AllExtractedData schema
+   - Output the corrected JSON
+4. If the response is VALID:
+   - Simply pass through the valid JSON unchanged
+
+Required schema structure: {'$defs': {'SingleJobData': {'properties': {'job_title': {'title': 'Job Title', 'type': 'string'}, 'job_description': {'title': 'Job Description', 'type': 'string'}, 'job_url': {'title': 'Job Url', 'type': 'string'}, 'agent_recommendation_rank': {'anyOf': [{'type': 'integer'}, {'type': 'null'}], 'title': 'The rank of the job to be considered in the final procurement report. (out of 5, Higher is Better) in the recommendation list ordering from the best to the worst'}, 'agent_recommendation_notes': {'anyOf': [{'items': {'type': 'string'}, 'type': 'array'}, {'type': 'null'}], 'description': 'A set of notes why the agent would recommend or not recommend this job for the user, compared to other jobs.', 'title': 'Agent Recommendation Notes'}}, 'required': ['job_title', 'job_description', 'job_url', 'agent_recommendation_rank', 'agent_recommendation_notes'], 'title': 'SingleJobData', 'type': 'object'}}, 'properties': {'jobs': {'items': {'$ref': '#/$defs/SingleJobData'}, 'title': 'Jobs', 'type': 'array'}}, 'required': ['jobs'], 'title': 'AllExtractedData', 'type': 'object'}
+
+CRITICAL: You must ALWAYS return a valid JSON object that matches the AllExtractedData schema.
+Do NOT include any text before or after the JSON. Do NOT use markdown formatting.
+Do NOT include explanations or validation reports.
+Return ONLY the corrected/validated JSON object that can be parsed directly.
+
+If the original response was valid, return it as-is.
+If it was invalid, fix it and return the corrected version.
+Your output will be used directly by the next agent, so it must be perfect JSON.", agent="Response Evaluator and Fixer", status="completed", output="{
+  "jobs": [
+    {
+      "job_title": "Machine Learning Engineer",
+      "job_description": "Develop and deploy deep learning and machine learning models using Python, TensorFlow, and PyTorch, focusing on healthcare applications.",
+      "job_url": "https://www.naukrigulf.com/senior-machine-learning-engineer-jobs-in-cairo-egypt-in-oncoustics-5-to-7-years-n-cd-10007458-jid-240325500306",
+      "agent_recommendation_rank": 4,
+      "agent_recommendation_notes": [
+        "This job is for a Senior Machine Learning Engineer with 5-7 years of experience.",
+        "The role involves developing and deploying deep learning and machine learning models using Python, TensorFlow, and PyTorch, with a focus on healthcare applications.",
+        "The location is Cairo, Egypt.",
+        "The company is Oncoustics."
+      ]
+    },
+    {
+      "job_title": "Machine Learning Engineer (Computer Vision & NLP)",
+      "job_description": "Design and develop machine learning models and algorithms for computer vision and natural language processing applications.",
+      "job_url": "https://www.facebook.com/groups/150506592291748/posts/machine-learning-engineer-computer-vision-nlp-is-needed-to-join-our-ai-team-loca/1512577392751321/",
+      "agent_recommendation_rank": 3,
+      "agent_recommendation_notes": [
+        "This job is for a Machine Learning Engineer with experience in computer vision and NLP.",
+        "The role involves designing and developing machine learning models and algorithms for computer vision and NLP applications.",
+        "The location is Egypt.",
+        "The company is not specified."
+      ]
+    },
+    {
+      "job_title": "Software Engineer - Machine Learning",
+      "job_description": "Develop and deploy machine learning models using Python, TensorFlow, and PyTorch, focusing on software development.",
+      "job_url": "https://www.gizasystemscareers.com/en/egypt/jobs/software-engineer-machine-learning-4827111/",
+      "agent_recommendation_rank": 4,
+      "agent_recommendation_notes": [
+        "This job is for a Software Engineer with experience in machine learning.",
+        "The role involves developing and deploying machine learning models using Python, TensorFlow, and PyTorch, with a focus on software development.",
+        "The location is Cairo, Egypt.",
+        "The company is Giza Systems."
+      ]
+    },
+    {
+      "job_title": "Machine Learning Engineer",
+      "job_description": "Develop and deploy deep learning and machine learning models using Python, TensorFlow, and PyTorch, focusing on various applications.",
+      "job_url": "https://www.indeed.com/q-machine-learning-engineer-l-egypt,-ma-jobs.html",
+      "agent_recommendation_rank": 3,
+      "agent_recommendation_notes": [
+        "This job is for a Machine Learning Engineer with experience in developing and deploying deep learning and machine learning models.",
+        "The role involves developing and deploying deep learning and machine learning models using Python, TensorFlow, and PyTorch, with a focus on various applications.",
+        "The location is Egypt.",
+        "The company is not specified."
+      ]
+    },
+    {
+      "job_title": "Entry Level Python Machine Learning Engineer",
+      "job_description": "Develop and deploy machine learning models using Python, focusing on entry-level applications.",
+      "job_url": "https://www.indeed.com/q-entry-level-python-machine-learning-no-experience-jobs.html",
+      "agent_recommendation_rank": 2,
+      "agent_recommendation_notes": [
+        "This job is for an Entry Level Python Machine Learning Engineer with no experience.",
+        "The role involves developing and deploying machine learning models using Python, with a focus on entry-level applications.",
+        "The location is Egypt.",
+        "The company is not specified."
+      ]
+    }
+  ]
+}"
+2025-09-14 23:27:25: task_name="None", task="A job seeker is looking for opportunities with the following requirements: {'Job_title': 'Machine Learning Engineer', 'job_type': ['Full-Time'], 'preferred_skills': ['Python'], 'experience_level': 'Fresh', 'min_years_experience': 0, 'locations': ['Egypt'], 'remote_preference': ['any']}Extract structured job search criteria and generate 8 optimized search queries using a multi-tier strategy.CRITICAL: ALL queries must include job-specific keywords to ensure they return actual job postings, not courses, profiles, or articles.Generate two types of queries:BROAD QUERIES (3-4 total): Simple but job-focused- Must include job indicator words: 'jobs', 'careers', 'hiring', 'vacancy', 'opening', 'position'- Use core job title provided by the user like {user_input['job_title']} + location like user_input['locations'] + job indicator- Example: 'data scientist jobs New York', 'software engineer hiring San Francisco'- NOT like this: 'NLP Cairo' (too vague, will return non-job results)PRECISE QUERIES (4-5 total): Detailed with all requirements- Include specific skills, experience level, and multiple criteria- Use site: operator for platforms mentioned by user- Include phrases like 'years experience', specific technologies, seniority level- Example: 'senior data scientist Python machine learning "5+ years" remote jobs'MANDATORY RULES:1. EVERY query must be job-focused - include words like: jobs, hiring, careers, vacancy, opening, position2. Even broad queries must be clearly about job postings3. Do NOT prefix queries with tier labels or numbers4. Mix query order naturally - don't group all broad or all precise together5. Add recency hints where relevant: 'hiring 2024', 'new opening', etc. (current: 2025-09-14)6. For specific platforms use: site:linkedin.com/jobs or site:indeed.comOUTPUT: Return exactly 8 search query strings, one per line, no labels or categories.", agent="Senior Job Search Query Optimizer specializing in converting natural language job requirements into highly effective search queries and keywords for various job boards.", status="started"
+2025-09-14 23:37:57: task_name="None", task="A job seeker is looking for opportunities with the following requirements: {'Job_title': 'Machine Learning Engineer', 'job_type': ['Full-Time'], 'preferred_skills': ['Python'], 'experience_level': 'Fresh', 'min_years_experience': 0, 'locations': ['Egypt'], 'remote_preference': ['any']}Extract structured job search criteria and generate 8 optimized search queries using a multi-tier strategy.CRITICAL: ALL queries must include job-specific keywords to ensure they return actual job postings, not courses, profiles, or articles.Generate two types of queries:BROAD QUERIES (3-4 total): Simple but job-focused- Must include job indicator words: 'jobs', 'careers', 'hiring', 'vacancy', 'opening', 'position'- Use core job title provided by the user like {user_input['job_title']} + location like user_input['locations'] + job indicator- Example: 'data scientist jobs New York', 'software engineer hiring San Francisco'- NOT like this: 'NLP Cairo' (too vague, will return non-job results)PRECISE QUERIES (4-5 total): Detailed with all requirements- Include specific skills, experience level, and multiple criteria- Use site: operator for platforms mentioned by user- Include phrases like 'years experience', specific technologies, seniority level- Example: 'senior data scientist Python machine learning "5+ years" remote jobs'MANDATORY RULES:1. EVERY query must be job-focused - include words like: jobs, hiring, careers, vacancy, opening, position2. Even broad queries must be clearly about job postings3. Do NOT prefix queries with tier labels or numbers4. Mix query order naturally - don't group all broad or all precise together5. Add recency hints where relevant: 'hiring 2024', 'new opening', etc. (current: 2025-09-14)6. For specific platforms use: site:linkedin.com/jobs or site:indeed.comOUTPUT: Return exactly 8 search query strings, one per line, no labels or categories.", agent="Senior Job Search Query Optimizer specializing in converting natural language job requirements into highly effective search queries and keywords for various job boards.", status="started"

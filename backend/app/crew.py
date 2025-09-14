@@ -1,6 +1,6 @@
 from crewai import Crew, Process
 import logging
-
+from pathlib import Path
 
 from app.agents.job_requirement_analyst import JobRequirementAnalyst
 from app.agents.search_agent import SearchAgent
@@ -12,6 +12,8 @@ from app.tools.mail_sender import send_email
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
+
+BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 
 def initialize_crew(user_input_data : dict):
@@ -30,7 +32,10 @@ def initialize_crew(user_input_data : dict):
 
     logger.info("All agents initialized successfully")
 
-    logs = f"./backend/logs/{email}.txt"
+    
+    logs_dir = BASE_DIR / "logs"
+    logs_dir.mkdir(exist_ok=True)
+    logs = str(logs_dir / f"{email}.txt")
 
     crew = Crew(
                 agents=[
@@ -70,7 +75,7 @@ def initialize_crew(user_input_data : dict):
                 send_email(to_email=email)
                 logger.info(f"Email sent successfully to {email}")
             else:
-                logging.error("Failed to generate the email bruhh")
+                logging.error("Failed to generate the email bruhh")  
                 raise Exception
 
         else:
@@ -81,5 +86,8 @@ def initialize_crew(user_input_data : dict):
 
         logging.error(f"The crew Failed miserably bruhhhh : {e}")
         logger.info(f"Sending error notification email to {email}")
-        send_email(to_email=email , html_file_path="./backend/error_template/error_email_template.html")
+        send_email(to_email=email, error= True)
+        logger.info(f"Error Email sent successfully to {email}")
+        return False
+     
 

@@ -79,7 +79,7 @@ class JobRequirementAnalyst:
             description=description,
             expected_output="A JSON object containing structured job requirements and optimized search queries.",
             output_json=JobSearchCriteria,
-            output_file=os.path.join("./backend/results/", "step_1_job_requirements_analysis.json"),
+            output_file=os.path.join("./results/", "step_1_job_requirements_analysis.json"),
             agent=self.agent,
         )
         return self.task

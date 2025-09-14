@@ -1,28 +1,24 @@
 FROM python:3.11.13-slim as base
 
-# Prevents Python from writing pyc files.
+# Prevents Python from writing pyc files
 ENV PYTHONDONTWRITEBYTECODE=1
-
-# Keeps Python from buffering stdout and stderr to avoid situations where
-# the application crashes without emitting any logs due to buffering.
+# Ensures logs are flushed directly
 ENV PYTHONUNBUFFERED=1
 
-WORKDIR /workingspace
+WORKDIR /backend
 
+# Install dependencies first (cached layer)
+COPY requirements.txt .
+RUN python -m pip install --no-cache-dir -r requirements.txt
 
-# Download dependencies as a separate step to take advantage of Docker's caching.
-# Leverage a cache mount to /root/.cache/pip to speed up subsequent builds.
-# Leverage a bind mount to requirements.txt to avoid having to copy them into
-# into this layer.
-RUN --mount=type=cache,target=/root/.cache/pip \
-    --mount=type=bind,source=requirements.txt,target=requirements.txt \
-    python -m pip install -r requirements.txt
-
-# Copy the source code into the container.
+# Copy the rest of the source code
 COPY . .
 
-# Expose the port that the application listens on.
+# Add the current directory to Python path so imports work correctly
+ENV PYTHONPATH=/backend
+
+# Expose the port for your app
 EXPOSE 8000
 
-# Run the application.
-CMD uvicorn 'main:app' --host=0.0.0.0 --port=8000
+CMD ["uvicorn", "main:app", "--host=0.0.0.0", "--port=8000"]
+

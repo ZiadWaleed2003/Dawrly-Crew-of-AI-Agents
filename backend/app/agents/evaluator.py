@@ -23,7 +23,7 @@ class EvaluatorAgent:
             verbose=True
         )
     
-    def create_task(self, output_dir="./backend/results/"):
+    def create_task(self, output_dir="./results/"):
         description = "".join([
             "Evaluate and fix the job scrutinizer agent's response from the previous task.\n\n",
             "Your task is to:\n",
@@ -56,6 +56,6 @@ class EvaluatorAgent:
         )
         return self.task
     
-    def evaluate_response(self, output_dir="./backend/results/"):
+    def evaluate_response(self, output_dir="./results/"):
         return self.create_task(output_dir)
     
