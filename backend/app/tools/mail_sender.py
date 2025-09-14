@@ -4,14 +4,29 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.application import MIMEApplication
 import os
 from dotenv import load_dotenv
+from pathlib import Path
 
-def send_email(to_email,html_file_path="./backend/results/final_result.html"):
+BASE_DIR = Path(__file__).resolve().parent.parent.parent
+
+def send_email(to_email, html_file_path=None , error=False):
 
     """
         this function is used to send an email to the user containing the results of the Dawrly Crew 
         it send it as an HTML to be directly rendered from the user
         and it send the actual file aswell !
     """
+
+    # Set default path and ensure results directory exists
+    if html_file_path is None:
+        results_dir = BASE_DIR / "results"
+        results_dir.mkdir(exist_ok=True)
+        html_file_path = str(results_dir / "final_result.html")
+
+    if error != False:
+
+        error_dir = BASE_DIR / "error_template"
+        error_dir.mkdir(exist_ok=True)
+        html_file_path = str(error_dir / "error_email_template.html")
 
     # loading password and email from the .env file 
     load_dotenv()
@@ -53,7 +68,13 @@ def send_email(to_email,html_file_path="./backend/results/final_result.html"):
         return False
 
 
-def read_file_content(file_path="./backend/results/final_result.html"):
+def read_file_content(file_path=None):
+    # Set default path and ensure results directory exists
+    if file_path is None:
+        results_dir = BASE_DIR / "results"
+        results_dir.mkdir(exist_ok=True)
+        file_path = str(results_dir / "final_result.html")
+    
     # Read the HTML content from the file
     try:
         with open(file_path, 'r', encoding='utf-8') as file:

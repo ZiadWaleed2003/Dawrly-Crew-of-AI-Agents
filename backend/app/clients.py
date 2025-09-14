@@ -2,7 +2,6 @@ from crewai import LLM
 import agentops
 from firecrawl import FirecrawlApp
 from tavily import TavilyClient
-from scrapegraph_py import Client
 from config import CONFIG
 
 
@@ -26,23 +25,6 @@ def get_llm_main() -> LLM:
     except Exception as e:
         print(f"ERROR initializing LLM: {str(e)}")
         raise
-
-# @lru_cache(maxsize=None)
-# def get_llm_main() -> LLM:
-#     """Initializes and returns a shared LLM instance."""
-#     print("--- Initializing LLM Client (This will run only once) deepseek from openrouter---")
-    
-#     try:
-#         llm = LLM(
-#             model="openrouter/tngtech/deepseek-r1t2-chimera:free",
-#             base_url = "https://openrouter.ai/api/v1",
-#             api_key=CONFIG['OPENROUTER_API_KEY'],
-#             temperature=0
-#         )
-#         return llm
-#     except Exception as e:
-#         print(f"ERROR initializing LLM: {str(e)}")
-#         raise
 
 
 
@@ -102,11 +84,6 @@ def get_search_client() -> TavilyClient:
     print("--- Initializing Tavily Client (This will run only once) ---")
     return TavilyClient(api_key=CONFIG['TAVILY_API_KEY'])
 
-@lru_cache(maxsize=None)
-def get_scrape_client() -> Client:
-    """Initializes and returns a shared ScrapeGraph Client instance."""
-    print("--- Initializing ScrapeGraph Client (This will run only once) ---")
-    return Client(api_key=CONFIG['SCRAPEGRAPH_API_KEY'])
 
 @lru_cache(maxsize=None)
 def get_fire_crawl_client() ->FirecrawlApp:

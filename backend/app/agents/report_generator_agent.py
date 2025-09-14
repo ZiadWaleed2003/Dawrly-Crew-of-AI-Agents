@@ -1,7 +1,10 @@
 import json
 import html
+from pathlib import Path
 
-def json_to_html_table(json_file_path="./backend/results/step_4_evaluator_fixed_results.json", output_html_path="./backend/results/final_result.html"):
+BASE_DIR = Path(__file__).resolve().parent.parent.parent 
+
+def json_to_html_table(json_file_path=None, output_html_path=None):
     """
     Convert JSON job data to a clean sheet-like HTML table
     
@@ -9,6 +12,15 @@ def json_to_html_table(json_file_path="./backend/results/step_4_evaluator_fixed_
         json_file_path (str): Path to the JSON file
         output_html_path (str): Path where HTML file will be saved
     """
+    
+    # Set default paths and ensure results directory exists
+    results_dir = BASE_DIR / "results"
+    results_dir.mkdir(exist_ok=True)
+    
+    if json_file_path is None:
+        json_file_path = str(results_dir / "step_4_evaluator_fixed_results.json")
+    if output_html_path is None:
+        output_html_path = str(results_dir / "final_result.html")
     
     # Read JSON data
     with open(json_file_path, 'r', encoding='utf-8') as file:
