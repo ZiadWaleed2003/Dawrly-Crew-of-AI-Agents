@@ -11,3 +11,9 @@ class SingleJobData(BaseModel):
 
 class AllExtractedData(BaseModel):
     jobs: List[SingleJobData] 
+
+class ExtractedJob(BaseModel):
+    job_title: str
+    job_description: str
+    job_url: str
+    posting_date : str
