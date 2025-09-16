@@ -8,7 +8,7 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
-def send_email(to_email, html_file_path=None , error=False):
+def send_email(to_email, user_id : str,html_file_path=None , error=False):
 
     """
         this function is used to send an email to the user containing the results of the Dawrly Crew 
@@ -20,7 +20,7 @@ def send_email(to_email, html_file_path=None , error=False):
     if html_file_path is None:
         results_dir = BASE_DIR / "results"
         results_dir.mkdir(exist_ok=True)
-        html_file_path = str(results_dir / "final_result.html")
+        html_file_path = str(results_dir / f"{user_id}/final_result.html")
 
     if error != False:
 

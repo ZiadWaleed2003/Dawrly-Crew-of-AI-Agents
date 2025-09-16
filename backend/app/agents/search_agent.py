@@ -20,9 +20,10 @@ class AllJobSearchResults(BaseModel):
     results: List[SingleJobSearchResult]
 
 class SearchAgent:
-    def __init__(self, score_threshold=0):
+    def __init__(self, user_id,score_threshold=0):
         self.llm = get_llm_search()
         self.search_tool = [tavily_search_engine_tool]
+        self.user_id = user_id
         self.score_threshold = score_threshold
         self.agent = self._create_agent()
         self.task = self.create_task()
@@ -69,7 +70,7 @@ class SearchAgent:
             description=description,
             expected_output="A pure JSON object matching AllJobSearchResults.",
             output_json=AllJobSearchResults,
-            output_file=os.path.join(output_dir, "step_2_job_search_results.json"),
+            output_file=os.path.join(f"./results/{self.user_id}/", "step_2_job_search_results.json"),
             agent=self.agent,
         )
         return self.task

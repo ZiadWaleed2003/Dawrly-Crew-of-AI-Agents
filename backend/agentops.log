@@ -1,5 +1,8 @@
-2025-09-14 23:15:01,010 - INFO - Session Replay for default trace: https://app.agentops.ai/sessions?trace_id=dfd280cc80a29c675743e8d7aa0aefe9
-2025-09-14 23:15:02,559 - INFO - You're on the agentops free plan 🤔
-2025-09-14 23:20:29,599 - WARNING - ToolEvent() is deprecated and will be removed in v4 in the future. Automatically tracked in v4.
-2025-09-14 23:24:58,152 - WARNING - end_session() is deprecated and will be removed in v4 in the future. Use agentops.end_trace() instead.
-2025-09-14 23:24:59,708 - INFO - Session Replay for default.session trace: https://app.agentops.ai/sessions?trace_id=dfd280cc80a29c675743e8d7aa0aefe9
+2025-09-16 04:16:32,759 - INFO - Session Replay for default trace: https://app.agentops.ai/sessions?trace_id=47fce5a891475eaa7eb036ef8b81ac42
+2025-09-16 04:16:33,714 - INFO - You're on the agentops free plan 🤔
+2025-09-16 04:16:47,684 - WARNING - ToolEvent() is deprecated and will be removed in v4 in the future. Automatically tracked in v4.
+2025-09-16 04:17:06,006 - ERROR - Network error during span export: HTTPSConnectionPool(host='otlp.agentops.ai', port=443): Max retries exceeded with url: /v1/traces (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7dac75dc7fd0>, 'Connection to otlp.agentops.ai timed out. (connect timeout=9.99999451637268)'))
+2025-09-16 04:17:27,186 - ERROR - Network error during span export: HTTPSConnectionPool(host='otlp.agentops.ai', port=443): Max retries exceeded with url: /v1/traces (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7dac75dd67d0>, 'Connection to otlp.agentops.ai timed out. (connect timeout=9.999993801116943)'))
+2025-09-16 04:19:25,568 - WARNING - ErrorEvent() is deprecated and will be removed in v4 in the future. Automatically tracked in v4.
+2025-09-16 04:21:38,560 - WARNING - end_session() is deprecated and will be removed in v4 in the future. Use agentops.end_trace() instead.
+2025-09-16 04:21:39,066 - INFO - Session Replay for default.session trace: https://app.agentops.ai/sessions?trace_id=47fce5a891475eaa7eb036ef8b81ac42

@@ -1,3 +1,5 @@
+import os
+import uuid
 from crewai import Crew, Process
 import logging
 from pathlib import Path
@@ -15,6 +17,7 @@ logger = logging.getLogger(__name__)
 
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
+# TODO : parallelize this shit in the future 
 
 def initialize_crew(user_input_data : dict):
 
@@ -23,12 +26,13 @@ def initialize_crew(user_input_data : dict):
     user_input_data.pop('email_address')
     logger.info(f"Processing request for email: {email}")
 
+    id = str(uuid.uuid4()) + f"_{email}"
 
 
-    job_analyst_agent_instance = JobRequirementAnalyst(input= user_input_data)
-    search_agent_instance = SearchAgent()
-    job_scrutinizer_agent = JobScrutinizerAgent(input=user_input_data)
-    evaluator_agent = EvaluatorAgent()
+    job_analyst_agent_instance = JobRequirementAnalyst(input= user_input_data , user_id= id)
+    search_agent_instance = SearchAgent(user_id= id)
+    job_scrutinizer_agent = JobScrutinizerAgent(input=user_input_data , user_id= id)
+    evaluator_agent = EvaluatorAgent(user_id= id)
 
     logger.info("All agents initialized successfully")
 
@@ -58,6 +62,7 @@ def initialize_crew(user_input_data : dict):
 
     logger.info("Crew configured and ready to start")
 
+
     try:
         # Kickoff the crew
         logger.info("Starting crew execution")
@@ -68,11 +73,11 @@ def initialize_crew(user_input_data : dict):
         logger.info("Crew execution completed")
         if results.raw:
             logger.info("Generating HTML report from results")
-            res = json_to_html_table()
+            res = json_to_html_table(user_id= id)
 
             if res:
                 logger.info("HTML report generated successfully, sending email")
-                send_email(to_email=email)
+                send_email(to_email=email , user_id=id)
                 logger.info(f"Email sent successfully to {email}")
             else:
                 logging.error("Failed to generate the email bruhh")  
@@ -86,8 +91,6 @@ def initialize_crew(user_input_data : dict):
 
         logging.error(f"The crew Failed miserably bruhhhh : {e}")
         logger.info(f"Sending error notification email to {email}")
-        send_email(to_email=email, error= True)
+        send_email(to_email=email, user_id=id,error= True)
         logger.info(f"Error Email sent successfully to {email}")
         return False
-     
-

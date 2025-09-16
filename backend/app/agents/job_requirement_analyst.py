@@ -19,10 +19,11 @@ class JobSearchCriteria(BaseModel):
 
 
 class JobRequirementAnalyst:
-    def __init__(self, input=None ,max_queries=8):
+    def __init__(self, user_id, input=None ,max_queries=8):
         self.llm = get_llm_main()
         self.max_queries = max_queries
         self.user_input = input
+        self.user_id = user_id
         self.agent = self._create_agent()
         self.task = self.create_task()
 
@@ -79,7 +80,7 @@ class JobRequirementAnalyst:
             description=description,
             expected_output="A JSON object containing structured job requirements and optimized search queries.",
             output_json=JobSearchCriteria,
-            output_file=os.path.join("./results/", "step_1_job_requirements_analysis.json"),
+            output_file=os.path.join(f"./results/{self.user_id}/", "step_1_job_requirements_analysis.json"),
             agent=self.agent,
         )
         return self.task
