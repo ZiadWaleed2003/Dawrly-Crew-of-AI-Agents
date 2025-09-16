@@ -4,7 +4,7 @@ import json
 import os
 
 from app.clients import get_llm_with_tool_use
-from app.models import AllExtractedData
+from app.models import AllExtractedData , ExtractedJob
 from app.tools.scraping_tool import web_scraping_firecrawl
 
 class JobScrutinizerAgent:
@@ -38,12 +38,13 @@ class JobScrutinizerAgent:
                     "For each URL:\n",
                     "1. First try to scrape the job information using the web_scraping_firecrawl tool.\n",
                     "2. If the tool failed, just save the URL\n\n",
-                    "For each job listing, extract:\n",
+                    "For each result from return from the tool, extract:\n",
                     "- Job title\n",
-                    "- Full job description\n",
+                    "- job description\n",
                     "- Job URL\n\n",
                     "Then evaluate each job based on the requirements from the user input: ""\n\n",
                     "Provide:\n",
+                    f"The tool returns a json object following this schema {ExtractedJob.model_json_schema()}you can use it to extract the needed fields as discussed earlier"
                     "- A recommendation rank (out of 5, higher is better)\n",
                     "- Detailed notes explaining your recommendation\n",
                     "- EXCLUDE jobs that use completely different technology stacks or domains from what the user specified (e.g., if user wants Node.js full-stack, exclude .NET or Python backend roles; if user wants AI/ML, exclude pure frontend or system admin roles)\n",
