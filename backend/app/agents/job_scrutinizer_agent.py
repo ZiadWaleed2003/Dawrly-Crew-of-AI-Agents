@@ -8,9 +8,10 @@ from app.models import AllExtractedData
 from app.tools.scraping_tool import web_scraping_firecrawl
 
 class JobScrutinizerAgent:
-    def __init__(self , input = None):
+    def __init__(self ,user_id, input = None):
         self.llm = get_llm_with_tool_use()
         self.user_input = input
+        self.user_id = user_id
         self.scrapping_tools = [web_scraping_firecrawl]
         self.agent = self._create_agent()
         self.task = self.create_task()
@@ -57,7 +58,7 @@ class JobScrutinizerAgent:
             description=description,
             expected_output="A JSON object containing job data entries with detailed analysis.",
             # output_json=AllExtractedData,
-            output_file=os.path.join(output_dir, "step_3_job_scrutinizer_results.json"),
+            output_file=os.path.join(f"./results/{self.user_id}/", "step_3_job_scrutinizer_results.json"),
             agent=self.agent
         )
         return self.task

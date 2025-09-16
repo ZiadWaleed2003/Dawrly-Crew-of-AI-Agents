@@ -5,9 +5,10 @@ from app.clients import get_llm_sec
 from app.models import AllExtractedData
 
 class EvaluatorAgent:
-    def __init__(self, input=None):
+    def __init__(self, user_id,input=None):
         self.llm = get_llm_sec()
         self.user_input = input
+        self.user_id = user_id
         self.agent = self._create_agent()
         self.task = self.create_task()
     
@@ -51,7 +52,7 @@ class EvaluatorAgent:
             description=description,
             expected_output="A valid JSON object matching the AllExtractedData schema (either corrected or passed through if already valid).",
             output_json=AllExtractedData,
-            output_file=os.path.join(output_dir, "step_4_evaluator_fixed_results.json"),
+            output_file=os.path.join(f"./results/{self.user_id}/", "step_4_evaluator_fixed_results.json"),
             agent=self.agent
         )
         return self.task

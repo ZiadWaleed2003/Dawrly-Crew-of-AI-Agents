@@ -47,7 +47,7 @@ def get_llm_sec() -> LLM:
 @lru_cache(maxsize=None)
 def get_llm_with_tool_use() -> LLM:
     """Initializes and returns a shared LLM instance."""
-    print("--- Initializing LLM Client (This will run only once) LLama 3 from Nvidia NIM---")
+    print("--- Initializing LLM Client (This will run only once) llama-3.3-70b-instruct from Nvidia NIM---")
     
     try:
         llm = LLM(
@@ -77,6 +77,22 @@ def get_llm_search() -> LLM:
     except Exception as e:
         print(f"ERROR initializing LLM: {str(e)}")
         raise
+
+# @lru_cache(maxsize=None)
+# def get_llm_search() -> LLM:
+#     """Initializes and returns a shared LLM instance."""
+#     print("--- Initializing LLM Client (This will run only once) llama-3.1-8b-instant ---")
+    
+#     try:
+#         llm = LLM(
+#             model="groq/meta-llama/llama-4-scout-17b-16e-instruct",
+#             api_key=CONFIG['GROQ_API_KEY'],
+#             temperature=0
+#         )
+#         return llm
+#     except Exception as e:
+#         print(f"ERROR initializing LLM: {str(e)}")
+#         raise
 
 @lru_cache(maxsize=None)
 def get_search_client() -> TavilyClient:

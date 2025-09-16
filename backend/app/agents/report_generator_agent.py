@@ -4,7 +4,7 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent.parent 
 
-def json_to_html_table(json_file_path=None, output_html_path=None):
+def json_to_html_table(user_id : str ,json_file_path=None, output_html_path=None):
     """
     Convert JSON job data to a clean sheet-like HTML table
     
@@ -18,9 +18,9 @@ def json_to_html_table(json_file_path=None, output_html_path=None):
     results_dir.mkdir(exist_ok=True)
     
     if json_file_path is None:
-        json_file_path = str(results_dir / "step_4_evaluator_fixed_results.json")
+        json_file_path = str(results_dir / f"{user_id}/step_4_evaluator_fixed_results.json")
     if output_html_path is None:
-        output_html_path = str(results_dir / "final_result.html")
+        output_html_path = str(results_dir / f"{user_id}/final_result.html")
     
     # Read JSON data
     with open(json_file_path, 'r', encoding='utf-8') as file:
@@ -28,7 +28,7 @@ def json_to_html_table(json_file_path=None, output_html_path=None):
     
     # Sort jobs by recommendation rank (descending - higher ranks first)
     jobs = data.get('jobs', [])
-    jobs_sorted = sorted(jobs, key=lambda x: x.get('agent_recommendation_rank', 0), reverse=True)
+    jobs_sorted = sorted(jobs, key=lambda x: x.get('agent_recommendation_rank') or 0, reverse=True)
     
     # Start building HTML
     html_content = f"""<!DOCTYPE html>
