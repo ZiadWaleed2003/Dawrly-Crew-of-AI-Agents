@@ -71,7 +71,7 @@ class JobRequirementAnalyst:
                 "3. Do NOT prefix queries with tier labels or numbers",
                 "4. Mix query order naturally - don't group all broad or all precise together",
                 f"5. Add recency hints where relevant: 'hiring 2024', 'new opening', etc. (current: {datetime.today().strftime('%Y-%m-%d')})",
-                "6. For specific platforms use: site:linkedin.com/jobs , site:indeed.com , site:remoteok.com ,site:arc.dev/remote-jobs ,site:wellfound.com",
+                "6. For specific platforms use: site:linkedin.com/jobs , site:indeed.com , site:remoteok.com ,site:arc.dev/remote-jobs ,site:wellfound.com and exclude wuzzuf don't include it",
                 "",
                 "OUTPUT: Return exactly 10 search query strings, one per line, no labels or categories."
             ])

@@ -17,3 +17,4 @@ class ExtractedJob(BaseModel):
     job_description: str
     job_url: str
     posting_date : str
+    required_years_of_experience : str
