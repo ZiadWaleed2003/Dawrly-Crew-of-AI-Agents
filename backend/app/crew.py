@@ -19,7 +19,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 # TODO : parallelize this shit in the future 
 
-def initialize_crew(user_input_data : dict):
+async def initialize_crew(user_input_data : dict):
 
     logger.info("Initializing crew with user input data")
     email = user_input_data['email_address']
@@ -66,7 +66,7 @@ def initialize_crew(user_input_data : dict):
     try:
         # Kickoff the crew
         logger.info("Starting crew execution")
-        results = crew.kickoff(inputs={
+        results = await crew.kickoff_async(inputs={
             "user_input" : user_input_data
         })
 

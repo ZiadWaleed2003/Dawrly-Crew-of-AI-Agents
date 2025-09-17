@@ -99,7 +99,7 @@ class ErrorResponse(BaseModel):
 @app.get(
         "/"
 )
-def main():
+async def main():
     return {"message": "Yeah it's working broski"}
 
 
@@ -110,7 +110,7 @@ def main():
     description="Check if the API is running",
     response_model=Dict[str, str],
 )
-def health_check():
+async def health_check():
     """Health check endpoint to verify API status"""
     return {"status": "healthy", "service": "Job Search API is working"}
 
@@ -127,7 +127,7 @@ def health_check():
         500: {"description": "Internal server error"}
     } , dependencies=[Depends(rate_limiter)]
 )
-def search_jobs(user_data: UserJobSearchRequest):
+async def search_jobs(user_data: UserJobSearchRequest):
     """
     Search for jobs based on user criteria
     
@@ -147,7 +147,7 @@ def search_jobs(user_data: UserJobSearchRequest):
         user_dict = user_data.model_dump()
         
         # Initialize crew with user data
-        crew_result = initialize_crew(user_dict)
+        crew_result = await initialize_crew(user_dict)
         
         if crew_result is False:
             logger.error("Crew initialization and execution failed")
