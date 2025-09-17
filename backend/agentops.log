@@ -1,6 +1,7 @@
-2025-09-16 22:46:19,345 - INFO - Session Replay for default trace: https://app.agentops.ai/sessions?trace_id=cfdf78f24220f1242e195476870df46a
-2025-09-16 22:46:20,317 - INFO - You're on the agentops free plan 🤔
-2025-09-16 22:47:35,184 - WARNING - ToolEvent() is deprecated and will be removed in v4 in the future. Automatically tracked in v4.
-2025-09-16 22:51:58,008 - WARNING - ErrorEvent() is deprecated and will be removed in v4 in the future. Automatically tracked in v4.
-2025-09-16 22:52:11,019 - WARNING - end_session() is deprecated and will be removed in v4 in the future. Use agentops.end_trace() instead.
-2025-09-16 22:52:11,763 - INFO - Session Replay for default.session trace: https://app.agentops.ai/sessions?trace_id=cfdf78f24220f1242e195476870df46a
+2025-09-17 18:26:26,781 - INFO - Session Replay for default trace: https://app.agentops.ai/sessions?trace_id=f1fecc97816f111672b7a75c45c5fdf6
+2025-09-17 18:26:28,438 - INFO - You're on the agentops free plan 🤔
+2025-09-17 18:27:12,489 - WARNING - ToolEvent() is deprecated and will be removed in v4 in the future. Automatically tracked in v4.
+2025-09-17 18:31:24,443 - WARNING - ErrorEvent() is deprecated and will be removed in v4 in the future. Automatically tracked in v4.
+2025-09-17 18:36:21,858 - WARNING - end_session() is deprecated and will be removed in v4 in the future. Use agentops.end_trace() instead.
+2025-09-17 18:36:23,516 - INFO - Session Replay for default.session trace: https://app.agentops.ai/sessions?trace_id=f1fecc97816f111672b7a75c45c5fdf6
+2025-09-17 18:41:44,163 - INFO - Session Replay for default.session trace: https://app.agentops.ai/sessions?trace_id=f1fecc97816f111672b7a75c45c5fdf6
