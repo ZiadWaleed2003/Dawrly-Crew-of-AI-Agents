@@ -2,8 +2,9 @@ from crewai import LLM
 import agentops
 from firecrawl import FirecrawlApp
 from tavily import TavilyClient
-from config import CONFIG
+from langchain.chat_models import init_chat_model
 
+from config import CONFIG
 
 from functools import lru_cache
 
@@ -25,6 +26,29 @@ def get_llm_main() -> LLM:
     except Exception as e:
         print(f"ERROR initializing LLM: {str(e)}")
         raise
+
+@lru_cache(maxsize=None)
+def get_LangGraph_model():
+    """Initializes and returns a shared LLM instance."""
+    print("--- Initializing LLM Client (This will run only once) LLama 3 from Nvidia NIM---")
+
+    try:
+
+        model = init_chat_model(
+            model="meta:llama-3.3-70b-instruct",
+            model_provider="langchain-nvidia-ai-endpoints",
+            base_url = "https://integrate.api.nvidia.com/v1",
+            temperature = 0,
+            api_key = CONFIG['NVIDIA_API_KEY']
+        )
+
+        return model
+
+    except Exception as e:
+
+        print(f"ERROR initializing LLM: {str(e)} : Nvidia from Langgraph")
+        raise
+
 
 
 
