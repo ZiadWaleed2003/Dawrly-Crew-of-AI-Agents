@@ -3,6 +3,7 @@ import agentops
 from firecrawl import FirecrawlApp
 from tavily import TavilyClient
 from langchain.chat_models import init_chat_model
+from langchain_core.rate_limiters import InMemoryRateLimiter
 
 from config import CONFIG
 
@@ -27,6 +28,9 @@ def get_llm_main() -> LLM:
         print(f"ERROR initializing LLM: {str(e)}")
         raise
 
+
+
+
 @lru_cache(maxsize=None)
 def get_LangGraph_model():
     """Initializes and returns a shared LLM instance."""
@@ -34,12 +38,20 @@ def get_LangGraph_model():
 
     try:
 
+
+        rate_limiter = InMemoryRateLimiter(
+                requests_per_second= 40 / 60,  # since I'm using Nvidia NIM here so I'm getting 40 RPM max 
+                check_every_n_seconds=0.1,  
+                max_bucket_size=1
+            )
+
         model = init_chat_model(
             model="meta:llama-3.3-70b-instruct",
             model_provider="langchain-nvidia-ai-endpoints",
             base_url = "https://integrate.api.nvidia.com/v1",
             temperature = 0,
-            api_key = CONFIG['NVIDIA_API_KEY']
+            api_key = CONFIG['NVIDIA_API_KEY'],
+            rate_limiter = rate_limiter
         )
 
         return model
