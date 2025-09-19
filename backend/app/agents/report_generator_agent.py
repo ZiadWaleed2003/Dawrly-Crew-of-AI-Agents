@@ -18,7 +18,7 @@ def json_to_html_table(user_id : str ,json_file_path=None, output_html_path=None
     results_dir.mkdir(exist_ok=True)
     
     if json_file_path is None:
-        json_file_path = str(results_dir / f"{user_id}/step_4_evaluator_fixed_results.json")
+        json_file_path = str(results_dir / f"{user_id}/step_3_job_scrutinizer_results.json")
     if output_html_path is None:
         output_html_path = str(results_dir / f"{user_id}/final_result.html")
     

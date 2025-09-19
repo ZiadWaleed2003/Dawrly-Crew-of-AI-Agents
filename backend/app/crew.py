@@ -8,6 +8,7 @@ from app.agents.job_requirement_analyst import JobRequirementAnalyst
 from app.agents.search_agent import SearchAgent
 from app.agents.job_scrutinizer_agent import JobScrutinizerAgent 
 from app.agents.evaluator import EvaluatorAgent
+from app.agents.langgraph_react_agent import JobScrutinizerLangGraphAgent
 from app.agents.report_generator_agent import json_to_html_table
 from app.tools.mail_sender import send_email
 
@@ -17,7 +18,7 @@ logger = logging.getLogger(__name__)
 
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
-# TODO : parallelize this shit in the future 
+# TODO : Get your shit together and fix this crap ASAP
 
 async def initialize_crew(user_input_data : dict):
 
@@ -31,8 +32,10 @@ async def initialize_crew(user_input_data : dict):
 
     job_analyst_agent_instance = JobRequirementAnalyst(input= user_input_data , user_id= id)
     search_agent_instance = SearchAgent(user_id= id)
-    job_scrutinizer_agent = JobScrutinizerAgent(input=user_input_data , user_id= id)
-    evaluator_agent = EvaluatorAgent(user_id= id)
+    # job_scrutinizer_agent = JobScrutinizerAgent(input=user_input_data , user_id= id)
+    # evaluator_agent = EvaluatorAgent(user_id= id)
+
+    job_scrutinizer_agent2 = JobScrutinizerLangGraphAgent(user_id=id , user_input= user_input_data)
 
     logger.info("All agents initialized successfully")
 
@@ -45,14 +48,14 @@ async def initialize_crew(user_input_data : dict):
                 agents=[
                     job_analyst_agent_instance.agent,
                     search_agent_instance.agent,
-                    job_scrutinizer_agent.agent,
-                    evaluator_agent.agent
+                    # job_scrutinizer_agent.agent,
+                    # evaluator_agent.agent
                 ],
                 tasks=[
                     job_analyst_agent_instance.task,
                     search_agent_instance.task,
-                    job_scrutinizer_agent.task,
-                    evaluator_agent.task
+                    # job_scrutinizer_agent.task,
+                    # evaluator_agent.task
                 ],
                 process=Process.sequential,
                 verbose=True,
@@ -70,8 +73,13 @@ async def initialize_crew(user_input_data : dict):
             "user_input" : user_input_data
         })
 
-        logger.info("Crew execution completed")
         if results.raw:
+
+            agent_3_result = await job_scrutinizer_agent2.scrutinize_jobs()
+
+        logger.info("Crew execution completed")
+
+        if agent_3_result:
             logger.info("Generating HTML report from results")
             res = json_to_html_table(user_id= id)
 

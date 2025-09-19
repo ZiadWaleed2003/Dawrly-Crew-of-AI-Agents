@@ -3,6 +3,7 @@ import agentops
 from firecrawl import FirecrawlApp
 from tavily import TavilyClient
 from langchain.chat_models import init_chat_model
+from langchain_nvidia_ai_endpoints import ChatNVIDIA
 from langchain_core.rate_limiters import InMemoryRateLimiter
 
 from config import CONFIG
@@ -45,12 +46,12 @@ def get_LangGraph_model():
                 max_bucket_size=1
             )
 
-        model = init_chat_model(
-            model="meta:llama-3.3-70b-instruct",
+        model = ChatNVIDIA(
+            model="meta/llama-3.3-70b-instruct",
             model_provider="langchain-nvidia-ai-endpoints",
             base_url = "https://integrate.api.nvidia.com/v1",
             temperature = 0,
-            api_key = CONFIG['NVIDIA_API_KEY'],
+            nvidia_api_key = CONFIG['NVIDIA_API_KEY'],
             rate_limiter = rate_limiter
         )
 

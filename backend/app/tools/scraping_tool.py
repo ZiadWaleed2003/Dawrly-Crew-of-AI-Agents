@@ -46,6 +46,7 @@ def web_scraping_firecrawl(page_url : str):
         time.sleep(60)
         print("Rate limit wait completed. Continuing...")
     
+    print(f"processing url : {page_url}")
     # Perform the scraping (same logic regardless of rate limiting)
     results = scraper.scrape_url(
         url=page_url,
@@ -56,6 +57,7 @@ def web_scraping_firecrawl(page_url : str):
         block_ads=True
     )
 
+    print(results.json)
     return results.json
     
 

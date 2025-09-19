@@ -22,7 +22,8 @@ class JobScrutinizerLangGraphAgent:
         agent = create_react_agent(
             model=self.llm,
             tools=self.tools,
-            state_modifier=self._system_prompt() 
+            prompt=self._system_prompt(),
+            response_format=SingleJobData
         )
         
         return agent
@@ -41,8 +42,8 @@ class JobScrutinizerLangGraphAgent:
             "- You provide honest, insightful evaluations that help job seekers make informed decisions\n\n",
             
             "## TASK WORKFLOW\n",
-            "For each job URL provided:\n",
-            "1. Use the web_scraping_firecrawl tool to extract job information from the URL\n",
+            "You will be given a SINGLE job URL to analyze:\n",
+            "1. Use the web_scraping_firecrawl tool to extract job information from the provided URL\n",
             "2. The tool will return a JSON object following the ExtractedJob schema containing:\n",
             "   - job_title: The official position title\n",
             "   - job_description: Complete job description and requirements\n",
@@ -50,8 +51,8 @@ class JobScrutinizerLangGraphAgent:
             "   - posting_date: When the job was posted\n",
             "   - required_years_of_experience: Experience requirements mentioned\n",
             "3. Analyze the returned data to judge if the job matches user preferences\n",
-            "4. If the job is suitable, include it in your final output using the job_url from the tool response\n",
-            "5. If scraping fails or job doesn't match criteria, exclude it from final results\n\n",
+            f"4. If the job is suitable, transform it into {SingleJobData.model_json_schema()} format for your response\n",
+            "5. If scraping fails or job doesn't match criteria, return null or indicate no match\n\n",
             
             "## ANALYSIS REQUIREMENTS\n",
             "For each JSON object returned by the web scraping tool:\n",
@@ -63,32 +64,34 @@ class JobScrutinizerLangGraphAgent:
             
             "## OUTPUT REQUIREMENTS\n",
             "Based on your analysis of the ExtractedJob data returned by the tool:\n",
-            "- **ONLY include jobs that match user preferences and criteria**\n",
+            "- **ONLY return the job if it matches user preferences and criteria**\n",
             "- **Use the job_url field from the tool's response** (not your input URL)\n",
             "- **Transform the data to match SingleJobData schema**:\n",
             "  - job_title: From tool response\n",
             "  - job_description: From tool response\n",
             "  - job_url: FROM TOOL RESPONSE (this is critical!)\n",
             "  - agent_recommendation_rank: Your 1-5 assessment\n",
-            "  - agent_recommendation_notes: Your detailed analysis as list of strings\n\n",
+            "  - agent_recommendation_notes: Your detailed analysis as list of strings\n",
+            "- **Return a single job object, not a list**\n\n",
             
             "## CRITICAL WORKFLOW NOTES\n",
-            f"- The web_scraping_firecrawl tool returns ```json{ExtractedJob.model_dump_json()} schema data\n",
+            f"- The web_scraping_firecrawl tool returns ```json{ExtractedJob.model_json_schema()} schema data\n",
             "- You must analyze this returned data to judge job suitability\n",
-            f"- Only include jobs that pass your analysis in the final ```json{AllExtractedData.model_dump_json} output\n",
+            f"- Only return the job if it passes your analysis in the ```json{SingleJobData.model_json_schema()} format\n",
             "- Always use the job_url from the tool response, NOT the input URL you provided to the tool\n",
-            "- The tool response contains the canonical/final URL after any redirects\n\n",
+            "- The tool response contains the canonical/final URL after any redirects\n",
+            "- You are processing ONE URL at a time, not multiple URLs\n\n",
             
             "## FILTERING RULES\n",
-            "**EXCLUDE jobs that:**\n",
-            "- Use completely different technology stacks or domains from user specifications\n",
-            f"- Are older than 3 months from current date  {current_date}\n",
+            "**EXCLUDE the job if it:**\n",
+            "- Uses completely different technology stacks or domains from user specifications\n",
+            f"- Is older than 3 months from current date  {current_date}\n",
             "- Example: If user wants Node.js full-stack, exclude .NET or Python backend roles\n",
             "- Example: If user wants AI/ML, exclude pure frontend or system admin roles\n\n",
             
-            "**INCLUDE jobs that:**\n",
-            "- Have similar or related technologies even if not exact matches\n",
-            "- Focus on the same DOMAIN and CORE TECHNOLOGY STACK\n",
+            "**INCLUDE the job if it:**\n",
+            "- Has similar or related technologies even if not exact matches\n",
+            "- Focuses on the same DOMAIN and CORE TECHNOLOGY STACK\n",
             "- Example: If user wants LangChain, include LangGraph, LlamaIndex, or similar frameworks\n",
             "- Example: If user wants React, include Vue or Angular positions\n\n",
             
@@ -100,31 +103,33 @@ class JobScrutinizerLangGraphAgent:
             "**Rank 1 (Poor)**: Minimal alignment, major skill or domain mismatch\n\n",
             
             "## OUTPUT FORMAT\n",
-            "**CRITICAL**: You must return ONLY a valid JSON object that matches the AllExtractedData schema structure.\n",
-            f"- Each job in the 'jobs' array must follow the ```json{SingleJobData.model_dump_json} schema\n",
+            "**CRITICAL**: You must return ONLY a valid JSON object that matches the SingleJobData schema structure.\n",
+            f"- The output must follow the ```json{SingleJobData.model_json_schema()} schema\n",
             "- Use job_url from the tool response (ExtractedJob.job_url), NOT your input URL\n",
-            "- Only include jobs that passed your analysis and match user criteria\n",
+            "- Only return the job if it passed your analysis and matches user criteria\n",
+            "- If the job doesn't match, return null or indicate no suitable match\n",
             "- Do NOT include any text before or after the JSON\n",
             "- Do NOT use markdown formatting or code blocks\n",
             "- Do NOT include explanations, thoughts, or commentary\n",
-            "- Return ONLY the raw JSON object\n",
+            "- Return ONLY the raw JSON object for the single job\n",
             "- Double-check your JSON structure before responding\n\n",
             
             "## QUALITY ASSURANCE\n",
             "Before providing your final response:\n",
-            "1. Verify you used job_url from tool responses, NOT input URLs\n",
-            "2. Confirm all included jobs passed your analysis criteria\n",
-            "3. Ensure recommendation ranks are justified by your notes\n",
-            "4. Confirm JSON structure matches AllExtractedData schema exactly\n",
-            "5. Validate that only suitable jobs matching user preferences are included\n",
-            "6. Double-check that job_url fields contain the URLs returned by the scraping tool\n\n",
+            "1. Verify you used job_url from tool response, NOT input URL\n",
+            "2. Confirm the job passed your analysis criteria\n",
+            "3. Ensure recommendation rank is justified by your notes\n",
+            "4. Confirm JSON structure matches SingleJobData schema exactly\n",
+            "5. Validate that the job matches user preferences\n",
+            "6. Double-check that job_url field contains the URL returned by the scraping tool\n",
+            "7. Return null or indicate no match if the job doesn't meet criteria\n\n",
             
             "Remember: Your analysis helps job seekers make career-defining decisions. Be thorough, honest, and constructive in your evaluations."
         ])
         
         return sys_prompt
     
-    def _read_job_urls_from_step2(self):
+    async def _read_job_urls_from_step2(self):
         """
         Read job URLs from step 2 results JSON file
         
@@ -156,84 +161,115 @@ class JobScrutinizerLangGraphAgent:
         except json.JSONDecodeError:
             raise ValueError(f"Invalid JSON in step 2 results file: {step2_file}")
     
-    def scrutinize_jobs(self):
+    async def scrutinize_jobs(self):
         """
         Execute the job scrutinization task
         
-        Reads job URLs from step 2 results file and analyzes them
+        Reads job URLs from step 2 results file and analyzes them one by one
         
         Returns:
-            AllExtractedData: Structured job analysis results
+            bool: if it managed to extract and save the results
         """
         # Read job URLs from step 2 results
         try:
-            job_urls = self._read_job_urls_from_step2()
+            job_urls = await self._read_job_urls_from_step2()
         except (FileNotFoundError, ValueError) as e:
             raise RuntimeError(f"Failed to read job URLs from step 2: {str(e)}")
         
         if not job_urls:
             raise ValueError("No job URLs found in step 2 results")
-        
-        # Construct the input message
-        message_content = []
-        message_content.append("Please analyze the following job URLs and extract detailed information:")
-        
-        if self.user_requirements:
-            message_content.append(f"\nUser Requirements: {self.user_requirements}")
-        
-        message_content.append("\nJob URLs to analyze:")
-        for i, url in enumerate(job_urls, 1):
-            message_content.append(f"{i}. {url}")
-        
-        message_content.append("\nPlease scrape each URL, extract the required information, and provide your analysis following the system instructions.")
-        
-        # Create input for the agent
-        input_data = {
-            "messages": [
-                {"role": "user", "content": "\n".join(message_content)}
-            ]
-        }
-        
-        # Execute the agent
-        result = self.agent.invoke(input_data)
 
-        saving_result = self._save_results(results=result)
+        jobs = []
+
+        for url in job_urls:
+
+            user_message = "".join([
+                "Please analyze the following job URL and extract detailed information:\n",
+                f"{url}\n",
+                "Please scrape this URL, extract the required information, and provide your analysis following the system instructions. ",
+                f"User requirements: {self.user_requirements}"
+            ])
+            
+            # Create input for the agent
+            input_data = {
+                "messages": [
+                    {"role": "user", "content": user_message}
+                ]
+            }
+            
+            try:
+                # Execute the agent for this single URL
+                result = await self.agent.ainvoke(input_data)
+                
+                if result and "structured_response" in result:
+                    job_data  = result["structured_response"]
+                    # Only add the job if it's not null and has the required fields
+                    if job_data:
+                        jobs.append(job_data.model_dump())
+                        print(f"Successfully processed job of a type: {type(job_data)}")
+                    else:
+                        print(f"Job from URL {url} was filtered out or invalid")
+                else:
+                    print(f"No valid result for URL: {url}")
+                    
+            except Exception as e:
+                print(f"Error processing URL {url}: {str(e)}")
+                continue
+
+        # Save all collected jobs
+        saving_result = await self._save_results(jobs)
 
         if saving_result:
-
-            print("Saved step3 results broski")
+            print(f"Saved step3 results with {len(jobs)} jobs")
             return True
         else:
-            print("Ouch something happened check agent num 3")
-            return None
+            print("Error occurred while saving step 3 results")
+            return False
     
 
 
-    def _save_results(self , result ,output_path ):
-    
-
+    async def _save_results(self, jobs_list):
+        """
+        Save the list of job results to a JSON file
+        
+        Args:
+            jobs_list: List of job dictionaries to save
+            
+        Returns:
+            bool: True if saved successfully, False otherwise
+        """
         output_dir = f"./results/{self.user_id}/"
         os.makedirs(output_dir, exist_ok=True)
-        
+
         output_file = os.path.join(output_dir, "step_3_job_scrutinizer_results.json")
-        
-        # Extract the final message content
-        if result and "messages" in result:
-            final_message = result["messages"][-1]["content"]
+
+        try:
+            # Create the final structure that matches AllExtractedData schema
+            # jobs_list already contains dictionaries from job_data.model_dump()
+            final_result = {
+                "jobs": jobs_list
+            }
             
             # Save to file
+            with open(output_file, 'w') as f:
+                json.dump(final_result, f, indent=2)
+            
+            # Validate the saved data by creating AllExtractedData instance
+            validated_data = AllExtractedData(**final_result)
+            print(f"Successfully saved {len(jobs_list)} jobs to {output_file}")
+            return True
+            
+        except Exception as e:
+            print(f"Error saving results: {str(e)}")
+            # Save raw data for debugging
+            debug_file = output_file.replace('.json', '_debug.json')
             try:
-                # Try to parse as JSON to validate
-                json_data = json.loads(final_message)
-                with open(output_file, 'w') as f:
-                    json.dump(json_data, f, indent=2)
-                
-                return AllExtractedData(**json_data)
-            except json.JSONDecodeError:
-                # If not valid JSON, save as text for debugging
-                with open(output_file.replace('.json', '_raw.txt'), 'w') as f:
-                    f.write(final_message)
-                raise ValueError("Agent did not return valid JSON format")
+                with open(debug_file, 'w') as f:
+                    json.dump({"error": str(e), "jobs_list": jobs_list}, f, indent=2)
+                print(f"Debug data saved to {debug_file}")
+            except Exception as debug_e:
+                print(f"Could not save debug file: {debug_e}")
+            return False
 
 
 
