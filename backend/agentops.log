@@ -1,7 +1,5 @@
-2025-09-19 03:39:10,754 - INFO - Session Replay for default trace: https://app.agentops.ai/sessions?trace_id=ba454a25904c09ce94cc051ae5fa18a3
-2025-09-19 03:39:11,953 - INFO - You're on the agentops free plan 🤔
-2025-09-19 03:39:24,691 - WARNING - ToolEvent() is deprecated and will be removed in v4 in the future. Automatically tracked in v4.
-2025-09-19 03:39:44,683 - ERROR - Network error during span export: HTTPSConnectionPool(host='otlp.agentops.ai', port=443): Max retries exceeded with url: /v1/traces (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x779ac022ec10>, 'Connection to otlp.agentops.ai timed out. (connect timeout=9.99999737739563)'))
-2025-09-19 03:40:05,864 - ERROR - Network error during span export: HTTPSConnectionPool(host='otlp.agentops.ai', port=443): Max retries exceeded with url: /v1/traces (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x779ac022e9d0>, 'Connection to otlp.agentops.ai timed out. (connect timeout=9.999994277954102)'))
-2025-09-19 03:43:32,097 - WARNING - end_session() is deprecated and will be removed in v4 in the future. Use agentops.end_trace() instead.
-2025-09-19 03:43:33,110 - INFO - Session Replay for default.session trace: https://app.agentops.ai/sessions?trace_id=ba454a25904c09ce94cc051ae5fa18a3
+2025-09-21 23:20:42,268 - INFO - Session Replay for default trace: https://app.agentops.ai/sessions?trace_id=d188ac392e7ae25ebf012ea8f6c5f1b9
+2025-09-21 23:20:43,056 - INFO - You're on the agentops free plan 🤔
+2025-09-21 23:20:52,260 - WARNING - ToolEvent() is deprecated and will be removed in v4 in the future. Automatically tracked in v4.
+2025-09-21 23:22:12,587 - WARNING - end_session() is deprecated and will be removed in v4 in the future. Use agentops.end_trace() instead.
+2025-09-21 23:22:13,092 - INFO - Session Replay for default.session trace: https://app.agentops.ai/sessions?trace_id=d188ac392e7ae25ebf012ea8f6c5f1b9

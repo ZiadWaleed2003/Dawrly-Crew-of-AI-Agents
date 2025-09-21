@@ -85,7 +85,7 @@ async def initialize_crew(user_input_data : dict):
 
             if res:
                 logger.info("HTML report generated successfully, sending email")
-                send_email(to_email=email , user_id=id)
+                send_email(to_email=email , user_id=id , error=False)
                 logger.info(f"Email sent successfully to {email}")
             else:
                 logging.error("Failed to generate the email bruhh")  
@@ -98,7 +98,7 @@ async def initialize_crew(user_input_data : dict):
     except Exception as e:
 
         logging.error(f"The crew Failed miserably bruhhhh : {e}")
-        if job_scrutinizer_agent2.job_urls == 0:
+        if job_scrutinizer_agent2.job_urls is not None:
             send_email(to_email=email, user_id=id,error= True , jobs=0)
             logger.info(f"0 Jobs Email sent successfully to {email}")
             return False

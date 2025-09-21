@@ -8,7 +8,7 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
-def send_email(to_email, user_id : str,html_file_path=None , error=False , jobs=None):
+def send_email(to_email, user_id : str,html_file_path=None , error=False , jobs=1):
 
     """
         this function is used to send an email to the user containing the results of the Dawrly Crew 
@@ -17,18 +17,20 @@ def send_email(to_email, user_id : str,html_file_path=None , error=False , jobs=
     """
 
     # Set default path and ensure results directory exists
-    if html_file_path is None:
+    if (html_file_path is None) and (error == False):
         results_dir = BASE_DIR / "results"
         results_dir.mkdir(exist_ok=True)
         html_file_path = str(results_dir / f"{user_id}/final_result.html")
 
     # sending error email if the crew failed and zero jobs found if we couldn't find any job for him
-    if error != False and jobs != 0:
+
+    if (error == True) and (jobs != 0):
 
         error_dir = BASE_DIR / "error_template"
         error_dir.mkdir(exist_ok=True)
         html_file_path = str(error_dir / "error_email_template.html")
-    else:
+        
+    elif (error == True) and (jobs == 0) :
 
         error_dir = BASE_DIR / "error_template"
         error_dir.mkdir(exist_ok=True)

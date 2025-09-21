@@ -14,7 +14,7 @@ class JobScrutinizerLangGraphAgent:
         self.llm = get_LangGraph_model()
         self.tools = [web_scraping_firecrawl]
         self.user_id = user_id
-        self.user_requirements = user_input
+        self.user_requirements : dict = user_input
         self.agent = self._create_agent()
         self.job_urls = None
 
@@ -52,7 +52,7 @@ class JobScrutinizerLangGraphAgent:
             "   - posting_date: When the job was posted\n",
             "   - required_years_of_experience: Experience requirements mentioned\n",
             "3. Analyze the returned data to judge if the job matches user preferences\n",
-            f"4. If the job is suitable, transform it into {SingleJobData.model_json_schema()} format for your response\n",
+            f"4. If the job matches the user requirements : {self.user_requirements}, transform it into {SingleJobData.model_json_schema()} format for your response\n",
             "5. If scraping fails or job doesn't match criteria, return null or indicate no match\n\n",
             
             "## ANALYSIS REQUIREMENTS\n",
@@ -108,7 +108,7 @@ class JobScrutinizerLangGraphAgent:
             f"- The output must follow the ```json{SingleJobData.model_json_schema()} schema\n",
             "- Use job_url from the tool response (ExtractedJob.job_url), NOT your input URL\n",
             "- Only return the job if it passed your analysis and matches user criteria\n",
-            "- If the job doesn't match, return null or indicate no suitable match\n",
+            "- If the job doesn't match, return false as a job_title placeholder\n",
             "- Do NOT include any text before or after the JSON\n",
             "- Do NOT use markdown formatting or code blocks\n",
             "- Do NOT include explanations, thoughts, or commentary\n",
@@ -207,7 +207,7 @@ class JobScrutinizerLangGraphAgent:
                 if result and "structured_response" in result:
                     job_data  = result["structured_response"]
                     # Only add the job if it's not null and has the required fields
-                    if job_data:
+                    if job_data is not None:
                         jobs.append(job_data.model_dump())
                         print(f"Successfully processed job of a type: {type(job_data)}")
                     else:
