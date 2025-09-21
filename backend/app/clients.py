@@ -2,7 +2,6 @@ from crewai import LLM
 import agentops
 from firecrawl import FirecrawlApp
 from tavily import TavilyClient
-from langchain.chat_models import init_chat_model
 from langchain_nvidia_ai_endpoints import ChatNVIDIA
 from langchain_core.rate_limiters import InMemoryRateLimiter
 

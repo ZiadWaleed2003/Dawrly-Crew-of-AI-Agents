@@ -16,6 +16,7 @@ class JobScrutinizerLangGraphAgent:
         self.user_id = user_id
         self.user_requirements = user_input
         self.agent = self._create_agent()
+        self.job_urls = None
 
     def _create_agent(self):
         # Create the agent with system prompt
@@ -176,8 +177,10 @@ class JobScrutinizerLangGraphAgent:
         except (FileNotFoundError, ValueError) as e:
             raise RuntimeError(f"Failed to read job URLs from step 2: {str(e)}")
         
-        if not job_urls:
-            raise ValueError("No job URLs found in step 2 results")
+        if not job_urls or job_urls == 0:
+            self.job_urls = 0
+            return False
+
 
         jobs = []
 

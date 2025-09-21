@@ -98,7 +98,12 @@ async def initialize_crew(user_input_data : dict):
     except Exception as e:
 
         logging.error(f"The crew Failed miserably bruhhhh : {e}")
-        logger.info(f"Sending error notification email to {email}")
-        send_email(to_email=email, user_id=id,error= True)
-        logger.info(f"Error Email sent successfully to {email}")
-        return False
+        if job_scrutinizer_agent2.job_urls == 0:
+            send_email(to_email=email, user_id=id,error= True , jobs=0)
+            logger.info(f"0 Jobs Email sent successfully to {email}")
+            return False
+        else:
+            logger.info(f"Sending error notification email to {email}")
+            send_email(to_email=email, user_id=id,error= True)
+            logger.info(f"Error Email sent successfully to {email}")
+            return False

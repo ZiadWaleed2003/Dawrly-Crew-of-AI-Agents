@@ -8,7 +8,7 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
-def send_email(to_email, user_id : str,html_file_path=None , error=False):
+def send_email(to_email, user_id : str,html_file_path=None , error=False , jobs=None):
 
     """
         this function is used to send an email to the user containing the results of the Dawrly Crew 
@@ -22,13 +22,20 @@ def send_email(to_email, user_id : str,html_file_path=None , error=False):
         results_dir.mkdir(exist_ok=True)
         html_file_path = str(results_dir / f"{user_id}/final_result.html")
 
-    if error != False:
+    # sending error email if the crew failed and zero jobs found if we couldn't find any job for him
+    if error != False and jobs != 0:
 
         error_dir = BASE_DIR / "error_template"
         error_dir.mkdir(exist_ok=True)
         html_file_path = str(error_dir / "error_email_template.html")
+    else:
 
-    # loading password and email from the .env file 
+        error_dir = BASE_DIR / "error_template"
+        error_dir.mkdir(exist_ok=True)
+        html_file_path = str(error_dir / "no_jobs_found_template.html")
+
+
+    
     load_dotenv()
     from_email = os.getenv('EMAIL')
     password   = os.getenv('EMAIL_PASSWORD')
