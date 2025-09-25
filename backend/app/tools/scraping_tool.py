@@ -58,7 +58,7 @@ def web_scraping_firecrawl(page_url : str):
 
         if results and results.json:
             print(results.json)
-            return str(results.json)
+            return results.json
         
         else : 
 
