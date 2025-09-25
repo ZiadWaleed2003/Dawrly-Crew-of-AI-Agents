@@ -1,5 +1,5 @@
 import time
-from crewai.tools import tool
+from langchain_core.tools import tool
 from firecrawl import JsonConfig
 from app.clients import  get_fire_crawl_client
 from app.models import ExtractedJob
@@ -44,18 +44,35 @@ def web_scraping_firecrawl(page_url : str):
         print(f"Rate limit reached after {cnt} calls. Waiting 60 seconds...")
         time.sleep(60)
         print("Rate limit wait completed. Continuing...")
-    
-    # Perform the scraping (same logic regardless of rate limiting)
-    results = scraper.scrape_url(
-        url=page_url,
-        formats=['json'],
-        json_options=json_config.model_dump(exclude_none=True),
-        only_main_content=False,
-        remove_base64_images=True,
-        block_ads=True
-    )
+    try:
+        print(f"processing url : {page_url}")
+        # Perform the scraping (same logic regardless of rate limiting)
+        results = scraper.scrape_url(
+            url=page_url,
+            formats=['json'],
+            json_options=json_config.model_dump(exclude_none=True),
+            only_main_content=False,
+            remove_base64_images=True,
+            block_ads=True
+        )
 
-    return results.json
+        if results and results.json:
+            print(results.json)
+            return results.json
+        
+        else : 
+
+            error_message = f"Scraping succeeded for {page_url}, but no JSON content was extracted."
+            print(f"⚠️  {error_message}")
+            return False
+    
+    except Exception as e:
+
+        error_message = f"A critical error occurred while scraping {page_url}: {e}"
+        print(f"❌ {error_message}")
+        return False
+
+
     
 
 
