@@ -3,7 +3,9 @@ import agentops
 from firecrawl import FirecrawlApp
 from tavily import TavilyClient
 from langchain_nvidia_ai_endpoints import ChatNVIDIA
+from langchain_groq import ChatGroq
 from langchain_core.rate_limiters import InMemoryRateLimiter
+from langsmith import Client as LangSmithClient
 
 from config import CONFIG
 
@@ -52,7 +54,15 @@ def get_LangGraph_model():
             temperature = 0,
             nvidia_api_key = CONFIG['NVIDIA_API_KEY'],
             rate_limiter = rate_limiter
-        )
+        ).with_fallbacks([
+            ChatGroq(
+                model="llama-3.3-70b-versatile",
+                temperature = 0,
+                api_key=CONFIG['GROQ_API_KEY'],
+                reasoning_format='hidden',
+                rate_limiter= rate_limiter
+            ),
+        ])
 
         return model
 
@@ -146,6 +156,12 @@ def get_fire_crawl_client() ->FirecrawlApp:
         api_key=CONFIG['FIRECRAWL_API_KEY']
     )
 
+
+@lru_cache(maxsize=None)
+def get_langsmith_client() -> LangSmithClient:
+    """Initializes and returns a shared LangSmith Client instance."""
+    print("--- Initializing LangSmith Client (This will run only once) ---")
+    return LangSmithClient()
 
 def initialize_agentops():
     """Initializes AgentOps. This doesn't need to return anything."""

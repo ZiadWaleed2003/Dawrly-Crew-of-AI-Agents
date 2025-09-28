@@ -14,6 +14,9 @@ def load_environment() -> Dict[str, str]:
         'NVIDIA_API_KEY':'Nvidia NIM key',
         'GEMINI_API_KEY':'Gemini API key',
         'GROQ_API_KEY' : 'Groq API key',
+        'LANGSMITH_TRACING': 'LangSmith tracing flag',
+        'LANGSMITH_API_KEY': 'LangSmith API key',
+        'LANGSMITH_PROJECT': 'LangSmith Project',
         'EMAIL':'Google email',
         'EMAIL_PASSWORD':'Google Password'
     }
@@ -24,6 +27,11 @@ def load_environment() -> Dict[str, str]:
         if not value:
             raise ValueError(f"Missing required environment variable: {var} ({description})")
         config[var] = value
+    
+    # Set LangSmith environment variables for proper initialization
+    os.environ['LANGSMITH_TRACING'] = config['LANGSMITH_TRACING']
+    os.environ['LANGSMITH_API_KEY'] = config['LANGSMITH_API_KEY']
+    os.environ['LANGSMITH_PROJECT'] = config['LANGSMITH_PROJECT']
     
     return config
 
