@@ -4,6 +4,7 @@ from firecrawl import FirecrawlApp
 from tavily import TavilyClient
 from langchain_nvidia_ai_endpoints import ChatNVIDIA
 from langchain_core.rate_limiters import InMemoryRateLimiter
+from langsmith import Client as LangSmithClient
 
 from config import CONFIG
 
@@ -146,6 +147,12 @@ def get_fire_crawl_client() ->FirecrawlApp:
         api_key=CONFIG['FIRECRAWL_API_KEY']
     )
 
+
+@lru_cache(maxsize=None)
+def get_langsmith_client() -> LangSmithClient:
+    """Initializes and returns a shared LangSmith Client instance."""
+    print("--- Initializing LangSmith Client (This will run only once) ---")
+    return LangSmithClient()
 
 def initialize_agentops():
     """Initializes AgentOps. This doesn't need to return anything."""

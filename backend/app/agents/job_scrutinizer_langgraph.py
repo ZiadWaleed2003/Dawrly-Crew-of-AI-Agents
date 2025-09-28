@@ -4,11 +4,13 @@ import os
 from typing import Optional, TypedDict , List
 from langgraph.graph import StateGraph , START , END
 from langgraph.prebuilt import create_react_agent
-
+from langsmith import traceable
 
 from app.clients import get_LangGraph_model
 from app.tools.scraping_tool import web_scraping_firecrawl
 from app.models import ExtractedJob , SingleJobData , AllExtractedData
+from config import CONFIG
+
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -41,11 +43,12 @@ class JobScrutinizerLangGraph():
         self.sys_prompt = self._sys_prompt()
         # self.agent = self._create_agent()
         self.saved_jobs = []
-        self.scrapped_urls = []
+        self.scrapped_urls = set()
         self.graph = self.build_graph()
 
     # Start
 
+    @traceable
     def build_graph(self):
 
         builder = StateGraph(GraphState)
@@ -170,6 +173,7 @@ class JobScrutinizerLangGraph():
 
 
     # get_urls node
+    @traceable
     def get_urls(self):
 
         """
@@ -204,7 +208,7 @@ class JobScrutinizerLangGraph():
             raise ValueError(f"Invalid JSON in step 2 results file: {step2_file}")
 
     # scraping node
-
+    @traceable(name="scraping_node")
     def scraping_node(self , state : GraphState):
         " a node used for scraping the URLs provided by the prev agent"
         url = state.get("current_url")
@@ -214,15 +218,19 @@ class JobScrutinizerLangGraph():
 
     
         result = web_scraping_firecrawl(tool_input=url)
-        # to avoid duplicates
-        if result.get("job_url") in self.scrapped_urls:
-            logger.info("skipping a duplicate URL")
-            return {"scraping_status" : False}
+        
+        
         
         
         if result:
+
             logger.info("Scraping successful.")
-            self.scrapped_urls.append(result.get("job_url"))
+            # to avoid duplicates
+            if result.get("job_url") in self.scrapped_urls:
+                logger.info("skipping a duplicate URL")
+                return {"scraping_status" : False}
+            
+            self.scrapped_urls.add(result.get("job_url"))
             return {"current_job": result, "scraping_status": True}
         else:
             logger.info("Scraping failed.")
@@ -232,6 +240,7 @@ class JobScrutinizerLangGraph():
 
 
     # Conditional node for scraping
+    @traceable(name="post_scraping_conditional")
     def post_scraping_conditional_node(self , state : GraphState):
         "a conditional node to check the scraped results"
         logger.info("--- Entering the Post scraping conditional node ---")
@@ -240,6 +249,7 @@ class JobScrutinizerLangGraph():
         else:
             return "skip_url"
         
+    @traceable(name="skip_node")
     def skip_node(self, state: GraphState):
         """This node does nothing and just allows the graph to terminate."""
         logger.info("--- Skipping URL ---")
@@ -247,6 +257,7 @@ class JobScrutinizerLangGraph():
         
 
     # filtering node
+    @traceable(name="filtering_node")
     def filtering_node(self , state : GraphState):
 
         logger.info("--- Entering the filtering Node ---")
@@ -264,7 +275,7 @@ class JobScrutinizerLangGraph():
                 'filtering_status' : False
             }
 
-
+    @traceable(name="post_filtering_conditional")
     def post_filtering_conditional_node(self, state : GraphState):
         "a conditional node to check the filtered results"
         logger.info("--- Entering the Post filtering conditional node ---")
@@ -273,7 +284,7 @@ class JobScrutinizerLangGraph():
         else:
             return "skip_url"
         
-
+    @traceable(name="llm_analysis_node")
     def llm_analysis_node(self , state : GraphState):
         "a node to get the analysis of the LLM"
         
@@ -334,7 +345,7 @@ class JobScrutinizerLangGraph():
             return {"analysis_status": False}
 
     # Conditional Node for the user reqs
-
+    @traceable(name="post_llm_analysis_conditional")
     def post_llm_analysis_conditional_node(self , state : GraphState):
         "a node to check if the the schema is valid or not and then decide based on it"
         if state.get("analysis_status"):
@@ -344,13 +355,13 @@ class JobScrutinizerLangGraph():
     
 
     # Collect Valid Jobs
-
+    @traceable(name="collect_valid_jobs")
     def collect_valid_jobs(self , state : GraphState):
         job = state.get("analyzed_job")
         return self.saved_jobs.append(job)
 
     # Save results
-
+    @traceable
     def _save_results(self, jobs_list):
         """
         Save the list of job results to a JSON file
@@ -394,7 +405,7 @@ class JobScrutinizerLangGraph():
             return False
 
 
-    
+    @traceable(name="job_scrutinizer_main")
     def scrutinize_jobs(self):
         
 
