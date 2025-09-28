@@ -3,12 +3,12 @@ import logging
 import os
 from typing import Optional, TypedDict , List
 from langgraph.graph import StateGraph , START , END
-from langgraph.prebuilt import create_react_agent
+
 from langsmith import traceable
 
 from app.clients import get_LangGraph_model
 from app.tools.scraping_tool import web_scraping_firecrawl
-from app.models import ExtractedJob , SingleJobData , AllExtractedData
+from app.models import ExtractedJob , SingleJobData
 from config import CONFIG
 
 
@@ -41,7 +41,6 @@ class JobScrutinizerLangGraph():
         self.user_input = user_input
         self.model = get_LangGraph_model()
         self.sys_prompt = self._sys_prompt()
-        # self.agent = self._create_agent()
         self.saved_jobs = []
         self.scrapped_urls = set()
         self.graph = self.build_graph()
@@ -158,18 +157,6 @@ class JobScrutinizerLangGraph():
                     ])
         
         return sys_prompt
-
-    # def _create_agent(self):
-    #     # Create the agent with system prompt
-    #     agent = create_react_agent(
-    #         model=self.model,
-    #         prompt=self._sys_prompt(),
-    #         response_format=SingleJobData
-    #     )
-        
-    #     return agent
-
-
 
 
     # get_urls node
