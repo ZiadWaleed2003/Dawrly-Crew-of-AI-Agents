@@ -2,6 +2,8 @@ from pydantic import BaseModel, Field
 from typing import List, Optional
 
 class SingleJobData(BaseModel):
+
+    matches_user_req : bool = Field (... ,title="a bool value to check if the scraped data matches the user requirements or not")
     job_title: str
     job_description: str
     job_url: str

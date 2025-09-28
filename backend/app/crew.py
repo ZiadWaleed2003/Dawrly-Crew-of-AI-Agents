@@ -6,9 +6,8 @@ from pathlib import Path
 
 from app.agents.job_requirement_analyst import JobRequirementAnalyst
 from app.agents.search_agent import SearchAgent
-from app.agents.job_scrutinizer_agent import JobScrutinizerAgent 
-from app.agents.evaluator import EvaluatorAgent
 from app.agents.langgraph_react_agent import JobScrutinizerLangGraphAgent
+from app.agents.job_scrutinizer_langgraph import JobScrutinizerLangGraph
 from app.agents.report_generator_agent import json_to_html_table
 from app.tools.mail_sender import send_email
 
@@ -32,10 +31,9 @@ async def initialize_crew(user_input_data : dict):
 
     job_analyst_agent_instance = JobRequirementAnalyst(input= user_input_data , user_id= id)
     search_agent_instance = SearchAgent(user_id= id)
-    # job_scrutinizer_agent = JobScrutinizerAgent(input=user_input_data , user_id= id)
-    # evaluator_agent = EvaluatorAgent(user_id= id)
 
-    job_scrutinizer_agent2 = JobScrutinizerLangGraphAgent(user_id=id , user_input= user_input_data)
+    # job_scrutinizer_agent2 = JobScrutinizerLangGraphAgent(user_id=id , user_input= user_input_data)
+    job_scrutinizer_agent2   = JobScrutinizerLangGraph(user_id=id , user_input= user_input_data)
 
     logger.info("All agents initialized successfully")
 
@@ -48,14 +46,10 @@ async def initialize_crew(user_input_data : dict):
                 agents=[
                     job_analyst_agent_instance.agent,
                     search_agent_instance.agent,
-                    # job_scrutinizer_agent.agent,
-                    # evaluator_agent.agent
                 ],
                 tasks=[
                     job_analyst_agent_instance.task,
                     search_agent_instance.task,
-                    # job_scrutinizer_agent.task,
-                    # evaluator_agent.task
                 ],
                 process=Process.sequential,
                 verbose=True,
@@ -75,7 +69,7 @@ async def initialize_crew(user_input_data : dict):
 
         if results.raw:
 
-            agent_3_result = await job_scrutinizer_agent2.scrutinize_jobs()
+            agent_3_result = job_scrutinizer_agent2.scrutinize_jobs()
 
         logger.info("Crew execution completed")
 
@@ -98,7 +92,7 @@ async def initialize_crew(user_input_data : dict):
     except Exception as e:
 
         logging.error(f"The crew Failed miserably bruhhhh : {e}")
-        if job_scrutinizer_agent2.job_urls is not None:
+        if len(job_scrutinizer_agent2.saved_jobs) == 0:
             send_email(to_email=email, user_id=id,error= True , jobs=0)
             logger.info(f"0 Jobs Email sent successfully to {email}")
             return False
