@@ -1,0 +1,26 @@
+services:
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        VITE_API_BASE_URL: http://localhost:8000
+    image: dawrly-frontend:1.0
+    pull_policy: never
+    restart: on-failure:0
+    ports:
+      - "3000:8080"
+    depends_on:
+      - backend
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    image: dawrly-backend:1.1
+    pull_policy: never
+    restart: on-failure:0
+    ports:
+      - "8000:8000"
+    env_file:
+      - ./backend/.env

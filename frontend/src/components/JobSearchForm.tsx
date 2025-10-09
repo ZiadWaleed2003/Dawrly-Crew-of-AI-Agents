@@ -10,14 +10,14 @@ import { useToast } from "@/hooks/use-toast";
 
 const JobSearchForm = () => {
   const [formData, setFormData] = useState({
-    jobTitle: "",
+    Job_title: "",
     skills: "",
-    experienceLevel: "",
-    yearsOfExperience: "",
-    location: "",
-    remotePreference: [] as string[],
-    jobType: [] as string[],
-    email: "",
+    experience_level: "",
+    min_years_experience: "",
+    locations: "",
+    remote_preference: [] as string[],
+    job_type: [] as string[],
+    email_address: "",
   });
   const [showSuccessModal, setShowSuccessModal] = useState(false);
   const { toast } = useToast();
@@ -29,7 +29,7 @@ const JobSearchForm = () => {
     }));
   };
 
-  const handleCheckboxChange = (field: "remotePreference" | "jobType", value: string, checked: boolean) => {
+  const handleCheckboxChange = (field: "remote_preference" | "job_type", value: string, checked: boolean) => {
     setFormData(prev => ({
       ...prev,
       [field]: checked 
@@ -40,7 +40,7 @@ const JobSearchForm = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!formData.email) {
+    if (!formData.email_address) {
       toast({
         title: "Email Required",
         description: "Please enter your email address to receive job results.",
@@ -97,8 +97,8 @@ const JobSearchForm = () => {
               <Input
                 id="jobTitle"
                 placeholder="e.g. Software Engineer, Data Scientist, Product Manager"
-                value={formData.jobTitle}
-                onChange={(e) => handleInputChange("jobTitle", e.target.value)}
+                value={formData.Job_title}
+                onChange={(e) => handleInputChange("Job_title", e.target.value)}
                 className="w-full bg-muted border-none"
               />
             </div>
@@ -120,7 +120,7 @@ const JobSearchForm = () => {
               <Label htmlFor="experienceLevel" className="text-sm font-medium text-foreground mb-2 block">
                 Experience Level
               </Label>
-              <Select value={formData.experienceLevel} onValueChange={(value) => handleInputChange("experienceLevel", value)}>
+              <Select value={formData.experience_level} onValueChange={(value) => handleInputChange("experience_level", value)}>
                 <SelectTrigger className="w-full bg-muted border-none">
                   <SelectValue placeholder="Select experience level" />
                 </SelectTrigger>
@@ -141,8 +141,8 @@ const JobSearchForm = () => {
                 id="years"
                 type="number"
                 placeholder="0"
-                value={formData.yearsOfExperience}
-                onChange={(e) => handleInputChange("yearsOfExperience", e.target.value)}
+                value={formData.min_years_experience}
+                onChange={(e) => handleInputChange("min_years_experience", e.target.value)}
                 className="w-full bg-muted border-none"
               />
             </div>
@@ -154,8 +154,8 @@ const JobSearchForm = () => {
               <Input
                 id="location"
                 placeholder="e.g. City ?"
-                value={formData.location}
-                onChange={(e) => handleInputChange("location", e.target.value)}
+                value={formData.locations}
+                onChange={(e) => handleInputChange("locations", e.target.value)}
                 className="w-full bg-muted border-none"
               />
             </div>
@@ -169,9 +169,9 @@ const JobSearchForm = () => {
                   <div key={option} className="flex items-center space-x-2">
                     <Checkbox
                       id={`remote-${option}`}
-                      checked={formData.remotePreference.includes(option)}
+                      checked={formData.remote_preference.includes(option)}
                       onCheckedChange={(checked) => 
-                        handleCheckboxChange("remotePreference", option, !!checked)
+                        handleCheckboxChange("remote_preference", option, !!checked)
                       }
                     />
                     <Label htmlFor={`remote-${option}`} className="text-xs sm:text-sm font-normal">
@@ -191,9 +191,9 @@ const JobSearchForm = () => {
                   <div key={option} className="flex items-center space-x-2">
                     <Checkbox
                       id={`type-${option}`}
-                      checked={formData.jobType.includes(option)}
+                      checked={formData.job_type.includes(option)}
                       onCheckedChange={(checked) => 
-                        handleCheckboxChange("jobType", option, !!checked)
+                        handleCheckboxChange("job_type", option, !!checked)
                       }
                     />
                     <Label htmlFor={`type-${option}`} className="text-xs sm:text-sm font-normal">
@@ -212,8 +212,8 @@ const JobSearchForm = () => {
                 id="email"
                 type="email"
                 placeholder="Enter your email"
-                value={formData.email}
-                onChange={(e) => handleInputChange("email", e.target.value)}
+                value={formData.email_address}
+                onChange={(e) => handleInputChange("email_address", e.target.value)}
                 className="w-full bg-muted border-none"
                 required
               />
@@ -228,7 +228,7 @@ const JobSearchForm = () => {
           </form>
 
           <p className="text-xs text-muted-foreground text-center mt-3 sm:mt-4 px-2">
-            Results will be sent to your email in 5-10 minutes. Please check your spam folder.
+            Results will be sent to your email in 10-15 minutes. Please check your spam folder.
           </p>
         </CardContent>
       </Card>
@@ -238,7 +238,7 @@ const JobSearchForm = () => {
           <DialogHeader>
             <DialogTitle className="text-center text-base sm:text-lg">Job Search Submitted</DialogTitle>
             <DialogDescription className="text-center text-xs sm:text-sm text-muted-foreground mt-4 px-2">
-              You can expect your results on your email within 5-10 minutes. Please check your spam folder.
+              You can expect your results on your email within 10-15 minutes. Please check your spam folder.
             </DialogDescription>
           </DialogHeader>
           <div className="flex justify-center mt-4 sm:mt-6">
