@@ -1,4 +1,4 @@
-FROM python:3.11.13-slim as base
+FROM python:3.11.13-slim AS base
 
 # Prevents Python from writing pyc files
 ENV PYTHONDONTWRITEBYTECODE=1

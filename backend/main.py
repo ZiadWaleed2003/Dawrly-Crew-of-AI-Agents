@@ -2,8 +2,8 @@ from collections import defaultdict
 from datetime import datetime, timedelta
 from fastapi import Depends, FastAPI, HTTPException, Request, status 
 from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel, Field
-from typing import Optional, List, Dict
+from pydantic import BaseModel, Field, field_validator
+from typing import Optional, List, Dict, Union
 import logging
 
 from app.crew import initialize_crew
@@ -23,6 +23,7 @@ origins = [
     "https://dawrly-crew-of-ai-agents.vercel.app",
     "http://localhost",
     "http://localhost:8000",
+    "http://localhost:3000"
 ]
 
 app.add_middleware(
@@ -74,13 +75,47 @@ class UserJobSearchRequest(BaseModel):
     """Request model for job search parameters"""
     Job_title : str
     email_address : str
-    job_type: Optional[str] = Field(None, description="Job type (full-time, part-time, contract)")
-    preferred_skills: Optional[List[str]] = Field(default=[], description="List of user's skills")
+    # Accept both 'skills' and 'preferred_skills' for compatibility
+    skills: Optional[Union[str, List[str]]] = Field(default=None, description="User's skills (string or list)")
+    preferred_skills: Optional[List[str]] = Field(default=None, description="List of user's skills")
     experience_level: str = Field(..., description="Fresh/Junior/Mid/Senior/Lead")
-    min_years_experience: Optional[int] = Field(default=0)
-    locations: List[str] = Field(default=[], description="Preferred locations")
-    remote_preference: List[str] = Field(default="any", description="remote/hybrid/onsite/any")
-    job_type : list[str] = Field(default=["Full-Time"] , description="Full-Time/Part-Time/Internship")
+    min_years_experience: Optional[Union[int, str]] = Field(default=0)
+    locations: Optional[Union[str, List[str]]] = Field(default=[], description="Preferred locations (string or list)")
+    remote_preference: Optional[Union[str, List[str]]] = Field(default="any", description="remote/hybrid/onsite/any")
+    job_type : Optional[Union[str, List[str]]] = Field(default=["Full-Time"] , description="Full-Time/Part-Time/Internship")
+    
+    @field_validator('min_years_experience', mode='before')
+    @classmethod
+    def convert_years_to_int(cls, v):
+        """Convert string years to integer"""
+        if isinstance(v, str):
+            return int(v) if v.isdigit() else 0
+        return v
+    
+    @field_validator('skills', 'preferred_skills', 'locations', 'remote_preference', 'job_type', mode='before')
+    @classmethod
+    def convert_to_list(cls, v):
+        """Convert string values to list, handle case sensitivity"""
+        if v is None:
+            return []
+        if isinstance(v, str):
+            # Split by comma if contains commas, otherwise make it a list
+            if ',' in v:
+                return [item.strip() for item in v.split(',')]
+            return [v] if v else []
+        if isinstance(v, list):
+            # Normalize case for remote_preference and job_type
+            return v
+        return []
+    
+    def model_post_init(self, __context):
+        """After validation, merge skills and preferred_skills"""
+        # If skills is provided but preferred_skills is not, use skills
+        if self.skills and not self.preferred_skills:
+            self.preferred_skills = self.skills if isinstance(self.skills, list) else [self.skills]
+        # If preferred_skills is empty and skills exists, use skills
+        elif not self.preferred_skills and self.skills:
+            self.preferred_skills = self.skills if isinstance(self.skills, list) else [self.skills]
     
 
 class JobSearchResponse(BaseModel):
@@ -141,7 +176,7 @@ async def search_jobs(user_data: UserJobSearchRequest):
         HTTPException: If job search fails or invalid data provided
     """
     try:
-        logger.info(f"Processing job search request for user with skills: {user_data.preferred_skills}")
+        logger.info(f"Processing job search request for user with skills: {user_data.skills}")
         
         # Convert Pydantic model to dict for crew initialization
         user_dict = user_data.model_dump()
