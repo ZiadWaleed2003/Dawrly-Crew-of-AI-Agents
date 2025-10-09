@@ -65,6 +65,7 @@ class JobRequirementAnalyst:
                 "- Include phrases like 'years experience', specific technologies, seniority level",
                 "- Example: 'senior data scientist Python machine learning \"5+ years\" remote jobs'",
                 "",
+                "One Single query including the {user_input['job_title'] + location only}"
                 "MANDATORY RULES:",
                 "1. EVERY query must be job-focused - include words like: jobs, hiring, careers, vacancy, opening, position",
                 "2. Even broad queries must be clearly about job postings",
