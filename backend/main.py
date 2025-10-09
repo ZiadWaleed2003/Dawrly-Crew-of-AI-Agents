@@ -20,7 +20,7 @@ app = FastAPI(
 )
 
 origins = [
-    "https://dawrly-crew-of-ai-agents.vercel.app",
+    "https://dawrly-crew.netlify.app",
     "http://localhost",
     "http://localhost:8000",
     "http://localhost:3000"
