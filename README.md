@@ -151,7 +151,7 @@ graph TD
     **add these to the .env file in the backend and you are good to go**
      
 
-6.  **Run with Docker Compose:**
+5.  **Run with Docker Compose:**
 
     Once Docker is installed and your `.env` files are configured, navigate to the main project directory (where your `docker-compose.yml` file is located) and run the following command:
 
@@ -169,3 +169,9 @@ graph TD
 
 ## What ? did u expect me to provide a `pip install` method ?
   - I'm going to hold your hands when I say this (ma man you need to learn how to use **Docker** it's 2025 and you are still drowning in dependency conflicts)
+  
+  
+
+6. **I almost forgot ... for monitoring I used LangSmith and AgentOps**
+
+- Don't worry there is nothing more u need to do just add the env vars and you are good to go you will find the logs on LangSmith website and AgentOps
