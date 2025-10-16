@@ -7,6 +7,7 @@ from typing import Optional, List, Dict, Union
 import logging
 
 from app.crew import initialize_crew
+from utils import rate_limiter
 
 
 logging.basicConfig(level=logging.INFO)
@@ -34,41 +35,6 @@ app.add_middleware(
 )
 
 
-
-# yeah the time window is 1 day so 3 RPD (I'm broke as hell broski credits FireCrawl is going to be out soon)
-RATE_LIMIT_PER_DAY = 3
-TIME_WINDOW = timedelta(days=1)
-
-
-ip_request_store: Dict[str, List[datetime]] = defaultdict(list)
-
-# The Rate limiter
-def rate_limiter(request: Request):
-    """
-    This dependency function checks and enforces the rate limit.
-    """
-    
-    # Ik anyone can get easily over it with a proxy but come on man who does this with a side project 
-    client_ip = request.client.host
-    
-    current_time = datetime.now()
-    request_timestamps = ip_request_store[client_ip]
-    
-    relevant_timestamps = [timestamp for timestamp in request_timestamps if current_time - timestamp < TIME_WINDOW]
-    
-    # If the number of requests in the time window is already at the limit,
-    # raise an HTTP exception.
-    if len(relevant_timestamps) >= RATE_LIMIT_PER_DAY:
-        raise HTTPException(
-            status_code=429, 
-            detail=f"Too many requests. Rate limit is {RATE_LIMIT_PER_DAY} requests per day."
-        )
-    
-    # The request is allowed. Record the new request timestamp.
-    relevant_timestamps.append(current_time)
-    ip_request_store[client_ip] = relevant_timestamps
-    
-    return True
 
 # Pydantic models for request/response validation
 class UserJobSearchRequest(BaseModel):
