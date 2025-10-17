@@ -89,12 +89,19 @@ async def initialize_crew(user_input_data : dict):
     except Exception as e:
 
         logging.error(f"The crew Failed miserably bruhhhh : {e}")
-        if len(job_scrutinizer_agent.saved_jobs) == 0:
-            send_email(to_email=email, user_id=id,error= True , jobs=0)
-            logger.info(f"0 Jobs Email sent successfully to {email}")
+        
+
+        # If we never found jobs or the process crashed before completion,
+        # or we had partial jobs but the workflow failed — send general error.
+        if not job_scrutinizer_agent.final_status :
+            logger.info(f"Sending general error notification email to {email}")
+            send_email(to_email=email, user_id=id, error=True)
+            logger.info(f"General Error Email sent successfully to {email}")
             return False
-        else:
-            logger.info(f"Sending error notification email to {email}")
-            send_email(to_email=email, user_id=id,error= True)
-            logger.info(f"Error Email sent successfully to {email}")
-            return False
+
+        # If the list exists but is empty (workflow finished, no jobs found)
+        logger.info(f"Sending 0-jobs email to {email}")
+        send_email(to_email=email, user_id=id, error=True, jobs=0)
+        logger.info(f"0 Jobs Email sent successfully to {email}")
+        return False
+           

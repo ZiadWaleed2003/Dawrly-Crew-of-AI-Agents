@@ -42,6 +42,7 @@ class JobScrutinizerLangGraph():
         self.model = get_LangGraph_model()
         self.sys_prompt = self._sys_prompt()
         self.saved_jobs = []
+        self.final_status = False
         self.scrapped_urls = set()
         self.graph = self.build_graph()
 
@@ -343,6 +344,7 @@ class JobScrutinizerLangGraph():
     def collect_valid_jobs(self , state : GraphState):
         job = state.get("analyzed_job")
         return self.saved_jobs.append(job)
+    
 
     # Save results
     @traceable
@@ -366,6 +368,7 @@ class JobScrutinizerLangGraph():
             final_result = {
                 "jobs": jobs_list
             }
+            
             
             # Save to file
             with open(output_file, 'w') as f:
@@ -407,6 +410,7 @@ class JobScrutinizerLangGraph():
         if len(self.saved_jobs) > 0:
             logger.info("saving jobs")
             self._save_results(self.saved_jobs)
+            self.final_status = True
             return True
-
+        self.final_status = True
         return False

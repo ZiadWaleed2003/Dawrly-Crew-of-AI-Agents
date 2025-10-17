@@ -12,16 +12,16 @@ from config import CONFIG
 
 from functools import lru_cache
 
-# This decorator ensures the function is only run once.
+# This decorator ensures the function only run once.
 # The result is cached and returned on all subsequent calls.
 @lru_cache(maxsize=None)
 def get_llm_main() -> LLM:
     """Initializes and returns a shared LLM instance."""
-    print("--- Initializing LLM Client (This will run only once) deepseek r1---")
+    print("--- Initializing LLM Client (This will run only once) Qwen3 80B---")
     
     try:
         llm = LLM(
-            model="deepseek-ai/deepseek-r1",
+            model="qwen/qwen3-next-80b-a3b-thinking",
             base_url = "https://integrate.api.nvidia.com/v1",
             api_key=CONFIG['NVIDIA_API_KEY'],
             temperature=0
