@@ -206,14 +206,11 @@ class JobScrutinizerLangGraph():
     
         result = web_scraping_firecrawl(tool_input=url)
         
-        
-        
-        
         if result:
 
             logger.info("Scraping successful.")
             # to avoid duplicates
-            if result.get("job_url") in self.scrapped_urls:
+            if result.get("job_url"," ") in self.scrapped_urls:
                 logger.info("skipping a duplicate URL")
                 return {"scraping_status" : False}
             

@@ -4,6 +4,7 @@ from firecrawl import FirecrawlApp
 from tavily import TavilyClient
 from langchain_nvidia_ai_endpoints import ChatNVIDIA
 from langchain_groq import ChatGroq
+from langchain_cerebras import ChatCerebras
 from langchain_core.rate_limiters import InMemoryRateLimiter
 from langsmith import Client as LangSmithClient
 
@@ -46,6 +47,12 @@ def get_LangGraph_model():
                 check_every_n_seconds=0.1,  
                 max_bucket_size=1
             )
+        
+        rate_limiter_cerebras = InMemoryRateLimiter(
+                requests_per_second= 30 / 60,  # with Cerebras I'm getting 30 RPM max 
+                check_every_n_seconds=0.1,  
+                max_bucket_size=1
+            )
 
         model = ChatNVIDIA(
             model="meta/llama-3.3-70b-instruct",
@@ -55,12 +62,11 @@ def get_LangGraph_model():
             nvidia_api_key = CONFIG['NVIDIA_API_KEY'],
             rate_limiter = rate_limiter
         ).with_fallbacks([
-            ChatGroq(
-                model="llama-3.3-70b-versatile",
+            ChatCerebras(
+                model="llama-3.3-70b",
                 temperature = 0,
-                api_key=CONFIG['GROQ_API_KEY'],
-                reasoning_format='hidden',
-                rate_limiter= rate_limiter
+                api_key = CONFIG['CEREBRAS_API_KEY'],
+                rate_limiter= rate_limiter_cerebras
             ),
         ])
 
