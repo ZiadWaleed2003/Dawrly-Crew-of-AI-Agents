@@ -1,21 +1,21 @@
 # Dawrly a Crew of Ai agents
 
-- Dawrly is a mutli agent system designed to automate the job hunting process. (so yeah boy no need to spend a lot of time again on linkedin or indeedd , etc..)
+- Dawrly is a multi agent system designed to automate the job hunting process. (so yeah boy no need to spend a lot of time again on linkedin or indeedd , etc..)
 
 - As you probably know, the current tech job market is pretty tough. After studying **MAS (Multi-Agent Systems)**, I got the idea to build **Dawrly**, an AI job hunter that automates the entire process for us.
 
 
-## if you still got any question the project
+## if you still got any question about the project
 - you can check the deep wiki docs for this project and chat with Mr Devin here about it
   - [![DeepWiki](https://img.shields.io/badge/DeepWiki-View%20Project-blue?logo=readme)](https://deepwiki.com/ZiadWaleed2003/Dawrly-Crew-of-AI-Agents)
 
-- or speak to me I'd be more than happy to help
+- or speak with me I'd be more than happy to help
   - <a href=https://www.linkedin.com/in/ziadwaleed target="_blank">Linkedin</a>
   - ziadwaleedmohamed2003@gmail.com
 
 
 
-## How Does it works ? 
+## How Does it work ? 
 
 - check this Demo and the Following diagrams
 
